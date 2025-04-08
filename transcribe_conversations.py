@@ -6,6 +6,7 @@ and Azure Speech Services for French.
 Usage:
     python transcribe_conversations.py --specialty cardiology --lang en-CA
     python transcribe_conversations.py --specialty all --lang all
+    python transcribe_conversations.py --audio test_data/test_conversation.wav
 """
 
 import os
@@ -27,6 +28,49 @@ BASE_DIR = "data-med"
 DEEPGRAM_API_KEY = os.getenv("DEEPGRAM_API_KEY")
 AZURE_SPEECH_KEY = os.getenv("AZURE_SPEECH_KEY")
 AZURE_SPEECH_REGION = os.getenv("AZURE_SPEECH_REGION", "eastus")
+
+# Function to send audio file to Deepgram API
+def transcribe_audio(audio_file_path, api_key):
+    url = "https://api.deepgram.com/v1/listen?model=nova-3-medical&diarize=true"
+    headers = {
+        "Authorization": f"Token {api_key}",
+        "Content-Type": "audio/wav"
+    }
+    with open(audio_file_path, "rb") as audio_file:
+        response = requests.post(url, headers=headers, data=audio_file)
+    return response.json()
+
+# Function to parse and format the API response
+def format_conversation(api_response):
+    conversation = []
+    current_speaker = None
+    current_text = []
+
+    # Extract utterances from the API response
+    for word in api_response["results"]["channels"][0]["alternatives"][0]["words"]:
+        speaker = word.get("speaker", "unknown")
+        text = word["word"]
+
+        # If the speaker changes, save the previous speaker's text
+        if speaker != current_speaker and current_speaker is not None:
+            conversation.append({
+                "speaker": "doctor" if current_speaker == "speaker_0" else "patient",
+                "text": " ".join(current_text)
+            })
+            current_text = []
+
+        # Update current speaker and text
+        current_speaker = speaker
+        current_text.append(text)
+
+    # Add the last speaker's text
+    if current_text:
+        conversation.append({
+            "speaker": "doctor" if current_speaker == "speaker_0" else "patient",
+            "text": " ".join(current_text)
+        })
+
+    return {"conversation": conversation}
 
 class AudioTranscriber:
     """Transcribe audio files using appropriate service based on language."""
@@ -59,142 +103,28 @@ class AudioTranscriber:
         try:
             print(f"Transcribing {audio_path} with Deepgram Nova 3 Medical...")
             
-            # Read the audio file as binary data
-            with open(audio_path, "rb") as audio_file:
-                audio_data = audio_file.read()
-            
-            # Create the request URL with model parameter and diarization enabled
-            url = "https://api.deepgram.com/v1/listen?model=nova-3-medical&diarize=true&punctuate=true&utterances=true"
-            
-            # Make the request using the binary audio data directly
-            response = requests.post(
-                url, 
-                headers=self.deepgram_headers,
-                data=audio_data
-            )
-            
-            if response.status_code != 200:
-                print(f"Error from Deepgram API: {response.status_code} - {response.text}")
-                return None, None
-            
-            # Parse the response
-            result = response.json()
+            # Use the improved transcribe_audio function
+            result = transcribe_audio(audio_path, DEEPGRAM_API_KEY)
             
             # Save the full raw response for debugging
             debug_path = os.path.join(os.path.dirname(audio_path), f"{os.path.basename(audio_path)}_dg_response.json")
             with open(debug_path, 'w', encoding='utf-8') as f:
                 json.dump(result, f, indent=2, ensure_ascii=False)
             
-            # Extract the transcription
+            # Extract the full transcript
             if "results" in result and "channels" in result["results"] and len(result["results"]["channels"]) > 0:
                 if "alternatives" in result["results"]["channels"][0] and len(result["results"]["channels"][0]["alternatives"]) > 0:
                     transcript = result["results"]["channels"][0]["alternatives"][0].get("transcript", "")
-                    words = result["results"]["channels"][0]["alternatives"][0].get("words", [])
-                    paragraphs = result["results"]["channels"][0]["alternatives"][0].get("paragraphs", {}).get("paragraphs", [])
                 else:
                     transcript = ""
-                    words = []
-                    paragraphs = []
             else:
                 transcript = ""
-                words = []
-                paragraphs = []
             
-            # Process words to create diarized transcript using paragraphs if available
-            diarized_transcript = []
+            # Use the improved format_conversation function to get better diarization
+            formatted_result = format_conversation(result)
+            diarized_transcript = formatted_result["conversation"]
             
-            # First attempt: Use paragraphs for better speaker segmentation
-            if paragraphs:
-                for paragraph in paragraphs:
-                    speaker = "doctor" if paragraph.get("speaker") == 0 else "patient"
-                    sentences = paragraph.get("sentences", [])
-                    if sentences:
-                        text = " ".join([s.get("text", "") for s in sentences])
-                        if text.strip():
-                            diarized_transcript.append({
-                                "speaker": speaker,
-                                "text": text.strip()
-                            })
-            
-            # Second attempt: Use words with speaker info if paragraphs didn't work
-            if not diarized_transcript and words:
-                segments = []
-                current_speaker = None
-                current_text = []
-                
-                for word in words:
-                    word_speaker = word.get("speaker", None)
-                    
-                    if word_speaker is not None and (current_speaker is None or word_speaker != current_speaker):
-                        # Save the previous segment if it exists
-                        if current_text and current_speaker is not None:
-                            segments.append({
-                                "speaker": current_speaker,
-                                "text": " ".join(current_text)
-                            })
-                        
-                        # Start new segment
-                        current_speaker = word_speaker
-                        current_text = [word["word"]]
-                    else:
-                        # Continue current segment
-                        current_text.append(word["word"])
-                
-                # Add the last segment
-                if current_text and current_speaker is not None:
-                    segments.append({
-                        "speaker": current_speaker,
-                        "text": " ".join(current_text)
-                    })
-                
-                # Convert speaker numbers to doctor/patient
-                for segment in segments:
-                    speaker = "doctor" if segment["speaker"] == 0 else "patient"
-                    text = segment["text"]
-                    
-                    # Add to diarized transcript
-                    if text.strip():
-                        diarized_transcript.append({
-                            "speaker": speaker,
-                            "text": text.strip()
-                        })
-            
-            # Third attempt: If all else fails, split by sentences and alternate speakers
-            if not diarized_transcript:
-                sentences = [s.strip() + "." for s in transcript.split('.') if s.strip()]
-                for i, sentence in enumerate(sentences):
-                    speaker = "doctor" if i % 2 == 0 else "patient"
-                    diarized_transcript.append({
-                        "speaker": speaker,
-                        "text": sentence
-                    })
-            
-            # Consolidate consecutive segments from the same speaker
-            consolidated_transcript = []
-            current_speaker = None
-            current_text = []
-            
-            for segment in diarized_transcript:
-                if segment["speaker"] == current_speaker:
-                    current_text.append(segment["text"])
-                else:
-                    if current_speaker is not None and current_text:
-                        consolidated_transcript.append({
-                            "speaker": current_speaker,
-                            "text": " ".join(current_text)
-                        })
-                    current_speaker = segment["speaker"]
-                    current_text = [segment["text"]]
-            
-            # Add the last segment
-            if current_speaker is not None and current_text:
-                consolidated_transcript.append({
-                    "speaker": current_speaker,
-                    "text": " ".join(current_text)
-                })
-            
-            # Use the consolidated transcript
-            return transcript, consolidated_transcript
+            return transcript, diarized_transcript
                 
         except Exception as e:
             print(f"Error transcribing with Deepgram: {str(e)}")
@@ -443,6 +373,23 @@ class AudioTranscriber:
             if diarized_transcript:
                 with open(json_path, 'w', encoding='utf-8') as f:
                     json.dump({"conversation": diarized_transcript}, f, indent=2, ensure_ascii=False)
+                
+                # Generate SOAP from transcript here - ensures it's only done once when the transcript is created
+                specialty = os.path.basename(os.path.dirname(os.path.dirname(output_dir)))
+                lang_code = os.path.basename(os.path.dirname(output_dir))
+                case_info = filename.split('_')
+                if len(case_info) >= 3:
+                    case_num = case_info[1]
+                    encounter_type = case_info[2]
+                    
+                    # Set up paths for SOAP generation
+                    soap_dir = os.path.join(BASE_DIR, specialty, lang_code, "soap")
+                    os.makedirs(soap_dir, exist_ok=True)
+                    
+                    # Generate SOAP from transcript
+                    from generate_medical_conversations import generate_soap_from_transcript
+                    conversation_json = {"conversation": diarized_transcript}
+                    generate_soap_from_transcript(conversation_json, soap_dir, specialty, lang_code.split('-')[0], case_num, encounter_type)
             
             print(f"Transcription saved for {filename}")
             return True
@@ -491,6 +438,57 @@ def process_specialty(specialty, language="all"):
         for audio_file in tqdm(audio_files, desc=f"Transcribing {lang} {specialty} conversations"):
             transcriber.transcribe_and_save(audio_file, transcripts_dir, lang)
 
+# Function to directly transcribe a specific audio file
+def transcribe_specific_audio(audio_file_path):
+    """
+    Transcribe a specific audio file using Deepgram Nova 3 Medical.
+    Saves the transcription in a JSON file next to the audio file.
+    
+    Args:
+        audio_file_path: Path to the audio file to transcribe
+    """
+    if not DEEPGRAM_API_KEY:
+        print("Deepgram API key not found. Set DEEPGRAM_API_KEY in your .env file.")
+        return False
+        
+    if not os.path.exists(audio_file_path):
+        print(f"Audio file not found: {audio_file_path}")
+        return False
+        
+    print(f"Transcribing {audio_file_path} with Deepgram Nova 3 Medical...")
+    
+    try:
+        # Step 1: Transcribe the audio
+        api_response = transcribe_audio(audio_file_path, DEEPGRAM_API_KEY)
+        
+        # Save the full raw response for debugging
+        debug_path = f"{audio_file_path}_dg_response.json"
+        with open(debug_path, 'w', encoding='utf-8') as f:
+            json.dump(api_response, f, indent=2, ensure_ascii=False)
+        
+        # Step 2: Format the conversation
+        formatted_conversation = format_conversation(api_response)
+        
+        # Step 3: Save the formatted conversation
+        output_path = os.path.splitext(audio_file_path)[0] + "_transcript.json"
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(formatted_conversation, f, indent=2, ensure_ascii=False)
+            
+        print(f"Transcription saved to {output_path}")
+        
+        # Also print the conversation to the console
+        print("\nTranscribed conversation:")
+        for segment in formatted_conversation["conversation"]:
+            print(f"{segment['speaker']}: {segment['text']}")
+            
+        return True
+        
+    except Exception as e:
+        print(f"Error transcribing audio file: {e}")
+        import traceback
+        traceback.print_exc()
+        return False
+
 def main():
     """Main function."""
     # Set up argument parser
@@ -499,8 +497,15 @@ def main():
                         help='Medical specialty to process')
     parser.add_argument('--lang', type=str, choices=['en-CA', 'fr-CA', 'all'], default='all',
                         help='Language to process')
+    parser.add_argument('--audio', type=str, help='Transcribe a specific audio file')
     args = parser.parse_args()
     
+    # If a specific audio file is provided, transcribe it directly
+    if args.audio:
+        transcribe_specific_audio(args.audio)
+        return
+    
+    # Otherwise, proceed with specialty/language based transcription
     # Check for required API keys
     if not DEEPGRAM_API_KEY and (args.lang == "en-CA" or args.lang == "all"):
         print("Warning: DEEPGRAM_API_KEY not found. English transcription will not work.")

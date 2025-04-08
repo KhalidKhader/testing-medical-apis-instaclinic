@@ -1,60 +1,56 @@
 {
   "conversation": [
     {
-      "speaker": "doctor",
-      "text": "good morning missus smith how are you feeling today"
+      "speaker": "patient",
+      "text": "good morning my name is doctor smith i'm a cardiologist how can i assist you today"
     },
     {
       "speaker": "patient",
-      "text": "good morning doctor i've been better i suppose i've been feeling my heart race quite a bit lately and it's making me feel a bit dizzy and weak"
-    },
-    {
-      "speaker": "doctor",
-      "text": "i'm sorry to hear that let's talk about it in detail when did you first notice these symptoms"
+      "text": "good morning doctor i've been having some episodes of rapid heartbeat lately my family doctor said i might have something called ventricular tachycardia"
     },
     {
       "speaker": "patient",
-      "text": "i suppose it started a few weeks ago but it's been getting worse"
-    },
-    {
-      "speaker": "doctor",
-      "text": "any chest pain shortness of breath or fainting spells"
+      "text": "i see i'm sorry to hear that could you tell me more about these episodes when do they happen and how long do they last"
     },
     {
       "speaker": "patient",
-      "text": "no chest pain but i do feel winded quite easily"
-    },
-    {
-      "speaker": "doctor",
-      "text": "have you noticed any triggers or patterns for example does the racing heart happen after you've exerted yourself"
+      "text": "they usually happen at rest especially in the evening they last for a few minutes and then stop i feel dizzy and short of breath during these episodes"
     },
     {
       "speaker": "patient",
-      "text": "not necessarily it seems to come on quite randomly"
-    },
-    {
-      "speaker": "doctor",
-      "text": "i see i'd like to run a few tests including an egg and possibly an echocardiogram to check your heart's rhythm and to see how it's pumping blood we may also do a stress test if needed"
+      "text": "any chest pain palpitations sweating or fainting during these episodes"
     },
     {
       "speaker": "patient",
-      "text": "alright doctor"
-    },
-    {
-      "speaker": "doctor",
-      "text": "after examination your heart rate is indeed a bit elevated and irregular you have ventricular tachycardia missus smith it's a condition where the lower chambers of your heart beat too fast causing inefficient blood flow"
+      "text": "no chest pain or sweating but i do feel palpitations at once i almost fainted"
     },
     {
       "speaker": "patient",
-      "text": "oh that sounds serious what can we do about it"
-    },
-    {
-      "speaker": "doctor",
-      "text": "we have some effective treatment options including medications to control your heart rhythm and possibly a procedure called catheter ablation if necessary lifestyle changes like reducing caffeine and alcohol could also help"
+      "text": "alright we'll certainly look into this any chest pain shortness of breath or leg swelling"
     },
     {
       "speaker": "patient",
-      "text": "i see and what's the next step doctor thank you doctor i'll follow your recommendations"
+      "text": "no none of that"
+    },
+    {
+      "speaker": "patient",
+      "text": "great are you on any medications currently any allergies"
+    },
+    {
+      "speaker": "patient",
+      "text": "i take a daily aspirin for blood pressure and i'm allergic to penicillin"
+    },
+    {
+      "speaker": "patient",
+      "text": "noted we will run some tests including an egg echocardiogram and possibly a stress test to further evaluate your condition your blood pressure and heart rate are slightly elevated which is consistent with your symptoms we will need to wait for the results of the tests for a definitive diagnosis in the meantime let's discuss potential treatments"
+    },
+    {
+      "speaker": "patient",
+      "text": "okay what kind of treatment are we looking at"
+    },
+    {
+      "speaker": "patient",
+      "text": "if confirmed ventricular tachycardia is often treated with medication lifestyle modifications and sometimes procedures such as catheter ablation we'll discuss the specifics once we have a confirmed diagnosis"
     }
   ]
 }

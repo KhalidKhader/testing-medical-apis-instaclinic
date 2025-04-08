@@ -2,51 +2,63 @@
   "language": "en-CA",
   "specialty": "gp",
   "type": "consultation",
-  "condition": "hypothyroidism",
+  "condition": "depression",
   "patient": {
-    "age": 55,
+    "age": 33,
     "gender": "female"
   },
   "conversation": [
     {
       "speaker": "doctor",
-      "text": "Good morning, Ms. Johnson. How have you been since your last visit?"
+      "text": "Good morning. What brings you in today?"
     },
     {
       "speaker": "patient",
-      "text": "Good morning, doctor. I've been feeling quite tired and have been gaining weight despite eating and exercising normally."
+      "text": "Hello, doctor. I've been feeling uncomfortable lately. I've noticed that I have to urinate more frequently than usual and it's quite painful each time. Also, the urine seems to be cloudy and has a strong odour."
     },
     {
       "speaker": "doctor",
-      "text": "I'm sorry to hear that. Has there been any other changes, like in your mood, skin, or hair?"
+      "text": "I'm sorry to hear that you're not feeling well. Any other symptoms you've noticed?"
     },
     {
       "speaker": "patient",
-      "text": "Yes, I have been feeling a bit low and my hair has become dry and thin."
+      "text": "Yes, I've also been feeling feverish and I've been experiencing lower abdominal pain."
     },
     {
       "speaker": "doctor",
-      "text": "Have you been taking your levothyroxine as prescribed?"
+      "text": "How long have you been experiencing these symptoms?"
     },
     {
       "speaker": "patient",
-      "text": "Yes, I have been taking it daily."
+      "text": "About 4 days now."
     },
     {
       "speaker": "doctor",
-      "text": "It's important that we monitor your symptoms closely because they may be related to your hypothyroidism. We might need to adjust your medication dosage. Let's do a physical examination. (Doctor performs physical examination)"
-    },
-    {
-      "speaker": "doctor",
-      "text": "Your vital signs are normal, but I noticed some puffiness around your eyes and dryness in your skin. I am going to order some blood tests to check your thyroid hormone levels."
+      "text": "Alright. Do you have any allergies?"
     },
     {
       "speaker": "patient",
-      "text": "Okay, doctor."
+      "text": "No, not that I am aware of."
     },
     {
       "speaker": "doctor",
-      "text": "We might need to adjust your levothyroxine dosage based on your test results. It's also important to have a balanced diet and regular exercise."
+      "text": "Ok. Let me conduct a physical exam, and then we'll take a urine sample for testing."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Your vitals are stable, but the lower abdomen seems tender. We’ll need to send your urine sample for testing to confirm, but your symptoms suggest a urinary tract infection."
+    },
+    {
+      "speaker": "patient",
+      "text": "Oh no, is it serious, doctor?"
+    },
+    {
+      "speaker": "doctor",
+      "text": "It's quite common, especially in women. It's usually caused by bacteria entering the urinary tract. If left untreated, it can lead to more serious complications. But with early treatment, you should be fine."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I'll prescribe an antibiotic called Nitrofurantoin, which should help clear the infection. It's important to finish the whole course of antibiotics even if you start feeling better."
     },
     {
       "speaker": "patient",
@@ -54,11 +66,15 @@
     },
     {
       "speaker": "doctor",
-      "text": "We'll meet again after we get your test results. Please keep taking your current dosage until then."
+      "text": "Also, drink plenty of water to help flush out the bacteria. Avoid coffee, alcohol, and spicy foods as they can irritate your bladder."
+    },
+    {
+      "speaker": "doctor",
+      "text": "We'll schedule a follow-up appointment in a week to check on your progress. If your symptoms get worse or you develop new symptoms like back pain or vomiting, please come in immediately."
     },
     {
       "speaker": "patient",
-      "text": "Will do, doctor."
+      "text": "Thank you, doctor. I'll do as you advise."
     }
   ]
 }

@@ -172,25 +172,35 @@ class AudioGenerator:
             return audio
         
         try:
-            # Determine voice transformation parameters based on speaker characteristics
+            # Use extreme voice transformations to ensure clear diarization
             if is_doctor:
                 if gender == "male":
-                    # Male doctor: deeper voice, authoritative
-                    pitch_shift = -2.0 if age > 50 else -1.0
-                    tempo = 0.95 if age > 50 else 0.98
+                    # Male doctor: extremely deep voice, authoritative
+                    pitch_shift = -7.0  # Extremely deep voice
+                    tempo = 0.8  # Slower speech rate for authority
                 else:  # female doctor
-                    # Female doctor: professional tone
-                    pitch_shift = -1.0 if age > 50 else 0.0
-                    tempo = 0.97 if age > 50 else 1.0
+                    # Female doctor: distinctly professional tone
+                    pitch_shift = 5.0  # Higher voice
+                    tempo = 0.85  # Slightly slower speech rate
             else:  # patient
                 if gender == "male":
-                    # Male patient: varies by age
-                    pitch_shift = -3.0 if age > 65 else (-1.5 if age > 40 else 0.5)
-                    tempo = 0.9 if age > 65 else (0.95 if age > 40 else 1.05)
+                    # Male patient: distinctly different from doctor
+                    pitch_shift = -2.0  # Less deep than doctor but still masculine
+                    tempo = 1.15  # Faster speech rate to indicate nervousness
                 else:  # female patient
-                    # Female patient: varies by age
-                    pitch_shift = -1.0 if age > 65 else (0.5 if age > 40 else 2.0)
-                    tempo = 0.9 if age > 65 else (0.98 if age > 40 else 1.05)
+                    # Female patient: distinctly different from doctor
+                    pitch_shift = 8.0  # Very high voice
+                    tempo = 1.05  # Slightly faster speech rate
+            
+            # Apply age-based adjustments
+            if age > 65:  # Elderly voice
+                tempo *= 0.9  # Slower for elderly
+                # Add a slight tremor for elderly voices
+                tremor = np.sin(2 * np.pi * 8 * np.arange(len(audio)) / sample_rate) * 0.03
+                audio = audio + tremor[:len(audio)]
+            elif age < 18:  # Young voice
+                pitch_shift += 2.0  # Higher pitch for younger
+                tempo *= 1.1  # Faster for younger
             
             # Apply pitch shifting
             y_shifted = librosa.effects.pitch_shift(audio, sr=sample_rate, n_steps=pitch_shift)
@@ -316,8 +326,8 @@ class AudioGenerator:
             else:
                 patient_gender = "male"
             
-            # Doctor characteristics - randomly assigned but consistent within conversation
-            doctor_gender = random.choice(["male", "female"])
+            # Always use contrasting doctor gender for clearer diarization
+            doctor_gender = "female" if patient_gender == "male" else "male"
             doctor_age = random.randint(35, 65)
             
             # Language code for TTS
@@ -392,9 +402,9 @@ class AudioGenerator:
                 
                 # Add a longer pause when speaker changes
                 if prev_speaker is not None and speaker != prev_speaker:
-                    pause_duration = int(1.5 * sr)  # 1.5 second pause
+                    pause_duration = int(2.5 * sr)  # 2.5 second pause between different speakers
                 else:
-                    pause_duration = int(0.7 * sr)  # 0.7 second pause
+                    pause_duration = int(1.0 * sr)  # 1.0 second pause for same speaker
                 
                 # Skip the pause for the first utterance
                 if i > 0:

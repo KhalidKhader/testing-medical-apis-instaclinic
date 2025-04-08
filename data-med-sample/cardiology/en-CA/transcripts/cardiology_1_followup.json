@@ -1,8 +1,52 @@
 {
   "conversation": [
     {
-      "speaker": "doctor",
-      "text": "good morning missus smith it's good to see you again how have you been feeling since our last visit good morning doctor well i've been feeling a little better the racing heart doesn't happen as often that's good to hear are you still feeling dizzy and weak not as much as before but i do still get winded quite easily i see have you been taking the metoprol as prescribed yes doctor i take it every day any side effects from the medication i've been feeling a bit more tired than usual but nothing too serious very well we'll keep an eye on that now let's take a look at your test results your egg shows that your heart rate has slowed down which is a good sign your echocardiogram also shows improvement in the pumping function of your heart that's relieving to hear doctor it is indeed in light of these results i think we should continue with your current medication plan remember to keep reducing your caffeine and alcohol consumption as well alright doctor i'll do my best"
+      "speaker": "patient",
+      "text": "good morning it's good to see you again how have you been feeling since our last visit"
+    },
+    {
+      "speaker": "patient",
+      "text": "good morning doctor i've been feeling somewhat better but i still get those rapid heartbeat episodes occasionally"
+    },
+    {
+      "speaker": "patient",
+      "text": "i see have they been happening as frequently as before any changes in the duration or intensity of these episodes"
+    },
+    {
+      "speaker": "patient",
+      "text": "they seem to be less frequent no change in duration but they feel less intense than before"
+    },
+    {
+      "speaker": "patient",
+      "text": "that's good to hear have you been adhering to the aspirin regime for your blood pressure"
+    },
+    {
+      "speaker": "patient",
+      "text": "yes i have been taking it as prescribed"
+    },
+    {
+      "speaker": "patient",
+      "text": "any side effects from the medication"
+    },
+    {
+      "speaker": "patient",
+      "text": "no none that i've noticed"
+    },
+    {
+      "speaker": "patient",
+      "text": "your blood pressure is manic which is better than last time your heart rate is phendom still slightly elevated but improved we received your test results the egg showed abnormal heart rhythms and the echocardiogram showed some changes in your heart muscle these findings support the suspected diagnosis of ventricular tachycardia"
+    },
+    {
+      "speaker": "patient",
+      "text": "okay so what are our next steps"
+    },
+    {
+      "speaker": "patient",
+      "text": "given the test results and your symptoms i would recommend starting with a medication called metoprolol it's a type of beta blocker that can help control your heart rate"
+    },
+    {
+      "speaker": "patient",
+      "text": "alright that sounds good is there anything else i should know got it thank you doctor"
     }
   ]
 }

@@ -99,7 +99,7 @@ Format the response as follows:
 3. Finally, include a "Keywords / Tags" section that categorizes key aspects of the encounter.
 
 The conversation should be detailed but realistic, covering:
-- Introduction and rapport building
+- Introduction and rapport building (use "Good morning/afternoon" for the initial greeting, not "How have you been since your last visit" as this is a first consultation)
 - Patient's chief complaint and history
 - Review of cardiovascular symptoms
 - Discussion of any diagnostic tests (ECG, echocardiogram, stress test, etc.)
@@ -133,7 +133,7 @@ Formatez la réponse comme suit :
 3. Enfin, incluez une section "Mots-clés / Étiquettes" qui catégorise les aspects clés de la rencontre.
 
 La conversation doit être détaillée mais réaliste, couvrant:
-- Introduction et établissement de la relation
+- Introduction et établissement de la relation (utilisez "Bonjour" pour la salutation initiale, pas "Comment allez-vous depuis notre dernière visite" car c'est une première consultation)
 - Plainte principale et antécédents du patient
 - Examen des symptômes cardiovasculaires
 - Discussion des tests diagnostiques (ECG, échocardiogramme, test d'effort, etc.)
@@ -169,7 +169,7 @@ Format the response as follows:
 3. Finally, include a "Keywords / Tags" section that categorizes key aspects of the encounter.
 
 The conversation should be detailed but realistic, covering:
-- Introduction and rapport building
+- Introduction and rapport building (use "Good morning/afternoon, what brings you in today?" for the initial greeting, not "How have you been since your last visit" as this is a first consultation)
 - Patient's chief complaint and history
 - Review of relevant symptoms
 - Physical examination discussion
@@ -203,7 +203,7 @@ Formatez la réponse comme suit :
 3. Enfin, incluez une section "Mots-clés / Étiquettes" qui catégorise les aspects clés de la rencontre.
 
 La conversation doit être détaillée mais réaliste, couvrant:
-- Introduction et établissement de la relation
+- Introduction et établissement de la relation (utilisez "Bonjour, qu'est-ce qui vous amène aujourd'hui?" pour la salutation initiale, pas "Comment allez-vous depuis notre dernière visite" car c'est une première consultation)
 - Plainte principale et antécédents du patient
 - Examen des symptômes pertinents
 - Discussion de l'examen physique
@@ -223,20 +223,18 @@ La section Mots-clés / Étiquettes doit inclure:
 - Traitement: Médicaments, procédures et interventions
 - Symptômes: Principaux symptômes rapportés par le patient
 - Conditions: Conditions médicales sous-jacentes ou connexes
-- Allergies: Toute allergie mentionnée
+- Allergies: Toutes allergies mentionnées
 
-Soyez spécifique à la pratique des soins primaires au Canada, en utilisant la terminologie médicale et les noms de médicaments canadiens."""
+Soyez spécifique à la pratique de médecine générale au Canada, en utilisant la terminologie médicale et les noms de médicaments canadiens."""
     }
 }
 
 # SOAP note prompt templates for follow-up visits
 FOLLOWUP_PROMPTS = {
     "cardiology": {
-        "en": """Generate a realistic cardiology follow-up visit between a doctor and a patient, along with a SOAP note.
+        "en": """Generate a realistic cardiology follow-up conversation between a doctor and a patient, along with a follow-up SOAP note.
 
-Patient profile: {age} year old {gender} with {condition}, initially seen {weeks_ago} weeks ago. Currently on {treatment}.
-
-The previous visit was a consultation for newly diagnosed {condition}.
+Patient profile: {age} year old {gender} with {condition}.
 
 Format the response as follows:
 1. First, provide a conversation transcript showing exactly what the doctor and patient said to each other. Each line should start with either "Doctor:" or "Patient:" to clearly indicate the speaker.
@@ -244,35 +242,35 @@ Format the response as follows:
 3. Finally, include a "Keywords / Tags" section that categorizes key aspects of the encounter.
 
 The conversation should be detailed but realistic, covering:
-- Welcome and brief review of the previous visit
-- Assessment of how patient is feeling since starting treatment
-- Review of any symptoms improvement or persistence
-- Discussion of medication adherence and side effects
-- Review of any new test results (if applicable)
-- Adjustments to treatment plan if needed
-- Reinforcement of lifestyle modifications
-- Planning for next follow-up
+- Greeting with reference to their previous visit (e.g., "Good morning, Mrs. Smith. How have you been feeling since our last visit?")
+- Discussion of how the patient has been doing since the last visit
+- Review of any changes in symptoms
+- Discussion of adherence to treatment plan
+- Any side effects from medications
+- Physical examination findings
+- Review of any new test results
+- Assessment of the effectiveness of the current treatment
+- Any adjustments to the treatment plan
+- Follow-up instructions
 
 The SOAP note should include:
-- Subjective: Patient's reported response to treatment, symptoms, and concerns
-- Objective: Updated cardiovascular examination, vital signs, and any new test results
-- Assessment: Progress of the cardiac condition and response to treatment
-- Plan: Adjustments to treatment, further testing if needed, and next follow-up
+- Subjective: Patient's reported symptoms, progress, medication adherence, and any side effects
+- Objective: Updated cardiovascular examination findings, vital signs, and any new test results
+- Assessment: Updated cardiac assessment and progress evaluation
+- Plan: Any changes to treatment plan, medications, and follow-up recommendations
 
 The Keywords / Tags section should include:
 - Diagnosis: Updated cardiac diagnoses
-- Treatment: Current and adjusted medications
-- Symptoms: Current cardiac symptoms and changes
-- Conditions: Primary and related cardiac conditions
-- Allergies: Any medication allergies or intolerances noted
+- Treatment: Current and any new cardiac medications or interventions
+- Symptoms: Any changes in symptoms since the last visit
+- Conditions: Updated status of cardiac conditions
+- Allergies: Any medication allergies
 
-Be specific to cardiology follow-up practice in Canada, using Canadian medical terminology and medication names.""",
+Be specific to cardiology practice in Canada, using Canadian medical terminology and medication names.""",
         
-        "fr": """Générez une visite de suivi cardiologique réaliste entre un médecin et un patient, accompagnée d'une note SOAP.
+        "fr": """Générez une conversation de suivi cardiologique réaliste entre un médecin et un patient, accompagnée d'une note SOAP de suivi.
 
-Profil du patient : {gender} de {age} ans avec {condition}, vu initialement il y a {weeks_ago} semaines. Actuellement sous {treatment}.
-
-La visite précédente était une consultation pour {condition} nouvellement diagnostiquée.
+Profil du patient : {gender} de {age} ans avec {condition}.
 
 Formatez la réponse comme suit :
 1. D'abord, fournissez une transcription de la conversation montrant exactement ce que le médecin et le patient se sont dit. Chaque ligne doit commencer par "Médecin:" ou "Patient:" pour indiquer clairement qui parle.
@@ -280,37 +278,37 @@ Formatez la réponse comme suit :
 3. Enfin, incluez une section "Mots-clés / Étiquettes" qui catégorise les aspects clés de la rencontre.
 
 La conversation doit être détaillée mais réaliste, couvrant:
-- Accueil et bref examen de la visite précédente
-- Évaluation de comment le patient se sent depuis le début du traitement
-- Examen de l'amélioration ou de la persistance des symptômes
-- Discussion sur l'adhérence aux médicaments et les effets secondaires
-- Examen des nouveaux résultats de tests (le cas échéant)
-- Ajustements au plan de traitement si nécessaire
-- Renforcement des modifications du mode de vie
-- Planification du prochain suivi
+- Salutation avec référence à la visite précédente (par exemple, "Bonjour, Madame. Comment vous sentez-vous depuis notre dernière rencontre?")
+- Discussion sur l'état du patient depuis la dernière visite
+- Examen de tout changement dans les symptômes
+- Discussion sur l'adhérence au plan de traitement
+- Tout effet secondaire des médicaments
+- Résultats de l'examen physique
+- Examen de nouveaux résultats de tests
+- Évaluation de l'efficacité du traitement actuel
+- Tout ajustement au plan de traitement
+- Instructions de suivi
 
 La note SOAP doit inclure:
-- Subjectif: Réponse rapportée du patient au traitement, symptômes et préoccupations
-- Objectif: Examen cardiovasculaire mis à jour, signes vitaux et nouveaux résultats de tests
-- Évaluation: Progression de la condition cardiaque et réponse au traitement
-- Plan: Ajustements du traitement, tests supplémentaires si nécessaire, et prochain suivi
+- Subjectif: Symptômes rapportés par le patient, progrès, adhérence aux médicaments et tout effet secondaire
+- Objectif: Mise à jour des résultats de l'examen cardiovasculaire, des signes vitaux et de nouveaux résultats de tests
+- Évaluation: Mise à jour de l'évaluation cardiaque et évaluation des progrès
+- Plan: Tout changement au plan de traitement, aux médicaments et recommandations de suivi
 
 La section Mots-clés / Étiquettes doit inclure:
 - Diagnostic: Diagnostics cardiaques mis à jour
-- Traitement: Médicaments actuels et ajustés
-- Symptômes: Symptômes cardiaques actuels et changements
-- Conditions: Conditions cardiaques primaires et connexes
-- Allergies: Toute allergie ou intolérance aux médicaments notée
+- Traitement: Médicaments cardiaques actuels et nouveaux ou interventions
+- Symptômes: Tout changement dans les symptômes depuis la dernière visite
+- Conditions: Statut mis à jour des conditions cardiaques
+- Allergies: Toute allergie aux médicaments
 
-Soyez spécifique à la pratique de suivi cardiologique au Canada, en utilisant la terminologie médicale et les noms de médicaments canadiens."""
+Soyez spécifique à la pratique cardiologique au Canada, en utilisant la terminologie médicale et les noms de médicaments canadiens."""
     },
     
     "gp": {
-        "en": """Generate a realistic General Practitioner (GP) follow-up visit between a doctor and a patient, along with a SOAP note.
+        "en": """Generate a realistic General Practitioner (GP) follow-up conversation between a doctor and a patient, along with a follow-up SOAP note.
 
-Patient profile: {age} year old {gender} with {condition}, initially seen {weeks_ago} weeks ago. Currently on {treatment}.
-
-The previous visit was a consultation for newly diagnosed {condition}.
+Patient profile: {age} year old {gender} with {condition}.
 
 Format the response as follows:
 1. First, provide a conversation transcript showing exactly what the doctor and patient said to each other. Each line should start with either "Doctor:" or "Patient:" to clearly indicate the speaker.
@@ -318,35 +316,35 @@ Format the response as follows:
 3. Finally, include a "Keywords / Tags" section that categorizes key aspects of the encounter.
 
 The conversation should be detailed but realistic, covering:
-- Welcome and brief review of the previous visit
-- Assessment of response to treatment
-- Review of any symptom changes
-- Discussion of medication adherence and side effects
-- Any new concerns since the last visit
-- Adjustments to treatment plan if needed
-- Health maintenance and preventive care updates
-- Planning for next follow-up
+- Greeting with reference to their previous visit (e.g., "Good morning, how have you been feeling since our last visit?")
+- Discussion of how the patient has been doing since the last visit
+- Review of any changes in symptoms
+- Discussion of adherence to treatment plan
+- Any side effects from medications
+- Physical examination findings
+- Review of any new test results
+- Assessment of the effectiveness of the current treatment
+- Any adjustments to the treatment plan
+- Follow-up instructions
 
 The SOAP note should include:
-- Subjective: Patient's reported response to treatment, symptoms, and concerns
+- Subjective: Patient's reported symptoms, progress, medication adherence, and any side effects
 - Objective: Updated physical examination findings, vital signs, and any new test results
-- Assessment: Progress of the condition and response to treatment
-- Plan: Adjustments to treatment, preventive care, and next follow-up
+- Assessment: Updated medical assessment and progress evaluation
+- Plan: Any changes to treatment plan, medications, and follow-up recommendations
 
 The Keywords / Tags section should include:
 - Diagnosis: Updated diagnoses
-- Treatment: Current and adjusted medications
-- Symptoms: Current symptoms and changes
-- Conditions: Primary and related conditions
-- Allergies: Any medication allergies or intolerances noted
+- Treatment: Current and any new medications or interventions
+- Symptoms: Any changes in symptoms since the last visit
+- Conditions: Updated status of medical conditions
+- Allergies: Any medication allergies
 
-Be specific to primary care follow-up practice in Canada, using Canadian medical terminology and medication names.""",
+Be specific to primary care practice in Canada, using Canadian medical terminology and medication names.""",
         
-        "fr": """Générez une visite de suivi de médecine générale réaliste entre un médecin et un patient, accompagnée d'une note SOAP.
+        "fr": """Générez une conversation de suivi réaliste de médecine générale entre un médecin et un patient, accompagnée d'une note SOAP de suivi.
 
-Profil du patient : {gender} de {age} ans avec {condition}, vu initialement il y a {weeks_ago} semaines. Actuellement sous {treatment}.
-
-La visite précédente était une consultation pour {condition} nouvellement diagnostiquée.
+Profil du patient : {gender} de {age} ans avec {condition}.
 
 Formatez la réponse comme suit :
 1. D'abord, fournissez une transcription de la conversation montrant exactement ce que le médecin et le patient se sont dit. Chaque ligne doit commencer par "Médecin:" ou "Patient:" pour indiquer clairement qui parle.
@@ -354,29 +352,31 @@ Formatez la réponse comme suit :
 3. Enfin, incluez une section "Mots-clés / Étiquettes" qui catégorise les aspects clés de la rencontre.
 
 La conversation doit être détaillée mais réaliste, couvrant:
-- Accueil et bref examen de la visite précédente
-- Évaluation de la réponse au traitement
-- Examen des changements de symptômes
-- Discussion sur l'adhérence aux médicaments et les effets secondaires
-- Nouvelles préoccupations depuis la dernière visite
-- Ajustements au plan de traitement si nécessaire
-- Mises à jour sur le maintien de la santé et les soins préventifs
-- Planification du prochain suivi
+- Salutation avec référence à la visite précédente (par exemple, "Bonjour, comment allez-vous depuis notre dernière visite?")
+- Discussion sur l'état du patient depuis la dernière visite
+- Examen de tout changement dans les symptômes
+- Discussion sur l'adhérence au plan de traitement
+- Tout effet secondaire des médicaments
+- Résultats de l'examen physique
+- Examen de nouveaux résultats de tests
+- Évaluation de l'efficacité du traitement actuel
+- Tout ajustement au plan de traitement
+- Instructions de suivi
 
 La note SOAP doit inclure:
-- Subjectif: Réponse rapportée du patient au traitement, symptômes et préoccupations
-- Objectif: Résultats mis à jour de l'examen physique, signes vitaux et nouveaux résultats de tests
-- Évaluation: Progression de la condition et réponse au traitement
-- Plan: Ajustements du traitement, soins préventifs et prochain suivi
+- Subjectif: Symptômes rapportés par le patient, progrès, adhérence aux médicaments et tout effet secondaire
+- Objectif: Mise à jour des résultats de l'examen physique, des signes vitaux et de nouveaux résultats de tests
+- Évaluation: Mise à jour de l'évaluation médicale et évaluation des progrès
+- Plan: Tout changement au plan de traitement, aux médicaments et recommandations de suivi
 
 La section Mots-clés / Étiquettes doit inclure:
 - Diagnostic: Diagnostics mis à jour
-- Traitement: Médicaments actuels et ajustés
-- Symptômes: Symptômes actuels et changements
-- Conditions: Conditions primaires et connexes
-- Allergies: Toute allergie ou intolérance aux médicaments notée
+- Traitement: Médicaments actuels et nouveaux ou interventions
+- Symptômes: Tout changement dans les symptômes depuis la dernière visite
+- Conditions: Statut mis à jour des conditions médicales
+- Allergies: Toute allergie aux médicaments
 
-Soyez spécifique à la pratique de suivi des soins primaires au Canada, en utilisant la terminologie médicale et les noms de médicaments canadiens."""
+Soyez spécifique à la pratique de médecine générale au Canada, en utilisant la terminologie médicale et les noms de médicaments canadiens."""
     }
 }
 
@@ -437,195 +437,451 @@ def generate_conversation_with_gpt(prompt, model="gpt-4", temperature=0.7, max_r
             
     return None
 
-def process_gpt_response(response_text, lang_code):
-    """Process the GPT response to extract conversation and SOAP note."""
-    if not response_text:
-        print("No response text received from GPT")
-        return None, None
+def process_french_conversations(conversations, raw_response):
+    """Process French conversations to separate doctor/patient exchanges."""
+    # Check for doctor/patient prefixes in conversation
+    if "Médecin :" in raw_response or "Médecin:" in raw_response or "Docteur :" in raw_response or "Docteur:" in raw_response:
+        # Extract the conversation exchanges
+        try:
+            # Try to split by Médecin/Patient prefixes
+            doctor_patient_pairs = []
+            
+            # Clean up and standardize the prefixes
+            processed_text = raw_response
+            # Replace common prefixes with standardized format
+            for prefix in ["Médecin ", "Médecin:", "Docteur ", "Docteur:"]:
+                processed_text = processed_text.replace(prefix, "DOCTOR_START")
+            
+            for prefix in ["Patient ", "Patient:"]:
+                processed_text = processed_text.replace(prefix, "PATIENT_START")
+            
+            # Split by standardized markers
+            parts = processed_text.split("DOCTOR_START")
+            for part in parts[1:]:  # Skip the first part which is empty
+                if "PATIENT_START" in part:
+                    doctor_text, patient_part = part.split("PATIENT_START", 1)
+                    # Find the end of the patient text (next doctor or end of text)
+                    if "DOCTOR_START" in patient_part:
+                        patient_text = patient_part.split("DOCTOR_START")[0]
+                    else:
+                        patient_text = patient_part
+                    
+                    # Clean up the texts and remove any prefix residue
+                    doctor_text = doctor_text.strip().replace(":", "").strip()
+                    patient_text = patient_text.strip().replace(":", "").strip()
+                    
+                    if doctor_text and patient_text:
+                        doctor_patient_pairs.append(("doctor", doctor_text))
+                        doctor_patient_pairs.append(("patient", patient_text))
+            
+            # If we successfully parsed doctor/patient pairs, use them
+            if doctor_patient_pairs:
+                conversations = []
+                for speaker, text in doctor_patient_pairs:
+                    conversations.append({"speaker": speaker, "text": text})
+                return conversations
+            
+        except Exception as e:
+            print(f"Error parsing doctor/patient prefixes: {e}")
+            print("Attempting fallback parsing...")
     
-    # Convert lang_code to language flag
-    is_english = (lang_code == "en")
-    
-    # Split the response into lines
-    lines = response_text.split('\n')
-    
-    # Define language-specific patterns
-    if is_english:
-        soap_indicators = ["SOAP", "Subjective:", "Objective:", "Assessment:", "Plan:", "SUBJECTIVE", "OBJECTIVE", "S:", "O:", "A:", "P:", "**Subjective", "**Objective", "**Assessment", "**Plan", "# SOAP", "## Subjective"]
-        keywords_indicators = ["Keywords", "Tags", "Keywords/Tags", "**Keywords", "# Keywords"]
-        doctor_prefixes = ["Doctor:", "Dr:", "Dr. ", "MD:"]
-        patient_prefixes = ["Patient:"]
-    else:  # French
-        soap_indicators = ["Note SOAP", "Subjectif:", "Objectif:", "Évaluation:", "Plan:", "SUBJECTIF", "OBJECTIF", "S:", "O:", "A:", "P:", "**Subjectif", "**Objectif", "**Évaluation", "**Plan", "# Note SOAP", "## Subjectif"]
-        keywords_indicators = ["Mots-clés", "Étiquettes", "Mots-clés / Étiquettes", "**Mots-clés", "# Mots-clés"]
-        doctor_prefixes = ["Médecin:", "Dr:", "Dr. ", "Docteur:", "MD:"]
-        patient_prefixes = ["Patient:", "Patiente:"]
+    # If we couldn't parse, return the original
+    return conversations
 
-    # First, try to detect if there's a conversation part
-    conversation_detected = False
-    for line in lines:
-        if any(line.startswith(prefix) for prefix in doctor_prefixes + patient_prefixes):
-            conversation_detected = True
-            break
+def generate_soap_note_markdown(soap_note_text, filename):
+    """Generate a SOAP note in markdown format."""
+    # Ensure the soap note text has proper markdown formatting
+    if "SOAP Note:" in soap_note_text:
+        soap_note_text = soap_note_text.split("SOAP Note:", 1)[1].strip()
     
-    if not conversation_detected:
-        print("No conversation with Doctor/Patient prefixes detected in the response")
+    # Make sure sections are properly formatted with markdown headers
+    sections = ["Subjective:", "Objective:", "Assessment:", "Plan:"]
+    for section in sections:
+        if section in soap_note_text:
+            soap_note_text = soap_note_text.replace(section, f"## {section}")
+    
+    # Add markdown for Keywords / Tags section
+    if "Keywords / Tags:" in soap_note_text:
+        soap_note_text = soap_note_text.replace("Keywords / Tags:", "## Keywords / Tags:")
+    
+    # Add title
+    soap_note_markdown = f"# SOAP Note\n\n{soap_note_text}"
+    
+    # Save to file with .md extension
+    try:
+        with open(filename, 'w', encoding='utf-8') as f:
+            f.write(soap_note_markdown)
+        print(f"Saved markdown SOAP note to {filename}")
+        return True
+    except Exception as e:
+        print(f"Error saving markdown SOAP note: {e}")
+        return False
+
+def generate_soap_from_transcript(conversation_json, soap_dir, specialty, language, case_num, encounter_type):
+    """Generate a SOAP note from the transcription."""
+    # Create directories for original and transcribed SOAPs
+    original_soap_dir = os.path.join(soap_dir, "original")
+    transcribed_soap_dir = os.path.join(soap_dir, "transcribed")
+    os.makedirs(original_soap_dir, exist_ok=True)
+    os.makedirs(transcribed_soap_dir, exist_ok=True)
+    
+    # Extract the conversation text
+    conversation_text = ""
+    for item in conversation_json.get("conversation", []):
+        speaker = item.get("speaker", "").lower()
+        text = item.get("text", "")
+        if speaker and text:
+            # Format as Doctor: or Patient: for the prompt
+            speaker_prefix = "Doctor:" if speaker == "doctor" else "Patient:"
+            conversation_text += f"{speaker_prefix} {text}\n"
+    
+    # Prepare the SOAP note prompt
+    if language == "en":
+        soap_prompt = f"""Based on the following medical conversation transcript, generate a comprehensive SOAP note:
+
+{conversation_text}
+
+Format the SOAP note with the following sections:
+- Subjective: Patient's reported symptoms, history, and concerns
+- Objective: Physical examination findings, vital signs, and any test results
+- Assessment: Medical assessment and differential diagnoses
+- Plan: Treatment plan, prescriptions, referrals, and follow-up recommendations
+
+Also include a "Keywords / Tags" section with:
+- Diagnosis: List of diagnoses and conditions identified
+- Treatment: Medications, procedures, and interventions
+- Symptoms: Key symptoms reported by the patient
+- Conditions: Underlying or related medical conditions
+- Allergies: Any allergies mentioned
+
+Use Canadian medical terminology and medication names."""
+    else:  # French
+        soap_prompt = f"""Basé sur la transcription de conversation médicale suivante, générez une note SOAP complète:
+
+{conversation_text}
+
+Formatez la note SOAP avec les sections suivantes:
+- Subjectif: Symptômes rapportés par le patient, antécédents et préoccupations
+- Objectif: Résultats de l'examen physique, signes vitaux et résultats des tests
+- Évaluation: Évaluation médicale et diagnostics différentiels
+- Plan: Plan de traitement, prescriptions, références et recommandations de suivi
+
+Incluez également une section "Mots-clés / Étiquettes" avec:
+- Diagnostic: Liste des diagnostics et conditions identifiés
+- Traitement: Médicaments, procédures et interventions
+- Symptômes: Principaux symptômes rapportés par le patient
+- Conditions: Conditions médicales sous-jacentes ou connexes
+- Allergies: Toutes allergies mentionnées
+
+Utilisez la terminologie médicale et les noms de médicaments canadiens."""
+    
+    # Generate the SOAP note using OpenAI
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "You are a medical professional who creates detailed SOAP notes from conversation transcripts."},
+                {"role": "user", "content": soap_prompt}
+            ],
+            max_tokens=1000,
+            temperature=0.7
+        )
         
-        # Try to find 'conversation' section in structured response
-        conversation_section = None
-        in_conversation = False
-        conversation_lines = []
+        soap_text = response.choices[0].message.content.strip()
         
-        for i, line in enumerate(lines):
-            if "conversation" in line.lower() or "dialogue" in line.lower():
-                in_conversation = True
-                continue
-            
-            if in_conversation:
-                # Check if we've hit another section
-                if any(indicator in line for indicator in soap_indicators + keywords_indicators):
+        # Save the SOAP note in markdown format
+        soap_filename = f"{specialty}_{case_num}_{encounter_type}"
+        transcribed_soap_path = os.path.join(transcribed_soap_dir, f"{soap_filename}.md")
+        generate_soap_note_markdown(soap_text, transcribed_soap_path)
+        
+        return True
+    except Exception as e:
+        print(f"Error generating SOAP from transcript: {e}")
+        return False
+
+def handle_consultation_response(response_text, specialty, language, case_num):
+    """Parse and save consultation response."""
+    # First, find the conversation part by looking for Doctor/Patient prefixes
+    conversation_parts = []
+    soap_part = ""
+    
+    try:
+        # Try to extract conversation and SOAP parts
+        if language == "en":
+            # For English, look for Doctor: and Patient: prefixes
+            in_conversation = True
+            lines = response_text.split('\n')
+            for line in lines:
+                line = line.strip()
+                if not line:
+                    continue
+                
+                # Check if this line is part of the conversation
+                if line.startswith("Doctor:") or line.startswith("Patient:"):
+                    in_conversation = True
+                    conversation_parts.append(line)
+                elif in_conversation and (line.startswith("SOAP") or line.startswith("1.") or line.startswith("2.")):
+                    # End of conversation, start of SOAP
                     in_conversation = False
-                    break
-                conversation_lines.append(line)
+                    soap_part = line + "\n"
+                elif not in_conversation:
+                    # Continue adding to SOAP part
+                    soap_part += line + "\n"
+        else:  # French
+            # For French, look for Médecin: and Patient: prefixes
+            in_conversation = True
+            lines = response_text.split('\n')
+            for line in lines:
+                line = line.strip()
+                if not line:
+                    continue
+                
+                # Check if this line is part of the conversation
+                if line.startswith("Médecin:") or line.startswith("Médecin :") or line.startswith("Patient:") or line.startswith("Patient :") or line.startswith("Docteur:") or line.startswith("Docteur :"):
+                    in_conversation = True
+                    conversation_parts.append(line)
+                elif in_conversation and (line.startswith("Note SOAP") or line.startswith("1.") or line.startswith("2.")):
+                    # End of conversation, start of SOAP
+                    in_conversation = False
+                    soap_part = line + "\n"
+                elif not in_conversation:
+                    # Continue adding to SOAP part
+                    soap_part += line + "\n"
+    
+        # Process the conversation parts into JSON structure
+        conversation = []
+        current_speaker = None
+        current_text = []
         
-        if conversation_lines:
-            # Try to parse the conversation without explicit prefixes
-            structured_conversation = []
-            current_speaker = "doctor"  # Assume doctor starts
-            current_text = []
-            
-            for line in conversation_lines:
-                if not line.strip():
-                    if current_text:
-                        structured_conversation.append({
-                            "speaker": current_speaker,
-                            "text": " ".join(current_text)
-                        })
-                        current_speaker = "patient" if current_speaker == "doctor" else "doctor"
-                        current_text = []
+        for part in conversation_parts:
+            if part.startswith("Doctor:") or part.startswith("Médecin:") or part.startswith("Médecin :") or part.startswith("Docteur:") or part.startswith("Docteur :"):
+                # Save previous speaker's text
+                if current_speaker and current_text:
+                    conversation.append({
+                        "speaker": current_speaker,
+                        "text": " ".join(current_text).strip()
+                    })
+                
+                # Start new doctor text
+                current_speaker = "doctor"
+                if ":" in part:
+                    current_text = [part.split(":", 1)[1].strip()]
                 else:
-                    current_text.append(line.strip())
-            
-            # Add the last utterance
-            if current_text:
-                structured_conversation.append({
-                    "speaker": current_speaker,
-                    "text": " ".join(current_text)
-                })
-            
-            return structured_conversation, "\n".join([line for line in lines if not line in conversation_lines])
-        
-        return None, None
-    
-    # Extract the conversation part (before SOAP note)
-    conversation_lines = []
-    soap_note_lines = []
-    keywords_lines = []
-    
-    in_conversation = True
-    in_soap = False
-    in_keywords = False
-    
-    for line in lines:
-        line = line.strip()
-        if not line:
-            continue
-            
-        # Check if we've reached the Keywords/Tags section
-        keyword_line = False
-        for indicator in keywords_indicators:
-            if indicator in line and not any(line.startswith(prefix) for prefix in doctor_prefixes + patient_prefixes):
-                keyword_line = True
-                in_conversation = False
-                in_soap = False
-                in_keywords = True
-                break
+                    current_text = []
+            elif part.startswith("Patient:") or part.startswith("Patient :"):
+                # Save previous speaker's text
+                if current_speaker and current_text:
+                    conversation.append({
+                        "speaker": current_speaker,
+                        "text": " ".join(current_text).strip()
+                    })
                 
-        # Check if we've reached the SOAP note section
-        soap_line = False
-        if not in_keywords:
-            for indicator in soap_indicators:
-                if indicator in line and not any(line.startswith(prefix) for prefix in doctor_prefixes + patient_prefixes):
-                    soap_line = True
+                # Start new patient text
+                current_speaker = "patient"
+                if ":" in part:
+                    current_text = [part.split(":", 1)[1].strip()]
+                else:
+                    current_text = []
+            else:
+                # Continue with current speaker
+                current_text.append(part)
+        
+        # Add the last speaker's text
+        if current_speaker and current_text:
+            conversation.append({
+                "speaker": current_speaker,
+                "text": " ".join(current_text).strip()
+            })
+        
+        # For French conversations, apply additional processing
+        if language == "fr":
+            conversation = process_french_conversations(conversation, response_text)
+        
+        # Create the final JSON structure
+        consultation_json = {
+            "language": f"{language}-CA",
+            "specialty": specialty,
+            "type": "consultation",
+            "condition": MEDICAL_CONDITIONS[specialty][language][random.randint(0, len(MEDICAL_CONDITIONS[specialty][language])-1)],
+            "patient": {
+                "age": random.randint(18, 85),
+                "gender": random.choice(["homme", "femme"]) if language == "fr" else random.choice(["male", "female"])
+            },
+            "conversation": conversation
+        }
+        
+        # Create the directory structure
+        json_dir = os.path.join(BASE_DIR, specialty, f"{language}-CA", "json")
+        soap_dir = os.path.join(BASE_DIR, specialty, f"{language}-CA", "soap")
+        os.makedirs(json_dir, exist_ok=True)
+        os.makedirs(soap_dir, exist_ok=True)
+        
+        # Save the conversation to JSON
+        json_path = os.path.join(json_dir, f"{specialty}_{case_num}_consultation.json")
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(consultation_json, f, indent=2, ensure_ascii=False)
+        
+        # Save the SOAP note in markdown format
+        soap_path = os.path.join(soap_dir, f"{specialty}_{case_num}_consultation.md")
+        generate_soap_note_markdown(soap_part, soap_path)
+        
+        # Also save in original/transcribed subdirectories
+        original_soap_dir = os.path.join(soap_dir, "original")
+        os.makedirs(original_soap_dir, exist_ok=True)
+        original_soap_path = os.path.join(original_soap_dir, f"{specialty}_{case_num}_consultation.md")
+        generate_soap_note_markdown(soap_part, original_soap_path)
+        
+        # Generate SOAP from the transcription itself (for simulation)
+        generate_soap_from_transcript(consultation_json, soap_dir, specialty, language, case_num, "consultation")
+        
+        return True
+    except Exception as e:
+        print(f"Error in handle_consultation_response: {e}")
+        import traceback
+        traceback.print_exc()
+        return False
+
+def handle_followup_response(response_text, specialty, language, case_num):
+    """Parse and save follow-up response."""
+    # First, find the conversation part by looking for Doctor/Patient prefixes
+    conversation_parts = []
+    soap_part = ""
+    
+    try:
+        # Try to extract conversation and SOAP parts
+        if language == "en":
+            # For English, look for Doctor: and Patient: prefixes
+            in_conversation = True
+            lines = response_text.split('\n')
+            for line in lines:
+                line = line.strip()
+                if not line:
+                    continue
+                
+                # Check if this line is part of the conversation
+                if line.startswith("Doctor:") or line.startswith("Patient:"):
+                    in_conversation = True
+                    conversation_parts.append(line)
+                elif in_conversation and (line.startswith("SOAP") or line.startswith("1.") or line.startswith("2.")):
+                    # End of conversation, start of SOAP
                     in_conversation = False
-                    in_soap = True
-                    break
+                    soap_part = line + "\n"
+                elif not in_conversation:
+                    # Continue adding to SOAP part
+                    soap_part += line + "\n"
+        else:  # French
+            # For French, look for Médecin: and Patient: prefixes
+            in_conversation = True
+            lines = response_text.split('\n')
+            for line in lines:
+                line = line.strip()
+                if not line:
+                    continue
                 
-        if in_conversation:
-            conversation_lines.append(line)
-        elif in_soap and not in_keywords:
-            soap_note_lines.append(line)
-        elif in_keywords:
-            keywords_lines.append(line)
+                # Check if this line is part of the conversation
+                if line.startswith("Médecin:") or line.startswith("Médecin :") or line.startswith("Patient:") or line.startswith("Patient :") or line.startswith("Docteur:") or line.startswith("Docteur :"):
+                    in_conversation = True
+                    conversation_parts.append(line)
+                elif in_conversation and (line.startswith("Note SOAP") or line.startswith("1.") or line.startswith("2.")):
+                    # End of conversation, start of SOAP
+                    in_conversation = False
+                    soap_part = line + "\n"
+                elif not in_conversation:
+                    # Continue adding to SOAP part
+                    soap_part += line + "\n"
     
-    # Process the conversation lines to structure them properly
-    structured_conversation = []
-    
-    current_speaker = None
-    current_text = []
-    
-    # Extract speaker turns with explicit Doctor:/Patient: prefixes
-    for line in conversation_lines:
-        is_doctor_line = any(line.startswith(prefix) for prefix in doctor_prefixes)
-        is_patient_line = any(line.startswith(prefix) for prefix in patient_prefixes)
+        # Process the conversation parts into JSON structure
+        conversation = []
+        current_speaker = None
+        current_text = []
         
-        if is_doctor_line:
-            # Save previous utterance if exists
-            if current_speaker and current_text:
-                structured_conversation.append({
-                    "speaker": current_speaker,
-                    "text": " ".join(current_text)
-                })
-            
-            # Start new doctor utterance
-            current_speaker = "doctor"
-            # Remove the prefix
-            for prefix in doctor_prefixes:
-                if line.startswith(prefix):
-                    line = line[len(prefix):].strip()
-                    break
-            current_text = [line]
-            
-        elif is_patient_line:
-            # Save previous utterance if exists
-            if current_speaker and current_text:
-                structured_conversation.append({
-                    "speaker": current_speaker,
-                    "text": " ".join(current_text)
-                })
-            
-            # Start new patient utterance
-            current_speaker = "patient"
-            # Remove the prefix
-            for prefix in patient_prefixes:
-                if line.startswith(prefix):
-                    line = line[len(prefix):].strip()
-                    break
-            current_text = [line]
-            
-        elif current_speaker:
-            # Continue previous utterance
-            current_text.append(line)
-    
-    # Add the last utterance
-    if current_speaker and current_text:
-        structured_conversation.append({
-            "speaker": current_speaker,
-            "text": " ".join(current_text)
-        })
-    
-    # Create the SOAP note
-    soap_note = "\n".join(soap_note_lines)
-    
-    # Add keywords if available
-    if keywords_lines:
-        soap_note += "\n\n" + "\n".join(keywords_lines)
-    
-    # Verify the conversation has enough turns (at least 4 turns)
-    if len(structured_conversation) < 4:
-        print(f"Warning: Conversation has only {len(structured_conversation)} turns, which is less than expected.")
-    
-    return structured_conversation, soap_note
+        for part in conversation_parts:
+            if part.startswith("Doctor:") or part.startswith("Médecin:") or part.startswith("Médecin :") or part.startswith("Docteur:") or part.startswith("Docteur :"):
+                # Save previous speaker's text
+                if current_speaker and current_text:
+                    conversation.append({
+                        "speaker": current_speaker,
+                        "text": " ".join(current_text).strip()
+                    })
+                
+                # Start new doctor text
+                current_speaker = "doctor"
+                if ":" in part:
+                    current_text = [part.split(":", 1)[1].strip()]
+                else:
+                    current_text = []
+            elif part.startswith("Patient:") or part.startswith("Patient :"):
+                # Save previous speaker's text
+                if current_speaker and current_text:
+                    conversation.append({
+                        "speaker": current_speaker,
+                        "text": " ".join(current_text).strip()
+                    })
+                
+                # Start new patient text
+                current_speaker = "patient"
+                if ":" in part:
+                    current_text = [part.split(":", 1)[1].strip()]
+                else:
+                    current_text = []
+            else:
+                # Continue with current speaker
+                current_text.append(part)
+        
+        # Add the last speaker's text
+        if current_speaker and current_text:
+            conversation.append({
+                "speaker": current_speaker,
+                "text": " ".join(current_text).strip()
+            })
+        
+        # For French conversations, apply additional processing
+        if language == "fr":
+            conversation = process_french_conversations(conversation, response_text)
+        
+        # Create the final JSON structure
+        followup_json = {
+            "language": f"{language}-CA",
+            "specialty": specialty,
+            "type": "followup",
+            "condition": MEDICAL_CONDITIONS[specialty][language][random.randint(0, len(MEDICAL_CONDITIONS[specialty][language])-1)],
+            "patient": {
+                "age": random.randint(18, 85),
+                "gender": random.choice(["homme", "femme"]) if language == "fr" else random.choice(["male", "female"])
+            },
+            "conversation": conversation
+        }
+        
+        # Create the directory structure
+        json_dir = os.path.join(BASE_DIR, specialty, f"{language}-CA", "json")
+        soap_dir = os.path.join(BASE_DIR, specialty, f"{language}-CA", "soap")
+        os.makedirs(json_dir, exist_ok=True)
+        os.makedirs(soap_dir, exist_ok=True)
+        
+        # Save the conversation to JSON
+        json_path = os.path.join(json_dir, f"{specialty}_{case_num}_followup.json")
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(followup_json, f, indent=2, ensure_ascii=False)
+        
+        # Save the SOAP note in markdown format
+        soap_path = os.path.join(soap_dir, f"{specialty}_{case_num}_followup.md")
+        generate_soap_note_markdown(soap_part, soap_path)
+        
+        # Also save in original/transcribed subdirectories
+        original_soap_dir = os.path.join(soap_dir, "original")
+        os.makedirs(original_soap_dir, exist_ok=True)
+        original_soap_path = os.path.join(original_soap_dir, f"{specialty}_{case_num}_followup.md")
+        generate_soap_note_markdown(soap_part, original_soap_path)
+        
+        # Generate SOAP from the transcription itself (for simulation)
+        generate_soap_from_transcript(followup_json, soap_dir, specialty, language, case_num, "followup")
+        
+        return True
+    except Exception as e:
+        print(f"Error in handle_followup_response: {e}")
+        import traceback
+        traceback.print_exc()
+        return False
 
 def generate_consultation(specialty, language, case_id):
     """Generate a consultation conversation for a given specialty and language."""
@@ -664,83 +920,78 @@ def generate_consultation(specialty, language, case_id):
     
     return conversation_data, soap_note, params
 
-def generate_follow_up_with_gpt(initial_conversation, soap_note, prompt_template, params, model="gpt-4", temperature=0.7, max_retries=3):
-    """Generate a follow-up medical conversation using GPT."""
-    # Format the prompt template with the params
-    prompt = prompt_template.format(**params)
+def generate_follow_up_with_gpt(consultation_text, soap_note, follow_up_prompt, params, model="gpt-4"):
+    """Generate a follow-up conversation based on the initial consultation."""
     
-    # Prepare the full context with initial conversation and SOAP note
-    full_prompt = f"""Initial visit conversation and SOAP note:
+    # Extract only consultation part for context
+    conversation_only = consultation_text
     
-{initial_conversation}
+    # Format the prompt
+    formatted_prompt = follow_up_prompt.format(**params)
+    
+    # Assemble the prompt for the GPT model
+    prompt = f"""
+I need to generate a realistic medical follow-up visit based on this previous consultation.
 
-{soap_note}
+Previous consultation:
+{conversation_only}
 
-Now, generate a follow-up visit based on the above:
-{prompt}"""
-    
-    for attempt in range(max_retries):
-        try:
-            response = openai.ChatCompletion.create(
-                model=model,
-                messages=[{"role": "user", "content": full_prompt}],
-                temperature=temperature,
-                max_tokens=4000
-            )
-            return response.choices[0].message.content
-        except Exception as e:
-            print(f"Error on attempt {attempt + 1}/{max_retries}: {str(e)}")
-            if attempt == max_retries - 1:
-                raise
-            time.sleep(2 * (attempt + 1))  # Exponential backoff
-            
-    return None
+Please generate the follow-up visit using this format:
+{formatted_prompt}
+"""
+
+    try:
+        response = openai.ChatCompletion.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": "You are a medical professional who creates realistic doctor-patient conversations for training purposes."},
+                {"role": "user", "content": prompt}
+            ],
+            max_tokens=2000,
+            temperature=0.7
+        )
+        
+        return response.choices[0].message.content.strip()
+    except Exception as e:
+        print(f"Error generating follow-up with GPT: {str(e)}")
+        time.sleep(5)  # Backoff if rate limited
+        return None
 
 def generate_medical_case(specialty, lang_code, case_id, model="gpt-4"):
-    """Generate a medical case with initial consultation and follow-up."""
-    # Format case_id with specialty
+    """Generate a medical case with conversation and SOAP note.
+    
+    Args:
+        specialty: Medical specialty (e.g., 'cardiology', 'gp')
+        lang_code: Language code ('en' or 'fr')
+        case_id: Case identifier (integer)
+        model: GPT model to use
+        
+    Returns:
+        True if successful, False otherwise
+    """
+    # Set up paths for files
+    lang_suffix = f"{lang_code}-CA"
     case_id_str = f"{specialty}_{case_id}"
     
-    # Get language name
-    lang_name = "English" if lang_code == "en" else "French"
-    lang_suffix = "en-CA" if lang_code == "en" else "fr-CA"
+    # Set up file paths
+    consultation_json = os.path.join(BASE_DIR, specialty, lang_suffix, "json", f"{case_id_str}_consultation.json")
+    consultation_soap = os.path.join(BASE_DIR, specialty, lang_suffix, "soap", f"{case_id_str}_consultation.md")
+    followup_json = os.path.join(BASE_DIR, specialty, lang_suffix, "json", f"{case_id_str}_followup.json")
+    followup_soap = os.path.join(BASE_DIR, specialty, lang_suffix, "soap", f"{case_id_str}_followup.md")
     
-    # Set directory paths
-    specialty_dir = os.path.join(BASE_DIR, specialty, lang_suffix)
-    json_dir = os.path.join(specialty_dir, "json")
-    soap_dir = os.path.join(specialty_dir, "soap")
-    
-    # Ensure directories exist
-    os.makedirs(json_dir, exist_ok=True)
-    os.makedirs(soap_dir, exist_ok=True)
-    
-    # Set file paths
-    consultation_json = os.path.join(json_dir, f"{case_id_str}_consultation.json")
-    followup_json = os.path.join(json_dir, f"{case_id_str}_followup.json")
-    consultation_soap = os.path.join(soap_dir, f"{case_id_str}_consultation.md")
-    followup_soap = os.path.join(soap_dir, f"{case_id_str}_followup.md")
-    
-    # Skip if files already exist
+    # Check if files already exist
     if os.path.exists(consultation_json) and os.path.exists(followup_json):
-        print(f"Files for {lang_name} {specialty} case {case_id_str} already exist. Skipping.")
+        print(f"Case {case_id_str} already exists, skipping")
         return True
     
-    # Select a random condition for this specialty and language
+    # Generate random patient data
+    patient_age = random.randint(25, 85)
+    patient_gender = random.choice(["homme", "femme"]) if lang_code == "fr" else random.choice(["male", "female"])
     condition = random.choice(MEDICAL_CONDITIONS[specialty][lang_code])
-    
-    # Generate patient parameters
-    patient_age = random.randint(30, 80)
-    patient_gender = random.choice(["male", "female"])
-    if lang_code == "fr":
-        patient_gender = "homme" if patient_gender == "male" else "femme"
-    
-    # Select a random treatment
     treatment = random.choice(TREATMENTS[specialty][lang_code])
-    
-    # Generate time parameter for follow-up (weeks since last visit)
     weeks_ago = random.randint(4, 12)
     
-    # Generate special circumstances
+    # Parameters for the prompts
     params = {
         "condition": condition,
         "age": patient_age,
@@ -767,42 +1018,12 @@ def generate_medical_case(specialty, lang_code, case_id, model="gpt-4"):
             print(f"Failed to generate consultation for case {case_id_str}")
             return False
         
-        # Parse consultation content
-        consultation_data, soap_note = process_gpt_response(consultation_content, lang_code)
+        # Handle the consultation response
+        success = handle_consultation_response(consultation_content, specialty, lang_code, case_id)
         
-        if not consultation_data:
-            print(f"Failed to parse consultation content for case {case_id_str}")
+        if not success:
+            print(f"Failed to handle consultation content for case {case_id_str}")
             return False
-        
-        # Save consultation as JSON
-        consultation_json_data = {
-            "language": lang_suffix,
-            "specialty": specialty,
-            "type": "consultation",
-            "condition": condition,
-            "patient": {
-                "age": patient_age,
-                "gender": patient_gender
-            },
-            "conversation": consultation_data
-        }
-        
-        with open(consultation_json, 'w', encoding='utf-8') as f:
-            json.dump(consultation_json_data, f, indent=2, ensure_ascii=False)
-        
-        # Save consultation SOAP note - check if it's not too long
-        if soap_note and isinstance(soap_note, str):
-            try:
-                with open(consultation_soap, 'w', encoding='utf-8') as f:
-                    f.write(soap_note)
-            except OSError as e:
-                print(f"Warning: Could not save SOAP note to {consultation_soap}. Error: {str(e)}")
-                # Save a simplified version
-                try:
-                    with open(consultation_soap, 'w', encoding='utf-8') as f:
-                        f.write(f"SOAP Note for {case_id_str} consultation\n\nThis note was too long to save directly.")
-                except Exception as e2:
-                    print(f"Error saving simplified SOAP note: {str(e2)}")
         
         # Get follow-up prompt
         followup_prompt = FOLLOWUP_PROMPTS[specialty][lang_code]
@@ -810,7 +1031,7 @@ def generate_medical_case(specialty, lang_code, case_id, model="gpt-4"):
         # Generate follow-up
         followup_content = generate_follow_up_with_gpt(
             consultation_content,
-            soap_note,
+            "",  # We no longer need the SOAP note as input
             followup_prompt,
             params,
             model=model
@@ -820,42 +1041,12 @@ def generate_medical_case(specialty, lang_code, case_id, model="gpt-4"):
             print(f"Failed to generate follow-up for case {case_id_str}")
             return False
         
-        # Parse follow-up content
-        followup_data, followup_soap = process_gpt_response(followup_content, lang_code)
+        # Handle the follow-up response
+        success = handle_followup_response(followup_content, specialty, lang_code, case_id)
         
-        if not followup_data:
-            print(f"Failed to parse follow-up content for case {case_id_str}")
+        if not success:
+            print(f"Failed to handle follow-up content for case {case_id_str}")
             return False
-        
-        # Save follow-up as JSON
-        followup_json_data = {
-            "language": lang_suffix,
-            "specialty": specialty,
-            "type": "followup",
-            "condition": condition,
-            "patient": {
-                "age": patient_age,
-                "gender": patient_gender
-            },
-            "conversation": followup_data
-        }
-        
-        with open(followup_json, 'w', encoding='utf-8') as f:
-            json.dump(followup_json_data, f, indent=2, ensure_ascii=False)
-        
-        # Save follow-up SOAP note - check if it's not too long
-        if followup_soap and isinstance(followup_soap, str):
-            try:
-                with open(followup_soap, 'w', encoding='utf-8') as f:
-                    f.write(followup_soap)
-            except OSError as e:
-                print(f"Warning: Could not save SOAP note to {followup_soap}. Error: {str(e)}")
-                # Save a simplified version
-                try:
-                    with open(followup_soap, 'w', encoding='utf-8') as f:
-                        f.write(f"SOAP Note for {case_id_str} follow-up\n\nThis note was too long to save directly.")
-                except Exception as e2:
-                    print(f"Error saving simplified SOAP note: {str(e2)}")
         
         return True
         

@@ -2,75 +2,63 @@
   "language": "en-CA",
   "specialty": "gp",
   "type": "followup",
-  "condition": "hypothyroidism",
+  "condition": "allergic rhinitis",
   "patient": {
-    "age": 55,
-    "gender": "female"
+    "age": 20,
+    "gender": "male"
   },
   "conversation": [
     {
       "speaker": "doctor",
-      "text": "Good morning, Ms. Johnson. How have you been feeling since our last visit?"
+      "text": "Good morning. How have you been feeling since our last visit?"
     },
     {
       "speaker": "patient",
-      "text": "Good morning, doctor. I've noticed some improvement, but I still feel quite tired."
+      "text": "Hello, doctor. I've been feeling better. The pain while urinating has decreased significantly, and I don't have to go as often. The fever and abdominal pain are also gone."
     },
     {
       "speaker": "doctor",
-      "text": "Have you been taking your levothyroxine and metformin as prescribed?"
+      "text": "That's good to hear. Have you been taking the prescribed Nitrofurantoin twice daily as advised?"
     },
     {
       "speaker": "patient",
-      "text": "Yes, I have been taking them daily."
+      "text": "Yes, I've been taking the medication exactly as you instructed."
     },
     {
       "speaker": "doctor",
-      "text": "Have you noticed any change in your weight, mood, skin or hair?"
+      "text": "Excellent. Have you noticed any side effects from the medication?"
     },
     {
       "speaker": "patient",
-      "text": "My mood has improved slightly, but I haven't noticed any significant changes in my weight or the condition of my skin and hair."
+      "text": "No, doctor. I haven't noticed any side effects."
     },
     {
       "speaker": "doctor",
-      "text": "Any side effects from the medications?"
+      "text": "Good. Let's proceed with a physical examination."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Your vitals are stable, and your lower abdomen is no longer tender. Your lab results also came back, and it confirms that you had a urinary tract infection. However, it seems the antibiotics are working well as your symptoms have improved."
     },
     {
       "speaker": "patient",
-      "text": "No, I haven't noticed any side effects."
+      "text": "That's a relief. So, is the infection all gone now?"
     },
     {
       "speaker": "doctor",
-      "text": "That's good to hear. Let's do a physical examination. (Doctor performs physical examination)"
+      "text": "It seems to be improving, but it's important that you finish the full course of antibiotics. This will ensure that the infection is completely cleared."
     },
     {
       "speaker": "doctor",
-      "text": "Your vitals are stable, and the puffiness around your eyes has reduced. However, your skin remains dry. Let's review your blood test results. (Doctor reviews blood test results)"
+      "text": "Continue drinking plenty of water and avoiding bladder irritants like coffee, alcohol, and spicy foods."
     },
     {
       "speaker": "doctor",
-      "text": "Your TSH levels have decreased but are still above the normal range, indicating that your hypothyroidism is not yet fully controlled. We need to slightly increase your levothyroxine dosage."
+      "text": "We'll schedule another follow-up appointment in two weeks to make sure everything is back to normal. If your symptoms return or if you develop new symptoms, please come in immediately."
     },
     {
       "speaker": "patient",
-      "text": "Okay, doctor."
-    },
-    {
-      "speaker": "doctor",
-      "text": "Continue with your balanced diet and regular exercise. And, take the increased dosage of levothyroxine."
-    },
-    {
-      "speaker": "patient",
-      "text": "Will do, doctor."
-    },
-    {
-      "speaker": "doctor",
-      "text": "We'll meet again in six weeks. Please continue taking the increased dosage until then."
-    },
-    {
-      "speaker": "patient",
-      "text": "I understand, doctor. Thank you."
+      "text": "Thank you, doctor. I'll continue with the medication and will follow your advice."
     }
   ]
 }

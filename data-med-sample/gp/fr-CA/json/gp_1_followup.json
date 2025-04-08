@@ -2,51 +2,51 @@
   "language": "fr-CA",
   "specialty": "gp",
   "type": "followup",
-  "condition": "arthrose",
+  "condition": "asthme",
   "patient": {
-    "age": 34,
+    "age": 38,
     "gender": "femme"
   },
   "conversation": [
     {
       "speaker": "doctor",
-      "text": "Bonjour, comment allez-vous depuis notre dernière visite?"
+      "text": "Bonjour, comment vous sentez-vous depuis notre dernière visite?"
     },
     {
       "speaker": "patient",
-      "text": "Bonjour Docteur. Ça va un peu mieux, les douleurs sont moins fortes mais je ressens toujours de la raideur le matin."
+      "text": "Bonjour docteur, je me sens beaucoup mieux. La sensation de brûlure a disparu et j'ai moins besoin d'aller aux toilettes."
     },
     {
       "speaker": "doctor",
-      "text": "C'est une bonne nouvelle que la douleur ait diminué. Avez-vous été en mesure de faire de l'exercice régulièrement comme nous l'avions discuté lors de notre dernière rencontre?"
+      "text": "C'est rassurant à entendre. Avez-vous pris vos antibiotiques comme prescrit?"
     },
     {
       "speaker": "patient",
-      "text": "Oui, j'ai commencé à faire du yoga et je trouve que cela m'aide."
+      "text": "Oui, je les ai pris tous les jours sans manquer une dose."
     },
     {
       "speaker": "doctor",
-      "text": "Excellent, c'est une bonne nouvelle. Avez-vous remarqué des effets secondaires depuis que vous prenez le naproxène?"
+      "text": "Très bien. Avez-vous remarqué des effets secondaires des médicaments?"
     },
     {
       "speaker": "patient",
-      "text": "Non, pas vraiment."
+      "text": "Non, je n'ai pas remarqué d'effets secondaires."
     },
     {
       "speaker": "doctor",
-      "text": "Très bien. Est-ce qu'il y a eu d'autres changements ou de nouvelles préoccupations depuis notre dernière visite?"
+      "text": "Votre examen physique semble normal et les résultats du test d'urine montrent que l'infection a disparu. Le traitement semble avoir été efficace."
     },
     {
       "speaker": "patient",
-      "text": "Non, rien de particulier."
+      "text": "C'est une bonne nouvelle. Dois-je continuer à prendre des médicaments?"
     },
     {
       "speaker": "doctor",
-      "text": "D'accord. En ce qui concerne votre arthrose, je pense que nous devrions continuer avec le même plan de traitement pour le moment, puisque vous montrez des signes d'amélioration. Nous allons toutefois surveiller de près votre progression. Il est également important de continuer à faire de l'exercice régulièrement. Pouvons-nous planifier une autre visite dans 6 semaines?"
+      "text": "Non, vous avez terminé votre traitement. Continuez à boire beaucoup d'eau et à suivre les conseils pour prévenir une autre infection."
     },
     {
       "speaker": "patient",
-      "text": "Oui, c'est parfait. Merci docteur."
+      "text": "D'accord, je vais continuer à faire cela. Merci docteur."
     }
   ]
 }

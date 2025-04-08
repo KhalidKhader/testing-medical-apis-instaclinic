@@ -141,33 +141,101 @@ The evaluation produces the following metrics:
 
 ## Evaluation Results
 
-The pipeline has been tested with medical conversations in both English and French for cardiology specialties. Here's a summary of our findings:
+The pipeline has been tested with medical conversations in both English and French for cardiology and GP specialties. Here's a summary of our latest findings:
 
-### English Transcription (Deepgram Nova 3 Medical)
-- **Word Error Rate (WER)**: 0.13 (Lower is better)
-- **Text Similarity**: 0.68
-- **BLEU Score**: 0.68
-- **Medical Term Accuracy**: 0.71
-- **Speaker Accuracy**: 0.90
+### Latest Evaluation Results (After Voice Enhancement)
 
-### French Transcription (Azure Speech Services)
-- **Word Error Rate (WER)**: 0.62 (Lower is better)
-- **Text Similarity**: 0.43
-- **BLEU Score**: 0.43
-- **Medical Term Accuracy**: 0.41
-- **Speaker Accuracy**: 1.00
+#### Cardiology - English (Deepgram Nova 3 Medical)
+- **Word Error Rate (WER)**: 0.1716 (std: 0.0044)
+- **Text Similarity**: 0.6578 (std: 0.2275)
+- **BLEU Score**: 0.6578 (std: 0.2275)
+- **Medical Term Accuracy**: 0.8819 (std: 0.0069)
+- **Speaker Accuracy**: 0.0000 (std: 0.0000)
+
+#### Cardiology - French (Azure Speech Services)
+- **Word Error Rate (WER)**: 0.0000 (std: 0.0000)
+- **Text Similarity**: 1.0000 (std: 0.0000)
+- **BLEU Score**: 1.0000 (std: 0.0000)
+- **Medical Term Accuracy**: 1.0000 (std: 0.0000)
+- **Speaker Accuracy**: 0.0000 (std: 0.0000)
+
+#### GP - English (Deepgram Nova 3 Medical)
+- **Word Error Rate (WER)**: 0.1601 (std: 0.0224)
+- **Text Similarity**: 0.8451 (std: 0.0219)
+- **BLEU Score**: 0.8451 (std: 0.0219)
+- **Medical Term Accuracy**: 1.0000 (std: 0.0000)
+- **Speaker Accuracy**: 0.0000 (std: 0.0000)
+
+#### GP - French (Azure Speech Services)
+- **Word Error Rate (WER)**: 0.0000 (std: 0.0000)
+- **Text Similarity**: 1.0000 (std: 0.0000)
+- **BLEU Score**: 1.0000 (std: 0.0000)
+- **Medical Term Accuracy**: 1.0000 (std: 0.0000)
+- **Speaker Accuracy**: 0.0000 (std: 0.0000)
 
 ### Key Insights
 
-1. **Transcription Accuracy**: Deepgram Nova 3 Medical demonstrates significantly higher transcription accuracy for English medical conversations with a WER of 0.13 compared to Azure's 0.62 for French.
+1. **Enhanced Voice Differentiation**: We've implemented extreme voice transformations to ensure clear diarization between doctor and patient speakers:
+   - Male doctors now have an extremely deep voice (pitch shift -7.0) and slower speech rate (0.8) for authority
+   - Female doctors have a higher pitch (5.0) with a moderately slow speech rate (0.85)
+   - Male patients have a less deep voice (pitch shift -2.0) with a faster speech rate (1.15) indicating nervousness
+   - Female patients have a very high voice (pitch shift 8.0) with a slightly faster speech rate (1.05)
+   - Age-based adjustments now include tremor effects for elderly voices and higher pitch/faster speech for younger patients
 
-2. **Medical Terminology Recognition**: Nova 3 Medical excels at recognizing medical terminology in English (71% accuracy) compared to Azure's performance in French (41% accuracy).
+2. **Transcription Performance**: 
+   - **English (Nova 3 Medical)**: Maintains good performance with WER around 0.16-0.17, but could be improved further.
+   - **French (Azure)**: Shows perfect transcription results, which is unexpected and may need further investigation.
+   
+3. **Medical Term Recognition**:
+   - Nova 3 Medical shows excellent medical term accuracy (88.19% for cardiology, 100% for GP), demonstrating its strength with specialized terminology.
+   - Azure's perfect score (100%) for French medical terms is surprising and warrants verification.
 
-3. **Speaker Diarization**: Azure Speech Services achieves perfect speaker identification in French conversations, while Nova 3 Medical maintains excellent but slightly lower accuracy (90%).
+4. **Speaker Diarization Challenges**:
+   - The 0% speaker accuracy across all tests indicates issues with the diarization component despite our voice enhancement efforts.
+   - This requires further investigation as the voices should be clearly differentiated with our extreme transformations.
 
-4. **Consistency**: Deepgram's results show more consistency across samples, while Azure's performance varies more widely depending on the conversation complexity.
+5. **Specialty Differences**:
+   - GP conversations show better overall transcription performance than cardiology conversations in English, possibly due to less complex terminology.
 
-These results highlight the current state-of-the-art in medical transcription technology and demonstrate the effectiveness of specialized models like Nova 3 Medical for healthcare applications.
+These results demonstrate both the potential and limitations of current medical transcription technology. The excellent medical term recognition is promising, but the diarization issues need to be addressed. Further refinements to the voice transformation parameters and evaluation metrics may help improve overall system performance.
+
+## Voice Transformation Enhancement
+
+We've implemented advanced voice transformations to maximize speaker differentiation:
+
+```python
+# Enhanced voice transformations for better diarization
+if is_doctor:
+    if gender == "male":
+        # Male doctor: extremely deep voice, authoritative
+        pitch_shift = -7.0  # Extremely deep voice
+        tempo = 0.8  # Slower speech rate for authority
+    else:  # female doctor
+        # Female doctor: distinctly professional tone
+        pitch_shift = 5.0  # Higher voice
+        tempo = 0.85  # Slightly slower speech rate
+else:  # patient
+    if gender == "male":
+        # Male patient: distinctly different from doctor
+        pitch_shift = -2.0  # Less deep than doctor but still masculine
+        tempo = 1.15  # Faster speech rate to indicate nervousness
+    else:  # female patient
+        # Female patient: distinctly different from doctor
+        pitch_shift = 8.0  # Very high voice
+        tempo = 1.05  # Slightly faster speech rate
+
+# Age-based voice adjustments
+if age > 65:  # Elderly voice
+    tempo *= 0.9  # Slower for elderly
+    # Add a slight tremor for elderly voices
+    tremor = np.sin(2 * np.pi * 8 * np.arange(len(audio)) / sample_rate) * 0.03
+    audio = audio + tremor[:len(audio)]
+elif age < 18:  # Young voice
+    pitch_shift += 2.0  # Higher pitch for younger
+    tempo *= 1.1  # Faster for younger
+```
+
+This approach aims to create more realistic and easily distinguishable voices between doctors and patients while adding age-appropriate characteristics.
 
 ## Visualizations
 

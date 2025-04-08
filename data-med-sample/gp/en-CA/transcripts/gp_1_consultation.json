@@ -1,44 +1,56 @@
 {
   "conversation": [
     {
-      "speaker": "doctor",
-      "text": "good morning miss johnson how have you been since your last visit"
+      "speaker": "patient",
+      "text": "good morning what brings you in today"
     },
     {
       "speaker": "patient",
-      "text": "good morning doctor i've been feeling quite tired and have been gaining weight despite eating and exercising normally"
-    },
-    {
-      "speaker": "doctor",
-      "text": "i'm sorry to hear that has there been any other changes like in your mood skin or hair"
+      "text": "hello doctor i've been feeling uncomfortable lately i've noticed that i have to urinate more frequently than usual and is quite painful each time also the urine seems to be cloudy and has a strong odor"
     },
     {
       "speaker": "patient",
-      "text": "yes i have been feeling a bit low and my hair has become dry and thin"
-    },
-    {
-      "speaker": "doctor",
-      "text": "have you been taking your levothyroxine as prescribed"
+      "text": "i'm sorry to hear that you're not feeling well any other symptoms you've noticed"
     },
     {
       "speaker": "patient",
-      "text": "yes i have been taking it daily"
-    },
-    {
-      "speaker": "doctor",
-      "text": "it's important that we monitor your symptoms closely because they may be related to your hypothyroidism we might need to adjust your medication dosage let's do a physical examination doctor performs physical examination your vital signs are normal but i noticed some puffiness around your eyes and dryness in your skin i am going to order some blood tests to check your thyroid hormone levels"
+      "text": "yes i've also been feeling feverish and i've been experiencing lower abdominal pain"
     },
     {
       "speaker": "patient",
-      "text": "okay doctor"
-    },
-    {
-      "speaker": "doctor",
-      "text": "we might need to adjust your levothyroxine dosage based on your test results it is also important to have a balanced diet and regular exercise"
+      "text": "how long have you been experiencing these symptoms"
     },
     {
       "speaker": "patient",
-      "text": "okay i understand with you doctor"
+      "text": "about days now"
+    },
+    {
+      "speaker": "patient",
+      "text": "alright do you have any allergies"
+    },
+    {
+      "speaker": "patient",
+      "text": "no not that i am aware of"
+    },
+    {
+      "speaker": "patient",
+      "text": "oak let me conduct a physical exam and then we'll take a urine sample for testing your vitals are stable but the lower abdomen seems tender we'll need to send you a urine sample for testing to confirm but your symptoms suggest a urinary tract infection"
+    },
+    {
+      "speaker": "patient",
+      "text": "oh no is it serious doctor"
+    },
+    {
+      "speaker": "patient",
+      "text": "it's quite common especially in women it's usually caused by bacteria entering the urinary tract if left untreated it can lead to more serious complications but with early treatment you should be fine i'll prescribe an antibiotic called nitrofurantoin which should help clear the infection it's important to finish the whole course of antibiotics even if you start feeling better"
+    },
+    {
+      "speaker": "patient",
+      "text": "okay i understand"
+    },
+    {
+      "speaker": "patient",
+      "text": "also drink plenty of water to help flush out bacteria avoid coffee alcohol and spicy foods as they can irritate your bladder"
     }
   ]
 }

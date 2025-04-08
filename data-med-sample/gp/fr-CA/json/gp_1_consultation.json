@@ -2,71 +2,67 @@
   "language": "fr-CA",
   "specialty": "gp",
   "type": "consultation",
-  "condition": "arthrose",
+  "condition": "rhinite allergique",
   "patient": {
-    "age": 34,
-    "gender": "femme"
+    "age": 33,
+    "gender": "homme"
   },
   "conversation": [
     {
       "speaker": "doctor",
-      "text": "Bonjour, je suis le Dr Martin. Comment puis-je vous aider aujourd'hui?"
+      "text": "Bonjour, qu'est-ce qui vous amène aujourd'hui?"
     },
     {
       "speaker": "patient",
-      "text": "Bonjour Docteur. J'ai remarqué que mes articulations sont douloureuses et raides ces derniers temps, surtout le matin."
+      "text": "Bonjour docteur, je crois que j'ai une infection urinaire. J'ai un besoin fréquent d'uriner, avec une sensation de brûlure lorsque j'y vais. Et l'urine est un peu trouble aussi."
     },
     {
       "speaker": "doctor",
-      "text": "Je suis désolé d'entendre cela. Depuis combien de temps ressentez-vous ces symptômes?"
+      "text": "Je suis désolé d'entendre cela. Avez-vous déjà eu une infection urinaire auparavant?"
     },
     {
       "speaker": "patient",
-      "text": "Ça fait environ deux mois maintenant."
+      "text": "Oui, c'est déjà arrivé il y a quelques années."
     },
     {
       "speaker": "doctor",
-      "text": "Avez-vous des antécédents d'arthrose dans votre famille?"
+      "text": "D'accord. Avez-vous de la fièvre ou des douleurs dans le bas du dos?"
     },
     {
       "speaker": "patient",
-      "text": "Oui, ma mère et ma grand-mère en ont toutes les deux."
+      "text": "Non, pas de fièvre, mais j'ai une légère douleur dans le bas du dos."
     },
     {
       "speaker": "doctor",
-      "text": "D'accord. Passons à un examen physique. Je vais examiner vos articulations pour vérifier la mobilité et la présence de gonflements. [Après l'examen]"
-    },
-    {
-      "speaker": "doctor",
-      "text": "Vos articulations montrent des signes de raideur, notamment au niveau des doigts et des genoux, ce qui est courant dans l'arthrose. Avez-vous déjà eu des radiographies de vos articulations?"
+      "text": "Je vois. Avez-vous des antécédents de maladies rénales ou de diabète?"
     },
     {
       "speaker": "patient",
-      "text": "Non, jamais."
+      "text": "Non, aucun de ces deux."
     },
     {
       "speaker": "doctor",
-      "text": "D'accord. Je vais vous référer pour des radiographies afin de confirmer le diagnostic. En attendant, je vais vous prescrire un anti-inflammatoire non stéroïdien (AINS), le naproxène, pour soulager vos symptômes."
+      "text": "D'accord madame, vos symptômes et vos résultats de test d'urine suggèrent une infection des voies urinaires. Ce n'est pas grave et il y a plusieurs options de traitement."
     },
     {
       "speaker": "patient",
-      "text": "D'accord, merci Docteur."
+      "text": "D'accord. Que recommandez-vous, docteur?"
     },
     {
       "speaker": "doctor",
-      "text": "Je vous recommande également de faire de l'exercice régulièrement. Cela peut aider à soulager la raideur et à renforcer les muscles autour des articulations. Essayez des exercices à faible impact, comme la natation ou le yoga."
+      "text": "Je vous prescrirai des antibiotiques pour l'infection. Vous devriez commencer à vous sentir mieux dans quelques jours. Assurez-vous de boire beaucoup d'eau et d'éviter le café, l'alcool et les épices qui peuvent irriter la vessie."
     },
     {
       "speaker": "patient",
-      "text": "Je ferai de mon mieux."
+      "text": "D'accord, je le ferai. Y a-t-il quelque chose que je peux faire pour prévenir ces infections à l'avenir?"
     },
     {
       "speaker": "doctor",
-      "text": "Excellent. Nous nous reverrons dans environ 6 semaines pour vérifier comment vous vous sentez avec le traitement et pour discuter des résultats de vos radiographies. Est-ce que cela vous convient?"
+      "text": "Certainement. Boire beaucoup d'eau, uriner régulièrement et surtout après les rapports sexuels peuvent aider à prévenir les infections urinaires."
     },
     {
       "speaker": "patient",
-      "text": "Oui, c'est parfait. Merci docteur."
+      "text": "Merci docteur, je vais suivre vos conseils."
     }
   ]
 }

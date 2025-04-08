@@ -1,8 +1,44 @@
 {
   "conversation": [
     {
-      "speaker": "doctor",
-      "text": "good morning missus johnson how have you been feeling since our last visit good morning doctor i've noticed some improvement but i still feel quite tired have you been taking your levothyroxine and metformin as prescribed yes i have been taking them daily have you noticed any change in your weight mood skin or hair my mood has improved slightly but i haven't noticed any significant changes in my weight or the condition of my skin and hair any side effects from the medications no i haven't noticed any side effects that's good to hear let's do a physical examination doctor performs physical examination your vitals are stable and the puffiness around your eyes has reduced however your skin remains dry let's review your blood test results doctor reviews blood test results your chills have decreased but are still above the normal range indicating that your hypothyroidism is not yet fully controlled we need to slightly increase your levothyroxine dosage okay doctor continue with your balanced diet and regular exercise and take the increased dosage of levothyroxine will do doctor i understand doctor thank you"
+      "speaker": "patient",
+      "text": "good morning how have you been feeling since our last visit"
+    },
+    {
+      "speaker": "patient",
+      "text": "hello doctor i've been feeling better the pain while urinating has decreased significantly and i don't have to go as often the fever and abdominal pain are also gone"
+    },
+    {
+      "speaker": "patient",
+      "text": "that's good to hear have you been taking the prescribed nitrofurantoin twice daily as advised"
+    },
+    {
+      "speaker": "patient",
+      "text": "yes i've been taking the medication exactly as you instructed"
+    },
+    {
+      "speaker": "patient",
+      "text": "excellent have you noticed any side effects from the medication"
+    },
+    {
+      "speaker": "patient",
+      "text": "no doctor i haven't noticed any side effects"
+    },
+    {
+      "speaker": "patient",
+      "text": "good let's proceed with a physical examination your vitals are stable and your lower abdomen is no longer tender your lab results also came back and it confirms that you had a urinary tract infection however it seems the antibiotics are working well as your symptoms have improved"
+    },
+    {
+      "speaker": "patient",
+      "text": "that's a relief so is the infection all gone now"
+    },
+    {
+      "speaker": "patient",
+      "text": "it seems to be improving but it's important that you finish the full course of antibiotics this will ensure that the infection is completely cleared continue drinking plenty of water and avoiding bladder irritants like coffee alcohol and spicy foods"
+    },
+    {
+      "speaker": "patient",
+      "text": "thank you doctor i'll continue with the medication and will follow your advice"
     }
   ]
 }
