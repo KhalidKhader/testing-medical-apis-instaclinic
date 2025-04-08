@@ -2,67 +2,35 @@
   "language": "fr-CA",
   "specialty": "cardiology",
   "type": "followup",
-  "condition": "endocardite",
+  "condition": "infarctus du myocarde",
   "patient": {
-    "age": 85,
+    "age": 48,
     "gender": "homme"
   },
   "conversation": [
     {
       "speaker": "doctor",
-      "text": "Bonjour, Madame. Comment vous êtes-vous sentie depuis notre dernière rencontre?"
+      "text": "Bonjour, Monsieur Leroux. Comment vous sentez-vous depuis notre dernière rencontre?"
     },
     {
       "speaker": "patient",
-      "text": "Bonjour, docteur. Je me sens un peu mieux, mais j'ai toujours des palpitations et je me sens fatiguée."
+      "text": "Bonjour, Docteur. Je me sens un peu mieux. Les maux de tête sont moins fréquents."
     },
     {
       "speaker": "doctor",
-      "text": "Je vois. Avez-vous remarqué des changements dans vos symptômes?"
+      "text": "C'est une bonne nouvelle. Et comment se passe votre traitement avec le ramipril?"
     },
     {
       "speaker": "patient",
-      "text": "Les maux de tête et les étourdissements ont diminué, mais la fatigue et les palpitations sont toujours présentes."
+      "text": "Je le prends régulièrement, mais j'ai remarqué que je tousse un peu plus qu'avant."
     },
     {
       "speaker": "doctor",
-      "text": "D'accord. Avez-vous réussi à suivre les recommandations d'une vie saine que nous avions discutées lors de votre dernière visite?"
+      "text": "Je vois, une toux sèche peut être un effet secondaire du ramipril. Nous allons surveiller cela. Avez-vous apporté les résultats de vos tests d'ECG et d'échocardiogramme?"
     },
     {
       "speaker": "patient",
-      "text": "J'ai essayé, mais c'est difficile avec la fatigue constante."
-    },
-    {
-      "speaker": "doctor",
-      "text": "Je comprends, ça peut être un défi. Puis-je vous demander si vous avez ressenti des effets secondaires depuis que vous avez commencé à prendre le médicament?"
-    },
-    {
-      "speaker": "patient",
-      "text": "Non, je n'ai pas remarqué d'effets secondaires."
-    },
-    {
-      "speaker": "doctor",
-      "text": "Très bien. Maintenant, examinons les résultats de vos tests. Votre échocardiogramme montre un prolapsus de la valve mitrale, ce qui est conforme à ce que nous avions suspecté. C'est une condition qui peut causer les symptômes que vous ressentez."
-    },
-    {
-      "speaker": "patient",
-      "text": "Alors, que devons-nous faire maintenant?"
-    },
-    {
-      "speaker": "doctor",
-      "text": "Compte tenu de vos symptômes persistants, je vais ajuster votre plan de traitement. Je vais ajouter un bêta-bloquant, le metoprolol, qui devrait aider à contrôler vos palpitations et votre fatigue."
-    },
-    {
-      "speaker": "patient",
-      "text": "D'accord, j'espère que cela aidera."
-    },
-    {
-      "speaker": "doctor",
-      "text": "Je le pense aussi. Nous continuerons à surveiller de près votre condition. Je veux que vous reveniez dans un mois pour voir comment vous réagissez au nouveau médicament. D'ici là, continuez à essayer de mener une vie saine autant que possible."
-    },
-    {
-      "speaker": "patient",
-      "text": "D'accord, je ferai de mon mieux. Merci, docteur.\n\n2. Note SOAP de suivi\n\n- Subjectif La patiente continue de ressentir de la fatigue et des palpitations, bien que les maux de tête et les étourdissements aient diminué. Elle n'a pas remarqué d'effets secondaires du médicament et a tenté de suivre les recommandations d'une vie saine.\n\n- Objectif L'échocardiogramme a confirmé un prolapsus de la valve mitrale. Les signes vitaux sont stables avec une fréquence cardiaque de 100 battements par minute et une pression artérielle de 120/80 mmHg.\n\n- Évaluation Le prolapsus de la valve mitrale persiste, causant toujours des symptômes de fatigue et de palpitations malgré le traitement initial.\n\n- Plan Ajustement du plan de traitement avec l'ajout de metoprolol pour aider à contrôler les symptômes. Suivi prévu dans un mois pour évaluer l'efficacité du nouveau médicament.\n\n3. Mots-clés / Étiquettes\n\n- Diagnostic Prolapsus de la valve mitrale confirmé\n- Traitement Ajout de metoprolol\n- Symptômes Fatigue persistante, palpitations, diminution des maux de tête et des étourdissements\n- Conditions Prolapsus de la valve mitrale, hypertension familiale\n- Allergies Aucune nouvelle allergie identifiée."
+      "text": "Oui, voici les rapports."
     }
   ]
 }

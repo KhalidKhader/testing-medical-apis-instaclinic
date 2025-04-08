@@ -1,30 +1,22 @@
 # SOAP Note
 
-Subjectif: 
-La patiente rapporte une diminution des maux de tête et des étourdissements, mais continue à ressentir de la fatigue et des palpitations. Elle n'a pas remarqué d'effets secondaires depuis qu'elle a commencé le traitement médicamenteux. La patiente a tenté de suivre les recommandations pour un mode de vie sain, mais a trouvé cela difficile en raison de sa fatigue constante.
+Note SOAP:
 
-Objectif: 
-L'examen physique ne montre pas de changements significatifs. Les signes vitaux sont stables avec une fréquence cardiaque de 100 battements par minute et une pression artérielle de 120/80 mmHg. L'échocardiogramme confirme un prolapsus de la valve mitrale.
+Subjectif:
+Monsieur Leroux rapporte une amélioration de ses maux de tête, qui sont devenus moins fréquents depuis notre dernière visite. Il suit son traitement par ramipril comme prescrit, mais note une augmentation de la toux, un effet secondaire possible du médicament. Aucune autre préoccupation ou symptôme n'a été mentionné.
 
-Évaluation: 
-La patiente a un prolapsus de la valve mitrale qui persiste et continue à provoquer des symptômes de fatigue et de palpitations. Les maux de tête et les étourdissements ont diminué, ce qui peut indiquer une certaine amélioration.
+Objectif:
+Les signes vitaux du patient n'ont pas été mentionnés lors de cette visite. Le patient a apporté les résultats de son ECG et de son échocardiogramme, mais les détails n'ont pas été discutés dans la transcription.
 
-## Plan: 
-Le plan de traitement sera ajusté pour inclure le metoprolol, un bêta-bloquant, dans l'espoir de contrôler les palpitations et la fatigue. La patiente doit revenir dans un mois pour évaluer l'efficacité du nouveau médicament. Malgré la fatigue, elle est encouragée à continuer à essayer de mener une vie saine autant que possible.
+Évaluation:
+Le patient semble répondre positivement au traitement, malgré l'apparition d'une toux, potentiellement liée à l'utilisation du ramipril. Les résultats de l'ECG et de l'échocardiogramme aideront à évaluer l'état cardiaque du patient.
+
+## Plan:
+Continuer le traitement par ramipril, tout en surveillant l'augmentation de la toux. Examiner et interpréter les résultats de l'ECG et de l'échocardiogramme pour évaluer si des ajustements du traitement sont nécessaires.
 
 Mots-clés / Étiquettes:
-
-Diagnostique: 
-Prolapsus de la valve mitrale
-
-Traitement: 
-Metoprolol ajouté au plan de traitement actuel
-
-Symptômes: 
-Fatigue, palpitations, diminution des maux de tête et des étourdissements
-
-Conditions: 
-Prolapsus de la valve mitrale, condition non spécifiée liée à la fatigue
-
-Allergies: 
-Aucune mentionnée lors de la visite.
+- Diagnostic: Maux de tête, effet secondaire du ramipril (toux)
+- Traitement: Ramipril
+- Symptômes: Maux de tête, toux
+- Conditions: Non spécifié
+- Allergies: Aucune mentionnée

@@ -2,51 +2,43 @@
   "conversation": [
     {
       "speaker": "patient",
-      "text": "good morning it's good to see you again how have you been feeling since our last visit"
+      "text": "good morning i'm doctor i tell your cardiologist how have you been feeling since our last meeting"
     },
     {
       "speaker": "patient",
-      "text": "good morning doctor i've been feeling somewhat better but i still get those rapid heartbeat episodes occasionally"
+      "text": "morning doctor i've been doing okay but i'm still feeling a bit tired"
     },
     {
       "speaker": "patient",
-      "text": "i see have they been happening as frequently as before any changes in the duration or intensity of these episodes"
+      "text": "i see has there been any change in your chest discomfort"
     },
     {
       "speaker": "patient",
-      "text": "they seem to be less frequent no change in duration but they feel less intense than before"
+      "text": "it's still there when i exert myself but it feels a bit less intense than before"
     },
     {
       "speaker": "patient",
-      "text": "that's good to hear have you been adhering to the aspirin regime for your blood pressure"
+      "text": "that's encouraging have you been able to stick to the medication regimen we discussed"
     },
     {
       "speaker": "patient",
-      "text": "yes i have been taking it as prescribed"
+      "text": "yes i've been taking the azole the beta blocker and the statin as you directed but i've noticed i feel a bit dizzy sometimes after taking the beta blocker"
     },
     {
       "speaker": "patient",
-      "text": "any side effects from the medication"
+      "text": "dizziness can be a side effect of beta blockers especially when standing up quickly i recommend you stand up slowly and sit down if you feel dizzy if it continues or worsens we may need to adjust the dosage any other side effects"
     },
     {
       "speaker": "patient",
-      "text": "no none that i've noticed"
+      "text": "no that's about it"
     },
     {
       "speaker": "patient",
-      "text": "your blood pressure is manic which is better than last time your heart rate is phendom still slightly elevated but improved we received your test results the egg showed abnormal heart rhythms and the echocardiogram showed some changes in your heart muscle these findings support the suspected diagnosis of ventricular tachycardia"
+      "text": "your heart rate and blood pressure are improving there's still some slight elevation but it's a positive trend i've also received your test results the egg and echocardiogram show some damage from a heart attack but the stress test results are encouraging based on your progress and test results i believe the current treatment is effective however we'll keep monitoring your symptoms and adjust the treatment as needed"
     },
     {
       "speaker": "patient",
-      "text": "okay so what are our next steps"
-    },
-    {
-      "speaker": "patient",
-      "text": "given the test results and your symptoms i would recommend starting with a medication called metoprolol it's a type of beta blocker that can help control your heart rate"
-    },
-    {
-      "speaker": "patient",
-      "text": "alright that sounds good is there anything else i should know got it thank you doctor"
+      "text": "what's the next step doctor i understand thank you doctor"
     }
   ]
 }

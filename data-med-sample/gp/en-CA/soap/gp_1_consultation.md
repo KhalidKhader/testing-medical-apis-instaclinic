@@ -1,16 +1,16 @@
 # SOAP Note
 
 ## Subjective:
-70-year-old female presents with symptoms suggestive of urinary tract infection (UTI) - increased frequency and discomfort during urination, cloudy urine with a strong odour, lower abdominal pain, and fever. Symptoms have been present for 4 days. No known allergies.
+46-year-old female presents with symptoms of allergic rhinitis including itchy, watery eyes, runny and stuffy nose, and frequent sneezing. Symptoms are worse in the mornings and when near plants or flowers. Patient has a history of hay fever, and symptoms have been worse this year. Over-the-counter antihistamines have not been effective.
 ## Objective:
-Vital signs within normal limits. Abdominal exam reveals tenderness in the lower abdomen. Urine sample taken for laboratory analysis.
+Physical examination revealed swollen nasal tissues and watery eyes. There are no signs of infection. Vital signs are within normal limits.
 ## Assessment:
-Suspected uncomplicated UTI based on clinical presentation. Laboratory results pending.
+Allergic rhinitis exacerbated by pollen and other outdoor allergens.
 ## Plan:
-Prescribe Nitrofurantoin 100mg twice daily for 7 days. Advise patient to drink plenty of water and avoid irritants such as coffee, alcohol, and spicy foods. Schedule follow-up in one week to assess response to treatment.
-## Keywords / Tags:
-Diagnosis: Urinary Tract Infection (UTI)
-Treatment: Nitrofurantoin
-Symptoms: Increased urination, dysuria, cloudy urine, odour, abdominal pain, fever
-Conditions: None
-Allergies: None
+Prescribe prescription-strength antihistamines, a corticosteroid nasal spray, and allergy eye drops. Patient advised to limit exposure to allergens. Follow-up appointment in 4 weeks to assess symptoms. If no improvement, consider allergy shots. Encouraged flu shot for the upcoming flu season.
+3. ## Keywords / Tags:
+Diagnosis: Allergic rhinitis, Hay fever
+Treatment: Prescription-strength antihistamines, Corticosteroid nasal spray, Allergy eye drops, Flu shot
+Symptoms: Itchy, watery eyes, Runny and stuffy nose, Sneezing, Exacerbated symptoms in the morning and near plants
+Conditions: Allergic rhinitis, Hay fever
+Allergies: Pollen, Outdoor allergens

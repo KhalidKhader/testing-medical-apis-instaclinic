@@ -2,79 +2,79 @@
   "language": "en-CA",
   "specialty": "cardiology",
   "type": "consultation",
-  "condition": "hypertension",
+  "condition": "mitral valve prolapse",
   "patient": {
-    "age": 60,
+    "age": 22,
     "gender": "male"
   },
   "conversation": [
     {
       "speaker": "doctor",
-      "text": "Good morning. My name is Dr. Smith, I'm a cardiologist. How can I assist you today?"
+      "text": "Good morning. I'm Dr. Patel, the cardiologist. How can I assist you today?"
     },
     {
       "speaker": "patient",
-      "text": "Good morning, Doctor. I've been having some episodes of rapid heartbeat lately, and my family doctor said I might have something called ventricular tachycardia."
+      "text": "Morning, Doctor. I'm here because I had a heart attack a few weeks ago. I was treated in the emergency room and they told me to come see a cardiologist."
     },
     {
       "speaker": "doctor",
-      "text": "I see, I'm sorry to hear that. Could you tell me more about these episodes? When do they happen and how long do they last?"
+      "text": "I'm sorry to hear that. Can you tell me more about the symptoms you experienced at that time?"
     },
     {
       "speaker": "patient",
-      "text": "They usually happen at rest, especially in the evening. They last for a few minutes and then stop. I feel dizzy and short of breath during these episodes."
+      "text": "I had a heavy feeling in my chest, sweating, and some shortness of breath. The pain was severe and it also went into my left arm."
     },
     {
       "speaker": "doctor",
-      "text": "Any chest pain, palpitations, sweating, or fainting during these episodes?"
+      "text": "I see. And how have you been feeling since the incident?"
     },
     {
       "speaker": "patient",
-      "text": "No chest pain or sweating, but I do feel palpitations and once I almost fainted."
+      "text": "I've been feeling a bit tired and I still have some chest discomfort on exertion."
     },
     {
       "speaker": "doctor",
-      "text": "Alright, we'll certainly look into this. Have you ever had any chest pain, shortness of breath, or leg swelling?"
+      "text": "Have you had any change in your appetite or weight, any fever, cough, or swelling in your legs?"
     },
     {
       "speaker": "patient",
-      "text": "No, none of that."
+      "text": "No, nothing like that."
     },
     {
       "speaker": "doctor",
-      "text": "Great. Are you on any medications currently? Any allergies?"
+      "text": "Alright. Let's move on to some tests. We'll need an ECG, an echocardiogram, and a stress test to evaluate your heart function and measure the extent of the damage."
     },
     {
       "speaker": "patient",
-      "text": "I take a daily aspirin for blood pressure, and I'm allergic to penicillin."
+      "text": "Okay, I understand."
     },
     {
       "speaker": "doctor",
-      "text": "Noted. We will run some tests, including an ECG, echocardiogram, and possibly a stress test to further evaluate your condition."
+      "text": "Your heart rate and blood pressure are slightly elevated, which is not unexpected given your recent myocardial infarction. The rest of the examination is unremarkable."
     },
     {
       "speaker": "doctor",
-      "text": "Your blood pressure and heart rate are slightly elevated, which is consistent with your symptoms. We will need to wait for the results of the tests for a definitive diagnosis. In the meantime, let's discuss potential treatments."
+      "text": "From your symptoms and examination, it seems you've had a significant heart attack, and there may be some ongoing angina. It's important to manage this well to prevent further events."
     },
     {
       "speaker": "patient",
-      "text": "Okay, what kind of treatment are we looking at?"
+      "text": "What's the plan, Doctor?"
     },
     {
       "speaker": "doctor",
-      "text": "If confirmed, ventricular tachycardia is often treated with medication, lifestyle modifications, and sometimes procedures such as catheter ablation. We'll discuss the specifics once we have a confirmed diagnosis."
+      "text": "We'll start medication including ASA, a beta-blocker, a statin, and possibly a nitrate for the chest pain. It's also important to make lifestyle changes: quit smoking if you do, maintain a healthy diet, and start a regular exercise routine."
     },
     {
       "speaker": "patient",
-      "text": "I understand, thank you for explaining."
+      "text": "Alright, I'll do my best."
     },
     {
       "speaker": "doctor",
-      "text": "Of course, I'm here to help. We'll schedule a follow-up appointment after the test results are in. In the meantime, if your symptoms worsen, please go to the emergency room."
+      "text": "We'll also arrange for you to have regular follow-ups and monitor your progress. If your symptoms worsen, it's crucial to seek immediate medical help."
     },
     {
       "speaker": "patient",
-      "text": "Got it. Thank you, Doctor."
+      "text": "Okay, I understand. Thank you, Doctor."
     }
   ]
 }

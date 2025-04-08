@@ -2,67 +2,59 @@
   "language": "fr-CA",
   "specialty": "cardiology",
   "type": "consultation",
-  "condition": "sténose aortique",
+  "condition": "prolapsus de la valve mitrale",
   "patient": {
-    "age": 20,
+    "age": 52,
     "gender": "homme"
   },
   "conversation": [
     {
       "speaker": "doctor",
-      "text": "Bonjour, je suis le Dr Cardin. Comment puis-je vous aider aujourd'hui?"
+      "text": "Bonjour, je suis le Dr Dupont. Vous êtes monsieur Leroux, c'est bien ça?"
     },
     {
       "speaker": "patient",
-      "text": "Bonjour, je suis ici pour un prolapsus de la valve mitrale."
+      "text": "Oui, c'est exact."
     },
     {
       "speaker": "doctor",
-      "text": "D'accord. Pouvez-vous me décrire vos symptômes et depuis combien de temps les ressentez-vous?"
+      "text": "Ravi de vous rencontrer, monsieur Leroux. Que puis-je faire pour vous aujourd'hui?"
     },
     {
       "speaker": "patient",
-      "text": "J'ai commencé à ressentir de la fatigue et des palpitations il y a environ un mois. J'ai aussi eu des maux de tête et des étourdissements."
+      "text": "Eh bien, mon médecin de famille m'a référé ici parce que j'ai une hypertension."
     },
     {
       "speaker": "doctor",
-      "text": "Avez-vous des antécédents de problèmes cardiaques dans votre famille ?"
+      "text": "D'accord, je vois. Avez-vous des symptômes, comme des maux de tête, des vertiges, des bourdonnements dans les oreilles ou des problèmes de vision?"
     },
     {
       "speaker": "patient",
-      "text": "Mon père a des problèmes de pression artérielle, mais rien d'autre à ma connaissance."
+      "text": "J'ai parfois des maux de tête, mais je pensais que c'était à cause du stress au travail."
     },
     {
       "speaker": "doctor",
-      "text": "Nous allons effectuer quelques tests pour évaluer votre condition. Cela comprend un ECG, un échocardiogramme et un test d'effort."
+      "text": "C'est possible, mais il se peut aussi que ce soit lié à votre hypertension. Allons plus loin. Avez-vous déjà subi un ECG ou un échocardiogramme?"
     },
     {
       "speaker": "patient",
-      "text": "D'accord, je comprends."
+      "text": "Non, jamais."
     },
     {
       "speaker": "doctor",
-      "text": "J'ai examiné les résultats de votre examen physique. Vous avez une fréquence cardiaque rapide et une pression artérielle normale. Lors de l'auscultation, j'ai noté un clic systolique apical."
+      "text": "Votre tension artérielle est un peu élevée aujourd'hui. Votre taux de cholestérol est également élevé, ce qui peut contribuer à votre hypertension."
     },
     {
       "speaker": "patient",
-      "text": "Cela signifie-t-il que ma condition est grave?"
+      "text": "C'est grave, docteur?"
     },
     {
       "speaker": "doctor",
-      "text": "En ce qui concerne le traitement, cela dépendra des résultats des tests. Cela pourrait aller de la surveillance à la prise de médicaments pour contrôler vos symptômes, à la chirurgie dans les cas plus graves."
+      "text": "Eh bien, l'hypertension peut être une affection sérieuse si elle n'est pas traitée, mais il existe de nombreux traitements disponibles. Nous pouvons commencer par un médicament appelé ramipril, qui peut aider à contrôler votre pression artérielle. Il sera également important de modifier votre style de vie, par exemple en améliorant votre alimentation et en faisant plus d'exercice."
     },
     {
       "speaker": "patient",
-      "text": "D'accord, j'espère que ce ne sera pas trop grave."
-    },
-    {
-      "speaker": "doctor",
-      "text": "Nous ferons un suivi après les tests pour discuter des résultats et du plan de traitement. Pour l'instant, essayez de mener une vie saine, de faire de l'exercice et de manger une alimentation équilibrée."
-    },
-    {
-      "speaker": "patient",
-      "text": "D'accord, je vais faire de mon mieux.\n\n2. Note SOAP\n\n- Subjectif La patiente, âgée de 26 ans, se plaint de fatigue, de palpitations, de maux de tête et d'étourdissements. Elle a un antécédent familial de problèmes de pression artérielle.\n\n- Objectif La fréquence cardiaque est rapide à 110 battements par minute, la pression artérielle est à 120/80 mmHg. L'auscultation révèle un clic systolique apical. Les résultats des tests (ECG, échocardiogramme, test d'effort) sont en attente.\n\n- Évaluation Le prolapsus de la valve mitrale est suspecté en raison du clic systolique apical à l'auscultation et des symptômes rapportés par la patiente.\n\n- Plan Attendre les résultats des tests pour finaliser le plan de traitement. Possible prescription de médicaments pour contrôler les symptômes ou recommandation de chirurgie dans les cas graves.  Suivi prévu après réception des résultats des tests.\n\n3. Mots-clés / Étiquettes\n\n- Diagnostic Prolapsus de la valve mitrale\n- Traitement En attente des résultats des tests\n- Symptômes Fatigue, palpitations, maux de tête, étourdissements\n- Conditions Antécédents familiaux de problèmes de pression artérielle\n- Allergies Aucune indiquée."
+      "text": "D'accord, je suis prêt à faire ce qu'il faut."
     }
   ]
 }

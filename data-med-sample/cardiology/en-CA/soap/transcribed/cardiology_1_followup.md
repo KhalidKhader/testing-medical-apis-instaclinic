@@ -1,20 +1,30 @@
 # SOAP Note
 
-**SUBJECTIVE**
-The patient reports feeling somewhat better since the last visit, but still experiencing occasional rapid heartbeat episodes. They report these episodes to be less frequent, with no change in duration but less intensity than before. The patient has been taking the prescribed aspirin regime for their blood pressure without any noticed side effects.
+## Subjective:
+The patient reports feeling tired, but states the chest discomfort has lessened in intensity during exertion. The patient has been compliant with the medication regimen which includes Azole, a beta blocker, and a statin. The patient reports occasional dizziness after taking the beta blocker. No other side effects were reported.
 
-**OBJECTIVE**
-Physical examination shows the patient's blood pressure is manic, indicating an improvement from the previous visit. Heart rate is still slightly elevated (phendom). Test results received show abnormal heart rhythms on the EKG and changes in heart muscle from the echocardiogram.
+## Objective:
+Patient's heart rate and blood pressure show improvement but are still slightly elevated. Recent tests, including an EKG and echocardiogram, show some damage from a heart attack. Stress test results are encouraging.
 
-**ASSESSMENT**
-Based on the reported symptoms, examination findings, and test results, the patient is diagnosed with ventricular tachycardia.
+## Assessment:
+Patient's symptoms, along with the EKG and echocardiogram results, indicate a previous heart attack. The patient's tiredness and occasional dizziness may be side effects of the medications. The chest discomfort during exertion is a typical symptom of coronary artery disease, but the patient reports it is less intense than before.
 
-**PLAN**
-The treatment plan includes starting the patient on a medication called Metoprolol, a type of beta blocker that can help control heart rate. The patient is to continue with their current aspirin regime for their blood pressure. The patient should continue to monitor their symptoms and report any changes. A follow-up visit will be scheduled to monitor the patient's response to the new medication.
+## Plan:
+Continuation of the current treatment plan as it appears to be effective. The patient is advised to stand up slowly and sit down if feeling dizzy after taking the beta blocker. If dizziness continues or worsens, the dosage may need to be adjusted. Regular monitoring of symptoms and adjustments to treatment as needed. 
 
-**KEYWORDS / TAGS**
-- Diagnosis: Ventricular Tachycardia
-- Treatment: Metoprolol, Aspirin
-- Symptoms: Rapid heartbeat, less frequent episodes, less intense episodes
-- Conditions: High blood pressure
-- Allergies: None mentioned
+## Keywords / Tags:
+
+Diagnosis:
+Past heart attack, Coronary artery disease
+
+Treatment:
+Azole, Beta blocker, Statin
+
+Symptoms:
+Fatigue, Chest discomfort during exertion, Occasional dizziness
+
+Conditions:
+Heart attack, High blood pressure
+
+Allergies: 
+None reported

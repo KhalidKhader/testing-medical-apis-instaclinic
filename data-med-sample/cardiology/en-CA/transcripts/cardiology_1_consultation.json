@@ -2,55 +2,55 @@
   "conversation": [
     {
       "speaker": "patient",
-      "text": "good morning my name is doctor smith i'm a cardiologist how can i assist you today"
+      "text": "good morning i'm doctor athol a cardiologist how can i assist you today"
     },
     {
       "speaker": "patient",
-      "text": "good morning doctor i've been having some episodes of rapid heartbeat lately my family doctor said i might have something called ventricular tachycardia"
+      "text": "morning doctor i'm here because i had a heart attack a few weeks ago i was treated in the emergency room and they told me to come see a cardiologist"
     },
     {
       "speaker": "patient",
-      "text": "i see i'm sorry to hear that could you tell me more about these episodes when do they happen and how long do they last"
+      "text": "i'm sorry to hear that can you tell me more about the symptoms you experienced at that time"
     },
     {
       "speaker": "patient",
-      "text": "they usually happen at rest especially in the evening they last for a few minutes and then stop i feel dizzy and short of breath during these episodes"
+      "text": "i had a heavy feeling in my chest sweating and some shortness of breath the pain was severe and it also went into my left arm"
     },
     {
       "speaker": "patient",
-      "text": "any chest pain palpitations sweating or fainting during these episodes"
+      "text": "i see and how have you been feeling since the incident"
     },
     {
       "speaker": "patient",
-      "text": "no chest pain or sweating but i do feel palpitations at once i almost fainted"
+      "text": "i've been feeling a bit tired and i still have some chest discomfort on exertion"
     },
     {
       "speaker": "patient",
-      "text": "alright we'll certainly look into this any chest pain shortness of breath or leg swelling"
+      "text": "have you had any change in your appetite or weight any fever cough or swelling in your legs"
     },
     {
       "speaker": "patient",
-      "text": "no none of that"
+      "text": "no nothing like that"
     },
     {
       "speaker": "patient",
-      "text": "great are you on any medications currently any allergies"
+      "text": "alright let's move on to some tests we'll need an egg an echocardiogram a stress test to evaluate your heart function and measure the extent of the damage"
     },
     {
       "speaker": "patient",
-      "text": "i take a daily aspirin for blood pressure and i'm allergic to penicillin"
+      "text": "okay i understand"
     },
     {
       "speaker": "patient",
-      "text": "noted we will run some tests including an egg echocardiogram and possibly a stress test to further evaluate your condition your blood pressure and heart rate are slightly elevated which is consistent with your symptoms we will need to wait for the results of the tests for a definitive diagnosis in the meantime let's discuss potential treatments"
+      "text": "your heart rate and blood pressure are slightly elevated which is not unexpected given your recent myocardial infarction the rest of the examination is unremarkable from your symptoms and examination it seems you've had a significant heart attack and there may be some ongoing angina it's important to manage this well to prevent further events"
     },
     {
       "speaker": "patient",
-      "text": "okay what kind of treatment are we looking at"
+      "text": "what's the plan doctor"
     },
     {
       "speaker": "patient",
-      "text": "if confirmed ventricular tachycardia is often treated with medication lifestyle modifications and sometimes procedures such as catheter ablation we'll discuss the specifics once we have a confirmed diagnosis"
+      "text": "start medication including aiza abeta blocker statin and possibly a nitrate for the chest pain it's also important to make lifestyle changes quit smoking if you do maintain a healthy diet and start a regular exercise routine"
     }
   ]
 }

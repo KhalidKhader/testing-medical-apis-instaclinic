@@ -1,1 +1,23 @@
-Bonjour, comment vous sentez-vous depuis notre dernière visite? Bonjour docteur, je me sens beaucoup mieux. La sensation de brûlure a disparu et j'ai moins besoin d'aller aux toilettes. C'est rassurant à entendre. Avez-vous pris vos antibiotiques comme prescrit? Oui, je les ai pris tous les jours sans manquer une dose. Très bien. Avez-vous remarqué des effets secondaires des médicaments? Non, je n'ai pas remarqué d'effets secondaires. Votre examen physique semble normal et les résultats du test d'urine montrent que l'infection a disparu. Le traitement semble avoir été efficace. C'est une bonne nouvelle. Dois-je continuer à prendre des médicaments? Non, vous avez terminé votre traitement. Continuez à boire beaucoup d'eau et à suivre les conseils pour prévenir une autre infection. D'accord, je vais continuer à faire cela. Merci docteur.
+Bonjour, comment vous sentez-vous depuis notre dernière visite? Bonjour Docteur, merci de demander. J'ai commencé à prendre les anti-inflammatoires que vous avez prescrits et ils ont aidé à réduire la douleur. C'est une bonne nouvelle. Avez-vous remarqué des effets secondaires à ce médicament? Non, pas vraiment. Mais je continue d'avoir des douleurs après des activités physiques. Je vois. Et comment se passe la physiothérapie? Est-ce que cela a aidé à améliorer votre mobilité? Oui, les séances de physiothérapie sont utiles. Je sens une certaine amélioration dans la mobilité de mes genoux. Excellent. Permettez-moi de vous examiner maintenant. (Après examen) Le gonflement semble avoir diminué un peu. Vos genoux bougent également un peu mieux que lors de votre dernière visite. Continuez avec la physiothérapie et les anti-inflammatoires. Nous allons également ajouter un médicament pour protéger votre estomac des anti-inflammatoires. Je vous reverrai dans trois mois à moins que vos symptômes ne s'aggravent. D'accord, merci Docteur.
+
+Note SOAP
+
+Subjectif 
+La patiente de 54 ans rapporte une réduction de la douleur après avoir commencé le traitement anti-inflammatoire. Aucun effet secondaire n'a été signalé. Les douleurs persistent après l'activité physique mais la physiothérapie a aidé à améliorer la mobilité du genou.
+
+Objectif 
+L'examen physique révèle une diminution du gonflement des articulations. Une amélioration de la mobilité du genou est notée.
+
+Évaluation 
+L'arthrose de la patiente semble répondre au traitement anti-inflammatoire et à la physiothérapie.
+
+Plan 
+Continuer les anti-inflammatoires et la physiothérapie. Ajouter un protecteur gastrique pour prévenir les effets secondaires des anti-inflammatoires. Suivi dans trois mois à moins que les symptômes ne s'aggravent.
+
+Mots-clés / Étiquettes
+
+Diagnostique Arthrose
+Traitement Anti-inflammatoires non stéroïdiens, physiothérapie, protecteur gastrique
+Symptômes Douleur articulaire, gonflement, amélioration de la mobilité
+Conditions Arthrose
+Allergies Aucune mentionnée

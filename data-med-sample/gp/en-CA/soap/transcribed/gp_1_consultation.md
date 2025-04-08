@@ -1,25 +1,20 @@
 # SOAP Note
 
-## Subjective:
-The patient is a female who presents with symptoms of increased frequency of urination, dysuria, cloudy urine with a strong odor, fever, and lower abdominal pain. Symptoms began approximately 4 days ago. She denies any known allergies.
+**SUBJECTIVE**
+The patient reports having a runny and stuffy nose, itchy and watery eyes, and frequent sneezing for the past few weeks, which worsens upon going outside. The patient has a history of hay fever during the spring and fall seasons but mentions that symptoms are more severe this year. The patient notices that symptoms are worse in the morning and when in proximity to flowering plants. The patient has been using over-the-counter antihistamines with little relief.
 
-## Objective:
-On physical examination, the patient's vitals are within normal limits. However, there is tenderness in the lower abdomen. Physician suggests a possible urinary tract infection (UTI) and recommends a urinalysis for confirmation.
+**OBJECTIVE**
+Physical examination focused on the patient's nasal passage and eyes, consistent with symptoms of allergic rhinitis. No other vital signs or test results were reported.
 
-## Assessment:
-The patient's symptoms, including dysuria, urinary frequency, and lower abdominal pain, are suggestive of a urinary tract infection. This is further corroborated by the physical examination findings of lower abdominal tenderness. The diagnosis will be confirmed through urinalysis.
+**ASSESSMENT**
+The patient's symptoms and the physical examination findings are indicative of exacerbated allergic rhinitis, consistent with the patient's history of hay fever.
 
-## Plan:
-The patient is being prescribed an antibiotic, Nitrofurantoin, to treat the suspected urinary tract infection. She is instructed to complete the entire course of the medication, even if symptoms improve before completion. The patient is also advised to increase her water intake to help flush out the bacteria and to avoid irritants such as coffee, alcohol, and spicy foods. 
+**PLAN**
+The patient is recommended to use a prescription corticosteroid nasal spray and allergy eye drops. The patient is also advised to limit exposure to allergens. A follow-up visit is scheduled in a few weeks to assess the patient's symptoms. If there is no improvement, allergy shots will be considered.
 
-## Keywords / Tags:
-
-Diagnosis: Urinary Tract Infection (UTI), pending urinalysis confirmation
-
-Treatment: Nitrofurantoin
-
-Symptoms: Increased urinary frequency, dysuria, cloudy and strong-smelling urine, fever, lower abdominal pain
-
-Conditions: Suspected Urinary Tract Infection (UTI)
-
-Allergies: None reported
+**KEYWORDS / TAGS**
+- Diagnosis: Allergic Rhinitis (Hay Fever)
+- Treatment: Corticosteroid nasal spray, allergy eye drops, potential allergy shots
+- Symptoms: Runny and stuffy nose, itchy and watery eyes, sneezing
+- Conditions: Hay Fever
+- Allergies: Pollen (implied from patient's comment about plants with flowers)

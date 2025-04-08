@@ -1,13 +1,13 @@
 # SOAP Note
 
-2. Note SOAP
-- Subjectif: La patiente, âgée de 26 ans, se plaint de fatigue, de palpitations, de maux de tête et d'étourdissements. Elle a un antécédent familial de problèmes de pression artérielle.
-- Objectif: La fréquence cardiaque est rapide à 110 battements par minute, la pression artérielle est à 120/80 mmHg. L'auscultation révèle un clic systolique apical. Les résultats des tests (ECG, échocardiogramme, test d'effort) sont en attente.
-- Évaluation: Le prolapsus de la valve mitrale est suspecté en raison du clic systolique apical à l'auscultation et des symptômes rapportés par la patiente.
-- ## Plan: Attendre les résultats des tests pour finaliser le plan de traitement. Possible prescription de médicaments pour contrôler les symptômes ou recommandation de chirurgie dans les cas graves.  Suivi prévu après réception des résultats des tests.
-3. Mots-clés / Étiquettes
-- Diagnostic: Prolapsus de la valve mitrale
-- Traitement: En attente des résultats des tests
-- Symptômes: Fatigue, palpitations, maux de tête, étourdissements
-- Conditions: Antécédents familiaux de problèmes de pression artérielle
-- Allergies: Aucune indiquée.
+Note SOAP:
+Subjectif: Monsieur Leroux, 32 ans, présente une hypertension diagnostiquée récemment. Il signale des maux de tête occasionnels, qu'il attribue au stress. Il n'a pas d'antécédents de maladie cardiaque.
+Objectif: La tension artérielle est de 150/95 mmHg. Le taux de cholestérol est élevé. Aucun signe de maladie cardiaque n'a été observé lors de l'examen physique. Les tests d'ECG et d'échocardiogramme sont recommandés.
+Évaluation: Hypertension primaire. Les maux de tête peuvent être liés à l'hypertension. Les tests d'ECG et d'échocardiogramme sont nécessaires pour évaluer la santé cardiaque et exclure toute maladie cardiaque sous-jacente.
+## Plan: Commencer un traitement par ramipril. Recommander des modifications du style de vie, y compris une alimentation saine et de l'exercice. Planifier un suivi après les tests pour évaluer l'efficacité du traitement.
+Mots-clés / Étiquettes:
+- Diagnostic: Hypertension primaire
+- Traitement: Ramipril
+- Symptômes: Maux de tête
+- Conditions: Cholestérol élevé
+- Allergies: Aucune signalée

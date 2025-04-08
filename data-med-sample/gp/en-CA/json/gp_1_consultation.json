@@ -2,79 +2,87 @@
   "language": "en-CA",
   "specialty": "gp",
   "type": "consultation",
-  "condition": "depression",
+  "condition": "GERD",
   "patient": {
-    "age": 33,
+    "age": 67,
     "gender": "female"
   },
   "conversation": [
     {
       "speaker": "doctor",
-      "text": "Good morning. What brings you in today?"
+      "text": "Good afternoon. What brings you in today?"
     },
     {
       "speaker": "patient",
-      "text": "Hello, doctor. I've been feeling uncomfortable lately. I've noticed that I have to urinate more frequently than usual and it's quite painful each time. Also, the urine seems to be cloudy and has a strong odour."
+      "text": "Hi doctor. For the past few weeks, I've been having runny and stuffy nose, itchy and watery eyes, and sneezing a lot. It has been worse when I go outside."
     },
     {
       "speaker": "doctor",
-      "text": "I'm sorry to hear that you're not feeling well. Any other symptoms you've noticed?"
+      "text": "I see. Do you have any known allergies?"
     },
     {
       "speaker": "patient",
-      "text": "Yes, I've also been feeling feverish and I've been experiencing lower abdominal pain."
+      "text": "Well, I've always had hay fever in the spring and fall, but this year it seems to be worse."
     },
     {
       "speaker": "doctor",
-      "text": "How long have you been experiencing these symptoms?"
+      "text": "Have you noticed any patterns? Are these symptoms worse at any particular time of the day or in a particular location?"
     },
     {
       "speaker": "patient",
-      "text": "About 4 days now."
+      "text": "They seem to be worse in the morning and when I am near plants or flowers."
     },
     {
       "speaker": "doctor",
-      "text": "Alright. Do you have any allergies?"
+      "text": "Have you been using any medications so far?"
     },
     {
       "speaker": "patient",
-      "text": "No, not that I am aware of."
+      "text": "I've been using over-the-counter antihistamines, but they aren't helping much."
     },
     {
       "speaker": "doctor",
-      "text": "Ok. Let me conduct a physical exam, and then we'll take a urine sample for testing."
+      "text": "Thank you for the information. Let's conduct a physical examination, mainly focusing on your nasal passage and eyes."
     },
     {
       "speaker": "doctor",
-      "text": "Your vitals are stable, but the lower abdomen seems tender. We’ll need to send your urine sample for testing to confirm, but your symptoms suggest a urinary tract infection."
+      "text": "Thank you for your patience. Based on your symptoms and the examination, it seems like your allergic rhinitis is acting up. This is consistent with your history of hay fever."
     },
     {
       "speaker": "patient",
-      "text": "Oh no, is it serious, doctor?"
+      "text": "Is there anything I can do to help this?"
     },
     {
       "speaker": "doctor",
-      "text": "It's quite common, especially in women. It's usually caused by bacteria entering the urinary tract. If left untreated, it can lead to more serious complications. But with early treatment, you should be fine."
-    },
-    {
-      "speaker": "doctor",
-      "text": "I'll prescribe an antibiotic called Nitrofurantoin, which should help clear the infection. It's important to finish the whole course of antibiotics even if you start feeling better."
+      "text": "Yes, there are several options. I would recommend a prescription-strength antihistamine, a corticosteroid nasal spray, and allergy eye drops. Also, try to limit your exposure to allergens."
     },
     {
       "speaker": "patient",
-      "text": "Okay, I understand."
+      "text": "Okay, thank you doctor."
     },
     {
       "speaker": "doctor",
-      "text": "Also, drink plenty of water to help flush out the bacteria. Avoid coffee, alcohol, and spicy foods as they can irritate your bladder."
-    },
-    {
-      "speaker": "doctor",
-      "text": "We'll schedule a follow-up appointment in a week to check on your progress. If your symptoms get worse or you develop new symptoms like back pain or vomiting, please come in immediately."
+      "text": "I also recommend that you come in for a follow-up visit in 4 weeks to assess your symptoms. If they're not improving, we might need to consider allergy shots."
     },
     {
       "speaker": "patient",
-      "text": "Thank you, doctor. I'll do as you advise."
+      "text": "Sounds good. I'll do that."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Great. Just one more thing, do you get your flu shot every year?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I usually don't."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Given your allergies, it would be beneficial for you to get a flu shot. It can help protect you from getting the flu which could potentially worsen your allergic rhinitis."
+    },
+    {
+      "speaker": "patient",
+      "text": "I'll consider that. Thank you."
     }
   ]
 }

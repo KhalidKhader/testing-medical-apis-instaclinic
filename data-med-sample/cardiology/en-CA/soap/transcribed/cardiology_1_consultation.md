@@ -1,25 +1,30 @@
 # SOAP Note
 
 ## Subjective: 
-The patient has recently been experiencing episodes of rapid heartbeat, especially at rest in the evenings, lasting for a few minutes at a time. During these episodes, the patient feels dizzy, short of breath, and has palpitations; once nearly fainting. No chest pain, sweating, or leg swelling has been reported. The patient takes daily Aspirin for blood pressure management and has a known allergy to Penicillin. The patient's family physician has suggested the possibility of ventricular tachycardia.
+The patient, a male of unknown age, presented with a history of a recent myocardial infarction treated in the emergency room. He described experiencing a heavy feeling in his chest, severe pain radiating into his left arm, sweating, and shortness of breath at the time of the incident. He continues to experience fatigue and chest discomfort on exertion post-incident, but denies any changes in appetite or weight, fever, cough, or leg swelling.
 
-## Objective:
-The patient's blood pressure and heart rate are slightly elevated. No immediate signs of distress are evident during the consultation. Further tests including an EKG, echocardiogram, and possibly a stress test have been planned.
+## Objective: 
+Physical examination revealed a slightly elevated heart rate and blood pressure, consistent with the patient's recent myocardial infarction. No other remarkable findings were reported. The patient is scheduled for an ECG, echocardiogram, and stress test to further assess heart function and extent of cardiac damage.
 
-## Assessment:
-The patient's symptoms and slightly elevated blood pressure and heart rate suggest the possibility of ventricular tachycardia. However, a definitive diagnosis will need to be confirmed by further testing.
+## Assessment: 
+The patient's symptoms and physical examination findings are indicative of a significant myocardial infarction with possible ongoing angina.
 
-## Plan:
-Pending confirmation of the diagnosis, potential treatment options include medication management, lifestyle modifications, and possibly catheter ablation. The patient will undergo further tests first to establish a diagnosis before proceeding with a detailed treatment plan.
+## Plan: 
+The patient is advised to start medication therapy, including ACE inhibitor, beta-blocker, statin, and potentially nitroglycerin for chest pain. Lifestyle modifications including smoking cessation (if applicable), a heart-healthy diet, and regular exercise are also recommended. 
 
 ## Keywords / Tags:
 
-Diagnosis: Ventricular tachycardia (suspected)
+Diagnosis: 
+Myocardial Infarction, Angina
 
-Treatment: Aspirin (current), potential medication management, lifestyle modifications, catheter ablation
+Treatment: 
+Medication (ACE inhibitor, Beta-blocker, Statin, Nitroglycerin), Lifestyle modifications (Diet, Exercise, Smoking cessation)
 
-Symptoms: Rapid heartbeat, dizziness, shortness of breath, palpitations, near fainting
+Symptoms: 
+Chest pain, Shortness of breath, Sweating, Left arm pain, Fatigue, Chest discomfort on exertion
 
-Conditions: Elevated blood pressure, potential ventricular tachycardia
+Conditions: 
+Heart disease
 
-Allergies: Penicillin
+Allergies: 
+None mentioned

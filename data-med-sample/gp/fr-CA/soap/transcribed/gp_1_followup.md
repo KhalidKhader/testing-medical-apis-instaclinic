@@ -1,33 +1,23 @@
 # SOAP Note
 
-Note SOAP:
+Note SOAP
 
-Subjectif:
-Le patient rapporte une amélioration significative de ses symptômes depuis notre dernière visite. Il mentionne que la sensation de brûlure a disparu et que la fréquence de ses visites aux toilettes a diminué. Il n'a pas noté d'effets secondaires de l'antibiotique prescrit. Il a pris tous les médicaments comme prescrit.
+Subjectif 
+La patiente, âgée de 54 ans, rapporte une diminution de la douleur depuis le début du traitement par des anti-inflammatoires non stéroïdiens (AINS). Elle n'a signalé aucun effet secondaire à ce médicament. Toutefois, elle continue d'éprouver des douleurs après une activité physique. Elle indique que la physiothérapie a aidé à améliorer la mobilité de ses genoux.
 
-Objectif:
-L'examen physique du patient ne présente aucune anomalie. Les résultats du test d'urine indiquent que l'infection urinaire a disparu.
+Objectif 
+À l'examen, il y a une réduction du gonflement au niveau des genoux. La mobilité du genou semble également s'améliorer par rapport à la dernière visite.
 
-Évaluation:
-Le patient semble avoir répondu favorablement au traitement antibiotique pour une infection urinaire.
+Évaluation 
+Il semble que l'arthrose du genou de la patiente réponde bien au traitement par AINS et à la physiothérapie.
 
-## Plan:
-Le traitement par antibiotiques est terminé. Le patient est conseillé de continuer à boire beaucoup d'eau et de suivre les recommandations pour prévenir une autre infection urinaire.
+Plan 
+La patiente doit continuer les AINS et la physiothérapie. Un médicament protecteur gastrique sera ajouté pour prévenir les effets secondaires gastro-intestinaux des AINS. Le patient sera revu dans trois mois, sauf en cas d'aggravation des symptômes.
 
-Mots-clés / Étiquettes:
+Mots-clés / Étiquettes
 
-Diagnostique:
-- Infection urinaire
-
-Traitement:
-- Antibiotiques
-
-Symptômes:
-- Sensation de brûlure
-- Mictions fréquentes
-
-Conditions:
-- Infection urinaire
-
-Allergies:
-- Aucune mentionnée
+Diagnostic: Arthrose du genou
+Traitement: Anti-inflammatoires non stéroïdiens, physiothérapie, protecteur gastrique
+Symptômes: Douleur au genou, douleur après l'activité physique, amélioration de la mobilité
+Conditions: Arthrose du genou
+Allergies: Aucune mentionnée

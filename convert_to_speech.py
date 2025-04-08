@@ -2,7 +2,7 @@
 """
 Convert generated medical conversations to speech.
 This script creates audio files with different voice characteristics for doctor and patient,
-and adds random background noise to simulate real-world conditions.
+producing crystal clear audio with maximum clarity.
 
 Usage:
     python convert_to_speech.py --specialty cardiology --lang en-CA
@@ -50,28 +50,13 @@ try:
     HAS_LIBROSA = True
 except ImportError:
     HAS_LIBROSA = False
-    print("librosa not available. Advanced audio processing will be limited.")
-
-try:
-    import noisereduce as nr
-    HAS_NOISEREDUCE = True
-except ImportError:
-    HAS_NOISEREDUCE = False
-    print("noisereduce not available. Noise processing will be limited.")
+    print("librosa not available. Voice transformation will be limited.")
 
 # Load environment variables
 load_dotenv()
 
 # Base directory for medical data
 BASE_DIR = "data-med"
-
-# Define background noise types and probabilities
-BACKGROUND_NOISES = {
-    "office": 0.4,      # Office background noise (typing, distant voices)
-    "hospital": 0.3,    # Hospital sounds (beeping, distant announcements)
-    "quiet": 0.2,       # Almost silent room (very light background noise)
-    "home": 0.1         # Home environment (occasional household sounds)
-}
 
 class AudioGenerator:
     """Generator for audio from text conversations with different speakers."""
@@ -128,7 +113,7 @@ class AudioGenerator:
             print(f"Error in transformers TTS: {e}")
             return None, None
     
-    def generate_speech_gtts(self, text, language="en"):
+    def generate_speech_gtts(self, text, language="en", voice_type="standard"):
         """Generate speech using gTTS as a fallback."""
         if not HAS_GTTS:
             print("gTTS not available. Cannot generate speech.")
@@ -140,7 +125,8 @@ class AudioGenerator:
                 temp_path = temp_file.name
             
             # Generate speech with gTTS
-            tts = gTTS(text=text, lang=language[:2], slow=False)
+            # NOTE: gTTS doesn't support different voice types, but we'll keep the parameter for consistency
+            tts = gTTS(text=text, lang=language[:2], slow=(voice_type == "slow"))
             tts.save(temp_path)
             
             # Load audio file and convert to numpy array
@@ -166,147 +152,85 @@ class AudioGenerator:
                 os.remove(temp_path)
             return None, None
     
-    def transform_voice(self, audio, sample_rate, is_doctor=True, gender="male", age=45):
-        """Transform voice characteristics to better match speaker."""
-        if not HAS_LIBROSA:
-            return audio
-        
+    def generate_french_speech(self, text, is_doctor=True, gender="male"):
+        """Generate French Canadian speech with different voices for doctor and patient."""
         try:
-            # Use extreme voice transformations to ensure clear diarization
+            # Use only Canadian French (fr-CA) as required by the client
+            lang_code = "fr-CA"
+            
+            # Different voice configurations for doctor vs patient, but all using Canadian French
             if is_doctor:
                 if gender == "male":
-                    # Male doctor: extremely deep voice, authoritative
-                    pitch_shift = -7.0  # Extremely deep voice
-                    tempo = 0.8  # Slower speech rate for authority
-                else:  # female doctor
-                    # Female doctor: distinctly professional tone
-                    pitch_shift = 5.0  # Higher voice
-                    tempo = 0.85  # Slightly slower speech rate
-            else:  # patient
+                    print(f"Using Canadian French male doctor voice")
+                    # Create initial speech
+                    audio, sample_rate = self.generate_speech_gtts(text, "fr", "slow")
+                else:
+                    print(f"Using Canadian French female doctor voice")
+                    # Create initial speech
+                    audio, sample_rate = self.generate_speech_gtts(text, "fr", "standard")
+            else:
                 if gender == "male":
-                    # Male patient: distinctly different from doctor
-                    pitch_shift = -2.0  # Less deep than doctor but still masculine
-                    tempo = 1.15  # Faster speech rate to indicate nervousness
-                else:  # female patient
-                    # Female patient: distinctly different from doctor
-                    pitch_shift = 8.0  # Very high voice
-                    tempo = 1.05  # Slightly faster speech rate
+                    print(f"Using Canadian French male patient voice")
+                    # Create initial speech
+                    audio, sample_rate = self.generate_speech_gtts(text, "fr", "standard")
+                else:
+                    print(f"Using Canadian French female patient voice")
+                    # Create initial speech
+                    audio, sample_rate = self.generate_speech_gtts(text, "fr", "standard")
             
-            # Apply age-based adjustments
-            if age > 65:  # Elderly voice
-                tempo *= 0.9  # Slower for elderly
-                # Add a slight tremor for elderly voices
-                tremor = np.sin(2 * np.pi * 8 * np.arange(len(audio)) / sample_rate) * 0.03
-                audio = audio + tremor[:len(audio)]
-            elif age < 18:  # Young voice
-                pitch_shift += 2.0  # Higher pitch for younger
-                tempo *= 1.1  # Faster for younger
+            # Apply minimalist voice transformations to differentiate speakers
+            # without adding noise or distortion
+            if HAS_LIBROSA and audio is not None:
+                try:
+                    if is_doctor:
+                        if gender == "male":
+                            # Male doctor: slightly deeper voice
+                            audio = librosa.effects.pitch_shift(audio, sr=sample_rate, n_steps=-2.0)
+                        else:
+                            # Female doctor: slightly higher voice
+                            audio = librosa.effects.pitch_shift(audio, sr=sample_rate, n_steps=2.0)
+                    else:
+                        if gender == "male":
+                            # Male patient: neutral with slight pitch adjustment
+                            audio = librosa.effects.pitch_shift(audio, sr=sample_rate, n_steps=1.0)
+                        else:
+                            # Female patient: higher pitch
+                            audio = librosa.effects.pitch_shift(audio, sr=sample_rate, n_steps=3.0)
+                except Exception as e:
+                    print(f"Error in voice transformation, using untransformed voice: {e}")
             
-            # Apply pitch shifting
-            y_shifted = librosa.effects.pitch_shift(audio, sr=sample_rate, n_steps=pitch_shift)
-            
-            # Apply time stretching for speech rate
-            y_stretched = librosa.effects.time_stretch(y_shifted, rate=tempo)
-            
-            return y_stretched
-        
-        except Exception as e:
-            print(f"Error in voice transformation: {e}")
-            return audio
-    
-    def generate_background_noise(self, length, sample_rate):
-        """Generate realistic background noise for medical conversations."""
-        # Choose noise type based on probability
-        noise_type = random.choices(
-            list(BACKGROUND_NOISES.keys()),
-            weights=list(BACKGROUND_NOISES.values()),
-            k=1
-        )[0]
-        
-        # Generate different types of background noise
-        if noise_type == "office":
-            # Office noise: light hum with occasional typing
-            noise = np.random.normal(0, 0.005, size=length)
-            # Add occasional typing sounds
-            for _ in range(int(length / sample_rate * 2)):  # 2 typing bursts per second
-                if random.random() > 0.7:  # Only 30% of possible typing sounds
-                    start = random.randint(0, length - int(0.2 * sample_rate))
-                    end = min(start + int(0.2 * sample_rate), length)
-                    noise[start:end] += np.random.normal(0, 0.02, size=end-start)
-        
-        elif noise_type == "hospital":
-            # Hospital noise: equipment beeps and background voices
-            noise = np.random.normal(0, 0.01, size=length)
-            # Add beeping sounds
-            beep_interval = sample_rate * 2  # Every 2 seconds
-            for i in range(0, length, beep_interval):
-                if i + int(0.1 * sample_rate) < length:
-                    noise[i:i+int(0.1*sample_rate)] += 0.1 * np.sin(2*np.pi*1000*np.arange(int(0.1*sample_rate))/sample_rate)
-        
-        elif noise_type == "home":
-            # Home environment: occasional background sounds
-            noise = np.random.normal(0, 0.003, size=length)
-            # Add random household sounds
-            for _ in range(3):  # Add 3 random household sounds
-                if random.random() > 0.5:
-                    start = random.randint(0, length - int(0.5 * sample_rate))
-                    end = min(start + int(0.5 * sample_rate), length)
-                    noise[start:end] += np.random.normal(0, 0.03, size=end-start)
-        
-        else:  # "quiet" or default
-            # Very quiet room with minimal background noise
-            noise = np.random.normal(0, 0.002, size=length)
-        
-        # Ensure noise level is appropriate (not too loud)
-        noise_level = random.uniform(0.01, 0.05)  # Random noise level between 1-5%
-        noise = noise_level * noise / np.max(np.abs(noise))
-        
-        return noise
-    
-    def apply_audio_enhancements(self, audio, sample_rate):
-        """Apply enhancements to make the audio more realistic."""
-        if not HAS_LIBROSA:
-            return audio
-        
-        try:
-            # Apply a subtle room reverb effect
-            if random.random() > 0.3:  # 70% chance of reverb
-                reverb_level = random.uniform(0.1, 0.3)
-                # Create a simple room impulse response
-                ir_len = int(sample_rate * 0.5)  # 500ms reverb
-                ir = np.zeros(ir_len)
-                for i in range(5):  # Add a few reflections
-                    pos = int(sample_rate * random.uniform(0.01, 0.3))
-                    if pos < ir_len:
-                        ir[pos] = reverb_level * (0.9 ** i)
+            # Ensure no DC offset (which can cause noise)
+            if audio is not None:
+                audio = audio - np.mean(audio)
                 
-                # Apply reverb
-                audio_reverb = np.convolve(audio, ir)[:len(audio)]
-                audio = audio + audio_reverb * reverb_level
+                # Apply a gentle noise gate
+                # This removes any background noise that might be in the recording
+                noise_floor = 0.005  # -46dB, very low threshold
+                gate_mask = np.abs(audio) < noise_floor
+                audio[gate_mask] = 0.0
             
-            # Add subtle compression
-            if random.random() > 0.5:  # 50% chance of compression
-                # Simple compression: reduce the dynamic range
-                threshold = 0.5
-                ratio = 4.0
-                makeup_gain = 1.2
-                
-                # Apply compression
-                mask = np.abs(audio) > threshold
-                audio[mask] = threshold + (np.abs(audio[mask]) - threshold) / ratio * np.sign(audio[mask])
-                audio = audio * makeup_gain
+            return audio, sample_rate
             
-            # Normalize audio
-            audio = audio / np.max(np.abs(audio))
-            
-            return audio
-        
         except Exception as e:
-            print(f"Error in audio enhancements: {e}")
-            return audio
+            print(f"Error generating French speech: {e}")
+            # Fallback to standard Canadian French
+            return self.generate_speech_gtts(text, "fr")
+    
+    def transform_voice(self, audio, sample_rate, is_doctor=True, gender="male", age=45, language="en"):
+        """Empty function - no longer applying transformations in this way"""
+        # Return the original audio without modification
+        # All voice transformations are now handled in generate_french_speech
+        return audio
+    
+    def normalize_audio(self, audio):
+        """Simple peak normalization for consistent volume."""
+        if np.max(np.abs(audio)) > 0:
+            # Simple peak normalization to 90% to avoid any clipping
+            return audio / np.max(np.abs(audio)) * 0.9
+        return audio
     
     def process_conversation(self, conversation_file, output_file, language="en-CA"):
-        """Process a conversation file and create an audio file with different speakers."""
+        """Process a conversation file and create a crystal clear audio file with different speakers."""
         try:
             # Load the conversation data
             with open(conversation_file, 'r', encoding='utf-8') as f:
@@ -316,8 +240,7 @@ class AudioGenerator:
             conversation = data.get("conversation", [])
             metadata = data.get("metadata", {})
             
-            # Extract age and gender for voice characteristics
-            patient_age = metadata.get("patient_age", 45)
+            # Extract gender for voice selection only - no transformations
             patient_gender = metadata.get("patient_gender", "male")
             
             # Convert gender to standardized form for our processing
@@ -326,9 +249,8 @@ class AudioGenerator:
             else:
                 patient_gender = "male"
             
-            # Always use contrasting doctor gender for clearer diarization
+            # Use contrasting gender for doctor voice
             doctor_gender = "female" if patient_gender == "male" else "male"
-            doctor_age = random.randint(35, 65)
             
             # Language code for TTS
             lang_code = language.split('-')[0]  # en or fr
@@ -345,28 +267,27 @@ class AudioGenerator:
                 
                 print(f"Processing {speaker} utterance: {text[:50]}{'...' if len(text) > 50 else ''}")
                 
-                # Determine speaker characteristics
+                # Determine speaker gender only
                 is_doctor = speaker.lower() == "doctor"
                 gender = doctor_gender if is_doctor else patient_gender
-                age = doctor_age if is_doctor else patient_age
                 
-                # Generate speech using appropriate method
-                if self.use_transformer_tts and lang_code == "en":
+                # Generate speech using appropriate method based on language
+                if lang_code == "fr":
+                    # For French, use our specialized function with distinct voices
+                    audio, sample_rate = self.generate_french_speech(text, is_doctor, gender)
+                elif self.use_transformer_tts and lang_code == "en":
                     # Use high-quality transformers model for English
                     audio, sample_rate = self.generate_speech_transformers(text, gender)
                 else:
-                    # Use gTTS for all other cases
+                    # Use standard gTTS for other languages
                     audio, sample_rate = self.generate_speech_gtts(text, lang_code)
                 
                 if audio is None:
                     print(f"Failed to generate speech for utterance {i+1}")
                     continue
                 
-                # Transform voice to better match speaker characteristics
-                audio = self.transform_voice(audio, sample_rate, is_doctor, gender, age)
-                
-                # Apply enhancements for realism
-                audio = self.apply_audio_enhancements(audio, sample_rate)
+                # Normalize audio
+                audio = self.normalize_audio(audio)
                 
                 # Add to segments
                 audio_segments.append((audio, sample_rate))
@@ -421,32 +342,12 @@ class AudioGenerator:
             # Trim excess space
             combined_audio = combined_audio[:pos]
             
-            # Generate background noise for the entire conversation
-            background_noise = self.generate_background_noise(len(combined_audio), sr)
-            
-            # Mix conversation with background noise
-            mixed_audio = combined_audio + background_noise
-            
-            # Apply optional noise reduction to make it more realistic 
-            # (sometimes real recordings have noise reduction applied)
-            if HAS_NOISEREDUCE and random.random() > 0.5:  # 50% chance of noise reduction
-                try:
-                    # Apply light noise reduction
-                    mixed_audio = nr.reduce_noise(
-                        y=mixed_audio, 
-                        sr=sr,
-                        prop_decrease=random.uniform(0.3, 0.6),  # Random amount of noise reduction
-                        stationary=False  # Non-stationary noise
-                    )
-                except Exception as e:
-                    print(f"Error applying noise reduction: {e}")
-            
-            # Normalize final audio
-            mixed_audio = mixed_audio / np.max(np.abs(mixed_audio))
+            # Final normalization
+            combined_audio = self.normalize_audio(combined_audio)
             
             # Save the audio file
-            sf.write(output_file, mixed_audio, sr)
-            print(f"Successfully created audio file: {output_file}")
+            sf.write(output_file, combined_audio, sr)
+            print(f"Successfully created pure, unprocessed audio file: {output_file}")
             
             return True
             

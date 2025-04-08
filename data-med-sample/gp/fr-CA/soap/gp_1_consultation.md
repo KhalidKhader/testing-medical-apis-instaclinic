@@ -1,13 +1,17 @@
 # SOAP Note
 
 Note SOAP:
-Subjectif: Femme de 60 ans se présentant avec des symptômes d'infection des voies urinaires, notamment une miction fréquente, une sensation de brûlure pendant la miction et une urine trouble. A déjà eu une infection urinaire dans le passé. Pas de fièvre, mais légère douleur dans le bas du dos. Pas d'antécédents de maladies rénales ou de diabète.
-Objectif: L'examen physique est normal. Les résultats du test d'urine montrent des signes d'infection.
-Évaluation: Infection des voies urinaires
-## Plan: Prescrire des antibiotiques. Conseiller le patient de boire beaucoup d'eau et d'éviter les irritants de la vessie. Suivi dans une semaine.
+Subjectif:
+La patiente de 54 ans se plaint de douleurs articulaires constantes, plus particulièrement aux genoux et aux mains, qui se sont aggravées récemment. Les douleurs sont pires après les activités physiques et par temps froid. Le repos et la chaleur semblent soulager les symptômes.
+Objectif:
+Examen physique révèle raideur et gonflement des articulations des genoux et des mains. Perte de mobilité notée au niveau des genoux.
+Évaluation:
+Les symptômes du patient sont compatibles avec un diagnostic d'arthrose.
+## Plan:
+Prescrire des anti-inflammatoires non stéroïdiens pour la douleur. Recommander de l'exercice régulier pour maintenir la mobilité des articulations. Orienter le patient vers un physiothérapeute. Suivi dans trois mois.
 Mots-clés / Étiquettes:
-- Diagnostic: Infection des voies urinaires
-- Traitement: Antibiotiques
-- Symptômes: Miction fréquente, sensation de brûlure pendant la miction, urine trouble, douleur dans le bas du dos
-- Conditions: Aucune condition médicale sous-jacente connue
-- Allergies: Aucune allergie mentionnée
+Diagnostique: Arthrose
+Traitement: Anti-inflammatoires non stéroïdiens, physiothérapie
+Symptômes: Douleurs articulaires, raideur, gonflement, perte de mobilité
+Conditions: Arthrose
+Allergies: Aucune mentionnée

@@ -4,61 +4,69 @@
   "type": "followup",
   "condition": "allergic rhinitis",
   "patient": {
-    "age": 20,
+    "age": 52,
     "gender": "male"
   },
   "conversation": [
     {
       "speaker": "doctor",
-      "text": "Good morning. How have you been feeling since our last visit?"
+      "text": "Good morning. How have you been since our last visit?"
     },
     {
       "speaker": "patient",
-      "text": "Hello, doctor. I've been feeling better. The pain while urinating has decreased significantly, and I don't have to go as often. The fever and abdominal pain are also gone."
+      "text": "Hi doctor. I've been a bit better, but I still have some symptoms."
     },
     {
       "speaker": "doctor",
-      "text": "That's good to hear. Have you been taking the prescribed Nitrofurantoin twice daily as advised?"
+      "text": "Can you tell me more about these symptoms? Have they improved, worsened, or stayed the same?"
     },
     {
       "speaker": "patient",
-      "text": "Yes, I've been taking the medication exactly as you instructed."
+      "text": "The sneezing and runny nose have improved a bit, but the itchy and watery eyes are about the same."
     },
     {
       "speaker": "doctor",
-      "text": "Excellent. Have you noticed any side effects from the medication?"
+      "text": "Have you been taking the prescribed antihistamines, nasal spray, and eye drops regularly?"
     },
     {
       "speaker": "patient",
-      "text": "No, doctor. I haven't noticed any side effects."
+      "text": "Yes, I've been using them as instructed."
     },
     {
       "speaker": "doctor",
-      "text": "Good. Let's proceed with a physical examination."
-    },
-    {
-      "speaker": "doctor",
-      "text": "Your vitals are stable, and your lower abdomen is no longer tender. Your lab results also came back, and it confirms that you had a urinary tract infection. However, it seems the antibiotics are working well as your symptoms have improved."
+      "text": "Have you noticed any side effects from these medications?"
     },
     {
       "speaker": "patient",
-      "text": "That's a relief. So, is the infection all gone now?"
+      "text": "No, I haven't had any side effects."
     },
     {
       "speaker": "doctor",
-      "text": "It seems to be improving, but it's important that you finish the full course of antibiotics. This will ensure that the infection is completely cleared."
+      "text": "Good to hear. Let's proceed with a physical examination."
     },
     {
       "speaker": "doctor",
-      "text": "Continue drinking plenty of water and avoiding bladder irritants like coffee, alcohol, and spicy foods."
-    },
-    {
-      "speaker": "doctor",
-      "text": "We'll schedule another follow-up appointment in two weeks to make sure everything is back to normal. If your symptoms return or if you develop new symptoms, please come in immediately."
+      "text": "Thank you for your patience. Your nasal passage looks less swollen, which suggests the treatment is working. However, since your eye symptoms persist, we might need to adjust your treatment. I would recommend a stronger allergy eye drop."
     },
     {
       "speaker": "patient",
-      "text": "Thank you, doctor. I'll continue with the medication and will follow your advice."
+      "text": "Okay, thank you doctor."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Great. Did you get a chance to think about getting the flu shot?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I'd like to get that today."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Excellent decision. We'll get that done for you today. I also want to see you again in two weeks to see how the new eye drops are working."
+    },
+    {
+      "speaker": "patient",
+      "text": "Sounds good. I'll do that."
     }
   ]
 }

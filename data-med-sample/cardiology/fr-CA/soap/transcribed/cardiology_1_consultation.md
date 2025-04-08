@@ -1,23 +1,20 @@
 # SOAP Note
 
-Note SOAP
+**SUBJECTIF**
+Monsieur Leroux a été référé par son médecin de famille en raison d'une hypertension. Il rapporte qu'il a parfois des maux de tête, qu'il attribuait auparavant au stress au travail. Il n'a jamais subi d'ECG ou d'échocardiogramme. Il semble inquiet de sa condition mais est prêt à faire les changements nécessaires pour améliorer sa santé.
 
-Subjectif: 
-La patiente de 26 ans se présente avec une plainte principale de fatigue, palpitations, maux de tête et étourdissements qui ont commencé il y a environ un mois. Elle a mentionné que son père a des problèmes de pression artérielle, mais n'a pas mentionné d'autres antécédents familiaux significatifs de maladies cardiaques.
+**OBJECTIF**
+La tension artérielle du patient est élevée lors de la visite. Ses analyses de sang montrent également un taux de cholestérol élevé. Aucun autre symptôme tel que des vertiges, des bourdonnements dans les oreilles ou des problèmes de vision n'est rapporté. Aucun signe d'urgence hypertensive n'est présent.
 
-Objectif: 
-L'examen physique révèle une fréquence cardiaque rapide à 110 battements par minute et une pression artérielle de 120/80 mmHg. L'auscultation cardiaque a révélé un clic systolique apical. Un ECG, un échocardiogramme et un test d'effort ont été commandés.
+**ÉVALUATION**
+Le patient est hypertendu avec des maux de tête potentiellement liés. Son taux de cholestérol élevé pourrait également contribuer à son hypertension. Aucune autre condition médicale n'a été identifiée lors de la visite.
 
-Évaluation: 
-Les symptômes de la patiente et les résultats de l'auscultation sont évocateurs d'un prolapsus de la valve mitrale. Cependant, une confirmation définitive nécessite les résultats des tests demandés.
+**PLAN**
+Le plan de traitement initial comprend la prescription de ramipril pour aider à contrôler la pression artérielle du patient. Il est également conseillé au patient de modifier son style de vie, notamment en améliorant son alimentation et en augmentant son niveau d'activité physique. Un suivi sera nécessaire pour évaluer l'efficacité du traitement.
 
-## Plan: 
-Une fois les résultats des tests reçus, un plan de traitement sera mis en place qui pourrait varier de la surveillance à la prise de médicaments pour contrôler les symptômes, à la chirurgie dans les cas plus graves. La patiente est conseillée de mener une vie saine, y compris de faire de l'exercice régulièrement et de maintenir une alimentation équilibrée. Un suivi est prévu après réception des résultats des tests.
-
-Mots-clés / Étiquettes: 
-
-- Diagnostic: Prolapsus de la valve mitrale (suspecté)
-- Traitement: En attente des résultats des tests
-- Symptômes: Fatigue, palpitations, maux de tête, étourdissements
-- Conditions: Antécédents familiaux de problèmes de pression artérielle
+**MOTS-CLÉS / ÉTIQUETTES**
+- Diagnostic: Hypertension, taux de cholestérol élevé
+- Traitement: Ramipril, modifications du style de vie (alimentation saine, activité physique)
+- Symptômes: Maux de tête
+- Conditions: Stress au travail
 - Allergies: Aucune mentionnée

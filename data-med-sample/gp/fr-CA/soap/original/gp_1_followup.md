@@ -1,13 +1,17 @@
 # SOAP Note
 
 Note SOAP:
-Subjectif: La patiente rapporte une amélioration de ses symptômes d'infection des voies urinaires. Elle n'a pas manqué de doses d'antibiotiques et ne rapporte aucun effet secondaire.
-Objectif: L'examen physique est normal. Les résultats du test d'urine montrent une résolution de l'infection.
-Évaluation: Résolution de l'infection des voies urinaires
-## Plan: Aucun médicament supplémentaire n'est nécessaire. La patiente doit continuer à boire beaucoup d'eau et à suivre les conseils pour prévenir une autre infection. Aucun suivi spécifique n'est nécessaire à moins que de nouveaux symptômes n'apparaissent.
+Subjectif:
+La patiente de 54 ans rapporte une réduction de la douleur après avoir commencé le traitement anti-inflammatoire. Aucun effet secondaire n'a été signalé. Les douleurs persistent après l'activité physique mais la physiothérapie a aidé à améliorer la mobilité du genou.
+Objectif:
+L'examen physique révèle une diminution du gonflement des articulations. Une amélioration de la mobilité du genou est notée.
+Évaluation:
+L'arthrose de la patiente semble répondre au traitement anti-inflammatoire et à la physiothérapie.
+## Plan:
+Continuer les anti-inflammatoires et la physiothérapie. Ajouter un protecteur gastrique pour prévenir les effets secondaires des anti-inflammatoires. Suivi dans trois mois à moins que les symptômes ne s'aggravent.
 Mots-clés / Étiquettes:
-- Diagnostic: Résolution de l'infection des voies urinaires
-- Traitement: Aucun médicament actuel
-- Symptômes: Amélioration des symptômes d'infection des voies urinaires
-- Conditions: Aucune condition médicale sous-jacente connue
-- Allergies: Aucune allergie mentionnée
+Diagnostique: Arthrose
+Traitement: Anti-inflammatoires non stéroïdiens, physiothérapie, protecteur gastrique
+Symptômes: Douleur articulaire, gonflement, amélioration de la mobilité
+Conditions: Arthrose
+Allergies: Aucune mentionnée

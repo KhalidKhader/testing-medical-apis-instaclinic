@@ -2,10 +2,10 @@
   "language": "fr-CA",
   "specialty": "gp",
   "type": "consultation",
-  "condition": "rhinite allergique",
+  "condition": "diabète de type 2",
   "patient": {
-    "age": 33,
-    "gender": "homme"
+    "age": 38,
+    "gender": "femme"
   },
   "conversation": [
     {
@@ -14,55 +14,47 @@
     },
     {
       "speaker": "patient",
-      "text": "Bonjour docteur, je crois que j'ai une infection urinaire. J'ai un besoin fréquent d'uriner, avec une sensation de brûlure lorsque j'y vais. Et l'urine est un peu trouble aussi."
+      "text": "Bonjour Docteur, j'ai des douleurs aux articulations depuis quelque temps, surtout au niveau des genoux et des mains. Je pense que ça pourrait être de l'arthrose, ma mère en avait."
     },
     {
       "speaker": "doctor",
-      "text": "Je suis désolé d'entendre cela. Avez-vous déjà eu une infection urinaire auparavant?"
+      "text": "Je suis désolé d'entendre cela. Depuis combien de temps ressentez-vous ces douleurs?"
     },
     {
       "speaker": "patient",
-      "text": "Oui, c'est déjà arrivé il y a quelques années."
+      "text": "Je dirais depuis environ six mois, mais elles se sont aggravées récemment."
     },
     {
       "speaker": "doctor",
-      "text": "D'accord. Avez-vous de la fièvre ou des douleurs dans le bas du dos?"
+      "text": "D'accord. Avez-vous remarqué que quelque chose en particulier aggrave vos symptômes? Par exemple, vos douleurs sont-elles pires après des activités physiques, ou en cas de temps froid?"
     },
     {
       "speaker": "patient",
-      "text": "Non, pas de fièvre, mais j'ai une légère douleur dans le bas du dos."
+      "text": "Oui, elles sont généralement pires après avoir jardiné ou fait de la marche. Et le temps froid semble également les aggraver."
     },
     {
       "speaker": "doctor",
-      "text": "Je vois. Avez-vous des antécédents de maladies rénales ou de diabète?"
+      "text": "Compris. Vos douleurs sont-elles constantes ou intermittentes? Est-ce que quelque chose soulage vos symptômes?"
     },
     {
       "speaker": "patient",
-      "text": "Non, aucun de ces deux."
+      "text": "Les douleurs sont plus ou moins constantes, mais elles s'intensifient par moments. Le repos et la chaleur semblent les soulager un peu."
     },
     {
       "speaker": "doctor",
-      "text": "D'accord madame, vos symptômes et vos résultats de test d'urine suggèrent une infection des voies urinaires. Ce n'est pas grave et il y a plusieurs options de traitement."
+      "text": "D'accord, je vais maintenant vous examiner. (Après examen) Je note une certaine raideur et un gonflement de vos articulations. Il semble que vous ayez une certaine perte de mobilité dans les genoux."
     },
     {
       "speaker": "patient",
-      "text": "D'accord. Que recommandez-vous, docteur?"
+      "text": "Oui, c'est assez douloureux."
     },
     {
       "speaker": "doctor",
-      "text": "Je vous prescrirai des antibiotiques pour l'infection. Vous devriez commencer à vous sentir mieux dans quelques jours. Assurez-vous de boire beaucoup d'eau et d'éviter le café, l'alcool et les épices qui peuvent irriter la vessie."
+      "text": "Merci pour votre patience. Il semble que vos symptômes correspondent à ceux de l'arthrose, qui est une dégradation du cartilage des articulations. C'est une affection courante, surtout chez les personnes de votre âge. Je vais vous prescrire des anti-inflammatoires non stéroïdiens pour soulager la douleur. Vous devriez également envisager de faire de l'exercice régulièrement pour maintenir la mobilité de vos articulations, mais évitez les activités qui aggravent vos symptômes. Je vais également vous orienter vers un physiothérapeute."
     },
     {
       "speaker": "patient",
-      "text": "D'accord, je le ferai. Y a-t-il quelque chose que je peux faire pour prévenir ces infections à l'avenir?"
-    },
-    {
-      "speaker": "doctor",
-      "text": "Certainement. Boire beaucoup d'eau, uriner régulièrement et surtout après les rapports sexuels peuvent aider à prévenir les infections urinaires."
-    },
-    {
-      "speaker": "patient",
-      "text": "Merci docteur, je vais suivre vos conseils."
+      "text": "D'accord, je comprends. Merci Docteur."
     }
   ]
 }
