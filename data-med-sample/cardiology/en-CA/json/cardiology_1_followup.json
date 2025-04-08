@@ -1,0 +1,64 @@
+{
+  "language": "en-CA",
+  "specialty": "cardiology",
+  "type": "followup",
+  "condition": "ventricular tachycardia",
+  "patient": {
+    "age": 78,
+    "gender": "female"
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Good morning, Mrs. Smith. It's good to see you again. How have you been feeling since our last visit?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Good morning, doctor. Well, I've been feeling a little better. The racing heart doesn't happen as often."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That's good to hear. Are you still feeling dizzy and weak?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not as much as before, but I do still get winded quite easily."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I see. Have you been taking the metoprolol as prescribed?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, doctor. I take it every day."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Any side effects from the medication?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I've been feeling a bit more tired than usual, but nothing too serious."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Very well. We'll keep an eye on that. Now, let's take a look at your test results. Your ECG shows that your heart rate has slowed down, which is a good sign. Your echocardiogram also shows improvement in the pumping function of your heart."
+    },
+    {
+      "speaker": "patient",
+      "text": "That's relieving to hear, doctor."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It is indeed. In light of these results, I think we should continue with your current medication plan. Remember to keep reducing your caffeine and alcohol consumption as well."
+    },
+    {
+      "speaker": "patient",
+      "text": "Alright, doctor. I'll do my best."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Great, Mrs. Smith. Let's schedule another follow-up in about a month, just to ensure everything continues to improve."
+    }
+  ]
+}

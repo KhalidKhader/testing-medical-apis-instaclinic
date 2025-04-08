@@ -1,0 +1,64 @@
+{
+  "language": "en-CA",
+  "specialty": "gp",
+  "type": "consultation",
+  "condition": "hypothyroidism",
+  "patient": {
+    "age": 55,
+    "gender": "female"
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Good morning, Ms. Johnson. How have you been since your last visit?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Good morning, doctor. I've been feeling quite tired and have been gaining weight despite eating and exercising normally."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I'm sorry to hear that. Has there been any other changes, like in your mood, skin, or hair?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I have been feeling a bit low and my hair has become dry and thin."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you been taking your levothyroxine as prescribed?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I have been taking it daily."
+    },
+    {
+      "speaker": "doctor",
+      "text": "It's important that we monitor your symptoms closely because they may be related to your hypothyroidism. We might need to adjust your medication dosage. Let's do a physical examination. (Doctor performs physical examination)"
+    },
+    {
+      "speaker": "doctor",
+      "text": "Your vital signs are normal, but I noticed some puffiness around your eyes and dryness in your skin. I am going to order some blood tests to check your thyroid hormone levels."
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, doctor."
+    },
+    {
+      "speaker": "doctor",
+      "text": "We might need to adjust your levothyroxine dosage based on your test results. It's also important to have a balanced diet and regular exercise."
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, I understand."
+    },
+    {
+      "speaker": "doctor",
+      "text": "We'll meet again after we get your test results. Please keep taking your current dosage until then."
+    },
+    {
+      "speaker": "patient",
+      "text": "Will do, doctor."
+    }
+  ]
+}

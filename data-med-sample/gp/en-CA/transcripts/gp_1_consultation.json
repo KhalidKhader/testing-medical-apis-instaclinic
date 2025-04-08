@@ -1,0 +1,44 @@
+{
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "good morning miss johnson how have you been since your last visit"
+    },
+    {
+      "speaker": "patient",
+      "text": "good morning doctor i've been feeling quite tired and have been gaining weight despite eating and exercising normally"
+    },
+    {
+      "speaker": "doctor",
+      "text": "i'm sorry to hear that has there been any other changes like in your mood skin or hair"
+    },
+    {
+      "speaker": "patient",
+      "text": "yes i have been feeling a bit low and my hair has become dry and thin"
+    },
+    {
+      "speaker": "doctor",
+      "text": "have you been taking your levothyroxine as prescribed"
+    },
+    {
+      "speaker": "patient",
+      "text": "yes i have been taking it daily"
+    },
+    {
+      "speaker": "doctor",
+      "text": "it's important that we monitor your symptoms closely because they may be related to your hypothyroidism we might need to adjust your medication dosage let's do a physical examination doctor performs physical examination your vital signs are normal but i noticed some puffiness around your eyes and dryness in your skin i am going to order some blood tests to check your thyroid hormone levels"
+    },
+    {
+      "speaker": "patient",
+      "text": "okay doctor"
+    },
+    {
+      "speaker": "doctor",
+      "text": "we might need to adjust your levothyroxine dosage based on your test results it is also important to have a balanced diet and regular exercise"
+    },
+    {
+      "speaker": "patient",
+      "text": "okay i understand with you doctor"
+    }
+  ]
+}

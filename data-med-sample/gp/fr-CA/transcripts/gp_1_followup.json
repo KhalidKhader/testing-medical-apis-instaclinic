@@ -1,0 +1,44 @@
+{
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Bonjour, comment allez-vous depuis notre dernière visite?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Bonjour Docteur. Ça va un peu mieux, les douleurs sont moins fortes mais je ressens toujours de la raideur le matin."
+    },
+    {
+      "speaker": "doctor",
+      "text": "C'est une bonne nouvelle que la douleur ait diminué. Avez-vous été en mesure de faire de l'exercice régulièrement comme nous l'avions discuté lors de notre dernière rencontre?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Oui, j'ai commencé à faire du yoga et je trouve que cela m'aide."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Excellent, c'est une bonne nouvelle. Avez-vous remarqué des effets secondaires depuis que vous prenez le naproxène?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Non, pas vraiment."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Très bien. Est-ce qu'il y a eu d'autres changements ou de nouvelles préoccupations depuis notre dernière visite?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Non, rien de particulier."
+    },
+    {
+      "speaker": "doctor",
+      "text": "D'accord. En ce qui concerne votre arthrose, je pense que nous devrions continuer avec le même plan de traitement pour le moment, puisque vous montrez des signes d'amélioration. Nous allons toutefois surveiller de près votre progression. Il est également important de continuer à faire de l'exercice régulièrement. Pouvons-nous planifier une autre visite dans 6 semaines?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Oui, c'est parfait. Merci docteur."
+    }
+  ]
+}

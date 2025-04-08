@@ -1,0 +1,27 @@
+openai>=1.70.0
+python-dotenv>=0.19.0
+gTTS==2.3.2
+tqdm==4.66.1
+pydub>=0.25.1
+numpy>=1.24.0
+pandas>=1.5.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+nltk>=3.8.0
+scipy>=1.10.0
+pyttsx3>=2.90
+soundfile>=0.12.1
+# Dependencies for audio processing
+speechbrain>=0.5.14
+torch>=2.0.0
+torchaudio>=2.0.0
+librosa>=0.10.0
+noisereduce>=2.0.1
+# For API integrations
+requests>=2.30.0
+deepgram-sdk>=2.12.0
+azure-cognitiveservices-speech>=1.31.0
+# For evaluation
+scikit-learn>=1.0.2
+# Optional dependencies
+ffmpeg-python>=0.2.0

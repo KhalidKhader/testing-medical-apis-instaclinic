@@ -1,0 +1,68 @@
+{
+  "language": "fr-CA",
+  "specialty": "cardiology",
+  "type": "consultation",
+  "condition": "hypertension",
+  "patient": {
+    "age": 76,
+    "gender": "femme"
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Médecin : Bonjour Madame. Comment puis-je vous aider aujourd'hui ?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Patient : Bonjour Docteur, j'ai été récemment diagnostiquée avec une hypertension. Je ressens parfois des douleurs dans ma poitrine et je suis souvent essoufflée."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Médecin : Je suis désolé d'entendre cela. Ces symptômes pourraient être liés à votre hypertension. Avez-vous d'autres conditions médicales ?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Patient : Je suis diabétique et je souffre également d'arthrite."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Médecin : Je vois. Avez-vous déjà fait un ECG ou un échocardiogramme ?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Patient : Non, je n'ai jamais fait ces tests."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Médecin : Je pense qu'il serait bon de faire ces tests pour évaluer votre condition cardiaque. Nous pourrions aussi faire un test d'effort pour évaluer comment votre cœur fonctionne lorsqu'il est soumis à un stress."
+    },
+    {
+      "speaker": "patient",
+      "text": "Patient : D'accord, Docteur."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Médecin : Maintenant, je vais faire un examen physique. (Après l'examen) Votre pouls est un peu élevé et votre tension artérielle est également haute."
+    },
+    {
+      "speaker": "patient",
+      "text": "Médecin : Sur la base de ces résultats et de vos symptômes, je pense que vous pourriez souffrir de maladie cardiaque. Nous devons faire des tests supplémentaires pour confirmer cela."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Patient : Que dois-je faire, Docteur ?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Médecin : Je vais vous prescrire un médicament pour l'hypertension, probablement un inhibiteur de l'enzyme de conversion de l'angiotensine comme le Ramipril. Nous devons également surveiller votre alimentation et votre exercice. Il serait également bon de consulter un diététicien."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Patient : D'accord, Docteur. Je vais suivre vos instructions."
+    },
+    {
+      "speaker": "patient",
+      "text": "Médecin : Parfait. Nous nous reverrons après les tests pour discuter des résultats. Je vais également vous référer à un cardiologue pour un suivi."
+    }
+  ]
+}

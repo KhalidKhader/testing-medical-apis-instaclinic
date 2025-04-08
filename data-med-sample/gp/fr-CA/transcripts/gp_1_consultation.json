@@ -1,0 +1,64 @@
+{
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Bonjour, je suis le Dr Martin. Comment puis-je vous aider aujourd'hui?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Bonjour Docteur. J'ai remarqué que mes articulations sont douloureuses et raides ces derniers temps, surtout le matin."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Je suis désolé d'entendre cela. Depuis combien de temps ressentez-vous ces symptômes?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Ça fait environ deux mois maintenant."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Avez-vous des antécédents d'arthrose dans votre famille?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Oui, ma mère et ma grand-mère en ont toutes les deux."
+    },
+    {
+      "speaker": "doctor",
+      "text": "D'accord. Passons à un examen physique. Je vais examiner vos articulations pour vérifier la mobilité et la présence de gonflements. [Après l'examen]"
+    },
+    {
+      "speaker": "doctor",
+      "text": "Vos articulations montrent des signes de raideur, notamment au niveau des doigts et des genoux, ce qui est courant dans l'arthrose. Avez-vous déjà eu des radiographies de vos articulations?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Non, jamais."
+    },
+    {
+      "speaker": "doctor",
+      "text": "D'accord. Je vais vous référer pour des radiographies afin de confirmer le diagnostic. En attendant, je vais vous prescrire un anti-inflammatoire non stéroïdien (AINS), le naproxène, pour soulager vos symptômes."
+    },
+    {
+      "speaker": "patient",
+      "text": "D'accord, merci Docteur."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Je vous recommande également de faire de l'exercice régulièrement. Cela peut aider à soulager la raideur et à renforcer les muscles autour des articulations. Essayez des exercices à faible impact, comme la natation ou le yoga."
+    },
+    {
+      "speaker": "patient",
+      "text": "Je ferai de mon mieux."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Excellent. Nous nous reverrons dans environ 6 semaines pour vérifier comment vous vous sentez avec le traitement et pour discuter des résultats de vos radiographies. Est-ce que cela vous convient?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Oui, c'est parfait. Merci docteur."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Bonjour, Madame. Comment vous sentez-vous depuis notre dernière rencontre ?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Patient : Bonjour Docteur, je me sens un peu mieux. Je ne ressens plus de douleurs thoraciques, mais je suis toujours essoufflée."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Je suis ravi d'entendre que la douleur thoracique a disparu. Avez-vous pris le Lisinopril comme je vous l'ai prescrit ?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Patient : Oui, je l'ai pris régulièrement."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Excellent. Avez-vous remarqué des effets secondaires ?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Patient : Je me sens parfois étourdie, surtout quand je me lève."
+    },
+    {
+      "speaker": "doctor",
+      "text": "C'est un effet secondaire courant du Lisinopril. Essayez de vous lever lentement pour éviter les étourdissements. Maintenant, je vais faire un examen physique. (Après l'examen) Votre pouls est de 80 bpm et votre tension artérielle est de 140/80 mmHg. Vos résultats de tests sont également revenus et votre ECG montre une légère anomalie."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Sur la base de ces résultats, je pense que nous devrions ajuster votre médication. Je vais diminuer la dose de Lisinopril et ajouter un bêta-bloquant, comme le Metoprolol, pour aider à contrôler votre tension artérielle et améliorer votre essoufflement."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Patient : D'accord, Docteur. Je vais suivre vos instructions."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Parfait. Nous devons continuer à surveiller votre alimentation et votre exercice. Essayez d'inclure plus de fruits et de légumes dans votre alimentation, et essayez de marcher au moins 30 minutes par jour."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Patient : Je vais essayer, Docteur."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Très bien. Nous nous reverrons dans 3 mois pour voir comment vous allez. Si vous avez des problèmes avant cela, appelez-nous."
+    }
+  ]
+}

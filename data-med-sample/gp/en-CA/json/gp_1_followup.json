@@ -1,0 +1,76 @@
+{
+  "language": "en-CA",
+  "specialty": "gp",
+  "type": "followup",
+  "condition": "hypothyroidism",
+  "patient": {
+    "age": 55,
+    "gender": "female"
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Good morning, Ms. Johnson. How have you been feeling since our last visit?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Good morning, doctor. I've noticed some improvement, but I still feel quite tired."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you been taking your levothyroxine and metformin as prescribed?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Yes, I have been taking them daily."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed any change in your weight, mood, skin or hair?"
+    },
+    {
+      "speaker": "patient",
+      "text": "My mood has improved slightly, but I haven't noticed any significant changes in my weight or the condition of my skin and hair."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Any side effects from the medications?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No, I haven't noticed any side effects."
+    },
+    {
+      "speaker": "doctor",
+      "text": "That's good to hear. Let's do a physical examination. (Doctor performs physical examination)"
+    },
+    {
+      "speaker": "doctor",
+      "text": "Your vitals are stable, and the puffiness around your eyes has reduced. However, your skin remains dry. Let's review your blood test results. (Doctor reviews blood test results)"
+    },
+    {
+      "speaker": "doctor",
+      "text": "Your TSH levels have decreased but are still above the normal range, indicating that your hypothyroidism is not yet fully controlled. We need to slightly increase your levothyroxine dosage."
+    },
+    {
+      "speaker": "patient",
+      "text": "Okay, doctor."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Continue with your balanced diet and regular exercise. And, take the increased dosage of levothyroxine."
+    },
+    {
+      "speaker": "patient",
+      "text": "Will do, doctor."
+    },
+    {
+      "speaker": "doctor",
+      "text": "We'll meet again in six weeks. Please continue taking the increased dosage until then."
+    },
+    {
+      "speaker": "patient",
+      "text": "I understand, doctor. Thank you."
+    }
+  ]
+}

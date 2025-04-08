@@ -1,0 +1,76 @@
+{
+  "language": "en-CA",
+  "specialty": "cardiology",
+  "type": "consultation",
+  "condition": "ventricular tachycardia",
+  "patient": {
+    "age": 78,
+    "gender": "female"
+  },
+  "conversation": [
+    {
+      "speaker": "doctor",
+      "text": "Good morning, Mrs. Smith. How are you feeling today?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Good morning, doctor. I've been better, I suppose. I've been feeling my heart race quite a bit lately, and it's making me feel a bit dizzy and weak."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I'm sorry to hear that. Let's talk about it in detail. When did you first notice these symptoms?"
+    },
+    {
+      "speaker": "patient",
+      "text": "I suppose it started a few weeks ago, but it's been getting worse."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Any chest pain, shortness of breath or fainting spells?"
+    },
+    {
+      "speaker": "patient",
+      "text": "No chest pain, but I do feel winded quite easily."
+    },
+    {
+      "speaker": "doctor",
+      "text": "Have you noticed any triggers or patterns? For example, does the racing heart happen after you've exerted yourself?"
+    },
+    {
+      "speaker": "patient",
+      "text": "Not necessarily, it seems to come on quite randomly."
+    },
+    {
+      "speaker": "doctor",
+      "text": "I see. I'd like to run a few tests, including an ECG and possibly an echocardiogram, to check your heart's rhythm and to see how it's pumping blood. We may also do a stress test if needed."
+    },
+    {
+      "speaker": "patient",
+      "text": "Alright, doctor."
+    },
+    {
+      "speaker": "doctor",
+      "text": "(After examination) Your heart rate is indeed a bit elevated and irregular. You have ventricular tachycardia, Mrs. Smith. It's a condition where the lower chambers of your heart beat too fast, causing inefficient blood flow."
+    },
+    {
+      "speaker": "patient",
+      "text": "Oh, that sounds serious. What can we do about it?"
+    },
+    {
+      "speaker": "doctor",
+      "text": "We have some effective treatment options, including medications to control your heart rhythm, and possibly a procedure called catheter ablation if necessary. Lifestyle changes, like reducing caffeine and alcohol, could also help."
+    },
+    {
+      "speaker": "patient",
+      "text": "I see. And what's the next step, doctor?"
+    },
+    {
+      "speaker": "doctor",
+      "text": "I'll start you on a medication called metoprolol. We'll monitor your response to it, and adjust as needed. The next step will be to schedule the tests. Let's plan on meeting again in a couple of weeks to discuss the results."
+    },
+    {
+      "speaker": "patient",
+      "text": "Thank you, doctor. I'll follow your recommendations."
+    }
+  ]
+}
