@@ -6,6 +6,7 @@ Special focus on medical terminology accuracy and speaker diarization.
 Usage:
     python evaluate_transcriptions.py --specialty cardiology --lang en-CA
     python evaluate_transcriptions.py --specialty all --lang all
+    python evaluate_transcriptions.py --data-dir "all-data"
 """
 
 import os
@@ -32,8 +33,8 @@ except ImportError:
     HAS_NLTK = False
     print("NLTK not available. Some evaluation metrics will be limited.")
 
-# Base directory for medical data
-BASE_DIR = "data-med"
+# Default base directory for medical data
+DEFAULT_BASE_DIR = "data-med"
 
 # Medical terminology dictionary by specialty
 MEDICAL_TERMS = {
@@ -84,10 +85,12 @@ MEDICAL_TERMS_FR = {
 class TranscriptionEvaluator:
     """Class to evaluate transcription accuracy and diarization quality."""
     
-    def __init__(self, specialty, language):
+    def __init__(self, specialty, language, base_dir=DEFAULT_BASE_DIR, dataset_name=""):
         """Initialize the evaluator with specialty and language selection."""
         self.specialty = specialty
         self.language = language
+        self.base_dir = base_dir
+        self.dataset_name = dataset_name
         self.metrics = defaultdict(list)
         self.conversation_results = {}
         
@@ -262,6 +265,10 @@ class TranscriptionEvaluator:
             
             # Store metrics
             metrics = {
+                "dataset": self.dataset_name,
+                "specialty": self.specialty,
+                "language": self.language,
+                "conversation_id": conversation_id,
                 "wer": wer,
                 "similarity": similarity,
                 "bleu": bleu,
@@ -274,7 +281,8 @@ class TranscriptionEvaluator:
             
             # Update aggregated metrics
             for key, value in metrics.items():
-                self.metrics[key].append(value)
+                if isinstance(value, (int, float)):  # Only add numeric metrics
+                    self.metrics[key].append(value)
             
             return metrics
             
@@ -291,14 +299,14 @@ class TranscriptionEvaluator:
         
         if not json_files:
             print(f"No JSON files found in {json_dir}")
-            return
+            return []
         
         print(f"Found {len(json_files)} original conversation files in {json_dir}")
         
         # Evaluate each conversation
         results = []
         
-        for json_file in tqdm(json_files, desc=f"Evaluating {self.language} {self.specialty} transcriptions"):
+        for json_file in tqdm(json_files, desc=f"Evaluating {self.language} {self.specialty} transcriptions in {self.dataset_name}"):
             # Extract basename
             basename = os.path.basename(json_file)
             filename = os.path.splitext(basename)[0]
@@ -316,31 +324,28 @@ class TranscriptionEvaluator:
             metrics = self.evaluate_conversation(json_file, transcript_file, diarized_file)
             
             if metrics:
-                results.append({
-                    'conversation_id': filename,
-                    **metrics
-                })
+                results.append(metrics)
         
         return results
     
     def print_summary(self):
         """Print a summary of the evaluation results."""
-        if not self.metrics["wer"]:
-            print(f"No evaluation results for {self.language} {self.specialty}")
+        if not self.metrics.get("wer", []):
+            print(f"No evaluation results for {self.language} {self.specialty} in {self.dataset_name}")
             return
             
-        print("\n===== TRANSCRIPTION EVALUATION SUMMARY =====")
+        print(f"\n===== TRANSCRIPTION EVALUATION SUMMARY for {self.dataset_name} =====")
         print(f"Specialty: {self.specialty}")
         print(f"Language: {self.language}")
         print(f"Conversations evaluated: {len(self.metrics['wer'])}")
         
         print("\nMean Metrics:")
         for key, values in self.metrics.items():
-            if values:
+            if values and key not in ["dataset", "specialty", "language", "conversation_id"]:
                 print(f"  {key.upper()}: {np.mean(values):.4f} (std: {np.std(values):.4f})")
             
         print("\nMedical Term Accuracy:")
-        medical_acc = self.metrics["medical_term_accuracy"]
+        medical_acc = self.metrics.get("medical_term_accuracy", [])
         if medical_acc:
             print(f"  Mean: {np.mean(medical_acc):.4f}")
             print(f"  Median: {np.median(medical_acc):.4f}")
@@ -349,8 +354,8 @@ class TranscriptionEvaluator:
     
     def plot_results(self, output_dir):
         """Plot evaluation results and save to the output directory."""
-        if not self.metrics["wer"]:
-            print(f"No evaluation results to plot for {self.language} {self.specialty}")
+        if not self.metrics.get("wer", []):
+            print(f"No evaluation results to plot for {self.language} {self.specialty} in {self.dataset_name}")
             return
             
         # Create output directory
@@ -359,16 +364,19 @@ class TranscriptionEvaluator:
         # Convert results to DataFrame
         results_df = pd.DataFrame(list(self.conversation_results.values()))
         
+        # Add dataset name prefix for output files
+        prefix = f"{self.dataset_name}_" if self.dataset_name else ""
+        
         # Plot WER distribution
         plt.figure(figsize=(10, 6))
         sns.histplot(results_df["wer"], kde=True)
         plt.axvline(x=results_df["wer"].mean(), color='r', linestyle='--', 
                    label=f'Mean: {results_df["wer"].mean():.4f}')
-        plt.title(f'{self.language} {self.specialty} - Word Error Rate Distribution')
+        plt.title(f'{self.dataset_name} {self.language} {self.specialty} - Word Error Rate Distribution')
         plt.xlabel('Word Error Rate (WER)')
         plt.ylabel('Count')
         plt.legend()
-        plt.savefig(os.path.join(output_dir, f'{self.language}_{self.specialty}_wer.png'), dpi=300)
+        plt.savefig(os.path.join(output_dir, f'{prefix}{self.language}_{self.specialty}_wer.png'), dpi=300)
         plt.close()
         
         # Plot medical term accuracy distribution
@@ -376,38 +384,42 @@ class TranscriptionEvaluator:
         sns.histplot(results_df["medical_term_accuracy"], kde=True)
         plt.axvline(x=results_df["medical_term_accuracy"].mean(), color='r', linestyle='--', 
                    label=f'Mean: {results_df["medical_term_accuracy"].mean():.4f}')
-        plt.title(f'{self.language} {self.specialty} - Medical Term Accuracy')
+        plt.title(f'{self.dataset_name} {self.language} {self.specialty} - Medical Term Accuracy')
         plt.xlabel('Medical Term Accuracy')
         plt.ylabel('Count')
         plt.legend()
-        plt.savefig(os.path.join(output_dir, f'{self.language}_{self.specialty}_med_acc.png'), dpi=300)
+        plt.savefig(os.path.join(output_dir, f'{prefix}{self.language}_{self.specialty}_med_acc.png'), dpi=300)
         plt.close()
         
         # Plot speaker accuracy vs medical term accuracy
         if "speaker_accuracy" in results_df.columns:
             plt.figure(figsize=(10, 6))
             plt.scatter(results_df["speaker_accuracy"], results_df["medical_term_accuracy"], alpha=0.7)
-            plt.title(f'{self.language} {self.specialty} - Speaker vs Medical Term Accuracy')
+            plt.title(f'{self.dataset_name} {self.language} {self.specialty} - Speaker vs Medical Term Accuracy')
             plt.xlabel('Speaker Accuracy')
             plt.ylabel('Medical Term Accuracy')
             plt.grid(True, alpha=0.3)
-            plt.savefig(os.path.join(output_dir, f'{self.language}_{self.specialty}_speaker_vs_med.png'), dpi=300)
+            plt.savefig(os.path.join(output_dir, f'{prefix}{self.language}_{self.specialty}_speaker_vs_med.png'), dpi=300)
             plt.close()
         
         # Save results to CSV
-        results_df.to_csv(os.path.join(output_dir, f'{self.language}_{self.specialty}_results.csv'), index=False)
+        results_df.to_csv(os.path.join(output_dir, f'{prefix}{self.language}_{self.specialty}_results.csv'), index=False)
         
         print(f"Plots and results saved to {output_dir}")
+        
+        return results_df
 
-def evaluate_specialty(specialty, language="all"):
+def evaluate_specialty(specialty, language="all", base_dir=DEFAULT_BASE_DIR, dataset_name=""):
     """Evaluate all conversations for a given specialty and language."""
     languages = ["en-CA", "fr-CA"] if language == "all" else [language]
+    all_results = []
     
     for lang in languages:
         # Set up directories
-        json_dir = os.path.join(BASE_DIR, specialty, lang, "json")
-        transcripts_dir = os.path.join(BASE_DIR, specialty, lang, "transcripts")
-        output_dir = os.path.join(BASE_DIR, "evaluation", specialty)
+        json_dir = os.path.join(base_dir, specialty, lang, "json")
+        transcripts_dir = os.path.join(base_dir, specialty, lang, "transcripts")
+        evaluation_dir = os.path.join(base_dir, "evaluation")
+        output_dir = os.path.join(evaluation_dir, specialty)
         
         # Check if directories exist
         if not os.path.exists(json_dir):
@@ -419,16 +431,77 @@ def evaluate_specialty(specialty, language="all"):
             continue
         
         # Create evaluator
-        evaluator = TranscriptionEvaluator(specialty, lang)
+        evaluator = TranscriptionEvaluator(specialty, lang, base_dir, dataset_name)
         
         # Evaluate conversations
-        evaluator.evaluate_all_conversations(json_dir, transcripts_dir)
+        results = evaluator.evaluate_all_conversations(json_dir, transcripts_dir)
+        all_results.extend(results)
         
         # Print summary
         evaluator.print_summary()
         
         # Plot results
         evaluator.plot_results(output_dir)
+    
+    return all_results
+
+def evaluate_all_datasets(data_dir="all-data", specialties=["cardiology", "gp"]):
+    """Evaluate all datasets in the data directory."""
+    # Get all dataset directories
+    dataset_dirs = [f.path for f in os.scandir(data_dir) if f.is_dir()]
+    
+    if not dataset_dirs:
+        print(f"No dataset directories found in {data_dir}")
+        return
+    
+    print(f"Found {len(dataset_dirs)} dataset directories in {data_dir}")
+    
+    # Store all results
+    all_results = []
+    
+    # Evaluate each dataset
+    for dataset_dir in dataset_dirs:
+        dataset_name = os.path.basename(dataset_dir)
+        print(f"\n\n===== Evaluating dataset: {dataset_name} =====")
+        
+        for specialty in specialties:
+            # Evaluate this specialty
+            results = evaluate_specialty(specialty, "all", dataset_dir, dataset_name)
+            all_results.extend(results)
+    
+    # Create comprehensive CSV with all results
+    if all_results:
+        df = pd.DataFrame(all_results)
+        
+        # Save comprehensive CSV
+        comprehensive_csv = os.path.join(data_dir, "comprehensive_evaluation_results.csv")
+        df.to_csv(comprehensive_csv, index=False)
+        print(f"\nComprehensive evaluation results saved to: {comprehensive_csv}")
+        
+        # Create summary CSV with means grouped by dataset, specialty, and language
+        summary = df.groupby(['dataset', 'specialty', 'language']).agg({
+            'wer': ['mean', 'std'],
+            'similarity': ['mean', 'std'],
+            'bleu': ['mean', 'std'],
+            'medical_term_accuracy': ['mean', 'std'],
+            'speaker_accuracy': ['mean', 'std']
+        }).reset_index()
+        
+        # Flatten the multi-level columns
+        summary.columns = ['_'.join(col).strip('_') for col in summary.columns.values]
+        
+        # Save summary CSV
+        summary_csv = os.path.join(data_dir, "evaluation_summary.csv")
+        summary.to_csv(summary_csv, index=False)
+        print(f"Evaluation summary saved to: {summary_csv}")
+        
+        # Create medical terms focused CSV
+        medical_focus = df[['dataset', 'specialty', 'language', 'conversation_id', 'medical_term_accuracy']]
+        
+        # Save medical focus CSV
+        medical_csv = os.path.join(data_dir, "medical_term_accuracy.csv")
+        medical_focus.to_csv(medical_csv, index=False)
+        print(f"Medical term accuracy results saved to: {medical_csv}")
 
 def main():
     """Main function."""
@@ -438,18 +511,35 @@ def main():
                         help='Medical specialty to evaluate')
     parser.add_argument('--lang', type=str, choices=['en-CA', 'fr-CA', 'all'], default='all',
                         help='Language to evaluate')
+    parser.add_argument('--base-dir', type=str, default=DEFAULT_BASE_DIR,
+                        help='Base directory for data')
+    parser.add_argument('--data-dir', type=str, default=None,
+                        help='Directory containing multiple datasets to evaluate')
     args = parser.parse_args()
     
-    # Ensure evaluation output directory exists
-    os.makedirs(os.path.join(BASE_DIR, "evaluation"), exist_ok=True)
-    
-    # Evaluate based on arguments
-    if args.specialty == "all":
-        specialties = ["cardiology", "gp"]
-        for specialty in specialties:
-            evaluate_specialty(specialty, args.lang)
+    # Check if we should process multiple datasets
+    if args.data_dir:
+        evaluate_all_datasets(args.data_dir)
     else:
-        evaluate_specialty(args.specialty, args.lang)
+        # Ensure evaluation output directory exists
+        os.makedirs(os.path.join(args.base_dir, "evaluation"), exist_ok=True)
+        
+        # Evaluate based on arguments
+        if args.specialty == "all":
+            specialties = ["cardiology", "gp"]
+            all_results = []
+            for specialty in specialties:
+                results = evaluate_specialty(specialty, args.lang, args.base_dir)
+                all_results.extend(results)
+                
+            # Create comprehensive CSV
+            if all_results:
+                df = pd.DataFrame(all_results)
+                comprehensive_csv = os.path.join(args.base_dir, "evaluation", "comprehensive_results.csv")
+                df.to_csv(comprehensive_csv, index=False)
+                print(f"\nComprehensive evaluation results saved to: {comprehensive_csv}")
+        else:
+            evaluate_specialty(args.specialty, args.lang, args.base_dir)
     
     print("\n=== Evaluation Complete ===")
 

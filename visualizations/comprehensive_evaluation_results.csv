@@ -1,0 +1,321 @@
+dataset,specialty,language,conversation_id,wer,similarity,bleu,medical_term_accuracy,speaker_accuracy
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_8_consultation,0.23283582089552238,0.8357954545454546,0.8357954545454546,0.6,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_9_followup,0.14418604651162792,0.9259574468085107,0.9259574468085107,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_9_consultation,0.1685823754789272,0.8721965112139551,0.8721965112139551,0.8333333333333334,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_10_followup,0.22748815165876776,0.7754010695187166,0.7754010695187166,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_4_followup,0.2354948805460751,0.7085604360371914,0.7085604360371914,0.8,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_7_followup,0.1391304347826087,0.9223140495867769,0.9223140495867769,0.6666666666666666,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_10_consultation,0.16387959866220736,0.888494528246081,0.888494528246081,0.9090909090909091,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_3_followup,0.14218009478672985,0.9216867469879518,0.9216867469879518,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_2_followup,0.22983870967741934,0.41747197526092,0.41747197526092,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_6_followup,0.17560975609756097,0.9103385178408051,0.9103385178408051,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_7_consultation,0.1357142857142857,0.9089692101740294,0.9089692101740294,0.8333333333333334,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_2_consultation,0.14067278287461774,0.8823700261399942,0.8823700261399942,0.5,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_6_consultation,0.1672473867595819,0.9126149802890933,0.9126149802890933,0.8333333333333334,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_1_followup,0.29017857142857145,0.7819614711033275,0.7819614711033275,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_5_followup,0.25830258302583026,0.8290630975143404,0.8290630975143404,0.8,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_3_consultation,0.13405797101449277,0.8711139896373057,0.8711139896373057,0.875,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_5_consultation,0.12923076923076923,0.9370860927152318,0.9370860927152318,0.8571428571428571,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_4_consultation,0.1553398058252427,0.7387599177196591,0.7387599177196591,0.8333333333333334,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_8_followup,0.20444444444444446,0.8781288469429627,0.8781288469429627,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,en-CA,cardiology_1_consultation,0.19900497512437812,0.5545583372697213,0.5545583372697213,0.7142857142857143,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_8_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_9_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_9_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_10_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_4_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_7_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_10_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_3_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_2_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_6_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_7_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_2_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_6_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_1_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_5_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_3_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_5_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_4_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_8_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,cardiology,fr-CA,cardiology_1_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_8_consultation,0.20066889632107024,0.0999026921829387,0.0999026921829387,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_9_followup,0.13732394366197184,0.9148286392941974,0.9148286392941974,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_9_consultation,0.18110236220472442,0.17329974811083124,0.17329974811083124,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_10_followup,0.2094017094017094,0.6257031588057118,0.6257031588057118,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_4_followup,0.16,0.8306208559373116,0.8306208559373116,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_3_followup,0.1169811320754717,0.941958041958042,0.941958041958042,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_7_followup,0.176,0.571875,0.571875,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_7_consultation,0.17142857142857143,0.8095071653268088,0.8095071653268088,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_6_followup,0.21052631578947367,0.8431641518061271,0.8431641518061271,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_2_consultation,0.14506172839506173,0.2806136680613668,0.2806136680613668,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_2_followup,0.18214285714285713,0.4267226302903113,0.4267226302903113,0.6666666666666666,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_5_followup,0.1220472440944882,0.9300347893312717,0.9300347893312717,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_6_consultation,0.16228070175438597,0.9119732999582811,0.9119732999582811,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_1_followup,0.29245283018867924,0.7704004054738977,0.7704004054738977,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_3_consultation,0.16716417910447762,0.8853541416566627,0.8853541416566627,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_5_consultation,0.22357723577235772,0.8605577689243028,0.8605577689243028,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_10_consultation,0.20168067226890757,0.8069022185702547,0.8069022185702547,0.75,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_8_followup,0.17454545454545456,0.8635253054101222,0.8635253054101222,0.75,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_4_consultation,0.18983957219251338,0.8679536679536679,0.8679536679536679,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,en-CA,gp_1_consultation,0.18397626112759644,0.8993249192838274,0.8993249192838274,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_8_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_9_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_9_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_10_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_4_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_3_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_7_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_7_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_6_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_2_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_2_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_5_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_6_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_1_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_3_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_5_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_10_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_8_followup,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_4_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-semi-noise-Azure for French-Nova for English,gp,fr-CA,gp_1_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_8_consultation,0.24477611940298508,0.15345122646891043,0.15345122646891043,0.6,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_9_followup,0.13953488372093023,0.9264142917907273,0.9264142917907273,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_9_consultation,0.1685823754789272,0.8721965112139551,0.8721965112139551,0.8333333333333334,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_10_followup,0.23696682464454977,0.8691796008869179,0.8691796008869179,0.8571428571428571,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_4_followup,0.21160409556313994,0.7163798597833014,0.7163798597833014,0.8,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_7_followup,0.1391304347826087,0.9223140495867769,0.9223140495867769,0.6666666666666666,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_10_consultation,0.1939799331103679,0.879160419790105,0.879160419790105,0.9090909090909091,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_3_followup,0.14691943127962084,0.9185946872322194,0.9185946872322194,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_2_followup,0.22983870967741934,0.11859838274932614,0.11859838274932614,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_6_followup,0.2,0.47689463955637706,0.47689463955637706,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_7_consultation,0.14642857142857144,0.8997668997668997,0.8997668997668997,0.8333333333333334,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_2_consultation,0.14067278287461774,0.9203025014543339,0.9203025014543339,0.5,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_6_consultation,0.1986062717770035,0.48423127463863336,0.48423127463863336,0.6666666666666666,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_1_followup,0.25892857142857145,0.8178277801817395,0.8178277801817395,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_5_followup,0.25461254612546125,0.8282982791586998,0.8282982791586998,0.8,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_3_consultation,0.17028985507246377,0.31057124097176625,0.31057124097176625,0.875,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_5_consultation,0.12615384615384614,0.941017316017316,0.941017316017316,0.8571428571428571,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_4_consultation,0.1262135922330097,0.9002898550724637,0.9002898550724637,0.8333333333333334,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_8_followup,0.22666666666666666,0.8567839195979899,0.8567839195979899,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,en-CA,cardiology_1_consultation,0.19154228855721392,0.442638179284719,0.442638179284719,0.7142857142857143,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_8_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_9_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_9_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_10_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_4_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_7_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_10_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_3_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_2_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_6_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_7_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_2_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_6_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_1_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_5_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_3_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_5_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_4_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_8_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,cardiology,fr-CA,cardiology_1_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_8_consultation,0.2040133779264214,0.1411764705882353,0.1411764705882353,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_9_followup,0.14084507042253522,0.9133537206931702,0.9133537206931702,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_9_consultation,0.17060367454068243,0.4577711144427786,0.4577711144427786,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_10_followup,0.18803418803418803,0.8766177739430544,0.8766177739430544,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_4_followup,0.16,0.8654194327097163,0.8654194327097163,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_3_followup,0.10943396226415095,0.9449093444909344,0.9449093444909344,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_7_followup,0.112,0.9411764705882353,0.9411764705882353,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_7_consultation,0.15714285714285714,0.8422152560083594,0.8422152560083594,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_6_followup,0.27751196172248804,0.5783938814531548,0.5783938814531548,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_2_consultation,0.1419753086419753,0.922564529558701,0.922564529558701,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_2_followup,0.19285714285714287,0.4165795889933821,0.4165795889933821,0.6666666666666666,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_5_followup,0.12598425196850394,0.9288476411446249,0.9288476411446249,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_6_consultation,0.17982456140350878,0.9016666666666666,0.9016666666666666,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_1_followup,0.2971698113207547,0.7708649468892261,0.7708649468892261,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_3_consultation,0.15522388059701492,0.89568345323741,0.89568345323741,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_5_consultation,0.1910569105691057,0.8444444444444444,0.8444444444444444,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_10_consultation,0.21428571428571427,0.05180921052631579,0.05180921052631579,0.75,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_8_followup,0.19636363636363635,0.11295446523120367,0.11295446523120367,0.75,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_4_consultation,0.17914438502673796,0.8994627782041443,0.8994627782041443,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,en-CA,gp_1_consultation,0.18100890207715134,0.41082989994114183,0.41082989994114183,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_8_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_9_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_9_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_10_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_4_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_3_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_7_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_7_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_6_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_2_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_2_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_5_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_6_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_1_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_3_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_5_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_10_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_8_followup,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_4_consultation,0.0,1.0,1.0,1.0,0.0
+data-med noisy-Azure for French-Nova for English,gp,fr-CA,gp_1_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_8_consultation,0.6835820895522388,0.42318164138467523,0.42318164138467523,0.2,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_9_followup,0.4790697674418605,0.64859228362878,0.64859228362878,0.0,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_9_consultation,0.5862068965517241,0.4732682473268247,0.4732682473268247,0.16666666666666666,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_10_followup,0.5308056872037915,0.5697297297297297,0.5697297297297297,0.2857142857142857,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_4_followup,0.6313993174061433,0.5407470288624788,0.5407470288624788,0.2,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_7_followup,0.5304347826086957,0.6240681576144835,0.6240681576144835,0.0,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_10_consultation,0.6454849498327759,0.4914004914004914,0.4914004914004914,0.5454545454545454,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_3_followup,0.5118483412322274,0.6537634408602151,0.6537634408602151,0.4,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_2_followup,0.5604838709677419,0.5769046478198371,0.5769046478198371,0.5,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_6_followup,0.4585365853658537,0.6966538672517828,0.6966538672517828,0.6666666666666666,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_7_consultation,0.5714285714285714,0.5844097995545657,0.5844097995545657,0.5,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_2_consultation,0.6116207951070336,0.45591739475774423,0.45591739475774423,0.0,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_6_consultation,0.6132404181184669,0.5345744680851063,0.5345744680851063,0.0,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_1_followup,0.49107142857142855,0.6149193548387096,0.6149193548387096,0.2,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_5_followup,0.5719557195571956,0.611214953271028,0.611214953271028,0.4,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_3_consultation,0.6340579710144928,0.4245409762651142,0.4245409762651142,0.375,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_5_consultation,0.6738461538461539,0.49158512720156555,0.49158512720156555,0.42857142857142855,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_4_consultation,0.6601941747572816,0.4903490759753593,0.4903490759753593,0.0,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_8_followup,0.5155555555555555,0.6551197147223637,0.6551197147223637,0.3333333333333333,0.0
+data-med-Azure for English-Nova for French,cardiology,en-CA,cardiology_1_consultation,0.7064676616915423,0.40480961923847697,0.40480961923847697,0.0,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_8_consultation,0.46808510638297873,0.6742756804214223,0.6742756804214223,0.42857142857142855,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_9_followup,0.5676691729323309,0.5888845092629089,0.5888845092629089,1.0,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_9_consultation,0.5044776119402985,0.6590558469608145,0.6590558469608145,0.6666666666666666,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_10_followup,0.45454545454545453,0.621492128678987,0.621492128678987,0.5,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_4_followup,0.24858757062146894,0.5621621621621622,0.5621621621621622,1.0,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_7_followup,0.555956678700361,0.5485021398002853,0.5485021398002853,0.3333333333333333,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_10_consultation,0.24561403508771928,0.8033648790746583,0.8033648790746583,0.75,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_3_followup,0.4787234042553192,0.4211212516297262,0.4211212516297262,0.6666666666666666,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_2_followup,0.45357142857142857,0.6593255333792154,0.6593255333792154,1.0,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_6_followup,0.47619047619047616,0.6622971285892634,0.6622971285892634,0.25,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_7_consultation,0.4355400696864111,0.6779336734693877,0.6779336734693877,1.0,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_2_consultation,0.4134366925064599,0.728834975991913,0.728834975991913,0.75,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_6_consultation,0.40399002493765584,0.6929205554290917,0.6929205554290917,0.5555555555555556,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_1_followup,0.2265193370165746,0.8734613490891187,0.8734613490891187,1.0,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_5_followup,0.4603174603174603,0.6774774774774774,0.6774774774774774,0.6,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_3_consultation,0.3734015345268542,0.28624449083739273,0.28624449083739273,0.8333333333333334,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_5_consultation,0.3577981651376147,0.763152243933863,0.763152243933863,1.0,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_4_consultation,0.20555555555555555,0.6493265211333024,0.6493265211333024,0.8571428571428571,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_8_followup,0.4778156996587031,0.6524725274725275,0.6524725274725275,0.25,0.0
+data-med-Azure for English-Nova for French,cardiology,fr-CA,cardiology_1_consultation,0.21818181818181817,0.553421368547419,0.553421368547419,0.8571428571428571,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_8_consultation,0.6020066889632107,0.5075268817204301,0.5075268817204301,0.25,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_9_followup,0.5809859154929577,0.5877623939258597,0.5877623939258597,0.0,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_9_consultation,0.6902887139107612,0.46536412078152756,0.46536412078152756,0.0,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_10_followup,0.5470085470085471,0.605475040257649,0.605475040257649,1.0,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_4_followup,0.6266666666666667,0.5198851988519885,0.5198851988519885,0.5,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_3_followup,0.5547169811320755,0.6182648401826484,0.6182648401826484,1.0,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_7_followup,0.56,0.6146971201588878,0.6146971201588878,1.0,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_7_consultation,0.5857142857142857,0.5727482678983834,0.5727482678983834,1.0,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_6_followup,0.49282296650717705,0.6655737704918033,0.6655737704918033,0.5,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_2_consultation,0.6851851851851852,0.4714285714285714,0.4714285714285714,0.5,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_2_followup,0.6142857142857143,0.531089294062646,0.531089294062646,0.3333333333333333,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_5_followup,0.5354330708661418,0.6284017812963879,0.6284017812963879,1.0,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_6_consultation,0.5175438596491229,0.6293779404077365,0.6293779404077365,1.0,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_1_followup,0.4716981132075472,0.6838487972508591,0.6838487972508591,1.0,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_3_consultation,0.6417910447761194,0.5099959200326397,0.5099959200326397,0.3333333333333333,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_5_consultation,0.5813008130081301,0.5919282511210763,0.5919282511210763,0.0,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_10_consultation,0.5504201680672269,0.6299132210311383,0.6299132210311383,0.5,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_8_followup,0.5236363636363637,0.6322751322751323,0.6322751322751323,0.75,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_4_consultation,0.6978609625668449,0.45783997129529963,0.45783997129529963,0.25,0.0
+data-med-Azure for English-Nova for French,gp,en-CA,gp_1_consultation,0.6646884272997032,0.4917238595074687,0.4917238595074687,1.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_8_consultation,0.3812636165577342,0.6976944624003447,0.6976944624003447,1.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_9_followup,0.4027777777777778,0.6979958534899793,0.6979958534899793,1.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_9_consultation,0.21893491124260356,0.8588621444201313,0.8588621444201313,1.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_10_followup,0.20915032679738563,0.8795252225519288,0.8795252225519288,1.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_4_followup,0.38028169014084506,0.753984753984754,0.753984753984754,1.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_3_followup,0.38924050632911394,0.7352846574461241,0.7352846574461241,0.5,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_7_followup,0.2288135593220339,0.7689873417721519,0.7689873417721519,0.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_7_consultation,0.24074074074074073,0.8505131637661758,0.8505131637661758,0.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_6_followup,0.4265232974910394,0.6946619217081851,0.6946619217081851,1.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_2_consultation,0.36675461741424803,0.5575695685473576,0.5575695685473576,0.6666666666666666,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_2_followup,0.4121212121212121,0.6970059880239521,0.6970059880239521,0.6666666666666666,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_5_followup,0.23076923076923078,0.8002577319587629,0.8002577319587629,1.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_6_consultation,0.3589041095890411,0.654739652870494,0.654739652870494,1.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_1_followup,0.24516129032258063,0.8361916026020106,0.8361916026020106,1.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_3_consultation,0.3448275862068966,0.46200454430699317,0.46200454430699317,0.25,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_5_consultation,0.24774774774774774,0.8272650296359018,0.8272650296359018,0.75,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_10_consultation,0.22302158273381295,0.8364389233954451,0.8364389233954451,1.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_8_followup,0.5203252032520326,0.6220264317180617,0.6220264317180617,0.5,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_4_consultation,0.23497267759562843,0.8754448398576512,0.8754448398576512,1.0,0.0
+data-med-Azure for English-Nova for French,gp,fr-CA,gp_1_consultation,0.22580645161290322,0.8554059921841077,0.8554059921841077,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_8_consultation,0.2298507462686567,0.8367463026166098,0.8367463026166098,0.6,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_9_followup,0.13488372093023257,0.9286926994906621,0.9286926994906621,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_9_consultation,0.19540229885057472,0.8896127397756062,0.8896127397756062,0.8333333333333334,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_10_followup,0.22274881516587677,0.18319928507596067,0.18319928507596067,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_4_followup,0.18430034129692832,0.7081736909323116,0.7081736909323116,0.8,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_7_followup,0.18695652173913044,0.8011919965942954,0.8011919965942954,0.6666666666666666,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_10_consultation,0.19063545150501673,0.8471930351245872,0.8471930351245872,0.9090909090909091,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_3_followup,0.13270142180094788,0.9233419465977606,0.9233419465977606,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_2_followup,0.22983870967741934,0.786042944785276,0.786042944785276,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_6_followup,0.1951219512195122,0.9002770083102493,0.9002770083102493,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_7_consultation,0.15714285714285714,0.9167516139993204,0.9167516139993204,0.8333333333333334,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_2_consultation,0.13761467889908258,0.9213809109370467,0.9213809109370467,0.5,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_6_consultation,0.1986062717770035,0.5066666666666667,0.5066666666666667,0.6666666666666666,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_1_followup,0.28125,0.7968197879858657,0.7968197879858657,0.8,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_5_followup,0.25461254612546125,0.8282982791586998,0.8282982791586998,0.8,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_3_consultation,0.18115942028985507,0.8072607260726072,0.8072607260726072,0.875,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_5_consultation,0.1476923076923077,0.9214425496225888,0.9214425496225888,0.8571428571428571,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_4_consultation,0.1650485436893204,0.7549194991055456,0.7549194991055456,0.8333333333333334,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_8_followup,0.18666666666666668,0.8849484536082475,0.8849484536082475,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,en-CA,cardiology_1_consultation,0.20149253731343283,0.7840453150814255,0.7840453150814255,0.7142857142857143,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_8_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_9_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_9_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_10_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_4_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_7_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_10_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_3_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_2_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_6_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_7_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_2_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_6_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_1_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_5_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_3_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_5_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_4_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_8_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,cardiology,fr-CA,cardiology_1_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_8_consultation,0.18729096989966554,0.8917155903457273,0.8917155903457273,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_9_followup,0.14788732394366197,0.9200273410799726,0.9200273410799726,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_9_consultation,0.1732283464566929,0.6651549508692366,0.6651549508692366,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_10_followup,0.18803418803418803,0.8766177739430544,0.8766177739430544,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_4_followup,0.15,0.8323803791754438,0.8323803791754438,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_3_followup,0.10943396226415095,0.9449093444909344,0.9449093444909344,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_7_followup,0.308,0.8025369978858351,0.8025369978858351,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_7_consultation,0.18214285714285713,0.9001416430594901,0.9001416430594901,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_6_followup,0.21052631578947367,0.8448512585812357,0.8448512585812357,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_2_consultation,0.1728395061728395,0.9082672706681767,0.9082672706681767,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_2_followup,0.1357142857142857,0.9270797672030127,0.9270797672030127,0.6666666666666666,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_5_followup,0.12992125984251968,0.9232558139534883,0.9232558139534883,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_6_consultation,0.16228070175438597,0.9104477611940298,0.9104477611940298,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_1_followup,0.27358490566037735,0.7832238504295098,0.7832238504295098,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_3_consultation,0.18208955223880596,0.9052376627308507,0.9052376627308507,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_5_consultation,0.22357723577235772,0.8605577689243028,0.8605577689243028,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_10_consultation,0.18487394957983194,0.892080426754206,0.892080426754206,0.75,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_8_followup,0.16363636363636364,0.9047785141262644,0.9047785141262644,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_4_consultation,0.21390374331550802,0.8792698826597132,0.8792698826597132,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,en-CA,gp_1_consultation,0.17507418397626112,0.9030552291421856,0.9030552291421856,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_8_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_9_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_9_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_10_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_4_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_3_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_7_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_7_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_6_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_2_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_2_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_5_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_6_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_1_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_3_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_5_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_10_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_8_followup,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_4_consultation,0.0,1.0,1.0,1.0,0.0
+data-med-without-noise-original-Azure for French-Nova for English,gp,fr-CA,gp_1_consultation,0.0,1.0,1.0,1.0,0.0
