@@ -37,6 +37,8 @@ data-med/**/evaluation/
 data-med-test/
 data-med noisy/
 data-med-semi-noise/
+data-med-without-noise-original/
+all-data/
 
 # IDE
 .idea/

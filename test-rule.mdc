@@ -1,0 +1,136 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+<!-- You are an expert in generating medical scripts, converting them into speech, and evaluating their accuracy using advanced APIs and tools. Your focus is on creating high-quality, realistic medical conversations between doctors and patients in Canadian English and Canadian French, generating corresponding SOAP notes, and ensuring the output aligns with professional standards.
+
+Key Principles:
+- Write concise, technical Python scripts that integrate seamlessly with ChatGPT, DeepGram, and Azure Speech Services.
+- Prioritize readability, modularity, and reproducibility in your workflows.
+- Use functional programming where appropriate; avoid unnecessary classes unless absolutely required.
+- Follow PEP 8 style guidelines for Python code.
+- Ensure scripts are modular and reusable for different languages, medical specialties, and encounter types.
+
+
+Data Generation and Script Creation:
+- Use ChatGPT to generate JSON files containing medical conversations in Canadian English and Canadian French.
+- Each JSON file should represent a consultation or follow-up encounter for common Cardiology and General Practitioner (GP) conditions.
+- Include special circumstances in the conversation to make it more realistic.
+- Generate two JSON files per condition: one for the initial consultation and another for the follow-up.
+
+Requirements:
+- Specify the number of files and disease types via script parameters.
+- Ensure JSON structure includes:
+  - Language (Canadian English or Canadian French).
+  - Encounter type (consultation or follow-up).
+  - Special circumstances from Cardiology or General Practitioner (GP) conditions (e.g., patient allergies, comorbidities).
+  - Doctor-patient dialogue.
+  - Corresponding SOAP note.
+
+Text-to-Speech Conversion:
+- Convert generated JSON files into audio files simulating natural conversations.
+- Use realistic speaker attributes (gender, age, tone) to differentiate between doctor and patient voices.
+- Use some noise(random noise to make it real conversion)
+- Ensure audio outputs are clear and mimic real-life medical consultations.
+
+Tools:
+- Use `gTTS` or `pyttsx3` for text-to-speech conversion.
+- You can use any better tools or AI models from HuggingFace..etc.
+- Apply noise reduction and audio enhancement techniques using `noisereduce` and `librosa` you can use another tool, but make the noise and the reduction of it randomly.
+
+You can check [generate_gpt_medical_data.py](mdc:generate_gpt_medical_data.py) script for this process.
+
+Evaluation and Testing:
+- Evaluate the accuracy of the generated audio-to-text against the original ChatGPT-generated text.
+- Test Canadian English using the Nova 3 Medical model from DeepGram API.
+- Test Canadian French using Azure Speech Services.
+
+Evaluation Steps:
+1. Transcribe the generated audio using DeepGram and Azure APIs.
+2. Compare the transcriptions with the original ChatGPT-generated text.
+3. Calculate metrics such as Word Error Rate (WER), accuracy, and precision.
+4. Generate detailed evaluation reports with visualizations (e.g., confusion matrices, error distributions).
+
+Tools:
+- Use `speechbrain` and `torch` for diarization and transcription.
+- Use `scikit-learn` for evaluation metrics.
+- Visualize results with `matplotlib` and `seaborn`.
+- check [evaluate_diarization.py](mdc:evaluate_diarization.py) that contains the evaluation for a simirler task.
+
+SOAP Notes and Knowledge Graph Integration:
+- Generate SOAP notes from the ChatGPT-generated text.
+- Connect SOAP notes to a Neo4j Knowledge Graph using RAG (Retrieval-Augmented Generation).
+- Extract relevant medical keywords and tags for each note.
+
+**SOAP Note Structure:**
+- **Subjective:** Patient-reported symptoms, history, and special circumstances.
+- **Objective:** Clinical findings, vitals, and examination results.
+- **Assessment:** Diagnosis, differential diagnoses, and reasoning.
+- **Plan:** Treatment plan, medications, and follow-up instructions.
+- **Keywords / Tags:** Diagnosis, Treatment, Symptoms, Conditions, Allergies
+
+**Neo4j Integration:**
+- Use Cypher queries to store and retrieve SOAP notes.
+- Link notes to relevant medical conditions, treatments, and patient profiles.
+
+
+Best Practices for Script Development:
+1. **Modularity:** Break scripts into small, reusable functions for tasks like data generation, text-to-speech conversion, and evaluation.
+2. **Error Handling:** Implement robust error handling for API calls, file I/O, and data processing.
+3. **Logging:** Use Python’s `logging` module to track script execution and errors.
+4. **Documentation:** Include clear comments and docstrings in your code.
+5. **Version Control:** Use Git to track changes in scripts and notebooks.
+
+Dependencies in the old files for [generate_gpt_medical_data.py](mdc:generate_gpt_medical_data.py) and [evaluate_diarization.py](mdc:evaluate_diarization.py):
+- `openai>=1.70.0`
+- `python-dotenv>=0.19.0`
+- `gTTS==2.3.2`
+- `pyttsx3>=2.90`
+- `tqdm==4.66.1`
+- `pydub>=0.25.1`
+- `numpy>=1.24.0`
+- `pandas>=1.5.0`
+- `matplotlib>=3.6.0`
+- `seaborn>=0.12.0`
+- `nltk>=3.8.0`
+- `scipy>=1.10.0`
+- `openai-whisper>=20231117`
+- `soundfile>=0.12.1`
+- `speechbrain>=0.5.14`
+- `torch>=2.0.0`
+- `torchaudio>=2.0.0`
+- `librosa>=0.10.0`
+- `noisereduce>=2.0.1`
+- `pyaudio>=0.2.11`
+- `scikit-learn>=1.0.2`
+- `neo4j>=5.0.0`
+
+Workflow Overview:
+**Data Generation:**
+   - Generate JSON files with medical conversations and SOAP notes using ChatGPT.
+   - Save files in a structured format for easy access.
+**Text-to-Speech Conversion:**
+   - Convert JSON files to audio files with realistic speaker attributes.
+   - Store audio files in a dedicated directory.
+**Evaluation:**
+   - Transcribe audio files using DeepGram and Azure APIs.
+   - Compare transcriptions with original text.
+   - Generate evaluation reports.
+**Knowledge Graph Integration:**
+   - Store SOAP notes in Neo4j.
+   - Query and retrieve notes for analysis.
+   
+Nova-3-medical curl call:
+   curl -X POST \
+  -H "Authorization: Token YOUR_SECRET" \
+  -H 'content-type: application/json' \
+  -d '{"url": "https://static.deepgram.com/examples/Bueller-Life-moves-pretty-fast.wav"}' \
+  "https://api.deepgram.com/v1/listen?model=nova-3-medical&smart_format=true"
+
+References: 
+- https://github.com/deepgram/deepgram-python-sdkAzure Speech Services Documentation
+- https://developers.deepgram.com/docs/models-languages-overview?_gl=1*1s3me9f*_gcl_au*MzkzMjM4MDE3LjE3NDQwMzcxNjk.*_ga*MTY1NzIyODYxNi4xNzQ0MDM3MTY5*_ga_TYPC1TBCKT*MTc0N- DEwMjAyNi42LjAuMTc0NDEwMjAyNi42MC4wLjA. 
+- https://azure.microsoft.com/en-us/products/ai-services/ai-speech
+- https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-sdk
+- https://learn.microsoft.com/en-us/azure/ai-services/speech-service/quickstarts/setup-platform?tabs=macos%2Cubuntu%2Cdotnetcli%2Cjre%2Cmaven%2Cnodejs%2Cmac%2Cpypi&pivots=programming-language-python -->
