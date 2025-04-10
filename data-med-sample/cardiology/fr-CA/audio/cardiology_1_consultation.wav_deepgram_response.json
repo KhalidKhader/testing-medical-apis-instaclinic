@@ -1,0 +1,2648 @@
+{
+  "metadata": {
+    "transaction_key": "deprecated",
+    "request_id": "7e018f82-3da9-4150-9fda-1e7801698b73",
+    "sha256": "244f2627f6d9661bfca0c7a5b5458ce281f838c30e73138b9a03e58d588a108e",
+    "created": "2025-04-10T15:44:49.898Z",
+    "duration": 91.25519,
+    "channels": 1,
+    "models": [
+      "c07cc5cd-d65f-48aa-9226-a9cc07999c3c"
+    ],
+    "model_info": {
+      "c07cc5cd-d65f-48aa-9226-a9cc07999c3c": {
+        "name": "2-general-nova",
+        "version": "2023-11-27.5008",
+        "arch": "nova-2"
+      }
+    }
+  },
+  "results": {
+    "channels": [
+      {
+        "alternatives": [
+          {
+            "transcript": "Bonjour, je suis le docteur Dupont. Vous êtes monsieur Leroux, c'est bien ça Oui, c'est exact. Ravi de vous rencontrer monsieur Roux, que puis-je faire pour vous aujourd'hui bien mon médecin de famille m'a référé ici parce que j'ai une hypertension. D'accord, je vois, avez-vous des symptômes comme les maux de tête, les vertiges, l'effondrement dans les oreilles ou les problèmes de vision. J'ai parfois des maux de tête, mais je pensais que c'était à cause du stress au travail. C'est possible, mais il se peut aussi que ce soit lié à votre hypertension. Votre tension artérielle est un peu élevée aujourd'hui, votre taux de cholestérol est également élevé, ce qui peut contribuer à votre hypertension. C'est grave docteur D'accord, je suis prêt à faire ce qu'il faut.",
+            "confidence": 0.99145776,
+            "words": [
+              {
+                "word": "bonjour",
+                "start": 0.16,
+                "end": 0.65999997,
+                "confidence": 0.92131925,
+                "speaker": 0,
+                "speaker_confidence": 0.0873425,
+                "punctuated_word": "Bonjour,"
+              },
+              {
+                "word": "je",
+                "start": 0.96,
+                "end": 1.12,
+                "confidence": 0.9905177,
+                "speaker": 0,
+                "speaker_confidence": 0.733165,
+                "punctuated_word": "je"
+              },
+              {
+                "word": "suis",
+                "start": 1.12,
+                "end": 1.4399999,
+                "confidence": 0.9988176,
+                "speaker": 0,
+                "speaker_confidence": 0.733165,
+                "punctuated_word": "suis"
+              },
+              {
+                "word": "le",
+                "start": 1.4399999,
+                "end": 1.5999999,
+                "confidence": 0.9753981,
+                "speaker": 0,
+                "speaker_confidence": 0.733165,
+                "punctuated_word": "le"
+              },
+              {
+                "word": "docteur",
+                "start": 1.5999999,
+                "end": 1.92,
+                "confidence": 0.79432535,
+                "speaker": 0,
+                "speaker_confidence": 0.733165,
+                "punctuated_word": "docteur"
+              },
+              {
+                "word": "dupont",
+                "start": 1.92,
+                "end": 2.42,
+                "confidence": 0.7934184,
+                "speaker": 0,
+                "speaker_confidence": 0.733165,
+                "punctuated_word": "Dupont."
+              },
+              {
+                "word": "vous",
+                "start": 3.12,
+                "end": 3.36,
+                "confidence": 0.9544057,
+                "speaker": 0,
+                "speaker_confidence": 0.54327077,
+                "punctuated_word": "Vous"
+              },
+              {
+                "word": "êtes",
+                "start": 3.36,
+                "end": 3.6,
+                "confidence": 0.92231154,
+                "speaker": 0,
+                "speaker_confidence": 0.54327077,
+                "punctuated_word": "êtes"
+              },
+              {
+                "word": "monsieur",
+                "start": 3.6,
+                "end": 3.9199998,
+                "confidence": 0.5827919,
+                "speaker": 0,
+                "speaker_confidence": 0.54327077,
+                "punctuated_word": "monsieur"
+              },
+              {
+                "word": "leroux",
+                "start": 3.9199998,
+                "end": 4.42,
+                "confidence": 0.78007495,
+                "speaker": 0,
+                "speaker_confidence": 0.54327077,
+                "punctuated_word": "Leroux,"
+              },
+              {
+                "word": "c'est",
+                "start": 4.64,
+                "end": 4.96,
+                "confidence": 0.97987604,
+                "speaker": 0,
+                "speaker_confidence": 0.31550372,
+                "punctuated_word": "c'est"
+              },
+              {
+                "word": "bien",
+                "start": 4.96,
+                "end": 5.2799997,
+                "confidence": 0.9918526,
+                "speaker": 0,
+                "speaker_confidence": 0.31550372,
+                "punctuated_word": "bien"
+              },
+              {
+                "word": "ça",
+                "start": 5.2799997,
+                "end": 5.52,
+                "confidence": 0.9439398,
+                "speaker": 0,
+                "speaker_confidence": 0.31550372,
+                "punctuated_word": "ça"
+              },
+              {
+                "word": "oui",
+                "start": 8.559999,
+                "end": 8.96,
+                "confidence": 0.90115,
+                "speaker": 1,
+                "speaker_confidence": 0.6062,
+                "punctuated_word": "Oui,"
+              },
+              {
+                "word": "c'est",
+                "start": 8.96,
+                "end": 9.2,
+                "confidence": 0.9997449,
+                "speaker": 1,
+                "speaker_confidence": 0.6062,
+                "punctuated_word": "c'est"
+              },
+              {
+                "word": "exact",
+                "start": 9.2,
+                "end": 9.7,
+                "confidence": 0.9938507,
+                "speaker": 1,
+                "speaker_confidence": 0.6062,
+                "punctuated_word": "exact."
+              },
+              {
+                "word": "ravi",
+                "start": 12.745,
+                "end": 13.065001,
+                "confidence": 0.90143454,
+                "speaker": 0,
+                "speaker_confidence": 0.5585296,
+                "punctuated_word": "Ravi"
+              },
+              {
+                "word": "de",
+                "start": 13.065001,
+                "end": 13.305,
+                "confidence": 0.99903834,
+                "speaker": 0,
+                "speaker_confidence": 0.5585296,
+                "punctuated_word": "de"
+              },
+              {
+                "word": "vous",
+                "start": 13.305,
+                "end": 13.465,
+                "confidence": 0.99759275,
+                "speaker": 0,
+                "speaker_confidence": 0.5585296,
+                "punctuated_word": "vous"
+              },
+              {
+                "word": "rencontrer",
+                "start": 13.465,
+                "end": 13.965,
+                "confidence": 0.9974681,
+                "speaker": 0,
+                "speaker_confidence": 0.5585296,
+                "punctuated_word": "rencontrer"
+              },
+              {
+                "word": "monsieur",
+                "start": 14.505,
+                "end": 14.825001,
+                "confidence": 0.7571672,
+                "speaker": 0,
+                "speaker_confidence": 0.5585296,
+                "punctuated_word": "monsieur"
+              },
+              {
+                "word": "roux",
+                "start": 14.825001,
+                "end": 15.325001,
+                "confidence": 0.5713392,
+                "speaker": 0,
+                "speaker_confidence": 0.5585296,
+                "punctuated_word": "Roux,"
+              },
+              {
+                "word": "que",
+                "start": 15.785,
+                "end": 16.025,
+                "confidence": 0.99617696,
+                "speaker": 0,
+                "speaker_confidence": 0.5585296,
+                "punctuated_word": "que"
+              },
+              {
+                "word": "puis-je",
+                "start": 16.025,
+                "end": 16.425,
+                "confidence": 0.99495286,
+                "speaker": 0,
+                "speaker_confidence": 0.5585296,
+                "punctuated_word": "puis-je"
+              },
+              {
+                "word": "faire",
+                "start": 16.425,
+                "end": 16.745,
+                "confidence": 0.9946883,
+                "speaker": 0,
+                "speaker_confidence": 0.5585296,
+                "punctuated_word": "faire"
+              },
+              {
+                "word": "pour",
+                "start": 16.745,
+                "end": 16.985,
+                "confidence": 0.9950919,
+                "speaker": 0,
+                "speaker_confidence": 0.5585296,
+                "punctuated_word": "pour"
+              },
+              {
+                "word": "vous",
+                "start": 16.985,
+                "end": 17.145,
+                "confidence": 0.9907478,
+                "speaker": 0,
+                "speaker_confidence": 0.5585296,
+                "punctuated_word": "vous"
+              },
+              {
+                "word": "aujourd'hui",
+                "start": 17.145,
+                "end": 17.645,
+                "confidence": 0.9993927,
+                "speaker": 0,
+                "speaker_confidence": 0.5585296,
+                "punctuated_word": "aujourd'hui"
+              },
+              {
+                "word": "bien",
+                "start": 21.225,
+                "end": 21.465,
+                "confidence": 0.9997795,
+                "speaker": 1,
+                "speaker_confidence": 0.46451324,
+                "punctuated_word": "bien"
+              },
+              {
+                "word": "mon",
+                "start": 21.465,
+                "end": 21.785,
+                "confidence": 0.65503114,
+                "speaker": 1,
+                "speaker_confidence": 0.46451324,
+                "punctuated_word": "mon"
+              },
+              {
+                "word": "médecin",
+                "start": 21.785,
+                "end": 22.185001,
+                "confidence": 0.9988431,
+                "speaker": 1,
+                "speaker_confidence": 0.46451324,
+                "punctuated_word": "médecin"
+              },
+              {
+                "word": "de",
+                "start": 22.185001,
+                "end": 22.345001,
+                "confidence": 0.99846953,
+                "speaker": 1,
+                "speaker_confidence": 0.66689616,
+                "punctuated_word": "de"
+              },
+              {
+                "word": "famille",
+                "start": 22.345001,
+                "end": 22.585,
+                "confidence": 0.9981153,
+                "speaker": 1,
+                "speaker_confidence": 0.66689616,
+                "punctuated_word": "famille"
+              },
+              {
+                "word": "m'a",
+                "start": 22.585,
+                "end": 22.825,
+                "confidence": 0.9970563,
+                "speaker": 1,
+                "speaker_confidence": 0.66689616,
+                "punctuated_word": "m'a"
+              },
+              {
+                "word": "référé",
+                "start": 22.825,
+                "end": 23.305,
+                "confidence": 0.9291295,
+                "speaker": 1,
+                "speaker_confidence": 0.66689616,
+                "punctuated_word": "référé"
+              },
+              {
+                "word": "ici",
+                "start": 23.305,
+                "end": 23.625,
+                "confidence": 0.9991842,
+                "speaker": 1,
+                "speaker_confidence": 0.66689616,
+                "punctuated_word": "ici"
+              },
+              {
+                "word": "parce",
+                "start": 23.625,
+                "end": 23.865,
+                "confidence": 0.9170766,
+                "speaker": 1,
+                "speaker_confidence": 0.66689616,
+                "punctuated_word": "parce"
+              },
+              {
+                "word": "que",
+                "start": 23.865,
+                "end": 23.945,
+                "confidence": 0.99864155,
+                "speaker": 1,
+                "speaker_confidence": 0.66689616,
+                "punctuated_word": "que"
+              },
+              {
+                "word": "j'ai",
+                "start": 23.945,
+                "end": 24.105,
+                "confidence": 0.99945885,
+                "speaker": 1,
+                "speaker_confidence": 0.66689616,
+                "punctuated_word": "j'ai"
+              },
+              {
+                "word": "une",
+                "start": 24.105,
+                "end": 24.345001,
+                "confidence": 0.95395595,
+                "speaker": 1,
+                "speaker_confidence": 0.66689616,
+                "punctuated_word": "une"
+              },
+              {
+                "word": "hypertension",
+                "start": 24.345001,
+                "end": 24.845001,
+                "confidence": 0.98817927,
+                "speaker": 1,
+                "speaker_confidence": 0.66689616,
+                "punctuated_word": "hypertension."
+              },
+              {
+                "word": "d'accord",
+                "start": 28.4,
+                "end": 28.9,
+                "confidence": 0.92707044,
+                "speaker": 0,
+                "speaker_confidence": 0.38445354,
+                "punctuated_word": "D'accord,"
+              },
+              {
+                "word": "je",
+                "start": 29.599998,
+                "end": 30.099998,
+                "confidence": 0.98064995,
+                "speaker": 0,
+                "speaker_confidence": 0.62833303,
+                "punctuated_word": "je"
+              },
+              {
+                "word": "vois",
+                "start": 30.4,
+                "end": 30.64,
+                "confidence": 0.8749018,
+                "speaker": 0,
+                "speaker_confidence": 0.62833303,
+                "punctuated_word": "vois,"
+              },
+              {
+                "word": "avez-vous",
+                "start": 30.64,
+                "end": 31.14,
+                "confidence": 0.9907244,
+                "speaker": 0,
+                "speaker_confidence": 0.62833303,
+                "punctuated_word": "avez-vous"
+              },
+              {
+                "word": "des",
+                "start": 31.199999,
+                "end": 31.439999,
+                "confidence": 0.76960546,
+                "speaker": 0,
+                "speaker_confidence": 0.62833303,
+                "punctuated_word": "des"
+              },
+              {
+                "word": "symptômes",
+                "start": 31.439999,
+                "end": 31.939999,
+                "confidence": 0.99806386,
+                "speaker": 0,
+                "speaker_confidence": 0.62833303,
+                "punctuated_word": "symptômes"
+              },
+              {
+                "word": "comme",
+                "start": 32.559998,
+                "end": 32.88,
+                "confidence": 0.5603318,
+                "speaker": 0,
+                "speaker_confidence": 0.58395505,
+                "punctuated_word": "comme"
+              },
+              {
+                "word": "les",
+                "start": 32.88,
+                "end": 33.12,
+                "confidence": 0.77485156,
+                "speaker": 0,
+                "speaker_confidence": 0.58395505,
+                "punctuated_word": "les"
+              },
+              {
+                "word": "maux",
+                "start": 33.12,
+                "end": 33.44,
+                "confidence": 0.9923873,
+                "speaker": 0,
+                "speaker_confidence": 0.58395505,
+                "punctuated_word": "maux"
+              },
+              {
+                "word": "de",
+                "start": 33.44,
+                "end": 33.52,
+                "confidence": 0.99464536,
+                "speaker": 0,
+                "speaker_confidence": 0.58395505,
+                "punctuated_word": "de"
+              },
+              {
+                "word": "tête",
+                "start": 33.52,
+                "end": 33.76,
+                "confidence": 0.9695926,
+                "speaker": 0,
+                "speaker_confidence": 0.58395505,
+                "punctuated_word": "tête,"
+              },
+              {
+                "word": "les",
+                "start": 33.76,
+                "end": 34.26,
+                "confidence": 0.9134195,
+                "speaker": 0,
+                "speaker_confidence": 0.58395505,
+                "punctuated_word": "les"
+              },
+              {
+                "word": "vertiges",
+                "start": 34.879997,
+                "end": 35.379997,
+                "confidence": 0.9927033,
+                "speaker": 0,
+                "speaker_confidence": 0.47825676,
+                "punctuated_word": "vertiges,"
+              },
+              {
+                "word": "l'effondrement",
+                "start": 36.079998,
+                "end": 36.579998,
+                "confidence": 0.8019634,
+                "speaker": 0,
+                "speaker_confidence": 0.47825676,
+                "punctuated_word": "l'effondrement"
+              },
+              {
+                "word": "dans",
+                "start": 37.04,
+                "end": 37.2,
+                "confidence": 0.99826187,
+                "speaker": 0,
+                "speaker_confidence": 0.78236365,
+                "punctuated_word": "dans"
+              },
+              {
+                "word": "les",
+                "start": 37.2,
+                "end": 37.6,
+                "confidence": 0.9970042,
+                "speaker": 0,
+                "speaker_confidence": 0.78236365,
+                "punctuated_word": "les"
+              },
+              {
+                "word": "oreilles",
+                "start": 37.6,
+                "end": 37.92,
+                "confidence": 0.9985436,
+                "speaker": 0,
+                "speaker_confidence": 0.78236365,
+                "punctuated_word": "oreilles"
+              },
+              {
+                "word": "ou",
+                "start": 37.92,
+                "end": 38.079998,
+                "confidence": 0.9575217,
+                "speaker": 0,
+                "speaker_confidence": 0.78236365,
+                "punctuated_word": "ou"
+              },
+              {
+                "word": "les",
+                "start": 38.079998,
+                "end": 38.239998,
+                "confidence": 0.68766695,
+                "speaker": 0,
+                "speaker_confidence": 0.78236365,
+                "punctuated_word": "les"
+              },
+              {
+                "word": "problèmes",
+                "start": 38.239998,
+                "end": 38.739998,
+                "confidence": 0.9980293,
+                "speaker": 0,
+                "speaker_confidence": 0.78236365,
+                "punctuated_word": "problèmes"
+              },
+              {
+                "word": "de",
+                "start": 38.8,
+                "end": 39.04,
+                "confidence": 0.97080517,
+                "speaker": 0,
+                "speaker_confidence": 0.78236365,
+                "punctuated_word": "de"
+              },
+              {
+                "word": "vision",
+                "start": 39.04,
+                "end": 39.54,
+                "confidence": 0.8877037,
+                "speaker": 0,
+                "speaker_confidence": 0.78236365,
+                "punctuated_word": "vision."
+              },
+              {
+                "word": "j'ai",
+                "start": 42.455,
+                "end": 42.775,
+                "confidence": 0.9982707,
+                "speaker": 1,
+                "speaker_confidence": 0.7057877,
+                "punctuated_word": "J'ai"
+              },
+              {
+                "word": "parfois",
+                "start": 42.775,
+                "end": 43.095,
+                "confidence": 0.99980575,
+                "speaker": 1,
+                "speaker_confidence": 0.7057877,
+                "punctuated_word": "parfois"
+              },
+              {
+                "word": "des",
+                "start": 43.095,
+                "end": 43.255,
+                "confidence": 0.998495,
+                "speaker": 1,
+                "speaker_confidence": 0.7057877,
+                "punctuated_word": "des"
+              },
+              {
+                "word": "maux",
+                "start": 43.255,
+                "end": 43.335,
+                "confidence": 0.9760207,
+                "speaker": 1,
+                "speaker_confidence": 0.7057877,
+                "punctuated_word": "maux"
+              },
+              {
+                "word": "de",
+                "start": 43.335,
+                "end": 43.575,
+                "confidence": 0.99922967,
+                "speaker": 1,
+                "speaker_confidence": 0.7057877,
+                "punctuated_word": "de"
+              },
+              {
+                "word": "tête",
+                "start": 43.575,
+                "end": 43.975,
+                "confidence": 0.90058637,
+                "speaker": 1,
+                "speaker_confidence": 0.7057877,
+                "punctuated_word": "tête,"
+              },
+              {
+                "word": "mais",
+                "start": 43.975,
+                "end": 44.135,
+                "confidence": 0.9967932,
+                "speaker": 1,
+                "speaker_confidence": 0.7057877,
+                "punctuated_word": "mais"
+              },
+              {
+                "word": "je",
+                "start": 44.135,
+                "end": 44.375,
+                "confidence": 0.9992937,
+                "speaker": 1,
+                "speaker_confidence": 0.7057877,
+                "punctuated_word": "je"
+              },
+              {
+                "word": "pensais",
+                "start": 44.375,
+                "end": 44.695,
+                "confidence": 0.999166,
+                "speaker": 1,
+                "speaker_confidence": 0.7057877,
+                "punctuated_word": "pensais"
+              },
+              {
+                "word": "que",
+                "start": 44.695,
+                "end": 44.855,
+                "confidence": 0.9989219,
+                "speaker": 1,
+                "speaker_confidence": 0.7057877,
+                "punctuated_word": "que"
+              },
+              {
+                "word": "c'était",
+                "start": 44.855,
+                "end": 45.095,
+                "confidence": 0.9988251,
+                "speaker": 1,
+                "speaker_confidence": 0.7034396,
+                "punctuated_word": "c'était"
+              },
+              {
+                "word": "à",
+                "start": 45.095,
+                "end": 45.255,
+                "confidence": 0.9885069,
+                "speaker": 1,
+                "speaker_confidence": 0.7034396,
+                "punctuated_word": "à"
+              },
+              {
+                "word": "cause",
+                "start": 45.255,
+                "end": 45.495,
+                "confidence": 0.9999038,
+                "speaker": 1,
+                "speaker_confidence": 0.7034396,
+                "punctuated_word": "cause"
+              },
+              {
+                "word": "du",
+                "start": 45.495,
+                "end": 45.575,
+                "confidence": 0.99802977,
+                "speaker": 1,
+                "speaker_confidence": 0.7034396,
+                "punctuated_word": "du"
+              },
+              {
+                "word": "stress",
+                "start": 45.575,
+                "end": 45.895,
+                "confidence": 0.9926347,
+                "speaker": 1,
+                "speaker_confidence": 0.7034396,
+                "punctuated_word": "stress"
+              },
+              {
+                "word": "au",
+                "start": 45.895,
+                "end": 46.055,
+                "confidence": 0.9976561,
+                "speaker": 1,
+                "speaker_confidence": 0.7034396,
+                "punctuated_word": "au"
+              },
+              {
+                "word": "travail",
+                "start": 46.055,
+                "end": 46.555,
+                "confidence": 0.9910408,
+                "speaker": 1,
+                "speaker_confidence": 0.7034396,
+                "punctuated_word": "travail."
+              },
+              {
+                "word": "c'est",
+                "start": 49.895,
+                "end": 50.295,
+                "confidence": 0.99145776,
+                "speaker": 0,
+                "speaker_confidence": 0.68999773,
+                "punctuated_word": "C'est"
+              },
+              {
+                "word": "possible",
+                "start": 50.295,
+                "end": 50.795,
+                "confidence": 0.9050412,
+                "speaker": 0,
+                "speaker_confidence": 0.68999773,
+                "punctuated_word": "possible,"
+              },
+              {
+                "word": "mais",
+                "start": 51.335,
+                "end": 51.575,
+                "confidence": 0.99462175,
+                "speaker": 0,
+                "speaker_confidence": 0.68999773,
+                "punctuated_word": "mais"
+              },
+              {
+                "word": "il",
+                "start": 51.575,
+                "end": 51.735,
+                "confidence": 0.96807176,
+                "speaker": 0,
+                "speaker_confidence": 0.68999773,
+                "punctuated_word": "il"
+              },
+              {
+                "word": "se",
+                "start": 51.735,
+                "end": 51.975,
+                "confidence": 0.47279197,
+                "speaker": 0,
+                "speaker_confidence": 0.68999773,
+                "punctuated_word": "se"
+              },
+              {
+                "word": "peut",
+                "start": 51.975,
+                "end": 52.295,
+                "confidence": 0.9985544,
+                "speaker": 0,
+                "speaker_confidence": 0.68999773,
+                "punctuated_word": "peut"
+              },
+              {
+                "word": "aussi",
+                "start": 52.295,
+                "end": 52.695,
+                "confidence": 0.98983765,
+                "speaker": 0,
+                "speaker_confidence": 0.68999773,
+                "punctuated_word": "aussi"
+              },
+              {
+                "word": "que",
+                "start": 52.695,
+                "end": 52.775,
+                "confidence": 0.9669611,
+                "speaker": 0,
+                "speaker_confidence": 0.68999773,
+                "punctuated_word": "que"
+              },
+              {
+                "word": "ce",
+                "start": 52.775,
+                "end": 53.015,
+                "confidence": 0.96382076,
+                "speaker": 0,
+                "speaker_confidence": 0.45686668,
+                "punctuated_word": "ce"
+              },
+              {
+                "word": "soit",
+                "start": 53.015,
+                "end": 53.415,
+                "confidence": 0.98749024,
+                "speaker": 0,
+                "speaker_confidence": 0.45686668,
+                "punctuated_word": "soit"
+              },
+              {
+                "word": "lié",
+                "start": 53.415,
+                "end": 53.655,
+                "confidence": 0.9964121,
+                "speaker": 0,
+                "speaker_confidence": 0.45686668,
+                "punctuated_word": "lié"
+              },
+              {
+                "word": "à",
+                "start": 53.655,
+                "end": 53.735,
+                "confidence": 0.98711026,
+                "speaker": 0,
+                "speaker_confidence": 0.45686668,
+                "punctuated_word": "à"
+              },
+              {
+                "word": "votre",
+                "start": 53.735,
+                "end": 54.055,
+                "confidence": 0.9740821,
+                "speaker": 0,
+                "speaker_confidence": 0.45686668,
+                "punctuated_word": "votre"
+              },
+              {
+                "word": "hypertension",
+                "start": 54.055,
+                "end": 54.555,
+                "confidence": 0.97996944,
+                "speaker": 0,
+                "speaker_confidence": 0.45686668,
+                "punctuated_word": "hypertension."
+              },
+              {
+                "word": "votre",
+                "start": 68.145004,
+                "end": 68.545,
+                "confidence": 0.9952265,
+                "speaker": 0,
+                "speaker_confidence": 0.7218299,
+                "punctuated_word": "Votre"
+              },
+              {
+                "word": "tension",
+                "start": 68.545,
+                "end": 69.045,
+                "confidence": 0.9731271,
+                "speaker": 0,
+                "speaker_confidence": 0.7218299,
+                "punctuated_word": "tension"
+              },
+              {
+                "word": "artérielle",
+                "start": 69.665,
+                "end": 69.745,
+                "confidence": 0.99976975,
+                "speaker": 0,
+                "speaker_confidence": 0.7218299,
+                "punctuated_word": "artérielle"
+              },
+              {
+                "word": "est",
+                "start": 69.745,
+                "end": 69.985,
+                "confidence": 0.9879661,
+                "speaker": 0,
+                "speaker_confidence": 0.7218299,
+                "punctuated_word": "est"
+              },
+              {
+                "word": "un",
+                "start": 69.985,
+                "end": 70.145004,
+                "confidence": 0.9940094,
+                "speaker": 0,
+                "speaker_confidence": 0.7218299,
+                "punctuated_word": "un"
+              },
+              {
+                "word": "peu",
+                "start": 70.145004,
+                "end": 70.385,
+                "confidence": 0.99810517,
+                "speaker": 0,
+                "speaker_confidence": 0.7679154,
+                "punctuated_word": "peu"
+              },
+              {
+                "word": "élevée",
+                "start": 70.385,
+                "end": 70.785,
+                "confidence": 0.96778005,
+                "speaker": 0,
+                "speaker_confidence": 0.7679154,
+                "punctuated_word": "élevée"
+              },
+              {
+                "word": "aujourd'hui",
+                "start": 70.785,
+                "end": 71.285,
+                "confidence": 0.89260304,
+                "speaker": 0,
+                "speaker_confidence": 0.7679154,
+                "punctuated_word": "aujourd'hui,"
+              },
+              {
+                "word": "votre",
+                "start": 72.305,
+                "end": 72.625,
+                "confidence": 0.99280715,
+                "speaker": 0,
+                "speaker_confidence": 0.7679154,
+                "punctuated_word": "votre"
+              },
+              {
+                "word": "taux",
+                "start": 72.625,
+                "end": 72.945,
+                "confidence": 0.99852556,
+                "speaker": 0,
+                "speaker_confidence": 0.7679154,
+                "punctuated_word": "taux"
+              },
+              {
+                "word": "de",
+                "start": 72.945,
+                "end": 73.185,
+                "confidence": 0.9885014,
+                "speaker": 0,
+                "speaker_confidence": 0.623152,
+                "punctuated_word": "de"
+              },
+              {
+                "word": "cholestérol",
+                "start": 73.185,
+                "end": 73.685,
+                "confidence": 0.95580214,
+                "speaker": 0,
+                "speaker_confidence": 0.623152,
+                "punctuated_word": "cholestérol"
+              },
+              {
+                "word": "est",
+                "start": 73.985,
+                "end": 74.385,
+                "confidence": 0.97516745,
+                "speaker": 0,
+                "speaker_confidence": 0.623152,
+                "punctuated_word": "est"
+              },
+              {
+                "word": "également",
+                "start": 74.385,
+                "end": 74.785,
+                "confidence": 0.9984882,
+                "speaker": 0,
+                "speaker_confidence": 0.623152,
+                "punctuated_word": "également"
+              },
+              {
+                "word": "élevé",
+                "start": 74.785,
+                "end": 75.285,
+                "confidence": 0.6931571,
+                "speaker": 0,
+                "speaker_confidence": 0.623152,
+                "punctuated_word": "élevé,"
+              },
+              {
+                "word": "ce",
+                "start": 75.985,
+                "end": 76.145004,
+                "confidence": 0.9457719,
+                "speaker": 0,
+                "speaker_confidence": 0.0,
+                "punctuated_word": "ce"
+              },
+              {
+                "word": "qui",
+                "start": 76.145004,
+                "end": 76.385,
+                "confidence": 0.99821043,
+                "speaker": 0,
+                "speaker_confidence": 0.0,
+                "punctuated_word": "qui"
+              },
+              {
+                "word": "peut",
+                "start": 76.385,
+                "end": 76.545,
+                "confidence": 0.98222154,
+                "speaker": 0,
+                "speaker_confidence": 0.45851946,
+                "punctuated_word": "peut"
+              },
+              {
+                "word": "contribuer",
+                "start": 76.545,
+                "end": 77.045,
+                "confidence": 0.9931486,
+                "speaker": 0,
+                "speaker_confidence": 0.45851946,
+                "punctuated_word": "contribuer"
+              },
+              {
+                "word": "à",
+                "start": 77.345,
+                "end": 77.505005,
+                "confidence": 0.9919693,
+                "speaker": 0,
+                "speaker_confidence": 0.45851946,
+                "punctuated_word": "à"
+              },
+              {
+                "word": "votre",
+                "start": 77.505005,
+                "end": 77.985,
+                "confidence": 0.99559903,
+                "speaker": 0,
+                "speaker_confidence": 0.45851946,
+                "punctuated_word": "votre"
+              },
+              {
+                "word": "hypertension",
+                "start": 77.985,
+                "end": 78.485,
+                "confidence": 0.9663225,
+                "speaker": 0,
+                "speaker_confidence": 0.45851946,
+                "punctuated_word": "hypertension."
+              },
+              {
+                "word": "c'est",
+                "start": 81.830185,
+                "end": 82.330185,
+                "confidence": 0.9992555,
+                "speaker": 1,
+                "speaker_confidence": 0.34307683,
+                "punctuated_word": "C'est"
+              },
+              {
+                "word": "grave",
+                "start": 85.190186,
+                "end": 85.690186,
+                "confidence": 0.9986809,
+                "speaker": 0,
+                "speaker_confidence": 0.11239052,
+                "punctuated_word": "grave"
+              },
+              {
+                "word": "docteur",
+                "start": 86.790184,
+                "end": 87.290184,
+                "confidence": 0.6195491,
+                "speaker": 0,
+                "speaker_confidence": 0.11239052,
+                "punctuated_word": "docteur"
+              },
+              {
+                "word": "d'accord",
+                "start": 88.470184,
+                "end": 88.970184,
+                "confidence": 0.925944,
+                "speaker": 1,
+                "speaker_confidence": 0.67825025,
+                "punctuated_word": "D'accord,"
+              },
+              {
+                "word": "je",
+                "start": 89.35019,
+                "end": 89.510185,
+                "confidence": 0.9985247,
+                "speaker": 1,
+                "speaker_confidence": 0.67825025,
+                "punctuated_word": "je"
+              },
+              {
+                "word": "suis",
+                "start": 89.510185,
+                "end": 89.75018,
+                "confidence": 0.9998287,
+                "speaker": 1,
+                "speaker_confidence": 0.67825025,
+                "punctuated_word": "suis"
+              },
+              {
+                "word": "prêt",
+                "start": 89.75018,
+                "end": 89.91019,
+                "confidence": 0.9976794,
+                "speaker": 1,
+                "speaker_confidence": 0.67825025,
+                "punctuated_word": "prêt"
+              },
+              {
+                "word": "à",
+                "start": 89.91019,
+                "end": 90.07018,
+                "confidence": 0.9983903,
+                "speaker": 1,
+                "speaker_confidence": 0.67825025,
+                "punctuated_word": "à"
+              },
+              {
+                "word": "faire",
+                "start": 90.07018,
+                "end": 90.23019,
+                "confidence": 0.99976486,
+                "speaker": 1,
+                "speaker_confidence": 0.67825025,
+                "punctuated_word": "faire"
+              },
+              {
+                "word": "ce",
+                "start": 90.23019,
+                "end": 90.39018,
+                "confidence": 0.99865365,
+                "speaker": 1,
+                "speaker_confidence": 0.67825025,
+                "punctuated_word": "ce"
+              },
+              {
+                "word": "qu'il",
+                "start": 90.39018,
+                "end": 90.71018,
+                "confidence": 0.99980736,
+                "speaker": 1,
+                "speaker_confidence": 0.67825025,
+                "punctuated_word": "qu'il"
+              },
+              {
+                "word": "faut",
+                "start": 90.71018,
+                "end": 91.21018,
+                "confidence": 0.9940362,
+                "speaker": 1,
+                "speaker_confidence": 0.67825025,
+                "punctuated_word": "faut."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "utterances": [
+      {
+        "start": 0.16,
+        "end": 2.42,
+        "confidence": 0.9122994,
+        "channel": 0,
+        "transcript": "Bonjour, je suis le docteur Dupont.",
+        "words": [
+          {
+            "word": "bonjour",
+            "start": 0.16,
+            "end": 0.65999997,
+            "confidence": 0.92131925,
+            "speaker": 0,
+            "speaker_confidence": 0.0873425,
+            "punctuated_word": "Bonjour,"
+          },
+          {
+            "word": "je",
+            "start": 0.96,
+            "end": 1.12,
+            "confidence": 0.9905177,
+            "speaker": 0,
+            "speaker_confidence": 0.733165,
+            "punctuated_word": "je"
+          },
+          {
+            "word": "suis",
+            "start": 1.12,
+            "end": 1.4399999,
+            "confidence": 0.9988176,
+            "speaker": 0,
+            "speaker_confidence": 0.733165,
+            "punctuated_word": "suis"
+          },
+          {
+            "word": "le",
+            "start": 1.4399999,
+            "end": 1.5999999,
+            "confidence": 0.9753981,
+            "speaker": 0,
+            "speaker_confidence": 0.733165,
+            "punctuated_word": "le"
+          },
+          {
+            "word": "docteur",
+            "start": 1.5999999,
+            "end": 1.92,
+            "confidence": 0.79432535,
+            "speaker": 0,
+            "speaker_confidence": 0.733165,
+            "punctuated_word": "docteur"
+          },
+          {
+            "word": "dupont",
+            "start": 1.92,
+            "end": 2.42,
+            "confidence": 0.7934184,
+            "speaker": 0,
+            "speaker_confidence": 0.733165,
+            "punctuated_word": "Dupont."
+          }
+        ],
+        "speaker": 0,
+        "id": "447ef1b3-e2c1-4008-ab70-4d905cd6023e"
+      },
+      {
+        "start": 3.12,
+        "end": 5.52,
+        "confidence": 0.8793219,
+        "channel": 0,
+        "transcript": "Vous êtes monsieur Leroux, c'est bien ça",
+        "words": [
+          {
+            "word": "vous",
+            "start": 3.12,
+            "end": 3.36,
+            "confidence": 0.9544057,
+            "speaker": 0,
+            "speaker_confidence": 0.54327077,
+            "punctuated_word": "Vous"
+          },
+          {
+            "word": "êtes",
+            "start": 3.36,
+            "end": 3.6,
+            "confidence": 0.92231154,
+            "speaker": 0,
+            "speaker_confidence": 0.54327077,
+            "punctuated_word": "êtes"
+          },
+          {
+            "word": "monsieur",
+            "start": 3.6,
+            "end": 3.9199998,
+            "confidence": 0.5827919,
+            "speaker": 0,
+            "speaker_confidence": 0.54327077,
+            "punctuated_word": "monsieur"
+          },
+          {
+            "word": "leroux",
+            "start": 3.9199998,
+            "end": 4.42,
+            "confidence": 0.78007495,
+            "speaker": 0,
+            "speaker_confidence": 0.54327077,
+            "punctuated_word": "Leroux,"
+          },
+          {
+            "word": "c'est",
+            "start": 4.64,
+            "end": 4.96,
+            "confidence": 0.97987604,
+            "speaker": 0,
+            "speaker_confidence": 0.31550372,
+            "punctuated_word": "c'est"
+          },
+          {
+            "word": "bien",
+            "start": 4.96,
+            "end": 5.2799997,
+            "confidence": 0.9918526,
+            "speaker": 0,
+            "speaker_confidence": 0.31550372,
+            "punctuated_word": "bien"
+          },
+          {
+            "word": "ça",
+            "start": 5.2799997,
+            "end": 5.52,
+            "confidence": 0.9439398,
+            "speaker": 0,
+            "speaker_confidence": 0.31550372,
+            "punctuated_word": "ça"
+          }
+        ],
+        "speaker": 0,
+        "id": "9a165bf2-7c39-452d-8967-2d8312336d96"
+      },
+      {
+        "start": 8.559999,
+        "end": 9.7,
+        "confidence": 0.9649152,
+        "channel": 0,
+        "transcript": "Oui, c'est exact.",
+        "words": [
+          {
+            "word": "oui",
+            "start": 8.559999,
+            "end": 8.96,
+            "confidence": 0.90115,
+            "speaker": 1,
+            "speaker_confidence": 0.6062,
+            "punctuated_word": "Oui,"
+          },
+          {
+            "word": "c'est",
+            "start": 8.96,
+            "end": 9.2,
+            "confidence": 0.9997449,
+            "speaker": 1,
+            "speaker_confidence": 0.6062,
+            "punctuated_word": "c'est"
+          },
+          {
+            "word": "exact",
+            "start": 9.2,
+            "end": 9.7,
+            "confidence": 0.9938507,
+            "speaker": 1,
+            "speaker_confidence": 0.6062,
+            "punctuated_word": "exact."
+          }
+        ],
+        "speaker": 1,
+        "id": "fda6842c-aaa7-43d9-98f4-dbe27655e3c9"
+      },
+      {
+        "start": 12.745,
+        "end": 13.965,
+        "confidence": 0.9738834,
+        "channel": 0,
+        "transcript": "Ravi de vous rencontrer",
+        "words": [
+          {
+            "word": "ravi",
+            "start": 12.745,
+            "end": 13.065001,
+            "confidence": 0.90143454,
+            "speaker": 0,
+            "speaker_confidence": 0.5585296,
+            "punctuated_word": "Ravi"
+          },
+          {
+            "word": "de",
+            "start": 13.065001,
+            "end": 13.305,
+            "confidence": 0.99903834,
+            "speaker": 0,
+            "speaker_confidence": 0.5585296,
+            "punctuated_word": "de"
+          },
+          {
+            "word": "vous",
+            "start": 13.305,
+            "end": 13.465,
+            "confidence": 0.99759275,
+            "speaker": 0,
+            "speaker_confidence": 0.5585296,
+            "punctuated_word": "vous"
+          },
+          {
+            "word": "rencontrer",
+            "start": 13.465,
+            "end": 13.965,
+            "confidence": 0.9974681,
+            "speaker": 0,
+            "speaker_confidence": 0.5585296,
+            "punctuated_word": "rencontrer"
+          }
+        ],
+        "speaker": 0,
+        "id": "4dc4baa3-e8f4-47a0-96ae-c07c2d33d9db"
+      },
+      {
+        "start": 14.505,
+        "end": 15.325001,
+        "confidence": 0.66425323,
+        "channel": 0,
+        "transcript": "monsieur Roux,",
+        "words": [
+          {
+            "word": "monsieur",
+            "start": 14.505,
+            "end": 14.825001,
+            "confidence": 0.7571672,
+            "speaker": 0,
+            "speaker_confidence": 0.5585296,
+            "punctuated_word": "monsieur"
+          },
+          {
+            "word": "roux",
+            "start": 14.825001,
+            "end": 15.325001,
+            "confidence": 0.5713392,
+            "speaker": 0,
+            "speaker_confidence": 0.5585296,
+            "punctuated_word": "Roux,"
+          }
+        ],
+        "speaker": 0,
+        "id": "4f51b9db-6ef9-4598-a5d0-d6ac6a83d690"
+      },
+      {
+        "start": 15.785,
+        "end": 17.645,
+        "confidence": 0.99517506,
+        "channel": 0,
+        "transcript": "que puis-je faire pour vous aujourd'hui",
+        "words": [
+          {
+            "word": "que",
+            "start": 15.785,
+            "end": 16.025,
+            "confidence": 0.99617696,
+            "speaker": 0,
+            "speaker_confidence": 0.5585296,
+            "punctuated_word": "que"
+          },
+          {
+            "word": "puis-je",
+            "start": 16.025,
+            "end": 16.425,
+            "confidence": 0.99495286,
+            "speaker": 0,
+            "speaker_confidence": 0.5585296,
+            "punctuated_word": "puis-je"
+          },
+          {
+            "word": "faire",
+            "start": 16.425,
+            "end": 16.745,
+            "confidence": 0.9946883,
+            "speaker": 0,
+            "speaker_confidence": 0.5585296,
+            "punctuated_word": "faire"
+          },
+          {
+            "word": "pour",
+            "start": 16.745,
+            "end": 16.985,
+            "confidence": 0.9950919,
+            "speaker": 0,
+            "speaker_confidence": 0.5585296,
+            "punctuated_word": "pour"
+          },
+          {
+            "word": "vous",
+            "start": 16.985,
+            "end": 17.145,
+            "confidence": 0.9907478,
+            "speaker": 0,
+            "speaker_confidence": 0.5585296,
+            "punctuated_word": "vous"
+          },
+          {
+            "word": "aujourd'hui",
+            "start": 17.145,
+            "end": 17.645,
+            "confidence": 0.9993927,
+            "speaker": 0,
+            "speaker_confidence": 0.5585296,
+            "punctuated_word": "aujourd'hui"
+          }
+        ],
+        "speaker": 0,
+        "id": "a6a37ba5-624c-4123-aeaf-f1d384b306cf"
+      },
+      {
+        "start": 21.225,
+        "end": 24.845001,
+        "confidence": 0.9563786,
+        "channel": 0,
+        "transcript": "bien mon médecin de famille m'a référé ici parce que j'ai une hypertension.",
+        "words": [
+          {
+            "word": "bien",
+            "start": 21.225,
+            "end": 21.465,
+            "confidence": 0.9997795,
+            "speaker": 1,
+            "speaker_confidence": 0.46451324,
+            "punctuated_word": "bien"
+          },
+          {
+            "word": "mon",
+            "start": 21.465,
+            "end": 21.785,
+            "confidence": 0.65503114,
+            "speaker": 1,
+            "speaker_confidence": 0.46451324,
+            "punctuated_word": "mon"
+          },
+          {
+            "word": "médecin",
+            "start": 21.785,
+            "end": 22.185001,
+            "confidence": 0.9988431,
+            "speaker": 1,
+            "speaker_confidence": 0.46451324,
+            "punctuated_word": "médecin"
+          },
+          {
+            "word": "de",
+            "start": 22.185001,
+            "end": 22.345001,
+            "confidence": 0.99846953,
+            "speaker": 1,
+            "speaker_confidence": 0.66689616,
+            "punctuated_word": "de"
+          },
+          {
+            "word": "famille",
+            "start": 22.345001,
+            "end": 22.585,
+            "confidence": 0.9981153,
+            "speaker": 1,
+            "speaker_confidence": 0.66689616,
+            "punctuated_word": "famille"
+          },
+          {
+            "word": "m'a",
+            "start": 22.585,
+            "end": 22.825,
+            "confidence": 0.9970563,
+            "speaker": 1,
+            "speaker_confidence": 0.66689616,
+            "punctuated_word": "m'a"
+          },
+          {
+            "word": "référé",
+            "start": 22.825,
+            "end": 23.305,
+            "confidence": 0.9291295,
+            "speaker": 1,
+            "speaker_confidence": 0.66689616,
+            "punctuated_word": "référé"
+          },
+          {
+            "word": "ici",
+            "start": 23.305,
+            "end": 23.625,
+            "confidence": 0.9991842,
+            "speaker": 1,
+            "speaker_confidence": 0.66689616,
+            "punctuated_word": "ici"
+          },
+          {
+            "word": "parce",
+            "start": 23.625,
+            "end": 23.865,
+            "confidence": 0.9170766,
+            "speaker": 1,
+            "speaker_confidence": 0.66689616,
+            "punctuated_word": "parce"
+          },
+          {
+            "word": "que",
+            "start": 23.865,
+            "end": 23.945,
+            "confidence": 0.99864155,
+            "speaker": 1,
+            "speaker_confidence": 0.66689616,
+            "punctuated_word": "que"
+          },
+          {
+            "word": "j'ai",
+            "start": 23.945,
+            "end": 24.105,
+            "confidence": 0.99945885,
+            "speaker": 1,
+            "speaker_confidence": 0.66689616,
+            "punctuated_word": "j'ai"
+          },
+          {
+            "word": "une",
+            "start": 24.105,
+            "end": 24.345001,
+            "confidence": 0.95395595,
+            "speaker": 1,
+            "speaker_confidence": 0.66689616,
+            "punctuated_word": "une"
+          },
+          {
+            "word": "hypertension",
+            "start": 24.345001,
+            "end": 24.845001,
+            "confidence": 0.98817927,
+            "speaker": 1,
+            "speaker_confidence": 0.66689616,
+            "punctuated_word": "hypertension."
+          }
+        ],
+        "speaker": 1,
+        "id": "8c956653-99ff-42b1-b57f-69c3cc58197d"
+      },
+      {
+        "start": 28.4,
+        "end": 28.9,
+        "confidence": 0.92707044,
+        "channel": 0,
+        "transcript": "D'accord,",
+        "words": [
+          {
+            "word": "d'accord",
+            "start": 28.4,
+            "end": 28.9,
+            "confidence": 0.92707044,
+            "speaker": 0,
+            "speaker_confidence": 0.38445354,
+            "punctuated_word": "D'accord,"
+          }
+        ],
+        "speaker": 0,
+        "id": "4a131aa2-d134-4d25-8424-c78c13dbc5d3"
+      },
+      {
+        "start": 29.599998,
+        "end": 30.099998,
+        "confidence": 0.98064995,
+        "channel": 0,
+        "transcript": "je",
+        "words": [
+          {
+            "word": "je",
+            "start": 29.599998,
+            "end": 30.099998,
+            "confidence": 0.98064995,
+            "speaker": 0,
+            "speaker_confidence": 0.62833303,
+            "punctuated_word": "je"
+          }
+        ],
+        "speaker": 0,
+        "id": "1cbaa62a-4984-42f1-914a-2daa61fff097"
+      },
+      {
+        "start": 30.4,
+        "end": 31.939999,
+        "confidence": 0.9083238,
+        "channel": 0,
+        "transcript": "vois, avez-vous des symptômes",
+        "words": [
+          {
+            "word": "vois",
+            "start": 30.4,
+            "end": 30.64,
+            "confidence": 0.8749018,
+            "speaker": 0,
+            "speaker_confidence": 0.62833303,
+            "punctuated_word": "vois,"
+          },
+          {
+            "word": "avez-vous",
+            "start": 30.64,
+            "end": 31.14,
+            "confidence": 0.9907244,
+            "speaker": 0,
+            "speaker_confidence": 0.62833303,
+            "punctuated_word": "avez-vous"
+          },
+          {
+            "word": "des",
+            "start": 31.199999,
+            "end": 31.439999,
+            "confidence": 0.76960546,
+            "speaker": 0,
+            "speaker_confidence": 0.62833303,
+            "punctuated_word": "des"
+          },
+          {
+            "word": "symptômes",
+            "start": 31.439999,
+            "end": 31.939999,
+            "confidence": 0.99806386,
+            "speaker": 0,
+            "speaker_confidence": 0.62833303,
+            "punctuated_word": "symptômes"
+          }
+        ],
+        "speaker": 0,
+        "id": "3f169096-1453-49df-b783-0049b905011a"
+      },
+      {
+        "start": 32.559998,
+        "end": 34.26,
+        "confidence": 0.867538,
+        "channel": 0,
+        "transcript": "comme les maux de tête, les",
+        "words": [
+          {
+            "word": "comme",
+            "start": 32.559998,
+            "end": 32.88,
+            "confidence": 0.5603318,
+            "speaker": 0,
+            "speaker_confidence": 0.58395505,
+            "punctuated_word": "comme"
+          },
+          {
+            "word": "les",
+            "start": 32.88,
+            "end": 33.12,
+            "confidence": 0.77485156,
+            "speaker": 0,
+            "speaker_confidence": 0.58395505,
+            "punctuated_word": "les"
+          },
+          {
+            "word": "maux",
+            "start": 33.12,
+            "end": 33.44,
+            "confidence": 0.9923873,
+            "speaker": 0,
+            "speaker_confidence": 0.58395505,
+            "punctuated_word": "maux"
+          },
+          {
+            "word": "de",
+            "start": 33.44,
+            "end": 33.52,
+            "confidence": 0.99464536,
+            "speaker": 0,
+            "speaker_confidence": 0.58395505,
+            "punctuated_word": "de"
+          },
+          {
+            "word": "tête",
+            "start": 33.52,
+            "end": 33.76,
+            "confidence": 0.9695926,
+            "speaker": 0,
+            "speaker_confidence": 0.58395505,
+            "punctuated_word": "tête,"
+          },
+          {
+            "word": "les",
+            "start": 33.76,
+            "end": 34.26,
+            "confidence": 0.9134195,
+            "speaker": 0,
+            "speaker_confidence": 0.58395505,
+            "punctuated_word": "les"
+          }
+        ],
+        "speaker": 0,
+        "id": "a0d2410f-519f-4315-b64c-0402e25acd56"
+      },
+      {
+        "start": 34.879997,
+        "end": 35.379997,
+        "confidence": 0.9927033,
+        "channel": 0,
+        "transcript": "vertiges,",
+        "words": [
+          {
+            "word": "vertiges",
+            "start": 34.879997,
+            "end": 35.379997,
+            "confidence": 0.9927033,
+            "speaker": 0,
+            "speaker_confidence": 0.47825676,
+            "punctuated_word": "vertiges,"
+          }
+        ],
+        "speaker": 0,
+        "id": "8005fa95-e9af-4a15-905e-0beda2a7dd35"
+      },
+      {
+        "start": 36.079998,
+        "end": 36.579998,
+        "confidence": 0.8019634,
+        "channel": 0,
+        "transcript": "l'effondrement",
+        "words": [
+          {
+            "word": "l'effondrement",
+            "start": 36.079998,
+            "end": 36.579998,
+            "confidence": 0.8019634,
+            "speaker": 0,
+            "speaker_confidence": 0.47825676,
+            "punctuated_word": "l'effondrement"
+          }
+        ],
+        "speaker": 0,
+        "id": "1ec42fdc-e6d9-4aa1-a838-778af708a5aa"
+      },
+      {
+        "start": 37.04,
+        "end": 39.54,
+        "confidence": 0.9369421,
+        "channel": 0,
+        "transcript": "dans les oreilles ou les problèmes de vision.",
+        "words": [
+          {
+            "word": "dans",
+            "start": 37.04,
+            "end": 37.2,
+            "confidence": 0.99826187,
+            "speaker": 0,
+            "speaker_confidence": 0.78236365,
+            "punctuated_word": "dans"
+          },
+          {
+            "word": "les",
+            "start": 37.2,
+            "end": 37.6,
+            "confidence": 0.9970042,
+            "speaker": 0,
+            "speaker_confidence": 0.78236365,
+            "punctuated_word": "les"
+          },
+          {
+            "word": "oreilles",
+            "start": 37.6,
+            "end": 37.92,
+            "confidence": 0.9985436,
+            "speaker": 0,
+            "speaker_confidence": 0.78236365,
+            "punctuated_word": "oreilles"
+          },
+          {
+            "word": "ou",
+            "start": 37.92,
+            "end": 38.079998,
+            "confidence": 0.9575217,
+            "speaker": 0,
+            "speaker_confidence": 0.78236365,
+            "punctuated_word": "ou"
+          },
+          {
+            "word": "les",
+            "start": 38.079998,
+            "end": 38.239998,
+            "confidence": 0.68766695,
+            "speaker": 0,
+            "speaker_confidence": 0.78236365,
+            "punctuated_word": "les"
+          },
+          {
+            "word": "problèmes",
+            "start": 38.239998,
+            "end": 38.739998,
+            "confidence": 0.9980293,
+            "speaker": 0,
+            "speaker_confidence": 0.78236365,
+            "punctuated_word": "problèmes"
+          },
+          {
+            "word": "de",
+            "start": 38.8,
+            "end": 39.04,
+            "confidence": 0.97080517,
+            "speaker": 0,
+            "speaker_confidence": 0.78236365,
+            "punctuated_word": "de"
+          },
+          {
+            "word": "vision",
+            "start": 39.04,
+            "end": 39.54,
+            "confidence": 0.8877037,
+            "speaker": 0,
+            "speaker_confidence": 0.78236365,
+            "punctuated_word": "vision."
+          }
+        ],
+        "speaker": 0,
+        "id": "0a5eab03-e63d-45b4-9e75-bfb916507c29"
+      },
+      {
+        "start": 42.455,
+        "end": 46.555,
+        "confidence": 0.99018705,
+        "channel": 0,
+        "transcript": "J'ai parfois des maux de tête, mais je pensais que c'était à cause du stress au travail.",
+        "words": [
+          {
+            "word": "j'ai",
+            "start": 42.455,
+            "end": 42.775,
+            "confidence": 0.9982707,
+            "speaker": 1,
+            "speaker_confidence": 0.7057877,
+            "punctuated_word": "J'ai"
+          },
+          {
+            "word": "parfois",
+            "start": 42.775,
+            "end": 43.095,
+            "confidence": 0.99980575,
+            "speaker": 1,
+            "speaker_confidence": 0.7057877,
+            "punctuated_word": "parfois"
+          },
+          {
+            "word": "des",
+            "start": 43.095,
+            "end": 43.255,
+            "confidence": 0.998495,
+            "speaker": 1,
+            "speaker_confidence": 0.7057877,
+            "punctuated_word": "des"
+          },
+          {
+            "word": "maux",
+            "start": 43.255,
+            "end": 43.335,
+            "confidence": 0.9760207,
+            "speaker": 1,
+            "speaker_confidence": 0.7057877,
+            "punctuated_word": "maux"
+          },
+          {
+            "word": "de",
+            "start": 43.335,
+            "end": 43.575,
+            "confidence": 0.99922967,
+            "speaker": 1,
+            "speaker_confidence": 0.7057877,
+            "punctuated_word": "de"
+          },
+          {
+            "word": "tête",
+            "start": 43.575,
+            "end": 43.975,
+            "confidence": 0.90058637,
+            "speaker": 1,
+            "speaker_confidence": 0.7057877,
+            "punctuated_word": "tête,"
+          },
+          {
+            "word": "mais",
+            "start": 43.975,
+            "end": 44.135,
+            "confidence": 0.9967932,
+            "speaker": 1,
+            "speaker_confidence": 0.7057877,
+            "punctuated_word": "mais"
+          },
+          {
+            "word": "je",
+            "start": 44.135,
+            "end": 44.375,
+            "confidence": 0.9992937,
+            "speaker": 1,
+            "speaker_confidence": 0.7057877,
+            "punctuated_word": "je"
+          },
+          {
+            "word": "pensais",
+            "start": 44.375,
+            "end": 44.695,
+            "confidence": 0.999166,
+            "speaker": 1,
+            "speaker_confidence": 0.7057877,
+            "punctuated_word": "pensais"
+          },
+          {
+            "word": "que",
+            "start": 44.695,
+            "end": 44.855,
+            "confidence": 0.9989219,
+            "speaker": 1,
+            "speaker_confidence": 0.7057877,
+            "punctuated_word": "que"
+          },
+          {
+            "word": "c'était",
+            "start": 44.855,
+            "end": 45.095,
+            "confidence": 0.9988251,
+            "speaker": 1,
+            "speaker_confidence": 0.7034396,
+            "punctuated_word": "c'était"
+          },
+          {
+            "word": "à",
+            "start": 45.095,
+            "end": 45.255,
+            "confidence": 0.9885069,
+            "speaker": 1,
+            "speaker_confidence": 0.7034396,
+            "punctuated_word": "à"
+          },
+          {
+            "word": "cause",
+            "start": 45.255,
+            "end": 45.495,
+            "confidence": 0.9999038,
+            "speaker": 1,
+            "speaker_confidence": 0.7034396,
+            "punctuated_word": "cause"
+          },
+          {
+            "word": "du",
+            "start": 45.495,
+            "end": 45.575,
+            "confidence": 0.99802977,
+            "speaker": 1,
+            "speaker_confidence": 0.7034396,
+            "punctuated_word": "du"
+          },
+          {
+            "word": "stress",
+            "start": 45.575,
+            "end": 45.895,
+            "confidence": 0.9926347,
+            "speaker": 1,
+            "speaker_confidence": 0.7034396,
+            "punctuated_word": "stress"
+          },
+          {
+            "word": "au",
+            "start": 45.895,
+            "end": 46.055,
+            "confidence": 0.9976561,
+            "speaker": 1,
+            "speaker_confidence": 0.7034396,
+            "punctuated_word": "au"
+          },
+          {
+            "word": "travail",
+            "start": 46.055,
+            "end": 46.555,
+            "confidence": 0.9910408,
+            "speaker": 1,
+            "speaker_confidence": 0.7034396,
+            "punctuated_word": "travail."
+          }
+        ],
+        "speaker": 1,
+        "id": "96015e0b-2f79-460c-858f-f4ab0a2b8a89"
+      },
+      {
+        "start": 49.895,
+        "end": 50.795,
+        "confidence": 0.94824946,
+        "channel": 0,
+        "transcript": "C'est possible,",
+        "words": [
+          {
+            "word": "c'est",
+            "start": 49.895,
+            "end": 50.295,
+            "confidence": 0.99145776,
+            "speaker": 0,
+            "speaker_confidence": 0.68999773,
+            "punctuated_word": "C'est"
+          },
+          {
+            "word": "possible",
+            "start": 50.295,
+            "end": 50.795,
+            "confidence": 0.9050412,
+            "speaker": 0,
+            "speaker_confidence": 0.68999773,
+            "punctuated_word": "possible,"
+          }
+        ],
+        "speaker": 0,
+        "id": "ec40b7ff-e597-4707-883b-85fa46ebfac2"
+      },
+      {
+        "start": 51.335,
+        "end": 54.555,
+        "confidence": 0.93997693,
+        "channel": 0,
+        "transcript": "mais il se peut aussi que ce soit lié à votre hypertension.",
+        "words": [
+          {
+            "word": "mais",
+            "start": 51.335,
+            "end": 51.575,
+            "confidence": 0.99462175,
+            "speaker": 0,
+            "speaker_confidence": 0.68999773,
+            "punctuated_word": "mais"
+          },
+          {
+            "word": "il",
+            "start": 51.575,
+            "end": 51.735,
+            "confidence": 0.96807176,
+            "speaker": 0,
+            "speaker_confidence": 0.68999773,
+            "punctuated_word": "il"
+          },
+          {
+            "word": "se",
+            "start": 51.735,
+            "end": 51.975,
+            "confidence": 0.47279197,
+            "speaker": 0,
+            "speaker_confidence": 0.68999773,
+            "punctuated_word": "se"
+          },
+          {
+            "word": "peut",
+            "start": 51.975,
+            "end": 52.295,
+            "confidence": 0.9985544,
+            "speaker": 0,
+            "speaker_confidence": 0.68999773,
+            "punctuated_word": "peut"
+          },
+          {
+            "word": "aussi",
+            "start": 52.295,
+            "end": 52.695,
+            "confidence": 0.98983765,
+            "speaker": 0,
+            "speaker_confidence": 0.68999773,
+            "punctuated_word": "aussi"
+          },
+          {
+            "word": "que",
+            "start": 52.695,
+            "end": 52.775,
+            "confidence": 0.9669611,
+            "speaker": 0,
+            "speaker_confidence": 0.68999773,
+            "punctuated_word": "que"
+          },
+          {
+            "word": "ce",
+            "start": 52.775,
+            "end": 53.015,
+            "confidence": 0.96382076,
+            "speaker": 0,
+            "speaker_confidence": 0.45686668,
+            "punctuated_word": "ce"
+          },
+          {
+            "word": "soit",
+            "start": 53.015,
+            "end": 53.415,
+            "confidence": 0.98749024,
+            "speaker": 0,
+            "speaker_confidence": 0.45686668,
+            "punctuated_word": "soit"
+          },
+          {
+            "word": "lié",
+            "start": 53.415,
+            "end": 53.655,
+            "confidence": 0.9964121,
+            "speaker": 0,
+            "speaker_confidence": 0.45686668,
+            "punctuated_word": "lié"
+          },
+          {
+            "word": "à",
+            "start": 53.655,
+            "end": 53.735,
+            "confidence": 0.98711026,
+            "speaker": 0,
+            "speaker_confidence": 0.45686668,
+            "punctuated_word": "à"
+          },
+          {
+            "word": "votre",
+            "start": 53.735,
+            "end": 54.055,
+            "confidence": 0.9740821,
+            "speaker": 0,
+            "speaker_confidence": 0.45686668,
+            "punctuated_word": "votre"
+          },
+          {
+            "word": "hypertension",
+            "start": 54.055,
+            "end": 54.555,
+            "confidence": 0.97996944,
+            "speaker": 0,
+            "speaker_confidence": 0.45686668,
+            "punctuated_word": "hypertension."
+          }
+        ],
+        "speaker": 0,
+        "id": "fb4f9acd-6762-48f6-81f6-328eab6ae8ac"
+      },
+      {
+        "start": 68.145004,
+        "end": 69.045,
+        "confidence": 0.9841768,
+        "channel": 0,
+        "transcript": "Votre tension",
+        "words": [
+          {
+            "word": "votre",
+            "start": 68.145004,
+            "end": 68.545,
+            "confidence": 0.9952265,
+            "speaker": 0,
+            "speaker_confidence": 0.7218299,
+            "punctuated_word": "Votre"
+          },
+          {
+            "word": "tension",
+            "start": 68.545,
+            "end": 69.045,
+            "confidence": 0.9731271,
+            "speaker": 0,
+            "speaker_confidence": 0.7218299,
+            "punctuated_word": "tension"
+          }
+        ],
+        "speaker": 0,
+        "id": "bc72cbbd-0f7f-4c77-8577-d4b65cba6684"
+      },
+      {
+        "start": 69.665,
+        "end": 71.285,
+        "confidence": 0.9733722,
+        "channel": 0,
+        "transcript": "artérielle est un peu élevée aujourd'hui,",
+        "words": [
+          {
+            "word": "artérielle",
+            "start": 69.665,
+            "end": 69.745,
+            "confidence": 0.99976975,
+            "speaker": 0,
+            "speaker_confidence": 0.7218299,
+            "punctuated_word": "artérielle"
+          },
+          {
+            "word": "est",
+            "start": 69.745,
+            "end": 69.985,
+            "confidence": 0.9879661,
+            "speaker": 0,
+            "speaker_confidence": 0.7218299,
+            "punctuated_word": "est"
+          },
+          {
+            "word": "un",
+            "start": 69.985,
+            "end": 70.145004,
+            "confidence": 0.9940094,
+            "speaker": 0,
+            "speaker_confidence": 0.7218299,
+            "punctuated_word": "un"
+          },
+          {
+            "word": "peu",
+            "start": 70.145004,
+            "end": 70.385,
+            "confidence": 0.99810517,
+            "speaker": 0,
+            "speaker_confidence": 0.7679154,
+            "punctuated_word": "peu"
+          },
+          {
+            "word": "élevée",
+            "start": 70.385,
+            "end": 70.785,
+            "confidence": 0.96778005,
+            "speaker": 0,
+            "speaker_confidence": 0.7679154,
+            "punctuated_word": "élevée"
+          },
+          {
+            "word": "aujourd'hui",
+            "start": 70.785,
+            "end": 71.285,
+            "confidence": 0.89260304,
+            "speaker": 0,
+            "speaker_confidence": 0.7679154,
+            "punctuated_word": "aujourd'hui,"
+          }
+        ],
+        "speaker": 0,
+        "id": "48541558-5ecd-43e2-86c6-3f7f325428a6"
+      },
+      {
+        "start": 72.305,
+        "end": 73.685,
+        "confidence": 0.9839091,
+        "channel": 0,
+        "transcript": "votre taux de cholestérol",
+        "words": [
+          {
+            "word": "votre",
+            "start": 72.305,
+            "end": 72.625,
+            "confidence": 0.99280715,
+            "speaker": 0,
+            "speaker_confidence": 0.7679154,
+            "punctuated_word": "votre"
+          },
+          {
+            "word": "taux",
+            "start": 72.625,
+            "end": 72.945,
+            "confidence": 0.99852556,
+            "speaker": 0,
+            "speaker_confidence": 0.7679154,
+            "punctuated_word": "taux"
+          },
+          {
+            "word": "de",
+            "start": 72.945,
+            "end": 73.185,
+            "confidence": 0.9885014,
+            "speaker": 0,
+            "speaker_confidence": 0.623152,
+            "punctuated_word": "de"
+          },
+          {
+            "word": "cholestérol",
+            "start": 73.185,
+            "end": 73.685,
+            "confidence": 0.95580214,
+            "speaker": 0,
+            "speaker_confidence": 0.623152,
+            "punctuated_word": "cholestérol"
+          }
+        ],
+        "speaker": 0,
+        "id": "678dbf4c-e868-4174-82fc-1d561029f7cf"
+      },
+      {
+        "start": 73.985,
+        "end": 75.285,
+        "confidence": 0.88893765,
+        "channel": 0,
+        "transcript": "est également élevé,",
+        "words": [
+          {
+            "word": "est",
+            "start": 73.985,
+            "end": 74.385,
+            "confidence": 0.97516745,
+            "speaker": 0,
+            "speaker_confidence": 0.623152,
+            "punctuated_word": "est"
+          },
+          {
+            "word": "également",
+            "start": 74.385,
+            "end": 74.785,
+            "confidence": 0.9984882,
+            "speaker": 0,
+            "speaker_confidence": 0.623152,
+            "punctuated_word": "également"
+          },
+          {
+            "word": "élevé",
+            "start": 74.785,
+            "end": 75.285,
+            "confidence": 0.6931571,
+            "speaker": 0,
+            "speaker_confidence": 0.623152,
+            "punctuated_word": "élevé,"
+          }
+        ],
+        "speaker": 0,
+        "id": "e414ca8f-e454-4db4-a3bc-4f8101640829"
+      },
+      {
+        "start": 75.985,
+        "end": 77.045,
+        "confidence": 0.97983813,
+        "channel": 0,
+        "transcript": "ce qui peut contribuer",
+        "words": [
+          {
+            "word": "ce",
+            "start": 75.985,
+            "end": 76.145004,
+            "confidence": 0.9457719,
+            "speaker": 0,
+            "speaker_confidence": 0.0,
+            "punctuated_word": "ce"
+          },
+          {
+            "word": "qui",
+            "start": 76.145004,
+            "end": 76.385,
+            "confidence": 0.99821043,
+            "speaker": 0,
+            "speaker_confidence": 0.0,
+            "punctuated_word": "qui"
+          },
+          {
+            "word": "peut",
+            "start": 76.385,
+            "end": 76.545,
+            "confidence": 0.98222154,
+            "speaker": 0,
+            "speaker_confidence": 0.45851946,
+            "punctuated_word": "peut"
+          },
+          {
+            "word": "contribuer",
+            "start": 76.545,
+            "end": 77.045,
+            "confidence": 0.9931486,
+            "speaker": 0,
+            "speaker_confidence": 0.45851946,
+            "punctuated_word": "contribuer"
+          }
+        ],
+        "speaker": 0,
+        "id": "ae4b5196-07ce-4a93-b8b8-16876ec9c650"
+      },
+      {
+        "start": 77.345,
+        "end": 78.485,
+        "confidence": 0.9846303,
+        "channel": 0,
+        "transcript": "à votre hypertension.",
+        "words": [
+          {
+            "word": "à",
+            "start": 77.345,
+            "end": 77.505005,
+            "confidence": 0.9919693,
+            "speaker": 0,
+            "speaker_confidence": 0.45851946,
+            "punctuated_word": "à"
+          },
+          {
+            "word": "votre",
+            "start": 77.505005,
+            "end": 77.985,
+            "confidence": 0.99559903,
+            "speaker": 0,
+            "speaker_confidence": 0.45851946,
+            "punctuated_word": "votre"
+          },
+          {
+            "word": "hypertension",
+            "start": 77.985,
+            "end": 78.485,
+            "confidence": 0.9663225,
+            "speaker": 0,
+            "speaker_confidence": 0.45851946,
+            "punctuated_word": "hypertension."
+          }
+        ],
+        "speaker": 0,
+        "id": "ba5f41ce-d090-4a56-bafc-44fe604f53b7"
+      },
+      {
+        "start": 81.830185,
+        "end": 82.330185,
+        "confidence": 0.9992555,
+        "channel": 0,
+        "transcript": "C'est",
+        "words": [
+          {
+            "word": "c'est",
+            "start": 81.830185,
+            "end": 82.330185,
+            "confidence": 0.9992555,
+            "speaker": 1,
+            "speaker_confidence": 0.34307683,
+            "punctuated_word": "C'est"
+          }
+        ],
+        "speaker": 1,
+        "id": "38e0a9a5-7ad9-435e-9552-21c7bc48d728"
+      },
+      {
+        "start": 85.190186,
+        "end": 85.690186,
+        "confidence": 0.9986809,
+        "channel": 0,
+        "transcript": "grave",
+        "words": [
+          {
+            "word": "grave",
+            "start": 85.190186,
+            "end": 85.690186,
+            "confidence": 0.9986809,
+            "speaker": 0,
+            "speaker_confidence": 0.11239052,
+            "punctuated_word": "grave"
+          }
+        ],
+        "speaker": 0,
+        "id": "1f420623-5272-4905-a642-8457b90bd959"
+      },
+      {
+        "start": 86.790184,
+        "end": 87.290184,
+        "confidence": 0.6195491,
+        "channel": 0,
+        "transcript": "docteur",
+        "words": [
+          {
+            "word": "docteur",
+            "start": 86.790184,
+            "end": 87.290184,
+            "confidence": 0.6195491,
+            "speaker": 0,
+            "speaker_confidence": 0.11239052,
+            "punctuated_word": "docteur"
+          }
+        ],
+        "speaker": 0,
+        "id": "36cf1db4-2ff1-46a0-bddc-8df65b137d83"
+      },
+      {
+        "start": 88.470184,
+        "end": 88.970184,
+        "confidence": 0.925944,
+        "channel": 0,
+        "transcript": "D'accord,",
+        "words": [
+          {
+            "word": "d'accord",
+            "start": 88.470184,
+            "end": 88.970184,
+            "confidence": 0.925944,
+            "speaker": 1,
+            "speaker_confidence": 0.67825025,
+            "punctuated_word": "D'accord,"
+          }
+        ],
+        "speaker": 1,
+        "id": "727b37f0-4435-49de-a928-871f8be280ff"
+      },
+      {
+        "start": 89.35019,
+        "end": 91.21018,
+        "confidence": 0.99833566,
+        "channel": 0,
+        "transcript": "je suis prêt à faire ce qu'il faut.",
+        "words": [
+          {
+            "word": "je",
+            "start": 89.35019,
+            "end": 89.510185,
+            "confidence": 0.9985247,
+            "speaker": 1,
+            "speaker_confidence": 0.67825025,
+            "punctuated_word": "je"
+          },
+          {
+            "word": "suis",
+            "start": 89.510185,
+            "end": 89.75018,
+            "confidence": 0.9998287,
+            "speaker": 1,
+            "speaker_confidence": 0.67825025,
+            "punctuated_word": "suis"
+          },
+          {
+            "word": "prêt",
+            "start": 89.75018,
+            "end": 89.91019,
+            "confidence": 0.9976794,
+            "speaker": 1,
+            "speaker_confidence": 0.67825025,
+            "punctuated_word": "prêt"
+          },
+          {
+            "word": "à",
+            "start": 89.91019,
+            "end": 90.07018,
+            "confidence": 0.9983903,
+            "speaker": 1,
+            "speaker_confidence": 0.67825025,
+            "punctuated_word": "à"
+          },
+          {
+            "word": "faire",
+            "start": 90.07018,
+            "end": 90.23019,
+            "confidence": 0.99976486,
+            "speaker": 1,
+            "speaker_confidence": 0.67825025,
+            "punctuated_word": "faire"
+          },
+          {
+            "word": "ce",
+            "start": 90.23019,
+            "end": 90.39018,
+            "confidence": 0.99865365,
+            "speaker": 1,
+            "speaker_confidence": 0.67825025,
+            "punctuated_word": "ce"
+          },
+          {
+            "word": "qu'il",
+            "start": 90.39018,
+            "end": 90.71018,
+            "confidence": 0.99980736,
+            "speaker": 1,
+            "speaker_confidence": 0.67825025,
+            "punctuated_word": "qu'il"
+          },
+          {
+            "word": "faut",
+            "start": 90.71018,
+            "end": 91.21018,
+            "confidence": 0.9940362,
+            "speaker": 1,
+            "speaker_confidence": 0.67825025,
+            "punctuated_word": "faut."
+          }
+        ],
+        "speaker": 1,
+        "id": "ce44fd2a-9c12-4202-8957-e804f8dba746"
+      }
+    ]
+  }
+}
