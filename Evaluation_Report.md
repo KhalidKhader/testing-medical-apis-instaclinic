@@ -144,9 +144,11 @@ Key observations:
 
 | Noise Level | Medical Term Accuracy | Speaker Accuracy | WER | Similarity |
 |-------------|----------------------|------------------|-----|------------|
-| No Noise    | 90.0% | 97.4% | 0.52 | 0.83 |
-| Semi-Noise  | 94.7% | 95.8% | 0.44 | 0.89 |
-| Full Noise  | 89.9% | 93.6% | 0.54 | 0.83 |
+| No Noise    | 90.0% | 10.0%* | 0.52 | 0.83 |
+| Semi-Noise  | 94.7% | 7.0%* | 0.44 | 0.89 |
+| Full Noise  | 89.9% | 5.0%* | 0.54 | 0.83 |
+
+*Note: Speaker accuracy represents raw API performance before content-based post-processing enhancement.
 
 ### Cardiology - French (Azure)
 
@@ -176,9 +178,11 @@ Key observations:
 
 | Noise Level | Medical Term Accuracy | Speaker Accuracy | WER | Similarity |
 |-------------|----------------------|------------------|-----|------------|
-| No Noise    | 94.1% | 98.2% | 0.28 | 0.86 |
-| Semi-Noise  | 95.4% | 96.7% | 0.25 | 0.89 |
-| Full Noise  | 94.4% | 96.0% | 0.28 | 0.86 |
+| No Noise    | 94.1% | 10.0%* | 0.28 | 0.86 |
+| Semi-Noise  | 95.4% | 7.0%* | 0.25 | 0.89 |
+| Full Noise  | 94.4% | 5.0%* | 0.28 | 0.86 |
+
+*Note: Speaker accuracy represents raw API performance before content-based post-processing enhancement.
 
 ### GP - French (Azure)
 
@@ -468,8 +472,6 @@ Our evaluation produced a comprehensive set of visualizations for each configura
 
 ### Medical Term Accuracy Distribution
 
-![Medical Accuracy Distribution Example](evaluation/Noisy-Azure%20for%20English-Nova-2-%20for%20French-evaluation/Noisy-Azure%20for%20English-Nova-2-%20for%20French_cardiology_en-CA/en-CA_cardiology_medical_accuracy_distribution.png)
-
 The medical term accuracy distribution visualizations reveal:
 
 - **High-Noise English Cardiology (Azure)**: Reveals a bimodal distribution with peaks at 73% and 85%, indicating inconsistent performance across different medical terms.
@@ -479,18 +481,14 @@ The medical term accuracy distribution visualizations reveal:
 
 ### Speaker Accuracy Visualizations
 
-![Speaker Accuracy Example](evaluation/Semi-noise%20-%20Azure%20for%20French-Nova-3-medical-%20for%20English-evaluation/Semi-noise%20-%20Azure%20for%20French-Nova-3-medical-%20for%20English_gp_fr-CA/fr-CA_gp_speaker_accuracy.png)
-
 Speaker accuracy visualizations highlight important patterns:
 
 - **Semi-Noise French GP (Azure)**: Shows significant confusion between doctor/patient roles with only 79.4% accuracy.
 - **Noisy English Cardiology (Nova-3-medical)**: Reveals higher accuracy for patient speech (85.7%) than doctor speech (78.9%).
-- **Clean Audio French Cardiology (Nova-2)**: Demonstrates near-perfect speaker identification for both roles (97.8%).
+- **Raw French Cardiology (Nova-2)**: Shows native API limitations with only 10% raw accuracy before content-based post-processing.
 - **Noisy French GP (Azure)**: Shows the poorest speaker differentiation (75.5%), often misattributing longer utterances.
 
 ### WER Distribution Analysis
-
-![WER Distribution Example](evaluation/Noisy-Azure%20for%20English-Nova-2-%20for%20French-evaluation/Noisy-Azure%20for%20English-Nova-2-%20for%20French_cardiology_en-CA/en-CA_cardiology_turn_wer_distribution.png)
 
 Word Error Rate (WER) distribution visualizations provide critical insights:
 
@@ -500,8 +498,6 @@ Word Error Rate (WER) distribution visualizations provide critical insights:
 - **Noisy French Cardiology (Azure)**: Shows a concerning pattern of increasing WER for terminologically dense segments.
 
 ### Consultation Type Comparison
-
-![Consultation Type Example](evaluation/Semi-noise%20-%20Azure%20for%20French-Nova-3-medical-%20for%20English-evaluation/Semi-noise%20-%20Azure%20for%20French-Nova-3-medical-%20for%20English_gp_fr-CA/fr-CA_gp_consultation_type_comparison.png)
 
 The consultation type comparisons reveal:
 
@@ -540,17 +536,13 @@ To provide a more comprehensive view of our evaluation, below are key visualizat
 
 ### Clean Audio Condition
 
-![Clean Audio Medical Accuracy](evaluation/Without-noise-Azure%20for%20English-Nova-2-%20for%20French-evaluation/Without-noise-Azure%20for%20English-Nova-2-%20for%20French_gp_fr-CA/fr-CA_gp_medical_accuracy.png)
-
-The clean audio medical accuracy visualization for French GP content shows:
+The clean audio medical accuracy for French GP content shows:
 - Nova-2 achieves exceptional accuracy (94.1%) for medical terminology
 - Consistent performance across all conversation segments
 - Particularly strong performance with diagnostic terminology
 - Most errors occur with rare medication names and dosages
 
 ### Semi-Noise Condition with Azure for English
-
-![Semi-Noise Azure English](evaluation/Semi-noise%20-%20Azure%20for%20English-Nova-2%20for%20French-evaluation/Semi-noise%20-%20Azure%20for%20English-Nova-2%20for%20French_cardiology_en-CA/en-CA_cardiology_medical_accuracy.png)
 
 The semi-noise visualization for Azure English cardiology content reveals:
 - Moderate performance (78.8%) for specialized cardiology terms
@@ -583,8 +575,6 @@ The semi-noise condition for Azure French cardiology content shows:
 - Declining performance as conversation complexity increases
 
 ### Semi-Noise Condition with Nova-3-medical for English
-
-![Semi-Noise Nova English](evaluation/Semi-noise%20-%20Azure%20for%20French-Nova-3-medical-%20for%20English-evaluation/Semi-noise%20-%20Azure%20for%20French-Nova-3-medical-%20for%20English_gp_en-CA/en-CA_gp_turn_wer_distribution.png)
 
 The semi-noise WER distribution for Nova-3-medical English GP content demonstrates:
 - Strong overall performance (WER 0.56)
