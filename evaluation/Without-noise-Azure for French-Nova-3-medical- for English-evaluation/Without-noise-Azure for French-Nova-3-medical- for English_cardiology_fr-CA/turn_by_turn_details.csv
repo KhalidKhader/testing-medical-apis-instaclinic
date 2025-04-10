@@ -1,0 +1,268 @@
+conversation_id,specialty,language,consultation_type,turn_index,original_speaker,transcript_speaker,original_text,transcript_text,wer,similarity,medical_accuracy,speaker_match
+cardiology_8_consultation,cardiology,fr-CA,consultation,0,doctor,doctor,"Bonjour, monsieur. Je suis le docteur Dupuis. Qu'est-ce qui vous amène aujourd'hui?","Bonjour Monsieur, je suis le docteur Dupuy, qu'est ce qui vous amène aujourd'hui?",0.07692307692307693,0.9808917197452229,1.0,True
+cardiology_8_consultation,cardiology,fr-CA,consultation,1,patient,patient,Bonjour docteur. J'ai des palpitations et un essoufflement à l'effort. Mon médecin de famille m'a dit que j'avais un prolapsus de la valve mitrale.,"Bonjour docteur, j'ai des palpitations et un essoufflement à l'effort, mon médecin de famille m'a dit que j'avais un prolapsus de la valve mitrale.",0.0,1.0,1.0,True
+cardiology_8_consultation,cardiology,fr-CA,consultation,2,doctor,doctor,Je vois. Pouvez-vous dire depuis combien de temps vous ressentez ces symptômes ?,"Je vois, pouvez vous dire depuis combien de temps vous ressentez ces symptômes?",0.0,1.0,1.0,True
+cardiology_8_consultation,cardiology,fr-CA,consultation,3,patient,patient,Ça a commencé il y a environ deux mois.,Ça a commencé il y a environ 2 mois.,0.1111111111111111,0.9315068493150684,1.0,True
+cardiology_8_consultation,cardiology,fr-CA,consultation,4,doctor,doctor,Avez-vous des antécédents de problèmes cardiaques dans votre famille?,Avez-vous des antécédents de problèmes cardiaques dans votre famille?,0.0,1.0,1.0,True
+cardiology_8_consultation,cardiology,fr-CA,consultation,5,patient,patient,Mon père a eu une crise cardiaque à 70 ans.,Mon père a eu une crise cardiaque à 70 ans.,0.0,1.0,1.0,True
+cardiology_8_consultation,cardiology,fr-CA,consultation,6,doctor,doctor,"Compris. Nous allons réaliser un examen physique puis des tests diagnostiques, comme un ECG et un échocardiogramme, pour évaluer votre cœur. Le test d'effort pourrait aussi être nécessaire. Êtes-vous d'accord avec ça?",Compris?,0.9696969696969697,0.06422018348623854,0.0,True
+cardiology_8_consultation,cardiology,fr-CA,consultation,7,patient,patient,"Oui, bien sûr.
+
+**Examen et explications**",Nous allons réaliser un examen physique puis des tests diagnostiques comme 1ECG et un écocardiogramme pour évaluer votre cœur.,2.8333333333333335,0.25,1.0,True
+cardiology_8_consultation,cardiology,fr-CA,consultation,8,doctor,doctor,"L'échocardiogramme nous aidera à déterminer la gravité de votre condition. Selon les résultats, nous pourrons décider du meilleur plan de traitement, qui pourrait inclure des médicaments, des changements de mode de vie, ou parfois une intervention chirurgicale.",Le test d'effort pourrait aussi être nécessaire.,0.972972972972973,0.17880794701986755,1.0,True
+cardiology_8_consultation,cardiology,fr-CA,consultation,9,patient,patient,"Cela semble bien, merci docteur.",êtes-vous d'accord avec?,1.0,0.2641509433962264,1.0,True
+cardiology_9_followup,cardiology,fr-CA,followup,0,doctor,doctor,"Bonjour, Monsieur. Comment vous sentez-vous depuis notre dernière rencontre? Avez-vous pris l'ibuprofène comme prescrit?","Bonjour Monsieur, comment vous sentez-vous depuis notre dernière rencontre?",0.375,0.7724867724867724,0.0,True
+cardiology_9_followup,cardiology,fr-CA,followup,1,patient,patient,"Bonjour, Docteur. Oui, j'ai pris l'ibuprofène. La douleur thoracique a diminué, mais je me sens toujours un peu fatigué.",avez-vous pris l'ibuprofène comme prescrit?,0.8947368421052632,0.358974358974359,1.0,True
+cardiology_9_followup,cardiology,fr-CA,followup,2,doctor,doctor,Je suis content d'entendre que la douleur est moins intense. Avez-vous ressenti des effets secondaires de l'ibuprofène?,"Bonjour docteur, oui j'ai pris l'ibuprofène, la douleur thoracique a diminué, mais je me sens toujours un peu fatiguée.",0.9444444444444444,0.3275862068965517,1.0,True
+cardiology_9_followup,cardiology,fr-CA,followup,3,patient,patient,"Pas que je sache, Docteur.",Je suis content d'entendre que la douleur est moins intense.,1.8,0.3132530120481928,1.0,True
+cardiology_9_followup,cardiology,fr-CA,followup,4,doctor,doctor,Votre rythme cardiaque et votre pression artérielle semblent s'être stabilisés. Avez-vous reçu les résultats de vos tests?,avez-vous ressenti des effets secondaires de l'ibuprofène?,0.8888888888888888,0.2711864406779661,1.0,True
+cardiology_9_followup,cardiology,fr-CA,followup,5,patient,patient,"Oui, ils ont dit que l'inflammation semble avoir diminué.","Pas que je sache, docteur.",0.8888888888888888,0.3037974683544304,1.0,True
+cardiology_9_followup,cardiology,fr-CA,followup,6,doctor,doctor,"C'est une très bonne nouvelle. Cela signifie que le traitement actuel est efficace. Cependant, je recommanderais de continuer à prendre de l'ibuprofène pendant encore une semaine et de continuer à vous reposer.","Votre rythme cardiaque et votre pression artérielle semblent s'être stabilisés, avez-vous reçu les résultats de vos tests?",0.96875,0.2147239263803681,0.0,True
+cardiology_9_followup,cardiology,fr-CA,followup,7,patient,patient,"D'accord, Docteur. Je vais suivre vos instructions.
+
+2. Note SOAP
+
+Subjectif 
+Le patient indique que la douleur thoracique a diminué et qu'il n'a ressenti aucun effet secondaire de l'ibuprofène. Cependant, il rapporte toujours de la fatigue.
+
+Objectif 
+L'examen physique montre que le rythme cardiaque et la pression artérielle du patient sont stables. Les résultats des tests indiquent que l'inflammation a diminué.
+
+Évaluation 
+L'état du patient semble s'améliorer avec le traitement actuel. La douleur thoracique a diminué, ce qui est un bon signe. Cependant, la fatigue persiste. 
+
+Plan 
+Le patient est conseillé de continuer à prendre de l'ibuprofène pendant encore une semaine et de continuer à se reposer. Un autre suivi est prévu dans deux semaines pour vérifier l'évolution de ses symptômes.
+
+3. Mots-clés / Étiquettes
+
+Diagnostic 
+Péricardite
+
+Traitement 
+Ibuprofène, repos
+
+Symptômes 
+Douleur thoracique diminuée, fatigue persistante
+
+Conditions 
+Antécédents familiaux de maladies cardiaques, inflammation cardiaque diminuée
+
+Allergies 
+Aucune allergie signalée.","Oui, ils ont dit que l'inflammation semble avoir diminué.",0.9731543624161074,0.08118081180811808,0.0,True
+cardiology_9_consultation,cardiology,fr-CA,consultation,0,doctor,doctor,"Bonjour, je suis le Dr. Tremblay, votre cardiologue. Comment puis-je vous aider aujourd'hui?","Bonjour, je suis le docteur Tremblay, votre cardiologue, comment puis je vous aider aujourd'hui?",0.07142857142857142,0.9720670391061452,1.0,True
+cardiology_9_consultation,cardiology,fr-CA,consultation,1,patient,patient,"Bonjour Docteur, je me sens mal depuis quelques jours. J'ai une douleur constante dans la poitrine et je me sens fatigué tout le temps.","Bonjour docteur, je me sens mal depuis quelques jours, j'ai une douleur constante dans la poitrine et je me sens fatiguée tout le temps.",0.041666666666666664,0.9962264150943396,1.0,True
+cardiology_9_consultation,cardiology,fr-CA,consultation,2,doctor,doctor,Je suis désolé d'entendre cela. Pouvez-vous me dire depuis combien de temps vous ressentez ces symptômes?,"Je suis désolée d'entendre cela, pouvez vous me dire depuis combien de temps vous ressentez ces symptômes?",0.058823529411764705,0.9951690821256038,1.0,True
+cardiology_9_consultation,cardiology,fr-CA,consultation,3,patient,patient,Ça a commencé il y a environ une semaine.,Ça a commencé il y a environ une semaine.,0.0,1.0,1.0,True
+cardiology_9_consultation,cardiology,fr-CA,consultation,4,doctor,doctor,Avez-vous des antécédents de problèmes cardiaques dans votre famille?,Avez-vous des antécédents de problèmes cardiaques dans votre famille?,0.0,1.0,1.0,True
+cardiology_9_consultation,cardiology,fr-CA,consultation,5,patient,patient,"Oui, mon père avait une maladie cardiaque.","Oui, mon père avait une maladie cardiaque.",0.0,1.0,1.0,True
+cardiology_9_consultation,cardiology,fr-CA,consultation,6,doctor,doctor,"Je vois. En raison de vos symptômes et de vos antécédents familiaux, je vais vous prescrire quelques tests, notamment un ECG, un échocardiogramme et un test d'effort.","Je vois en raison de vos symptômes et de vos antécédents familiaux, je vais vous prescrire quelques tests, notamment à ECG, un écocardiogramme et un test d'effort.",0.07407407407407407,0.9875,1.0,True
+cardiology_10_followup,cardiology,fr-CA,followup,0,doctor,doctor,"Bonjour, madame. Je suis le Dr. Dupont. Comment vous sentez-vous depuis notre dernière rencontre ?","Bonjour Madame, je suis le docteur Dupont, comment vous sentez-vous depuis notre dernière rencontre?",0.06666666666666667,0.9735449735449735,1.0,True
+cardiology_10_followup,cardiology,fr-CA,followup,1,patient,patient,"Bonjour Docteur. Je me sens un peu mieux, la douleur à la poitrine est moins intense.","Bonjour docteur, je me sens un peu mieux, la douleur à la poitrine est moins intense.",0.0,1.0,1.0,True
+cardiology_10_followup,cardiology,fr-CA,followup,2,doctor,doctor,Je suis ravi de l'entendre. Avez-vous bien pris l'ibuprofène comme prescrit ?,Je suis ravie de l'entendre.,0.6666666666666666,0.5148514851485149,0.0,True
+cardiology_10_followup,cardiology,fr-CA,followup,3,patient,patient,"Oui, je l'ai bien pris. Je n'ai pas remarqué d'effets secondaires.",avez-vous bien pris l'ibuprofène comme prescrit?,0.8181818181818182,0.36363636363636365,1.0,True
+cardiology_10_followup,cardiology,fr-CA,followup,4,doctor,doctor,"Très bien, c'est encourageant. Avez-vous remarqué une amélioration de votre fatigue ou de votre essoufflement ?","Oui, je l'ai bien pris, je n'ai pas remarqué d'effets secondaires.",1.0,0.32941176470588235,1.0,True
+cardiology_10_followup,cardiology,fr-CA,followup,5,patient,patient,"Je me sens un peu moins fatiguée, mais je m'essouffle encore un peu.","Très bien, c'est encourageant.",1.0,0.3191489361702128,1.0,True
+cardiology_10_followup,cardiology,fr-CA,followup,6,doctor,doctor,"Votre rythme cardiaque est un peu plus bas, ce qui est un bon signe. Nous avons également reçu les résultats de vos tests. Votre ECG et votre échocardiogramme confirment une péricardite. Le traitement à l'ibuprofène semble bien fonctionner pour le moment. Nous allons continuer avec ce traitement, mais je vais augmenter la dose pour mieux contrôler vos symptômes. Si vous remarquez des effets secondaires, veuillez me contacter immédiatement.",avez-vous remarqué une amélioration de votre fatigue ou de votre essoufflement?,0.9705882352941176,0.1171875,0.0,True
+cardiology_10_followup,cardiology,fr-CA,followup,7,patient,patient,"D'accord, je comprends.","Je me sens un peu moins fatiguée, mais je m'essouffle encore un peu.",4.0,0.22988505747126436,1.0,True
+cardiology_4_followup,cardiology,fr-CA,followup,0,doctor,doctor,"Bonjour, comment vous sentez-vous depuis notre dernière rencontre?","Bonjour, comment vous sentez-vous depuis notre dernière rencontre?",0.0,1.0,1.0,True
+cardiology_4_followup,cardiology,fr-CA,followup,1,patient,patient,"Bonjour, Docteur. Je me sens un peu mieux. Les palpitations ont diminué.","Bonjour docteur, je me sens un peu mieux, les palpitations ont diminué.",0.0,1.0,1.0,True
+cardiology_4_followup,cardiology,fr-CA,followup,2,doctor,doctor,C'est une bonne nouvelle. Avez-vous suivi les instructions pour éviter les efforts physiques intenses et pour contrôler votre hypertension ?,C'est une bonne nouvelle.,0.8,0.2981366459627329,0.0,True
+cardiology_4_followup,cardiology,fr-CA,followup,3,patient,patient,"Oui, j'ai essayé de suivre vos instructions aussi attentivement que possible.",avez-vous suivi les instructions pour éviter les efforts physiques intensifs pour contrôler votre.,1.2727272727272727,0.4418604651162791,1.0,True
+cardiology_4_followup,cardiology,fr-CA,followup,4,doctor,doctor,Très bien. Avez-vous remarqué des effets secondaires de vos médicaments ?,Hypertension.,1.0,0.14634146341463414,1.0,True
+cardiology_4_followup,cardiology,fr-CA,followup,5,patient,patient,"Non, pas vraiment.","Oui, j'ai essayé de suivre vos instructions aussi attentivement que possible.",3.6666666666666665,0.21978021978021978,1.0,True
+cardiology_4_followup,cardiology,fr-CA,followup,6,doctor,doctor,"D'accord, faisons un examen physique. (Après l'examen) Votre tension artérielle semble stable. J'ai reçu les résultats de vos tests, l'échocardiogramme confirme le prolapsus de la valve mitrale.",Très bien avez-vous remarqué des effets secondaires de vos médicaments?,0.9259259259259259,0.25680933852140075,0.0,True
+cardiology_4_followup,cardiology,fr-CA,followup,7,patient,patient,Qu'est-ce que cela signifie pour moi ?,"Non, pas vraiment.",1.0,0.19230769230769232,1.0,True
+cardiology_4_followup,cardiology,fr-CA,followup,8,doctor,doctor,"Cela signifie que nous devrons commencer un traitement pour contrôler cette condition. En fonction de la gravité, cela peut inclure des médicaments et, dans certains cas, une intervention chirurgicale.","D'accord, faisons un examen physique après l'examen, votre tension artérielle semble stable.",0.9655172413793104,0.25263157894736843,1.0,True
+cardiology_4_followup,cardiology,fr-CA,followup,9,patient,patient,Et quel serait le plan de traitement ?,J'ai reçu les résultats de vos tests.,1.0,0.4166666666666667,1.0,True
+cardiology_4_followup,cardiology,fr-CA,followup,10,doctor,doctor,"Pour le moment, je vais vous prescrire du bisoprolol pour aider à contrôler vos symptômes. Nous allons également surveiller votre condition attentivement.",L'échocardiogramme confirme le prolapsus de la valve mitrale.,1.0,0.13270142180094788,1.0,True
+cardiology_7_followup,cardiology,fr-CA,followup,0,doctor,doctor,Bonjour Mme. Dupont. Comment vous sentez-vous depuis notre dernière rencontre ?,"Bonjour Madame Dupont, comment vous sentez-vous depuis notre dernière rencontre?",0.09090909090909091,0.9803921568627451,1.0,True
+cardiology_7_followup,cardiology,fr-CA,followup,1,patient,patient,Bonjour Docteur. Je me sens un peu mieux depuis que j'ai commencé à prendre le metoprolol.,"Bonjour docteur, je me sens un peu mieux depuis que j'ai commencé à prendre le métoprolol.",0.0625,0.9886363636363636,1.0,True
+cardiology_7_followup,cardiology,fr-CA,followup,2,doctor,doctor,C'est une bonne nouvelle. Avez-vous remarqué une diminution de votre essoufflement ou de vos palpitations cardiaques ?,C'est une bonne nouvelle.,0.7647058823529411,0.34532374100719426,0.0,True
+cardiology_7_followup,cardiology,fr-CA,followup,3,patient,patient,"Oui, j'ai l'impression que les palpitations sont moins fréquentes. Mais je me sens un peu étourdie parfois.",avez-vous remarqué une diminution de votre essoufflement ou de vos palpitations cardiaques?,1.0,0.36082474226804123,1.0,True
+cardiology_7_followup,cardiology,fr-CA,followup,4,doctor,doctor,Je vois. Cela pourrait être un effet secondaire du metoprolol. Avez-vous suivi le régime alimentaire faible en sodium que nous avons discuté ?,"Oui, j'ai l'impression que les palpitations sont moins fréquentes, mais je me sens un peu étourdi parfois.",1.0,0.22406639004149378,0.0,True
+cardiology_7_followup,cardiology,fr-CA,followup,5,patient,patient,"Oui, j'ai fait de mon mieux pour limiter le sodium.","Je vois, cela pourrait être un effet secondaire du métoprolol avez-vous suivi le régime alimentaire faible en sodium que nous avons discuté?",2.1,0.2887700534759358,1.0,True
+cardiology_7_followup,cardiology,fr-CA,followup,6,doctor,doctor,Nous allons nous revoir dans deux semaines pour voir comment ces ajustements fonctionnent pour vous. Continuez à suivre le régime faible en sodium et essayez de rester aussi actif que possible sans vous essouffler.,"Oui, j'ai fait de mon mieux pour limiter le sodium.",0.9117647058823529,0.24521072796934865,1.0,True
+cardiology_7_followup,cardiology,fr-CA,followup,7,patient,patient,"D'accord, je comprends. Merci, docteur.
+
+Note SOAP 
+
+Subjectif 
+- Plainte principale  Diminution des palpitations cardiaques, apparition de vertiges.
+- Adhésion aux médicaments  Prend du metoprolol comme prescrit, signale des étourdissements.
+- Régime  Suivi du régime faible en sodium.
+
+Objectif 
+- Examen physique  Régularisation du rythme cardiaque, pression artérielle légèrement basse.
+- Résultats de laboratoire  Perturbation des électrolytes.
+
+Évaluation 
+- Amélioration de la tachycardie ventriculaire grâce au metoprolol.
+- Les étourdissements sont probablement dus à une pression artérielle basse causée par le metoprolol.
+- La perturbation des électrolytes pourrait contribuer à la tachycardie ventriculaire.
+
+Plan 
+- Ajustement de la dose de metoprolol pour éviter les effets secondaires.
+- Prescription d'un supplément d'électrolytes pour corriger le déséquilibre.
+- Suivi dans deux semaines pour évaluer la réponse aux ajustements de traitement.
+
+Mots-clés / Étiquettes 
+
+- Diagnostic  Tachycardie ventriculaire, déséquilibre électrolytique.
+- Traitement  Metoprolol (ajustement de la dose), supplément d'électrolytes.
+- Symptômes  Diminution des palpitations cardiaques, apparition de vertiges.
+- Conditions  Diabète, hypertension, tachycardie ventriculaire.
+- Allergies  Aucune signalée.",Nous allons nous revoir dans 2 semaines pour voir comment ces ajustements fonctionnent pour vous.,0.9731543624161074,0.11280487804878049,0.0,True
+cardiology_10_consultation,cardiology,fr-CA,consultation,0,doctor,doctor,"Bonjour, madame. Je suis le Dr. Dupont, le cardiologue. Comment puis-je vous aider aujourd'hui ?","Bonjour Madame, je suis le docteur Dupont, le cardiologue, comment puis je vous aider aujourd'hui?",0.06666666666666667,0.9726775956284153,1.0,True
+cardiology_10_consultation,cardiology,fr-CA,consultation,1,patient,patient,Bonjour Docteur. J'ai été référée par mon médecin généraliste qui pense que j'ai une péricardite. J'ai beaucoup de douleurs à la poitrine depuis quelques semaines.,"Bonjour docteur, j'ai été référé par mon médecin généraliste qui pense que j'ai une péricardite.",0.44,0.7401574803149606,1.0,True
+cardiology_10_consultation,cardiology,fr-CA,consultation,2,doctor,doctor,Je suis désolé d'entendre cela. Pouvez-vous me décrire la nature de ces douleurs ?,J'ai beaucoup de douleur à la poitrine depuis quelques semaines.,0.9285714285714286,0.2535211267605634,1.0,True
+cardiology_10_consultation,cardiology,fr-CA,consultation,3,patient,patient,"C'est une douleur aiguë, surtout quand je respire profondément ou me couche.","Je suis désolée d'entendre cela, pouvez vous me décrire la nature de ces douleurs?",1.1666666666666667,0.19480519480519481,1.0,True
+cardiology_10_consultation,cardiology,fr-CA,consultation,4,doctor,doctor,"Avez-vous d'autres symptômes, comme de la fièvre, une fatigue inhabituelle ou un essoufflement ?","C'est une douleur aiguë, surtout quand je respire profondément où me couche.",1.0,0.2891566265060241,1.0,True
+cardiology_10_consultation,cardiology,fr-CA,consultation,5,patient,patient,"Oui, je me sens fatiguée tout le temps et j'ai eu un peu de fièvre la semaine dernière.","Avez-vous d'autres symptômes comme de la fièvre, une fatigue inhabituelle ou un essoufflement?",1.0,0.3050847457627119,1.0,True
+cardiology_10_consultation,cardiology,fr-CA,consultation,6,doctor,doctor,"D'accord. Avons-nous l'autorisation d'effectuer un électrocardiogramme (ECG), une échographie cardiaque et éventuellement un test d'effort pour approfondir le diagnostic ?","Oui, je me sens fatiguée tout le temps, etjai.eu un peu de fièvre la semaine dernière.",0.95,0.24193548387096775,0.0,True
+cardiology_10_consultation,cardiology,fr-CA,consultation,7,patient,patient,"Oui, bien sûr.","D'accord, avons-nous l'autorisation d'effectuer un électrocardiogramme?",2.3333333333333335,0.1728395061728395,1.0,True
+cardiology_3_followup,cardiology,fr-CA,followup,0,doctor,doctor,"Bonjour, Madame. Comment vous sentez-vous depuis notre dernière rencontre?","Bonjour Madame, comment vous sentez-vous depuis notre dernière rencontre?",0.0,1.0,1.0,True
+cardiology_3_followup,cardiology,fr-CA,followup,1,patient,patient,"Bonjour Docteur. Je me sens un peu mieux avec les médicaments, mais je ressens toujours de la fatigue et un essoufflement lors de l'effort.","Bonjour docteur, je me sens un peu mieux avec les médicaments, mais je ressens toujours de la fatigue et un essoufflement lors de l'effort.",0.0,1.0,1.0,True
+cardiology_3_followup,cardiology,fr-CA,followup,2,doctor,doctor,Avez-vous remarqué une amélioration de vos douleurs thoraciques?,Avez-vous remarqué une amélioration de vos douleurs thoraciques?,0.0,1.0,1.0,True
+cardiology_3_followup,cardiology,fr-CA,followup,3,patient,patient,"Oui, je dirais que la douleur a diminué.","Oui, je dirais que la douleur a diminué.",0.0,1.0,1.0,True
+cardiology_3_followup,cardiology,fr-CA,followup,4,doctor,doctor,C'est une bonne nouvelle. Avez-vous eu des effets secondaires des médicaments?,C'est une bonne nouvelle avezvous.eu des effets secondaires des médicaments?,0.16666666666666666,0.9933774834437086,1.0,True
+cardiology_3_followup,cardiology,fr-CA,followup,5,patient,patient,"Non, je n'ai pas remarqué d'effets secondaires.","Non, je n'ai pas remarqué d'effets secondaires.",0.0,1.0,1.0,True
+cardiology_3_followup,cardiology,fr-CA,followup,6,doctor,doctor,Vos signes vitaux sont stables. L'échocardiogramme confirme la sténose aortique.,"Vos signes vitaux sont stables, l'Échocardiogramme confirme l'asthénose aortique.",0.2,0.9808917197452229,0.5,True
+cardiology_3_followup,cardiology,fr-CA,followup,7,patient,patient,Est-ce que cela signifie que je dois subir une intervention chirurgicale?,Est ce que cela signifie que je dois subir une intervention chirurgicale?,0.0,1.0,1.0,True
+cardiology_3_followup,cardiology,fr-CA,followup,8,doctor,doctor,"Nous devons en discuter avec le cardiologue interventionnel. Mais pour l'instant, nous allons continuer le traitement médicamenteux et surveiller de près votre condition.",Nous devons en discuter avec.,0.782608695652174,0.28717948717948716,1.0,True
+cardiology_2_followup,cardiology,fr-CA,followup,0,doctor,doctor,"Bonjour, M. Dupont. Comment vous sentez-vous depuis notre dernière rencontre?","Bonjour Monsieur Dupont, comment vous sentez-vous depuis notre dernière rencontre?",0.09090909090909091,0.954248366013072,1.0,True
+cardiology_2_followup,cardiology,fr-CA,followup,1,patient,patient,"Bonjour, Docteur. Je me sens un peu mieux. Les palpitations sont moins fréquentes.","Bonjour docteur, je me sens un peu mieux, les palpitations sont moins fréquentes.",0.0,1.0,1.0,True
+cardiology_2_followup,cardiology,fr-CA,followup,2,doctor,doctor,C'est une bonne nouvelle. Vous prenez le Metoprolol comme prescrit?,"C'est une bonne nouvelle, vous prenez le métoprologue comme prescrit.",0.1,0.9545454545454546,1.0,True
+cardiology_2_followup,cardiology,fr-CA,followup,3,patient,patient,"Oui, tous les jours.","Oui, tous les jours.",0.0,1.0,1.0,True
+cardiology_2_followup,cardiology,fr-CA,followup,4,doctor,doctor,"Avez-vous ressenti des effets secondaires, comme des étourdissements ou une fatigue accrue?",Avez-vous ressenti des effets secondaires comme des étourdissements ou une fatigue accrue?,0.0,1.0,1.0,True
+cardiology_2_followup,cardiology,fr-CA,followup,5,patient,patient,"J'ai remarqué une légère fatigue, mais rien de plus.","J'ai remarqué une légère fatigue, mais rien de plus.",0.0,1.0,1.0,True
+cardiology_2_followup,cardiology,fr-CA,followup,6,doctor,doctor,Votre rythme cardiaque est stable et votre pression artérielle est normale. Je reçois aujourd'hui les résultats de votre échocardiogramme de suivi. Ils montrent une amélioration du reflux de la valve mitrale. Je pense que le traitement fonctionne bien.,Votre rythme cardiaque est stable et votre pression artérielle est normale.,0.7105263157894737,0.45962732919254656,0.0,True
+cardiology_2_followup,cardiology,fr-CA,followup,7,patient,patient,"C'est une bonne nouvelle. Alors, on continue?",Je reçois aujourd'hui les résultats de votre écocardiogramme de suivi.,1.4285714285714286,0.2702702702702703,1.0,True
+cardiology_2_followup,cardiology,fr-CA,followup,8,doctor,doctor,"Oui, nous allons continuer avec le Metoprolol et le style de vie modifié. Nous allons également ajouter un diurétique pour aider à diminuer la fatigue que vous ressentez.",Il montre une amélioration du reflux de la valve mitrale.,0.9285714285714286,0.2062780269058296,0.0,True
+cardiology_2_followup,cardiology,fr-CA,followup,9,patient,patient,"D'accord, Docteur.",Je pense que le traitement fonctionne bien.,3.5,0.1724137931034483,1.0,True
+cardiology_6_followup,cardiology,fr-CA,followup,0,doctor,doctor,"Bonjour, Madame. Comment vous sentez-vous depuis notre dernière rencontre?","Bonjour Madame, comment vous sentez-vous depuis notre dernière rencontre?",0.0,1.0,1.0,True
+cardiology_6_followup,cardiology,fr-CA,followup,1,patient,patient,"Bonjour, Dr Tremblay. Je me sens un peu mieux. Les palpitations semblent moins fréquentes.","Bonjour docteur Tremblay, je me sens un peu mieux, les palpitations semblent moins fréquentes.",0.07142857142857142,0.9717514124293786,1.0,True
+cardiology_6_followup,cardiology,fr-CA,followup,2,doctor,doctor,"C'est une bonne nouvelle. Avez-vous remarqué des changements dans vos symptômes, comme l'essoufflement?",C'est une bonne nouvelle.,0.7142857142857143,0.3870967741935484,1.0,True
+cardiology_6_followup,cardiology,fr-CA,followup,3,patient,patient,"Non, je n'ai pas remarqué de changements majeurs de ce côté.",Avez-vous remarqué des changements dans vos symptômes comme l'essoufflement?,0.9090909090909091,0.5112781954887218,1.0,True
+cardiology_6_followup,cardiology,fr-CA,followup,4,doctor,doctor,Très bien. Avez-vous suivi le plan de traitement que nous avons mis en place lors de votre dernière visite?,"Non, je n'ai pas remarqué de changement majeur de ce côté.",0.9,0.3105590062111801,1.0,True
+cardiology_6_followup,cardiology,fr-CA,followup,5,patient,patient,"Oui, j'ai commencé à prendre le Metoprolol et j'ai fait des changements à mon alimentation.",Très bien avez-vous suivi le plan de traitement que nous avons mis en place lors de votre dernière visite?,1.2666666666666666,0.30927835051546393,1.0,True
+cardiology_6_followup,cardiology,fr-CA,followup,6,doctor,doctor,Excellent. Avez-vous ressenti des effets secondaires du médicament?,"Oui, j'ai commencé à prendre le métopolol et j'ai fait des changements à mon alimentation.",1.5555555555555556,0.26143790849673204,1.0,True
+cardiology_6_followup,cardiology,fr-CA,followup,7,patient,patient,"J'ai eu un peu de fatigue, mais rien de trop grave.",Excellent avez-vous ressenti des effets secondaires du médicament?,1.0,0.2807017543859649,1.0,True
+cardiology_6_followup,cardiology,fr-CA,followup,8,doctor,doctor,"D'accord. Nous avons reçu les résultats de vos tests. Votre ECG et votre échocardiogramme sont normaux, ce qui est une bonne nouvelle. Cela signifie que le traitement fonctionne. Continuons avec le même plan de traitement.",Jai.eu un peu de fatigue mais rien de trop grave.,0.9714285714285714,0.23484848484848486,0.0,True
+cardiology_7_consultation,cardiology,fr-CA,consultation,0,doctor,doctor,Bonjour Mme. Dupont. Comment puis-je vous aider aujourd'hui ?,"Bonjour Madame Dupont, comment puis-je vous aider aujourd'hui?",0.1111111111111111,0.9743589743589743,1.0,True
+cardiology_7_consultation,cardiology,fr-CA,consultation,1,patient,patient,Bonjour Docteur. Je me sens essoufflée et j'ai des palpitations cardiaques.,"Bonjour docteur, je me sens essoufflé et j'ai des palpitations cardiaques.",0.09090909090909091,0.993103448275862,1.0,True
+cardiology_7_consultation,cardiology,fr-CA,consultation,2,doctor,doctor,Depuis combien de temps ressentez-vous ces symptômes ?,Depuis combien de temps ressentez vous ces symptômes?,0.0,1.0,1.0,True
+cardiology_7_consultation,cardiology,fr-CA,consultation,3,patient,patient,Cela a commencé il y a environ une semaine.,Cela a commencé il y a environ une semaine.,0.0,1.0,1.0,True
+cardiology_7_consultation,cardiology,fr-CA,consultation,4,doctor,doctor,D'accord. Avez-vous des antécédents de problèmes cardiaques dans votre famille ?,"D'accord, avez-vous des antécédents de problèmes cardiaques dans votre famille?",0.0,1.0,1.0,True
+cardiology_7_consultation,cardiology,fr-CA,consultation,5,patient,patient,"Oui, mon père est décédé d'une crise cardiaque quand il avait 70 ans.","Oui, mon père est décédé d'une crise cardiaque quand il avait 70 ans.",0.0,1.0,1.0,True
+cardiology_7_consultation,cardiology,fr-CA,consultation,6,doctor,doctor,Je suis désolé d'entendre cela. Avez-vous d'autres problèmes de santé ? Prenez-vous des médicaments actuellement ?,Je suis désolé d'entendre cela.,0.6875,0.4316546762589928,1.0,True
+cardiology_7_consultation,cardiology,fr-CA,consultation,7,patient,patient,Je suis diabétique et j'ai de l'hypertension. Je prends du metformine pour le diabète et de l'hydrochlorothiazide pour l'hypertension.,avez-vous d'autres problèmes de santé?,0.9473684210526315,0.15384615384615385,0.0,True
+cardiology_7_consultation,cardiology,fr-CA,consultation,8,doctor,doctor,Votre ECG montre une tachycardie ventriculaire. Cela signifie que votre cœur bat plus vite que la normale. Cela pourrait expliquer vos symptômes.,prenez-vous des médicaments actuellement?,1.0,0.1978021978021978,0.0,True
+cardiology_7_consultation,cardiology,fr-CA,consultation,9,patient,patient,Qu'est-ce qui cause cela ?,"Je suis diabétique et j'ai de l'hypertension, je prends du metformin pour le diabète et de l'Hydrochlorothyasite pour l'hypertension.",3.8,0.18064516129032257,1.0,True
+cardiology_2_consultation,cardiology,fr-CA,consultation,0,doctor,doctor,"Bonjour, je suis le Dr. Cardin, votre cardiologue. Vous êtes?","Bonjour, je suis le Dr Cardin, votre cardiologue, vous êtes.",0.0,1.0,1.0,True
+cardiology_2_consultation,cardiology,fr-CA,consultation,1,patient,patient,"Bonjour, je suis M. Dupont.","Bonjour, je suis Monsieur Dupont.",0.2,0.8727272727272727,1.0,True
+cardiology_2_consultation,cardiology,fr-CA,consultation,2,doctor,doctor,"Enchanté de vous rencontrer, M. Dupont. Je comprends que vous êtes ici pour un problème cardiaque. Pouvez-vous me dire exactement ce que vous ressentez?","Enchanté de vous rencontrer, M Dupont, je comprends que vous êtes ici pour un problème cardiaque, pouvez vous me dire exactement ce que vous ressentez?",0.0,1.0,1.0,True
+cardiology_2_consultation,cardiology,fr-CA,consultation,3,patient,patient,"Oui, je ressens parfois des palpitations et une fatigue inhabituelle. C'est surtout après un effort physique.","Oui, je ressens parfois des palpitations et une fatigue inhabituelle, c'est surtout après un effort physique.",0.0,1.0,1.0,True
+cardiology_2_consultation,cardiology,fr-CA,consultation,4,doctor,doctor,Depuis combien de temps ressentez-vous ces symptômes?,Depuis combien de temps ressentez vous ces symptômes?,0.0,1.0,1.0,True
+cardiology_2_consultation,cardiology,fr-CA,consultation,5,patient,patient,Environ deux mois.,Environ 2 mois.,0.3333333333333333,0.8387096774193549,1.0,True
+cardiology_2_consultation,cardiology,fr-CA,consultation,6,doctor,doctor,D'accord. Avez-vous des antécédents de problèmes cardiaques dans votre famille?,"D'accord, avez-vous des antécédents de problèmes cardiaques dans votre famille?",0.0,1.0,1.0,True
+cardiology_2_consultation,cardiology,fr-CA,consultation,7,patient,patient,"Oui, mon père avait une maladie cardiaque.","Oui, mon père avait une maladie cardiaque.",0.0,1.0,1.0,True
+cardiology_2_consultation,cardiology,fr-CA,consultation,8,doctor,doctor,"Je vois. Je vais vous faire passer quelques tests, dont un ECG, un échocardiogramme et un test d'effort, pour mieux comprendre votre condition.","Je vois, je vais vous faire passer quelques.",0.6521739130434783,0.4666666666666667,0.0,True
+cardiology_6_consultation,cardiology,fr-CA,consultation,0,doctor,doctor,"Bonjour, je suis le Dr Tremblay. Comment puis-je vous aider aujourd'hui?","Bonjour, je suis le docteur Tremblay, comment puis-je vous aider aujourd'hui?",0.08333333333333333,0.965034965034965,1.0,True
+cardiology_6_consultation,cardiology,fr-CA,consultation,1,patient,patient,"Bonjour, Dr Tremblay. Je suis ici parce que j'ai eu des palpitations cardiaques récemment. Elles sont assez effrayantes.","Bonjour docteur Tremblay, je suis ici parce quejai.eu des palpitations cardiaques récemment, elles sont assez effrayantes.",0.16666666666666666,0.9702127659574468,1.0,True
+cardiology_6_consultation,cardiology,fr-CA,consultation,2,doctor,doctor,"Je comprends, cela peut être assez inquiétant. Pouvez-vous me dire quand ces palpitations ont commencé?","Je comprends, cela peut être assez inquiétant.",0.5625,0.6111111111111112,0.0,True
+cardiology_6_consultation,cardiology,fr-CA,consultation,3,patient,patient,Elles ont commencé il y a environ une semaine.,Pouvez vous me dire quand ces palpitations ont commencé?,1.0,0.32,1.0,True
+cardiology_6_consultation,cardiology,fr-CA,consultation,4,doctor,doctor,"D'accord, avez-vous d'autres symptômes comme des douleurs à la poitrine, des étourdissements ou des essoufflements?",Elles ont commencé il y a environ une semaine.,1.0,0.25477707006369427,1.0,True
+cardiology_6_consultation,cardiology,fr-CA,consultation,5,patient,patient,"Oui, j'ai eu quelques épisodes d'essoufflement.","D'accord, avez-vous d'autres symptômes comme des douleurs à la poitrine, des étourdissements ou des essoufflements?",2.6666666666666665,0.3821656050955414,1.0,True
+cardiology_6_consultation,cardiology,fr-CA,consultation,6,doctor,doctor,Avez-vous des antécédents de problèmes cardiaques dans votre famille?,Ouijai.eu quelques épisodes d'essoufflement?,1.0,0.34234234234234234,1.0,True
+cardiology_6_consultation,cardiology,fr-CA,consultation,7,patient,patient,Ma mère a eu une crise cardiaque à 62 ans.,Avez-vous des antécédents de problèmes cardiaques dans votre famille?,1.0,0.3669724770642202,1.0,True
+cardiology_6_consultation,cardiology,fr-CA,consultation,8,doctor,doctor,"Merci pour cette information. Nous allons vous faire passer quelques tests, dont un ECG, un échocardiogramme et un test d'effort pour évaluer votre fonction cardiaque.",Ma mère a eu une crise cardiaque à 62 ans.,1.0,0.24509803921568626,0.0,True
+cardiology_1_followup,cardiology,fr-CA,followup,0,doctor,doctor,"Bonjour, Madame. Comment vous sentez-vous depuis notre dernière rencontre?","Bonjour Madame, comment vous sentez-vous depuis notre dernière rencontre?",0.0,1.0,1.0,True
+cardiology_1_followup,cardiology,fr-CA,followup,1,patient,patient,"Bonjour,",Bonjour.,0.0,1.0,1.0,True
+cardiology_1_followup,cardiology,fr-CA,followup,2,doctor,doctor,"C'est une bonne nouvelle. Avez-vous eu d'autres symptômes depuis notre dernière visite, comme l'essoufflement, les douleurs à la poitrine, ou des évanouissements?","C'est une bonne nouvelle, avezvous.eu d'autres symptômes depuis notre dernière visite, comme les soufflements, les douleurs à la poitrine, pour des évanouissements.",0.21739130434782608,0.9810126582278481,1.0,True
+cardiology_1_followup,cardiology,fr-CA,followup,3,patient,patient,"Non, je n'ai pas eu d'autres symptômes.","Non, je naipas.eu d'autres symptômes.",0.2857142857142857,0.9722222222222222,1.0,True
+cardiology_1_followup,cardiology,fr-CA,followup,4,doctor,doctor,Très bien. Avez-vous suivi le plan de traitement que nous avons discuté?,Très bien avez-vous suivi le plan de traitement que nous avons discuté?,0.0,1.0,1.0,True
+cardiology_1_followup,cardiology,fr-CA,followup,5,patient,patient,"Oui, j'ai commencé à prendre les médicaments que vous avez prescrits. Je suis aussi plus actif physiquement et j'essaie de manger plus sainement.","Oui, j'ai commencé à prendre les médicaments que vous avez prescrits.",0.5217391304347826,0.6411483253588517,1.0,True
+cardiology_1_followup,cardiology,fr-CA,followup,6,doctor,doctor,Excellent. Avez-vous ressenti des effets secondaires de vos médicaments?,Je suis aussi plus active physiquement et j'essaie de manger plus sainement.,1.1,0.3586206896551724,1.0,True
+cardiology_1_followup,cardiology,fr-CA,followup,7,patient,patient,"Non, je ne pense pas.
+
+[Après l'examen]",Excellent avez-vous ressenti des effets secondaires de vos médicaments?,1.4285714285714286,0.23076923076923078,1.0,True
+cardiology_1_followup,cardiology,fr-CA,followup,8,doctor,doctor,Votre examen physique semble normal. Vos signes vitaux sont stables et votre cœur a un rythme plus régulier qu'avant. C'est un bon signe. Nous avons également reçu les résultats de votre dernier test d'effort et ils montrent une amélioration.,"Non, je ne pense pas après l'examen.",1.0,0.0661764705882353,0.0,True
+cardiology_5_followup,cardiology,fr-CA,followup,0,doctor,doctor,"Bonjour Sophie, comment vous sentez-vous depuis notre dernière rencontre ?","Bonjour Sophie, comment vous sentez-vous depuis notre dernière rencontre?",0.0,1.0,1.0,True
+cardiology_5_followup,cardiology,fr-CA,followup,1,patient,patient,"Bonjour, Dr. Tremblay. Je me sens un peu mieux. Les palpitations sont moins fréquentes.","Bonjour docteur Tremblay, je me sens un peu mieux, les palpitations sont moins fréquentes.",0.07142857142857142,0.9704142011834319,1.0,True
+cardiology_5_followup,cardiology,fr-CA,followup,2,doctor,doctor,C'est bon à entendre. Avez-vous remarqué des changements dans vos symptômes ?,C'est bon à entendre.,0.6666666666666666,0.425531914893617,1.0,True
+cardiology_5_followup,cardiology,fr-CA,followup,3,patient,patient,"Oui, comme je l'ai dit, les palpitations sont moins fréquentes. Mais je ressens parfois des vertiges.",Avez-vous remarqué des changements dans vos symptômes?,1.0,0.21333333333333335,0.0,True
+cardiology_5_followup,cardiology,fr-CA,followup,4,doctor,doctor,"Je vois. Et comment allez-vous avec le médicament, l'amiodarone ?","Oui, comme je l'ai dit, les palpitations sont moins fréquentes, mais je ressens parfois des vertiges.",1.5,0.25316455696202533,1.0,True
+cardiology_5_followup,cardiology,fr-CA,followup,5,patient,patient,J'ai pris le médicament comme vous me l'avez prescrit.,Je vois et Comment allez-vous avec le médicament?,0.8888888888888888,0.3564356435643564,1.0,True
+cardiology_5_followup,cardiology,fr-CA,followup,6,doctor,doctor,Parfait. Avez-vous remarqué des effets secondaires ?,L'agneau d'aronne.,1.0,0.15151515151515152,1.0,True
+cardiology_5_followup,cardiology,fr-CA,followup,7,patient,patient,"Pas vraiment, sauf peut-être une légère fatigue.",J'ai pris le médicament comme vous me l'avez prescrit.,1.125,0.36363636363636365,1.0,True
+cardiology_5_followup,cardiology,fr-CA,followup,8,doctor,doctor,Votre tension artérielle et votre rythme cardiaque sont maintenant dans la normale. Les résultats de l'ECG et de l'échocardiogramme montrent également une amélioration.,Parfait avez-vous remarqué des effets secondaires?,1.0,0.26046511627906976,0.0,True
+cardiology_5_followup,cardiology,fr-CA,followup,9,patient,patient,C'est une bonne nouvelle.,"Pas vraiment, sauf peut être une légère fatigue.",1.75,0.34285714285714286,1.0,True
+cardiology_5_followup,cardiology,fr-CA,followup,10,doctor,doctor,"Oui, c'est encourageant. Cependant, nous devrons continuer à surveiller votre condition. Pour l'instant, je vais ajuster la dose d'amiodarone pour voir si cela peut aider à réduire votre fatigue.",Votre tension artérielle et votre rythme cardiaque.,0.9655172413793104,0.23430962343096234,1.0,True
+cardiology_3_consultation,cardiology,fr-CA,consultation,0,doctor,doctor,"Lemaire, cardiologue. Comment puis-je vous aider aujourd'hui?","Lemaire, cardiologue, comment puis je vous aider aujourd'hui?",0.0,1.0,1.0,True
+cardiology_3_consultation,cardiology,fr-CA,consultation,1,patient,patient,"Bonjour Docteur, je suis ici parce que j'ai des problèmes pour respirer, surtout quand je monte des escaliers ou quand je fais des efforts. J'ai aussi eu des épisodes de douleur dans la poitrine.","Bonjour docteur, je suis ici parce que j'ai des problèmes pour respirer, surtout quand je monte des escaliers ou quand je fais des efforts.",0.29411764705882354,0.8318042813455657,1.0,True
+cardiology_3_consultation,cardiology,fr-CA,consultation,2,doctor,doctor,"Je vois, depuis combien de temps ressentez-vous ces symptômes?",Jaiaussi.eu des épisodes de douleur dans la poitrine.,0.9,0.25,1.0,True
+cardiology_3_consultation,cardiology,fr-CA,consultation,3,patient,patient,Cela fait environ deux mois maintenant.,Je vois depuis combien de temps ressentez vous ces symptômes?,1.6666666666666667,0.2857142857142857,1.0,True
+cardiology_3_consultation,cardiology,fr-CA,consultation,4,doctor,doctor,Avez-vous des maladies cardiaques dans votre famille?,Cela fait environ 2 mois maintenant.,1.0,0.2988505747126437,1.0,True
+cardiology_3_consultation,cardiology,fr-CA,consultation,5,patient,patient,"Oui, mon père est décédé d'une crise cardiaque et ma mère a des problèmes de tension artérielle.",Avez-vous des maladies cardiaques dans votre famille?,1.0,0.3698630136986301,0.0,True
+cardiology_3_consultation,cardiology,fr-CA,consultation,6,doctor,doctor,"D'accord, merci pour ces informations. Nous allons faire un examen cardiovasculaire, cela comprendra un ECG, un échocardiogramme pour évaluer le fonctionnement de votre cœur, ainsi qu'un test d'effort. Vous sentez-vous à l'aise avec cela?","Oui, mon père est décédé d'une crise cardiaque et ma mère a des problèmes de tension artérielle.",0.9714285714285714,0.28923076923076924,0.0,True
+cardiology_3_consultation,cardiology,fr-CA,consultation,7,patient,patient,"Oui, je comprends.
+
+(Après l'examen)","D'accord, merci pour ces informations, nous allons faire un examen cardiovasculaire.",2.2,0.32142857142857145,1.0,True
+cardiology_3_consultation,cardiology,fr-CA,consultation,8,doctor,doctor,"Votre ECG montre des signes de sténose aortique, ce qui signifie que votre valve aortique se rétrécit, ce qui peut expliquer vos symptômes. Nous devons encore confirmer cela avec une échographie cardiaque.",Cela comprendra 1ECG un écocardiogramme pour évaluer le fonctionnement de votre cœur.,0.96875,0.16842105263157894,0.3333333333333333,True
+cardiology_5_consultation,cardiology,fr-CA,consultation,0,doctor,doctor,"Bonjour, je suis le Dr. Tremblay. Comment puis-je vous aider aujourd'hui ?","Bonjour, je suis le docteur Tremblay, comment puis-je vous aider aujourd'hui?",0.08333333333333333,0.965034965034965,1.0,True
+cardiology_5_consultation,cardiology,fr-CA,consultation,1,patient,patient,"Bonjour, je m'appelle Sophie. Ces derniers temps, j'ai des palpitations cardiaques et des battements cardiaques rapides.","Bonjour, je m'appelle Sophie, ces derniers temps j'ai des palpitations cardiaques et des battements cardiaques rapides.",0.0,1.0,1.0,True
+cardiology_5_consultation,cardiology,fr-CA,consultation,2,doctor,doctor,"Je suis désolé d'entendre cela, Sophie. Pouvez-vous me donner plus de détails sur ces symptômes ? Combien de temps cela dure-t-il et y a-t-il des déclencheurs spécifiques ?",Je suis désolé d'entendre cela Sophie.,0.8064516129032258,0.3645320197044335,1.0,True
+cardiology_5_consultation,cardiology,fr-CA,consultation,3,patient,patient,Cela dure généralement une dizaine de minutes et ça arrive souvent quand je suis stressée.,Pouvez vous me donner plus de détails sur ces symptômes?,0.9333333333333333,0.3055555555555556,1.0,True
+cardiology_5_consultation,cardiology,fr-CA,consultation,4,doctor,doctor,Avez-vous des antécédents de problèmes cardiaques dans votre famille ?,Combien de temps cela dure?,0.9,0.3404255319148936,1.0,True
+cardiology_5_consultation,cardiology,fr-CA,consultation,5,patient,patient,Ma mère a eu une crise cardiaque il y a quelques années.,T il YAT il des déclencheurs spécifiques?,0.9166666666666666,0.25263157894736843,1.0,True
+cardiology_5_consultation,cardiology,fr-CA,consultation,6,doctor,doctor,Je vois. Avez-vous déjà fait des tests cardiaques comme un ECG ou un échocardiogramme ?,Cela dure généralement une dizaine de minutes et ça arrive souvent quand je suis stressé.,1.0,0.13953488372093023,0.0,True
+cardiology_5_consultation,cardiology,fr-CA,consultation,7,patient,patient,"Non, je ne l'ai jamais fait.",Avez-vous des antécédents de problèmes cardiaques dans votre famille?,1.6666666666666667,0.23404255319148937,1.0,True
+cardiology_5_consultation,cardiology,fr-CA,consultation,8,doctor,doctor,"D'accord. Étant donné vos symptômes et vos antécédents familiaux, je vous conseille de faire un ECG et un échocardiogramme. Cela nous aidera à mieux comprendre la situation.",Ma mère a eu une crise cardiaque il y a quelques années.,1.0,0.25892857142857145,0.0,True
+cardiology_5_consultation,cardiology,fr-CA,consultation,9,patient,patient,"D'accord.
+
+[Après l'examen physique]",Je vois avez-vous déjà fait des tests cardiaques comme 1ECG ou un écocardiogramme?,3.5,0.1592920353982301,1.0,True
+cardiology_4_consultation,cardiology,fr-CA,consultation,0,doctor,doctor,"Bonjour, je suis le Dr. Lamontagne, cardiologue. Comment puis-je vous aider aujourd'hui ?","Bonjour, je suis le docteur la montagne, cardiologue, comment puis-je vous aider aujourd'hui?",0.23076923076923078,0.9651162790697675,1.0,True
+cardiology_4_consultation,cardiology,fr-CA,consultation,1,patient,patient,Bonjour Dr. Lamontagne. Mon médecin m'a référé à vous en raison d'un prolapsus de la valve mitrale.,"Bonjour docteur la montagne, mon médecin m'a référé à vous en raison d'un prolapsus de la valve mitrale.",0.17647058823529413,0.9696969696969697,1.0,True
+cardiology_4_consultation,cardiology,fr-CA,consultation,2,doctor,doctor,"D'accord. Avez-vous des symptômes comme la fatigue, l'essoufflement, des palpitations ou des douleurs thoraciques ?","D'accord, avez-vous des symptômes comme la fatigue, l'essoufflement des palpitations ou des douleurs thoraciques?",0.0,1.0,1.0,True
+cardiology_4_consultation,cardiology,fr-CA,consultation,3,patient,patient,"Oui, j'ai de l'essoufflement et des palpitations.","Oui, j'ai de l'essoufflement et des palpitations.",0.0,1.0,1.0,True
+cardiology_4_consultation,cardiology,fr-CA,consultation,4,doctor,doctor,"Avez-vous des antécédents médicaux particuliers, comme l'hypertension, le diabète ou une maladie cardiaque familiale ?","Avez-vous des antécédents médicaux particuliers comme l'hypertension, le diabète ou une maladie cardiaque familiale?",0.0,1.0,1.0,True
+cardiology_4_consultation,cardiology,fr-CA,consultation,5,patient,patient,"J'ai de l'hypertension, mais elle est contrôlée par des médicaments.","J'ai de l'hypertension, mais elle est contrôlée par des médicaments.",0.0,1.0,1.0,True
+cardiology_4_consultation,cardiology,fr-CA,consultation,6,doctor,doctor,D'accord. Permettez-moi d'effectuer un examen physique. (Après l'examen) Votre tension artérielle est un peu élevée et je peux entendre un souffle cardiaque. Je vais vous recommander un ECG et un échocardiogramme pour confirmer le diagnostic. Nous pourrions aussi envisager un test d'effort pour évaluer votre capacité d'exercice.,"D'accord, permettez-moi d'effectuer un examen physique après l'examen.",0.8125,0.34782608695652173,0.0,True
+cardiology_4_consultation,cardiology,fr-CA,consultation,7,patient,patient,"D'accord. Et après ça, quel serait le plan de traitement ?",Votre tension artérielle est un peu élevée.,1.0,0.375,1.0,True
+cardiology_4_consultation,cardiology,fr-CA,consultation,8,doctor,doctor,"Le traitement dépend des résultats des tests. Il pourrait s'agir de médicaments ou, dans certains cas, d'une intervention chirurgicale. Nous discuterons de cela une fois que nous aurons les résultats.",Je.,1.0,0.01015228426395939,1.0,True
+cardiology_8_followup,cardiology,fr-CA,followup,0,doctor,doctor,"Bonjour, monsieur. Je suis le docteur Dupuis. Comment vous sentez-vous depuis notre dernière rencontre?","Bonjour Monsieur, je suis le docteur Dupuis, comment vous sentez-vous depuis notre dernière rencontre?",0.0,1.0,1.0,True
+cardiology_8_followup,cardiology,fr-CA,followup,1,patient,patient,"Bonjour docteur. Je me sens un peu mieux. Les palpitations ont diminué, mais je ressens toujours un certain essoufflement à l'effort.","Bonjour docteur, je me sens un peu mieux, les palpitations vont diminuer, mais je ressens toujours un certaine essoufflement à l'effort.",0.14285714285714285,0.9808429118773946,1.0,True
+cardiology_8_followup,cardiology,fr-CA,followup,2,doctor,doctor,Avez-vous suivi les recommandations sur les changements de mode de vie que nous avons discutés lors de votre dernière visite?,Avez-vous suivi les recommandations sur les changements de mode de vie que nous avons discuté lors de votre dernière visite?,0.047619047619047616,0.9959514170040485,1.0,True
+cardiology_8_followup,cardiology,fr-CA,followup,3,patient,patient,"Oui, j'ai commencé à marcher plus et à manger plus sainement.","Oui, j'ai commencé à marcher plus et à manger plus sainement.",0.0,1.0,1.0,True
+cardiology_8_followup,cardiology,fr-CA,followup,4,doctor,doctor,Très bien. Et comment allez-vous avec les médicaments que nous avons prescrits? Avez-vous remarqué des effets secondaires?,Très bien.,0.8947368421052632,0.140625,1.0,True
+cardiology_8_followup,cardiology,fr-CA,followup,5,patient,patient,"Je prends les médicaments comme indiqué. Je n'ai pas remarqué d'effets secondaires majeurs, peut-être juste un peu de fatigue.",Et comment allez vous avec les médicaments que nous avons prescrits?,1.0,0.3684210526315789,1.0,True
+cardiology_8_followup,cardiology,fr-CA,followup,6,doctor,doctor,"Nous allons continuer avec le même plan de traitement pour le moment, mais je veux vous revoir dans trois mois pour surveiller votre progression. Continuez à suivre vos médicaments et vos changements de mode de vie. Si vos symptômes s'aggravent, appelez-nous immédiatement. Avez-vous des questions?",avez-vous remarqué des effets secondaires?,0.9787234042553191,0.0960960960960961,1.0,True
+cardiology_8_followup,cardiology,fr-CA,followup,7,patient,patient,"Non, merci docteur.
+
+**Note SOAP**
+
+*Subjectif* Le patient rapporte une amélioration des palpitations, mais a toujours un essoufflement à l'effort. Adhère aux modifications de mode de vie recommandées et aux médicaments prescrits. Signale une légère fatigue.
+
+*Objectif* Tension artérielle à 130/80, présence d'un souffle cardiaque, moins intense qu'auparavant. L'échocardiogramme montre un prolapsus de la valve mitrale stable.
+
+*Évaluation* Prolapsus de la valve mitrale stable avec symptômes d'essoufflement à l'effort. Hypertension contrôlée. Les médicaments semblent efficaces.
+
+*Plan* Continuer le traitement actuel avec les inhibiteurs de l'ECA et les bêta-bloquants. Suivre les recommandations de mode de vie. Suivi dans trois mois.
+
+**Mots-clés / Étiquettes**
+
+*Diagnostique* Prolapsus de la valve mitrale, hypertension contrôlée.
+*Traitement* Inhibiteurs de l'ECA, bêta-bloquants, changements de mode de vie.
+*Symptômes* Diminution des palpitations, essoufflement à l'effort.
+*Conditions* Histoire familiale de maladie cardiaque.
+*Allergies* Aucune mentionnée.","Je prends les médicaments comme indiqué, je n'ai pas remarqué d'effets secondaires majeurs, peut être juste un peu de fatigue.",0.9784172661870504,0.10767872903795234,0.0,True
+cardiology_1_consultation,cardiology,fr-CA,consultation,0,doctor,doctor,"Bonjour, je suis le Dr Martin. Que puis-je faire pour vous aujourd'hui?","Bonjour, je suis le docteur Martin, que puis-je faire pour vous aujourd'hui?",0.07692307692307693,0.9645390070921985,1.0,True
+cardiology_1_consultation,cardiology,fr-CA,consultation,1,patient,patient,Bonjour Dr Martin. Je suis récemment diagnostiquée avec une fibrillation auriculaire et j'ai des palpitations cardiaques irrégulières.,"Bonjour docteur Martin, je suis récemment diagnostiqué avec une fibrillation auriculaire et j'ai des palpitations.",0.23529411764705882,0.8770491803278688,1.0,True
+cardiology_1_consultation,cardiology,fr-CA,consultation,2,doctor,doctor,"D'accord, je comprends. Pouvez-vous me dire depuis combien de temps avez-vous ces symptômes?",Cardiaque irrégulière.,1.0,0.12727272727272726,1.0,True
+cardiology_1_consultation,cardiology,fr-CA,consultation,3,patient,patient,Ça a commencé il y a environ 2 mois.,"D'accord, je comprends, pouvez-vous me dire depuis combien de temps avez-vous ces symptômes?",1.6666666666666667,0.2903225806451613,1.0,True
+cardiology_1_consultation,cardiology,fr-CA,consultation,4,doctor,doctor,"Avez-vous d'autres symptômes comme des essoufflements, des douleurs à la poitrine ou des évanouissements?",Ça a commencé il y a environ 2 mois.,1.0,0.2463768115942029,1.0,True
+cardiology_1_consultation,cardiology,fr-CA,consultation,5,patient,patient,"Non, je n'ai pas eu d'autres symptômes.","Avez-vous d'autres symptômes comme des essoufflements, des douleurs à la poitrine ou des évanouissements?",2.142857142857143,0.3,1.0,True
+cardiology_1_consultation,cardiology,fr-CA,consultation,6,doctor,doctor,D'accord. Avez-vous des antécédents familiaux de maladies cardiaques?,"Non, je naipas.eu d'autres symptômes.",1.0,0.21568627450980393,1.0,True
+cardiology_1_consultation,cardiology,fr-CA,consultation,7,patient,patient,Mon père a eu une crise cardiaque à l'âge de 60 ans.,"D'accord, avez-vous des antécédents familiaux de maladie cardiaque?",0.9166666666666666,0.29310344827586204,1.0,True
+cardiology_1_consultation,cardiology,fr-CA,consultation,8,doctor,doctor,"Merci de me l'avoir dit. Nous allons effectuer quelques tests pour mieux comprendre votre condition. Cela comprendra un ECG, un échocardiogramme et peut-être un test d'effort.",Mon père a eu une crise cardiaque à l'âge de 60 ans.,1.0,0.23423423423423423,0.0,True

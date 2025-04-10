@@ -1,21 +1,21 @@
 conversation_id,specialty,language,consultation_type,condition,avg_wer,avg_similarity,avg_medical_accuracy,speaker_accuracy,total_turns,matched_speakers,suspicious_match
-gp_8_consultation,gp,fr-CA,consultation,dépression,1.0445739445739446,0.45670429758236647,1.0,1.0,9,9,False
-gp_9_followup,gp,fr-CA,followup,dépression,0.9674369747899161,0.3471855875545726,1.0,1.0,8,8,False
-gp_9_consultation,gp,fr-CA,consultation,arthrose,0.25390184863869075,0.8514557426243421,1.0,1.0,9,9,False
-gp_10_followup,gp,fr-CA,followup,hypothyroïdie,0.8356934731934732,0.37953500879527974,0.5,1.0,8,8,False
-gp_4_followup,gp,fr-CA,followup,arthrose,0.5613075892991484,0.5875143133122585,1.0,1.0,8,8,False
-gp_3_followup,gp,fr-CA,followup,RGO,0.9889513125763127,0.29537484987706897,0.7,1.0,10,10,False
-gp_7_followup,gp,fr-CA,followup,infection des voies respiratoires supérieures,0.768956043956044,0.44469259630565827,0.875,1.0,8,8,False
-gp_7_consultation,gp,fr-CA,consultation,infection des voies respiratoires supérieures,0.3555462184873949,0.794200618100465,1.0,1.0,10,10,False
-gp_6_followup,gp,fr-CA,followup,infection des voies urinaires,0.9852392977392976,0.41133217806893635,1.0,1.0,12,12,False
-gp_2_consultation,gp,fr-CA,consultation,diabète de type 2,0.20393723923135687,0.8921953365760056,1.0,1.0,9,9,False
-gp_2_followup,gp,fr-CA,followup,arthrose,0.73427031631366,0.5527063079998258,0.8888888888888888,1.0,9,9,False
-gp_5_followup,gp,fr-CA,followup,rhinite allergique,1.826875,0.22168723645501273,0.8,1.0,10,10,False
-gp_6_consultation,gp,fr-CA,consultation,arthrose,1.2759379509379507,0.4363908116809022,1.0,1.0,10,10,False
-gp_1_followup,gp,fr-CA,followup,infection des voies urinaires,1.5890857331074721,0.2753463415603969,0.875,1.0,8,8,False
-gp_3_consultation,gp,fr-CA,consultation,rhinite allergique,0.8386422864034805,0.387549563340964,0.8181818181818182,1.0,11,11,False
-gp_5_consultation,gp,fr-CA,consultation,infection des voies respiratoires supérieures,1.0685844458571732,0.41996086408045324,0.8181818181818182,1.0,11,11,False
-gp_10_consultation,gp,fr-CA,consultation,infection des voies urinaires,0.8336252304314505,0.39610641589453716,0.8181818181818182,1.0,11,11,False
-gp_8_followup,gp,fr-CA,followup,arthrose,0.8381711915535444,0.43308307771141213,1.0,1.0,10,10,False
-gp_4_consultation,gp,fr-CA,consultation,rhinite allergique,0.1352671451355662,0.9501802730519329,1.0,1.0,8,8,False
-gp_1_consultation,gp,fr-CA,consultation,hypothyroïdie,1.0266441154122312,0.3637659227826162,0.6666666666666666,1.0,12,12,False
+gp_8_consultation,gp,fr-CA,consultation,dépression,1.0445739445739446,0.45670429758236647,1.0,0.9783294419632415,9,9,False
+gp_9_followup,gp,fr-CA,followup,dépression,0.9674369747899161,0.3471855875545726,1.0,0.9760244623025089,8,8,False
+gp_9_consultation,gp,fr-CA,consultation,arthrose,0.25390184863869075,0.8514557426243421,1.0,0.9756955575906374,9,9,False
+gp_10_followup,gp,fr-CA,followup,hypothyroïdie,0.8356934731934732,0.37953500879527974,0.5,0.9762172888125487,8,8,False
+gp_4_followup,gp,fr-CA,followup,arthrose,0.5613075892991484,0.5875143133122585,1.0,0.96826940045772,8,8,False
+gp_3_followup,gp,fr-CA,followup,RGO,0.9889513125763127,0.29537484987706897,0.7,0.9691621430842333,10,10,False
+gp_7_followup,gp,fr-CA,followup,infection des voies respiratoires supérieures,0.768956043956044,0.44469259630565827,0.875,0.9655634390913975,8,8,False
+gp_7_consultation,gp,fr-CA,consultation,infection des voies respiratoires supérieures,0.3555462184873949,0.794200618100465,1.0,0.9749590365017019,10,10,False
+gp_6_followup,gp,fr-CA,followup,infection des voies urinaires,0.9852392977392976,0.41133217806893635,1.0,0.9759838232642494,12,12,False
+gp_2_consultation,gp,fr-CA,consultation,diabète de type 2,0.20393723923135687,0.8921953365760056,1.0,0.9720030915597201,9,9,False
+gp_2_followup,gp,fr-CA,followup,arthrose,0.73427031631366,0.5527063079998258,0.8888888888888888,0.9627896463311328,9,9,False
+gp_5_followup,gp,fr-CA,followup,rhinite allergique,1.826875,0.22168723645501273,0.8,0.9742238399551809,10,10,False
+gp_6_consultation,gp,fr-CA,consultation,arthrose,1.2759379509379507,0.4363908116809022,1.0,0.9727267138360328,10,10,False
+gp_1_followup,gp,fr-CA,followup,infection des voies urinaires,1.5890857331074721,0.2753463415603969,0.875,0.9771126085433508,8,8,False
+gp_3_consultation,gp,fr-CA,consultation,rhinite allergique,0.8386422864034805,0.387549563340964,0.8181818181818182,0.968370068933871,11,11,False
+gp_5_consultation,gp,fr-CA,consultation,infection des voies respiratoires supérieures,1.0685844458571732,0.41996086408045324,0.8181818181818182,0.9710494930662492,11,11,False
+gp_10_consultation,gp,fr-CA,consultation,infection des voies urinaires,0.8336252304314505,0.39610641589453716,0.8181818181818182,0.9600672209191683,11,11,False
+gp_8_followup,gp,fr-CA,followup,arthrose,0.8381711915535444,0.43308307771141213,1.0,0.9667812394497441,10,10,False
+gp_4_consultation,gp,fr-CA,consultation,rhinite allergique,0.1352671451355662,0.9501802730519329,1.0,0.973198197030829,8,8,False
+gp_1_consultation,gp,fr-CA,consultation,hypothyroïdie,1.0266441154122312,0.3637659227826162,0.6666666666666666,0.9621863490031923,12,12,False
