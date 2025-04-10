@@ -1,0 +1,3 @@
+consultation_type,count,avg_wer,avg_similarity,avg_medical_accuracy,avg_speaker_accuracy
+consultation,10,0.2760307129820994,0.8543016838916888,0.9427564102564103,1.0
+followup,10,0.28263902413323183,0.87382121214458,0.9450854700854702,1.0

@@ -1,52 +1,42 @@
-{
-  "conversation": [
-    {
-      "speaker": "doctor",
-      "text": "Bonjour, je suis le Dr Dupont. Vous êtes monsieur Leroux, c'est bien ça?"
-    },
-    {
-      "speaker": "patient",
-      "text": "Oui, c'est exact."
-    },
-    {
-      "speaker": "doctor",
-      "text": "Ravi de vous rencontrer, monsieur Leroux. Que puis-je faire pour vous aujourd'hui?"
-    },
-    {
-      "speaker": "patient",
-      "text": "Eh bien, mon médecin de famille m'a référé ici parce que j'ai une hypertension."
-    },
-    {
-      "speaker": "doctor",
-      "text": "D'accord, je vois. Avez-vous des symptômes, comme des maux de tête, des vertiges, des bourdonnements dans les oreilles ou des problèmes de vision?"
-    },
-    {
-      "speaker": "patient",
-      "text": "J'ai parfois des maux de tête, mais je pensais que c'était à cause du stress au travail."
-    },
-    {
-      "speaker": "doctor",
-      "text": "C'est possible, mais il se peut aussi que ce soit lié à votre hypertension. Allons plus loin. Avez-vous déjà subi un ECG ou un échocardiogramme?"
-    },
-    {
-      "speaker": "patient",
-      "text": "Non, jamais."
-    },
-    {
-      "speaker": "doctor",
-      "text": "Votre tension artérielle est un peu élevée aujourd'hui. Votre taux de cholestérol est également élevé, ce qui peut contribuer à votre hypertension."
-    },
-    {
-      "speaker": "patient",
-      "text": "C'est grave, docteur?"
-    },
-    {
-      "speaker": "doctor",
-      "text": "Eh bien, l'hypertension peut être une affection sérieuse si elle n'est pas traitée, mais il existe de nombreux traitements disponibles. Nous pouvons commencer par un médicament appelé ramipril, qui peut aider à contrôler votre pression artérielle. Il sera également important de modifier votre style de vie, par exemple en améliorant votre alimentation et en faisant plus d'exercice."
-    },
-    {
-      "speaker": "patient",
-      "text": "D'accord, je suis prêt à faire ce qu'il faut."
-    }
-  ]
-}
+[
+  {
+    "speaker": "doctor",
+    "text": "Bonjour, je suis le docteur Dupont. Vous êtes monsieur Leroux, c'est bien ça"
+  },
+  {
+    "speaker": "patient",
+    "text": "Oui, c'est exact."
+  },
+  {
+    "speaker": "doctor",
+    "text": "Ravi de vous rencontrer monsieur Roux, que puis-je faire pour vous aujourd'hui"
+  },
+  {
+    "speaker": "patient",
+    "text": "bien mon médecin de famille m'a référé ici parce que j'ai une hypertension."
+  },
+  {
+    "speaker": "doctor",
+    "text": "D'accord, je vois, avez-vous des symptômes comme les maux de tête, les vertiges, l'effondrement dans les oreilles ou les problèmes de vision."
+  },
+  {
+    "speaker": "patient",
+    "text": "J'ai parfois des maux de tête, mais je pensais que c'était à cause du stress au travail."
+  },
+  {
+    "speaker": "doctor",
+    "text": "C'est possible, mais il se peut aussi que ce soit lié à votre hypertension. Votre tension artérielle est un peu élevée aujourd'hui, votre taux de cholestérol est également élevé, ce qui peut contribuer à votre hypertension."
+  },
+  {
+    "speaker": "patient",
+    "text": "C'est"
+  },
+  {
+    "speaker": "doctor",
+    "text": "grave docteur"
+  },
+  {
+    "speaker": "patient",
+    "text": "D'accord, je suis prêt à faire ce qu'il faut."
+  }
+]
