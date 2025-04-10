@@ -1,0 +1,21 @@
+conversation_id,specialty,language,consultation_type,condition,avg_wer,avg_similarity,avg_medical_accuracy,speaker_accuracy,total_turns,matched_speakers,suspicious_match
+cardiology_8_consultation,cardiology,fr-CA,consultation,prolapsus de la valve mitrale,0.5964037464037464,0.6669577642962625,0.9,1.0,10,10,False
+cardiology_9_followup,cardiology,fr-CA,followup,péricardite,0.9667329283429491,0.3303986247033448,0.625,1.0,8,8,False
+cardiology_9_consultation,cardiology,fr-CA,consultation,tachycardie ventriculaire,0.03514183451158241,0.9929946480465841,1.0,1.0,7,7,False
+cardiology_10_followup,cardiology,fr-CA,followup,insuffisance cardiaque,1.0652629233511586,0.4809582600846515,0.75,1.0,8,8,False
+cardiology_4_followup,cardiology,fr-CA,followup,tachycardie ventriculaire,1.0573488278817431,0.3961123175016311,0.8181818181818182,1.0,11,11,False
+cardiology_7_followup,cardiology,fr-CA,followup,maladie coronarienne,0.8628792551950615,0.4432536316637379,0.625,1.0,8,8,False
+cardiology_10_consultation,cardiology,fr-CA,consultation,endocardite,0.985654761904762,0.39627221997770967,0.875,1.0,8,8,False
+cardiology_3_followup,cardiology,fr-CA,followup,infarctus du myocarde,0.12769726247987118,0.9179387433742688,0.9444444444444444,1.0,9,9,False
+cardiology_2_followup,cardiology,fr-CA,followup,maladie coronarienne,0.6758578263841422,0.7017383240030621,0.8,1.0,10,10,False
+cardiology_6_followup,cardiology,fr-CA,followup,prolapsus de la valve mitrale,0.8209395542728876,0.4741057651743861,0.8888888888888888,1.0,9,9,False
+cardiology_7_consultation,cardiology,fr-CA,consultation,fibrillation auriculaire,0.6636888623072833,0.6931410611832504,0.8,1.0,10,10,False
+cardiology_2_consultation,cardiology,fr-CA,consultation,insuffisance cardiaque,0.1317230273752013,0.9086781796459216,0.8888888888888888,1.0,9,9,False
+cardiology_6_consultation,cardiology,fr-CA,consultation,hypertension,0.9421296296296295,0.4953015973205564,0.7777777777777778,1.0,9,9,False
+cardiology_1_followup,cardiology,fr-CA,followup,fibrillation auriculaire,0.5059351276742581,0.6944388440912844,0.8888888888888888,1.0,9,9,False
+cardiology_5_followup,cardiology,fr-CA,followup,fibrillation auriculaire,0.9061364880330397,0.41560573160504133,0.8181818181818182,1.0,11,11,False
+cardiology_3_consultation,cardiology,fr-CA,consultation,infarctus du myocarde,1.0001069872393402,0.42392361652911614,0.7037037037037037,1.0,9,9,False
+cardiology_5_consultation,cardiology,fr-CA,consultation,sténose aortique,1.0806451612903225,0.4019977694896437,0.8,1.0,10,10,False
+cardiology_4_consultation,cardiology,fr-CA,consultation,tachycardie ventriculaire,0.35774886877828055,0.7408657355541354,0.8888888888888888,1.0,9,9,False
+cardiology_8_followup,cardiology,fr-CA,followup,insuffisance cardiaque,0.5052942128779779,0.5862019008308837,0.875,1.0,8,8,False
+cardiology_1_consultation,cardiology,fr-CA,consultation,hypertension,1.0042675189734014,0.39428714043911767,0.8888888888888888,1.0,9,9,False

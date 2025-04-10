@@ -1,0 +1,21 @@
+conversation_id,specialty,language,consultation_type,condition,avg_wer,avg_similarity,avg_medical_accuracy,speaker_accuracy,total_turns,matched_speakers,suspicious_match
+cardiology_8_consultation,cardiology,en-CA,consultation,aortic stenosis,1.8173742189183366,0.42615297563307525,0.7083333333333334,0.75,12,9,False
+cardiology_9_followup,cardiology,en-CA,followup,hypertension,0.8005952380952381,0.6664754485715896,0.8,0.7,10,7,False
+cardiology_9_consultation,cardiology,en-CA,consultation,mitral valve prolapse,0.8739462081128747,0.7395585506597452,0.8055555555555555,0.75,12,9,False
+cardiology_10_followup,cardiology,en-CA,followup,endocarditis,0.5191190679170219,0.8354714525700299,0.9,0.9,10,9,False
+cardiology_4_followup,cardiology,en-CA,followup,hypertension,1.2209838833194098,0.6041949436874482,0.75,0.75,12,9,False
+cardiology_7_followup,cardiology,en-CA,followup,aortic stenosis,1.4406782106782106,0.47659230553450316,0.9,0.9,10,9,False
+cardiology_10_consultation,cardiology,en-CA,consultation,endocarditis,1.5241983311107734,0.5515360624085323,0.6666666666666667,0.6428571428571429,14,9,False
+cardiology_3_followup,cardiology,en-CA,followup,myocardial infarction,1.43338004101162,0.608017892152909,0.8,0.7,10,7,False
+cardiology_2_followup,cardiology,en-CA,followup,endocarditis,0.7010202007295031,0.7032565408061776,0.8181818181818182,0.8181818181818182,11,9,False
+cardiology_6_followup,cardiology,en-CA,followup,myocardial infarction,0.9149891158809564,0.6801732751232279,0.8,0.7,10,7,False
+cardiology_7_consultation,cardiology,en-CA,consultation,myocardial infarction,1.0692007280531617,0.5941445331520303,0.8666666666666666,0.7,10,7,False
+cardiology_2_consultation,cardiology,en-CA,consultation,ventricular tachycardia,0.056262332883871634,0.9875580307742204,0.869047619047619,0.972148307627019,14,14,True
+cardiology_6_consultation,cardiology,en-CA,consultation,heart failure,0.5925266493543805,0.7483003217322152,0.7976190476190476,0.7857142857142857,14,11,False
+cardiology_1_followup,cardiology,en-CA,followup,endocarditis,0.41824675324675326,0.7855974930238632,0.6666666666666666,0.8333333333333334,6,5,False
+cardiology_5_followup,cardiology,en-CA,followup,pericarditis,0.21613756613756613,0.8704671864550283,0.85,0.9,10,9,False
+cardiology_3_consultation,cardiology,en-CA,consultation,myocardial infarction,1.4753799596761783,0.5364499394029513,0.6428571428571429,0.6428571428571429,14,9,False
+cardiology_5_consultation,cardiology,en-CA,consultation,myocardial infarction,1.6375124999494748,0.6609329408412168,0.7,0.7,10,7,False
+cardiology_4_consultation,cardiology,en-CA,consultation,coronary artery disease,1.4511289900575615,0.7193708735661042,0.8333333333333333,0.7857142857142857,14,11,False
+cardiology_8_followup,cardiology,en-CA,followup,pericarditis,0.8590010517070013,0.5888047272464448,0.8,0.7,10,7,False
+cardiology_1_consultation,cardiology,en-CA,consultation,coronary artery disease,0.5225526107879049,0.7502701722061643,0.9138888888888889,0.9166666666666666,12,11,False

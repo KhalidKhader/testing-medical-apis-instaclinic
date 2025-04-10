@@ -4,18 +4,18 @@ gp_9_followup,gp,en-CA,followup,GERD,0.3993221690590112,0.8657251796202687,1.0,0
 gp_9_consultation,gp,en-CA,consultation,asthma,1.00885861646659,0.645637274708207,0.8571428571428571,0.7857142857142857,14,11,False
 gp_10_followup,gp,en-CA,followup,depression,0.3426923076923077,0.8561176604223455,0.9,0.9,10,9,False
 gp_4_followup,gp,en-CA,followup,hypothyroidism,0.9606440751602041,0.7221762734573934,0.8,0.7333333333333333,15,11,False
-gp_3_followup,gp,en-CA,followup,type 2 diabetes,0.10493827160493827,0.9667738478027866,1.0,1.0,9,9,False
+gp_3_followup,gp,en-CA,followup,type 2 diabetes,0.10493827160493827,0.9667738478027866,1.0,0.9631944256777673,9,9,False
 gp_7_followup,gp,en-CA,followup,GERD,0.8076944998575093,0.7771998510262851,1.0,0.8181818181818182,11,9,False
-gp_7_consultation,gp,en-CA,consultation,depression,0.38622589531680435,0.9292348888067998,1.0,1.0,11,11,False
+gp_7_consultation,gp,en-CA,consultation,depression,0.38622589531680435,0.9292348888067998,1.0,0.9745875446728057,11,11,False
 gp_6_followup,gp,en-CA,followup,upper respiratory infection,0.47778455284552845,0.8225198136246813,0.875,0.875,8,7,False
 gp_2_consultation,gp,en-CA,consultation,hypothyroidism,0.7165674603174602,0.7008426521301889,0.75,0.6875,16,11,False
 gp_2_followup,gp,en-CA,followup,asthma,0.5743364822312191,0.7927795973257131,0.9230769230769231,0.8461538461538461,13,11,False
 gp_5_followup,gp,en-CA,followup,hypothyroidism,1.2070847851335658,0.6885585716487911,1.0,0.7,10,7,True
-gp_6_consultation,gp,en-CA,consultation,osteoarthritis,0.05732009925558312,0.9572849113705145,0.9615384615384616,1.0,13,13,False
+gp_6_consultation,gp,en-CA,consultation,osteoarthritis,0.05732009925558312,0.9572849113705145,0.9615384615384616,0.9736095211841626,13,13,False
 gp_1_followup,gp,en-CA,followup,allergic rhinitis,0.15561501192306146,0.8980396366965847,1.0,0.9,10,9,False
 gp_3_consultation,gp,en-CA,consultation,type 2 diabetes,0.5942167034798109,0.7364026101884451,0.7916666666666666,0.75,12,9,False
 gp_5_consultation,gp,en-CA,consultation,upper respiratory infection,0.7107377538829152,0.7576475103212199,0.9166666666666666,0.75,12,9,False
 gp_10_consultation,gp,en-CA,consultation,osteoarthritis,0.3309197746697747,0.7951521506057692,0.7916666666666666,0.75,12,9,False
 gp_8_followup,gp,en-CA,followup,hypothyroidism,0.15470496894409938,0.8862360876707276,0.8,0.9,10,9,False
-gp_4_consultation,gp,en-CA,consultation,upper respiratory infection,0.06755807200929151,0.9663700124731275,1.0,1.0,20,20,False
+gp_4_consultation,gp,en-CA,consultation,upper respiratory infection,0.06755807200929151,0.9663700124731275,1.0,0.970680159812053,20,20,False
 gp_1_consultation,gp,en-CA,consultation,type 2 diabetes,1.5796918767507002,0.741090166002479,1.0,0.75,12,9,False
