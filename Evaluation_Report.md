@@ -558,11 +558,25 @@ The semi-noise visualization for Azure English cardiology content reveals:
 - Better performance with common terms like "heart" and "blood"
 - Higher accuracy in structured portions of the conversation
 
+### Noisy Condition with Nova-2 for French
+
+The noisy condition for Nova-2 French GP consultation comparison highlights:
+- Remarkable resilience to noise (94.4% accuracy)
+- Minimal difference between consultation types
+- Strong performance on both diagnostic and treatment discussions
+- Slight advantage in follow-up visits (95.1% vs. 93.7%)
+
+### Noisy Condition with Azure for English
+
+The noisy condition for Azure English cardiology medical accuracy distribution shows:
+- Wide spread of accuracy values (65-85%)
+- Bimodal distribution suggesting inconsistent performance
+- Strong degradation with specialized terminology
+- Maintained accuracy with common terms
+
 ### Semi-Noise Condition with Azure for French
 
-![Semi-Noise Azure French](evaluation/Semi-noise%20-%20Azure%20for%20French-Nova-3-medical-%20for%20English-evaluation/Semi-noise%20-%20Azure%20for%20French-Nova-3-medical-%20for%20English_cardiology_fr-CA/fr-CA_cardiology_speaker_accuracy.png)
-
-The semi-noise visualization for Azure French cardiology content shows:
+The semi-noise condition for Azure French cardiology content shows:
 - Lower speaker identification accuracy (79.8%)
 - Frequent confusion between doctor and patient roles
 - Better performance on shorter utterances
@@ -577,26 +591,6 @@ The semi-noise WER distribution for Nova-3-medical English GP content demonstrat
 - Clustered excellence for medical terminology
 - Some outlier errors with complex medication names
 - Consistent performance across utterance lengths
-
-### Noisy Condition with Nova-2 for French
-
-![Noisy Nova French](evaluation/Noisy-Azure%20for%20English-Nova-2-%20for%20French-evaluation/Noisy-Azure%20for%20English-Nova-2-%20for%20French_gp_fr-CA/fr-CA_gp_consultation_type_comparison.png)
-
-The noisy visualization for Nova-2 French GP consultation comparison highlights:
-- Remarkable resilience to noise (94.4% accuracy)
-- Minimal difference between consultation types
-- Strong performance on both diagnostic and treatment discussions
-- Slight advantage in follow-up visits (95.1% vs. 93.7%)
-
-### Noisy Condition with Azure for English
-
-![Noisy Azure English](evaluation/Noisy-Azure%20for%20French-Nova-3-medical-%20for%20English-evaluation/Noisy-Azure%20for%20French-Nova-3-medical-%20for%20English_cardiology_en-CA/en-CA_cardiology_medical_accuracy_distribution.png)
-
-The noisy visualization for Azure English cardiology medical accuracy distribution shows:
-- Wide spread of accuracy values (65-85%)
-- Bimodal distribution suggesting inconsistent performance
-- Strong degradation with specialized terminology
-- Maintained accuracy with common terms
 
 ### Specialty-Specific Performance Highlight
 
