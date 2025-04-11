@@ -27,7 +27,7 @@ The framework includes a complete pipeline for:
 
 ## Key Findings
 
-![Model Performance Comparison](results/figures/model_comparison.png)
+![Model Performance Comparison](results/figures/model_performance_comparison.png)
 
 Our rigorous scientific evaluation revealed:
 
@@ -108,7 +108,7 @@ medical-stt-evaluation/
 │       └── fr-CA/                # French-Canadian data
 │
 ├── results/                      # Results and outputs
-│   ├── figures/                  # Visualization outputs
+│   ├── evaluation/               # Evaluation results
 │   ├── tables/                   # Evaluation result tables
 │   └── reports/                  # Generated reports
 │
@@ -241,10 +241,10 @@ The framework includes tools for generating scientific visualizations and report
 ### Available Visualizations
 
 1. **Model Performance Comparison**:
-   ![Model Performance](results/figures/model_comparison.png)
+   ![Model Performance](results/figures/model_performance_comparison.png)
 
 2. **Language Performance Analysis**:
-   ![Language Performance](results/figures/language_comparison.png)
+   ![Language Performance](results/figures/language_performance_comparison.png)
 
 3. **SOAP Section Analysis**:
    ![SOAP Section Performance](results/figures/combined_section_scores.png)
