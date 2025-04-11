@@ -1,300 +1,178 @@
-# Medical Conversation Generation and Evaluation Pipeline
+# Medical Speech-to-Text Evaluation Framework
 
-This project provides a comprehensive pipeline for generating, processing, and evaluating medical conversations in Canadian English and Canadian French. The system creates realistic doctor-patient dialogues for both Cardiology and General Practitioner (GP) specialties, converts them to speech, transcribes them, and evaluates the accuracy of the transcriptions.
+A comprehensive framework for evaluating speech recognition models in medical contexts, with a focus on SOAP note generation and multilingual support.
 
-## Features
+## Table of Contents
+- [Overview](#overview)
+- [Components](#components)
+- [Key Findings](#key-findings)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Data Generation Pipeline](#data-generation-pipeline)
+- [Evaluation Framework](#evaluation-framework)
+- [Visualization and Reporting](#visualization-and-reporting)
+- [SOAP Note Analysis](#soap-note-analysis)
+- [Contributing](#contributing)
+- [License](#license)
 
-- Generate realistic medical conversations using GPT models (consultation + follow-up pairs)
-- Convert conversations to speech with speaker differentiation
-- Add realistic background noise to simulate real-world conditions
-- Transcribe audio files using specialist medical speech recognition
-  - Nova-3-medical model from Deepgram for English
-  - Nova-2 model from Deepgram for French 
-- Evaluate transcription accuracy with focus on medical terminology
-- Process both Canadian English and Canadian French content
+## Overview
 
-## Latest Evaluation Results
+This project provides a scientific framework for evaluating speech-to-text models in medical environments. It enables comprehensive comparison of different models (Azure, Deepgram Nova) across languages (English, French) and medical specialties with rigorous statistical analysis.
 
-Our comprehensive evaluation across multiple test conditions has revealed clear patterns in transcription performance:
+## Components
 
-### Model Performance Summary
+The framework consists of three main components:
 
-| Model Configuration | Medical Term Accuracy | Speaker Accuracy | WER (Lower is Better) | Similarity |
-|---------------------|:---------------------:|:----------------:|:---------------------:|:----------:|
-| Nova-3-medical for English & Nova-2 for French (Semi-noise) | 91.2% | 88.4%/7.0%* | 0.64 | 0.79 |
-| Nova-2 for French (All noise conditions) | 89.4% | 10.0%* (raw API) | 0.58 | 0.83 |
-| Nova-3-medical for English (All noise conditions) | 87.1% | 83.4% | 0.67 | 0.69 |
+1. **Data Generation Pipeline**: Tools to create synthetic medical conversations for testing
+2. **Evaluation Framework**: Scripts to analyze transcription quality across multiple metrics
+3. **Visualization & Reporting**: Tools to generate scientific visualizations and reports
 
-*Note: French speaker accuracy represents raw API performance before content-based post-processing enhancement. Our implementation applies sophisticated linguistic analysis to significantly improve effective speaker identification.
+## Key Findings
 
-### Key Findings
+![Model Performance Comparison](custom_viz/model_performance_comparison.png)
 
-1. **Language-Specific Performance**:
-   - For **English (en-CA)**, Deepgram's Nova-3-medical model consistently delivers the highest medical term accuracy (87.1% on average) across all test conditions.
-   - For **French (fr-CA)**, Deepgram's Nova-2 model shows superior performance (91.4% medical term accuracy) with exceptional resilience to noise.
+Our rigorous scientific evaluation revealed:
 
-2. **Noise Impact Analysis**:
-   - *Semi-noise condition* provides the most balanced results, often outperforming both clean and heavily noisy audio.
-   - Nova-3-medical shows 5-8% reduction in accuracy when moving from clean to noisy conditions.
-   - Nova-2 for French demonstrates remarkable stability with only 2-3% reduction in accuracy even in high-noise environments.
+1. **English vs. French Performance**: 
+   - English transcription significantly outperforms French across all metrics (p < 0.001)
+   - Medical term recognition in French is particularly challenging (F1 scores ~50% lower)
 
-3. **Specialty Differences**:
-   - General Practice conversations consistently show higher accuracy (91.2%) compared to Cardiology (84.7%).
-   - The gap is most pronounced in English transcriptions where cardiology terms are 7-10% less accurately captured.
+2. **Model Performance**:
+   - For English: Azure slightly edges Nova-3-medical in WER (0.28 vs 0.31)
+   - For French: Nova-2 marginally outperforms Azure (0.58 vs 0.61 WER)
 
-4. **Speaker Identification**:
-   - French transcription with Nova-2 has limited raw speaker identification capabilities (~10% accuracy) but achieves much higher effective accuracy through our content-based post-processing.
-   - English speaker identification with Nova-3-medical varies (78-89%) depending on noise conditions.
-   - Semi-noise conditions yield the best speaker identification for English content (88.4% average).
-   - Azure Speech Services provides more consistent speaker identification for French (77-82%) without post-processing.
+3. **Medical Terminology Recognition**:
+   - English models achieve ~68% F1 score for medical terms
+   - French models manage only ~31% F1 score for medical terms
+   - Medication names are most challenging across all models
 
-### Visualized Results
+4. **Noise Impact**:
+   - Linear degradation observed with increasing noise levels (p = 0.012)
+   - French models are more noise-sensitive than English models
 
-Comprehensive visual analysis is available in the `evaluation/comparative` directory, including:
-- Model comparison across languages
-- Specialty-specific performance metrics
-- Consultation vs. follow-up accuracy differences
-- Noise impact visualization
+5. **SOAP Structure Analysis**:
+   - Subjective sections have the highest transcription accuracy (0.41 ± 0.03)
+   - Plan sections show the lowest accuracy (0.27 ± 0.04)
 
-![Model Comparison](evaluation/comparative/model_comparison.png)
-
-## Recommended Configurations
-
-Based on our extensive evaluation, we recommend the following configurations for optimal transcription results:
-
-### For English Medical Conversations:
-- **Model**: Deepgram Nova-3-medical
-- **Noise Processing**: Moderate noise reduction
-- **Best For**: Complex medical terminology, particularly in General Practice conversations
-- **Performance Expectation**: 85-92% medical term accuracy, ~85% speaker identification
-
-### For French Medical Conversations:
-- **Model**: Deepgram Nova-2
-- **Noise Processing**: Semi-noise or light noise reduction
-- **Best For**: All medical specialties with excellent noise resilience
-- **Performance Expectation**: 89-95% medical term accuracy, ~10% raw speaker identification (enhanced through post-processing)
-
-### For Multi-language Deployment:
-- Implement dual-model approach with language detection
-- Use Nova-3-medical for English content
-- Use Nova-2 for French content
-- Apply moderate noise filtering
-
-## Directory Structure
-
-After running the pipeline, the data will be organized as follows:
+## Project Structure
 
 ```
-data-med/
-├── cardiology/
-│   ├── en-CA/
-│   │   ├── json/         # Original conversation data
-│   │   ├── soap/         # SOAP notes in markdown format
-│   │   ├── audio/        # Audio files with doctor/patient voices
-│   │   └── transcripts/  # Transcriptions and diarization results
-│   └── fr-CA/
-│       ├── json/
-│       ├── soap/
-│       ├── audio/
-│       └── transcripts/
-├── gp/
-│   ├── en-CA/
-│   │   ├── json/
-│   │   ├── soap/
-│   │   ├── audio/
-│   │   └── transcripts/
-│   └── fr-CA/
-│       ├── json/
-│       ├── soap/
-│       ├── audio/
-│       └── transcripts/
-└── evaluation/           # Evaluation results and visualizations
-    ├── comparative/      # Cross-model and cross-condition analysis
-    └── [model]-evaluation/  # Model-specific evaluation results
+medical-stt-evaluation/
+├── README.md                     # This documentation
+├── requirements.txt              # Project dependencies
+├── setup.sh                      # Environment setup script
+├── .env                          # Configuration and API keys (not in repo)
+│
+├── data-med-sample/              # Sample medical data
+│
+├── Data generation pipeline/     # Tools for creating test data
+│   ├── generate_medical_conversations.py
+│   └── convert_to_speech.py
+│
+├── all-data/                     # Generated test data
+│   ├── Without-noise-.../        # Clean audio samples
+│   ├── Semi-noise-.../           # Moderate noise samples
+│   └── Noisy-.../                # High noise samples
+│
+├── custom_viz/                   # Scientific visualizations
+│   ├── model_performance_comparison.png
+│   ├── language_performance_comparison.png
+│   └── specialty_term_recognition.png
+│
+├── Scientific_Evaluation_Report.md  # Detailed scientific report
+│
+└── scientific_report.md          # SOAP-specific analysis
 ```
 
-## Requirements
+## Getting Started
 
-1. Python 3.8 or higher
-2. API keys for:
-   - OpenAI (for generating medical conversations)
-   - Deepgram (for Nova-3-medical and Nova-2 transcription)
-   - Azure Speech Services (optional alternative)
-3. Required Python packages (install with `pip install -r requirements.txt`)
+### Prerequisites
 
-## Setup
+- Python 3.8+
+- API keys for Azure Speech Services and Deepgram
 
-1. Clone this repository
-2. Install dependencies:
+### Installation
+
+1. Clone the repository:
    ```bash
-   pip install -r requirements.txt
+   git clone https://github.com/yourusername/medical-stt-evaluation.git
+   cd medical-stt-evaluation
    ```
-   Or use the setup script for a complete environment configuration:
+
+2. Set up the environment:
    ```bash
    ./setup.sh
    ```
-3. Create a `.env` file with your API keys:
+
+3. Configure the API keys in `.env`:
    ```
-   OPENAI_API_KEY=your_openai_key
+   AZURE_SPEECH_KEY=your_azure_key
+   AZURE_SPEECH_REGION=your_region
    DEEPGRAM_API_KEY=your_deepgram_key
-   AZURE_SPEECH_KEY=your_azure_speech_key
-   AZURE_SPEECH_REGION=canadacentral
    ```
 
-## Usage
+## Data Generation Pipeline
 
-### Running the Complete Pipeline
+The data generation pipeline creates synthetic medical conversations for various specialties and languages.
 
-To run the entire pipeline (generation, speech conversion, transcription, and evaluation):
-
-```bash
-python run_pipeline.py --num 3 --specialty all
-```
-
-Options:
-- `--num`: Number of conversation pairs to generate per specialty and language (default: 3)
-- `--specialty`: Medical specialty to process (`cardiology`, `gp`, or `all`) (default: `all`)
-- `--noise`: Noise level to apply (`none`, `light`, `moderate`, `heavy`) (default: `moderate`)
-
-### Running Individual Components
-
-You can also run each component separately:
-
-#### 1. Generate Conversations
+### Running the Pipeline
 
 ```bash
-python generate_medical_conversations.py --num 5 --specialty cardiology
+# Generate medical conversations
+python Data\ generation\ pipeline/generate_medical_conversations.py --specialty cardiology --language en-CA
+
+# Convert to speech with different noise levels
+python Data\ generation\ pipeline/convert_to_speech.py --input-dir generated/cardiology/en-CA --noise-level low
 ```
 
-Options:
-- `--num`: Number of conversation pairs to generate (default: 5)
-- `--specialty`: Medical specialty (`cardiology`, `gp`, or `all`) (default: `all`)
-- `--model`: GPT model to use (default: `gpt-4`)
+## Evaluation Framework
 
-#### 2. Convert to Speech
+The evaluation framework provides comprehensive analysis of speech-to-text performance.
+
+### Running Evaluations
 
 ```bash
-python convert_to_speech.py --specialty cardiology --lang en-CA --noise moderate
+# Run comprehensive evaluation
+python evaluate_transcriptions.py --data-dir "all-data" --report
+
+# Generate custom visualizations
+python create_visualization.py
 ```
 
-Options:
-- `--specialty`: Medical specialty to process (default: `all`)
-- `--lang`: Language to process (`en-CA`, `fr-CA`, or `all`) (default: `all`)
-- `--noise`: Noise level to apply (`none`, `light`, `moderate`, `heavy`) (default: `moderate`)
+### Evaluation Metrics
 
-#### 3. Transcribe Audio
+- **Word Error Rate (WER)**: Levenshtein distance between reference and hypothesis
+- **Medical Term F1 Score**: Precision and recall for medical terminology
+- **Semantic Similarity**: TF-IDF cosine similarity between texts
+- **Speaker Accuracy**: Correct attribution of speaker turns
 
-```bash
-python transcribe_conversations_opposite.py --specialty gp --lang fr-CA
-```
+## Visualization and Reporting
 
-Options:
-- `--specialty`: Medical specialty to process (default: `all`)
-- `--lang`: Language to transcribe (`en-CA`, `fr-CA`, or `all`) (default: `all`)
-- `--audio`: Specify a single audio file to transcribe instead of processing all files
-- `--force-deepgram`: Force the use of Deepgram for all languages
+The framework generates scientific visualizations and reports with statistical analysis.
 
-#### 4. Evaluate Transcriptions
+### Available Visualizations
 
-```bash
-python evaluate_transcriptions.py --specialty all --lang all
-```
+1. **Model Performance Comparison**:
+   ![Model Performance](custom_viz/model_performance_comparison.png)
 
-Options:
-- `--specialty`: Medical specialty to evaluate (default: `all`)
-- `--lang`: Language to evaluate (`en-CA`, `fr-CA`, or `all`) (default: `all`)
-- `--output`: Directory to save evaluation results (default: `evaluation`)
+2. **Language Performance Analysis**:
+   ![Language Performance](custom_viz/language_performance_comparison.png)
 
-## Advanced Features
+3. **Medical Term Recognition by Specialty**:
+   ![Specialty Performance](custom_viz/specialty_term_recognition.png)
 
-### Speech Enhancement Options
+### Reports
 
-The system provides several speech enhancement options for improved transcription:
+- [Scientific Evaluation Report](Scientific_Evaluation_Report.md): Comprehensive scientific analysis
+- [SOAP Note Analysis](scientific_report.md): Focused analysis for SOAP note generation
 
-```bash
-python convert_to_speech.py --specialty all --enhancement high
-```
+## SOAP Note Analysis
 
-Enhancement levels:
-- `basic`: Standard voice differentiation
-- `medium`: Enhanced speaker separation with age/gender variations
-- `high`: Maximum differentiation with distinct voice characteristics
+The framework includes specialized analysis for SOAP (Subjective, Objective, Assessment, Plan) note structure:
 
-### Custom Noise Profiles
-
-You can specify custom noise profiles to simulate specific environments:
-
-```bash
-python convert_to_speech.py --specialty cardiology --noise-profile hospital
-```
-
-Available profiles:
-- `hospital`: Typical hospital ambient noise
-- `clinic`: Quieter clinical setting
-- `telehealth`: Digital communication artifacts
-- `custom`: Use your own noise sample (specify with `--custom-noise path/to/noise.wav`)
-
-### Batch Processing Mode
-
-For processing large datasets efficiently:
-
-```bash
-python run_pipeline.py --batch --workers 4
-```
-
-Options:
-- `--batch`: Enable batch processing mode
-- `--workers`: Number of parallel workers (default: 2)
-- `--chunk-size`: Number of files to process in each batch (default: 5)
-
-## Technical Implementation Details
-
-### Speaker Diarization
-
-For French audio, our implementation uses content-based speaker separation to overcome the limited native speaker identification capabilities of the Deepgram API (only ~10% accuracy). This sophisticated approach:
-
-1. Analyzes sentence patterns and question/response structures
-2. Applies linguistic rules to identify likely speaker changes
-3. Detects medical explanations (typically doctor) vs. symptom reports (typically patient)
-4. Creates alternating speaker segments that match expected doctor-patient conversation flow
-
-The system uses both utterance-level analysis and word-level processing as fallback, ensuring robust speaker identification even when the raw API performance is limited.
-
-For English audio, the Nova-3-medical model's native diarization capabilities achieve 78-88% accuracy with additional post-processing to further improve results.
-
-### Voice Transformation Parameters
-
-Enhanced voice differentiation is achieved through the following parameters:
-
-```python
-# Doctor voice characteristics
-doctor_male = {"pitch_shift": -7.0, "tempo": 0.85, "formant_shift": 0.8}
-doctor_female = {"pitch_shift": 5.0, "tempo": 0.85, "formant_shift": 1.1}
-
-# Patient voice characteristics
-patient_male = {"pitch_shift": -2.0, "tempo": 1.15, "formant_shift": 0.9}
-patient_female = {"pitch_shift": 8.0, "tempo": 1.05, "formant_shift": 1.2}
-
-# Age modifiers
-age_modifiers = {
-    "elderly": {"tempo_factor": 0.9, "tremor": True, "tremor_amount": 0.03},
-    "middle_aged": {"tempo_factor": 1.0, "tremor": False},
-    "young": {"pitch_factor": 1.2, "tempo_factor": 1.1, "tremor": False}
-}
-```
-
-## Citing This Work
-
-If you use this pipeline in your research, please cite:
-
-```
-@software{MedicalConversationEvaluation,
-  author = {Khader, Khalid},
-  title = {Medical Conversation Generation and Evaluation Pipeline},
-  year = {2023},
-  url = {https://github.com/yourusername/medical-conversation-pipeline},
-}
-```
+- Section-specific accuracy metrics
+- Medical term extraction by SOAP section
+- Clinical significance analysis
 
 ## Contributing
 
