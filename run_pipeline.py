@@ -1,169 +1,189 @@
 #!/usr/bin/env python3
 """
-Run the complete medical conversation generation and evaluation pipeline.
+Medical Speech-to-Text Pipeline Runner
 
-This script will:
-1. Generate medical conversations for cardiology and GP specialties in English and French
-2. Convert the conversations to speech with different voices
-3. Transcribe the speech using appropriate services
-4. Evaluate the transcription accuracy
-
-Usage:
-    python run_pipeline.py --num 3 --specialty cardiology
-    python run_pipeline.py --num 5 --specialty all
+This script orchestrates the full pipeline for generating, transcribing,
+and evaluating medical conversations across different models and languages.
 """
 
-import os
-import subprocess
 import argparse
+import os
 import sys
-import glob
-import shutil
-from dotenv import load_dotenv
+import logging
+from datetime import datetime
 
-# Load environment variables
-load_dotenv()
+# Add the project root to the path
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-# Base directory for medical data
-BASE_DIR = "data-med"
+# Configure logging
+log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
+os.makedirs(log_dir, exist_ok=True)
+log_file = os.path.join(log_dir, f"pipeline_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log")
 
-def check_environment():
-    """Check if the required environment variables are set."""
-    required_vars = {
-        "OPENAI_API_KEY": "OpenAI API key for generating conversations",
-        "DEEPGRAM_API_KEY": "Deepgram API key for English transcription",
-        "AZURE_SPEECH_KEY": "Azure Speech key for French transcription",
-        "AZURE_SPEECH_REGION": "Azure Speech region (e.g., canadacentral)"
-    }
-    
-    missing_vars = []
-    for var, description in required_vars.items():
-        if not os.getenv(var):
-            missing_vars.append(f"{var} ({description})")
-    
-    if missing_vars:
-        print("The following environment variables are missing:")
-        for var in missing_vars:
-            print(f"  - {var}")
-        print("\nPlease set these variables in a .env file or your environment before running the pipeline.")
-        print("Note: For Azure Speech Services, we recommend using 'canadacentral' as the region.")
-        return False
-    
-    # Verify Azure region is valid
-    azure_region = os.getenv("AZURE_SPEECH_REGION", "").lower()
-    if azure_region and azure_region not in ["canadacentral", "eastus", "westus", "westus2", "eastus2", "northeurope", "westeurope"]:
-        print(f"Warning: '{azure_region}' might not be a valid Azure Speech region.")
-        print("Recommended regions: canadacentral, eastus, westus, westus2, eastus2, northeurope, westeurope")
-    
-    return True
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler(log_file),
+        logging.StreamHandler()
+    ]
+)
 
-def run_script(script_name, args=None):
-    """Run a Python script with the given arguments."""
-    cmd = [sys.executable, script_name]
-    if args:
-        cmd.extend(args)
-    
-    print(f"\nRunning: {' '.join(cmd)}")
-    result = subprocess.run(cmd, check=False)
-    
-    if result.returncode != 0:
-        print(f"Warning: {script_name} exited with code {result.returncode}")
-    
-    return result.returncode
+logger = logging.getLogger("medical_stt_pipeline")
 
-def run_pipeline(num_cases=3, specialty="all"):
-    """Run the complete pipeline."""
-    print("=" * 80)
-    print("MEDICAL CONVERSATION PIPELINE")
-    print("=" * 80)
+def parse_args():
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(description="Run the medical speech-to-text evaluation pipeline")
     
-    # Step 1: Generate conversations
-    print("\n\n" + "=" * 30 + " STEP 1: GENERATING CONVERSATIONS " + "=" * 30)
-    generate_args = ["--num", str(num_cases), "--specialty", specialty]
-    run_script("generate_medical_conversations.py", generate_args)
+    parser.add_argument("--specialty", type=str, choices=["cardiology", "gp", "all"], default="all",
+                        help="Medical specialty to process (default: all)")
     
-    # Step 2: Convert to speech
-    print("\n\n" + "=" * 30 + " STEP 2: CONVERTING TO SPEECH " + "=" * 30)
-    speech_args = ["--specialty", specialty, "--lang", "all"]
-    run_script("convert_to_speech.py", speech_args)
+    parser.add_argument("--language", type=str, choices=["en-CA", "fr-CA", "all"], default="all",
+                        help="Language to process (default: all)")
     
-    # Step 3: Transcribe conversations
-    print("\n\n" + "=" * 30 + " STEP 3: TRANSCRIBING AUDIO " + "=" * 30)
-    transcribe_args = ["--specialty", specialty, "--lang", "all"]
-    run_script("transcribe_conversations.py", transcribe_args)
+    parser.add_argument("--noise", type=str, choices=["none", "moderate", "high", "all"], default="all",
+                        help="Noise level to apply (default: all)")
     
-    # Step 4: Evaluate transcriptions
-    print("\n\n" + "=" * 30 + " STEP 4: EVALUATING RESULTS " + "=" * 30)
-    evaluate_args = ["--specialty", specialty, "--lang", "all"]
-    run_script("evaluate_transcriptions.py", evaluate_args)
+    parser.add_argument("--num", type=int, default=5,
+                        help="Number of conversations to generate (default: 5)")
     
-    # Step 5: Clean up unnecessary intermediate files
-    print("\n\n" + "=" * 30 + " STEP 5: CLEANING UP WORKSPACE " + "=" * 30)
-    cleanup_files(specialty)
+    parser.add_argument("--models", type=str, nargs="+", 
+                        choices=["azure", "nova-3-medical", "nova-2", "all"], default=["all"],
+                        help="Models to evaluate (default: all)")
     
-    print("\n\n" + "=" * 80)
-    print("PIPELINE COMPLETE")
-    print("=" * 80)
-    print("\nResults are available in the data-med directory:")
-    print("  - Original conversations: data-med/[specialty]/[language]/json")
-    print("  - SOAP notes: data-med/[specialty]/[language]/soap")
-    print("  - Audio files: data-med/[specialty]/[language]/audio")
-    print("  - Transcriptions: data-med/[specialty]/[language]/transcripts")
-    print("  - Evaluation results: data-med/evaluation/[specialty]")
-    print("\nKey evaluations to check:")
-    print("  - Comparison of transcription accuracy between:")
-    print("    * Deepgram Nova 3 Medical (English)")
-    print("    * Azure Speech Services (French)")
-    print("  - Evaluation metrics include WER, medical term accuracy, and speaker accuracy")
-    print("  - CSV results: data-med/evaluation/[specialty]/[language]_[specialty]_results.csv")
-    print("  - Visualization plots: data-med/evaluation/[specialty]/")
-
-def cleanup_files(specialty="all"):
-    """Clean up unnecessary files."""
-    # Determine specialties to process
-    specialties = ["cardiology", "gp"] if specialty == "all" else [specialty]
+    parser.add_argument("--steps", type=str, nargs="+",
+                        choices=["generate", "convert", "transcribe", "evaluate", "visualize", "all"],
+                        default=["all"],
+                        help="Pipeline steps to run (default: all)")
     
-    for spec in specialties:
-        # Process each language
-        for lang in ["en-CA", "fr-CA"]:
-            # Clean up debug responses and other temporary files
-            audio_dir = os.path.join(BASE_DIR, spec, lang, "audio")
-            
-            # Find and remove temporary/debug files
-            if os.path.exists(audio_dir):
-                for file in os.listdir(audio_dir):
-                    if file.endswith("_dg_response.json") or file.endswith("_azure_response.json"):
-                        try:
-                            os.remove(os.path.join(audio_dir, file))
-                            print(f"Removed {file}")
-                        except:
-                            pass
+    parser.add_argument("--output-dir", type=str, default="results",
+                        help="Directory for output files (default: results)")
     
-    # Remove any __pycache__ directories
-    for root, dirs, files in os.walk(".", topdown=False):
-        for name in dirs:
-            if name == "__pycache__":
-                try:
-                    import shutil
-                    shutil.rmtree(os.path.join(root, name))
-                    print(f"Removed {os.path.join(root, name)}")
-                except:
-                    pass
+    return parser.parse_args()
 
 def main():
-    """Main function."""
-    # Set up argument parser
-    parser = argparse.ArgumentParser(description='Run the medical conversation pipeline')
-    parser.add_argument('--num', type=int, default=3, help='Number of conversation pairs to generate per specialty and language')
-    parser.add_argument('--specialty', type=str, choices=['cardiology', 'gp', 'all'], default='all', help='Medical specialty to process')
-    args = parser.parse_args()
+    """Run the complete pipeline."""
+    args = parse_args()
     
-    # Check environment
-    if not check_environment():
-        sys.exit(1)
+    logger.info("Starting Medical STT Evaluation Pipeline")
+    logger.info(f"Arguments: {args}")
     
-    # Run the pipeline
-    run_pipeline(args.num, args.specialty)
+    # Import here to avoid circular imports
+    from src.pipeline import generate_medical_conversations
+    from src.pipeline import convert_to_speech
+    from src.pipeline import convert_to_speech_noisy
+    from src.pipeline import transcribe_conversations
+    from src.pipeline import transcribe_conversations_opposite
+    from src.pipeline import soap_generation
+    from src.evaluation import evaluator
+    from src.visualization import plots
+    
+    # Expand "all" options
+    if "all" in args.steps or args.steps == ["all"]:
+        steps = ["generate", "convert", "transcribe", "evaluate", "visualize"]
+    else:
+        steps = args.steps
+        
+    specialties = ["cardiology", "gp"] if args.specialty == "all" else [args.specialty]
+    languages = ["en-CA", "fr-CA"] if args.language == "all" else [args.language]
+    noise_levels = ["none", "moderate", "high"] if args.noise == "all" else [args.noise]
+    
+    # Create output directories
+    os.makedirs(os.path.join(args.output_dir, "figures"), exist_ok=True)
+    os.makedirs(os.path.join(args.output_dir, "tables"), exist_ok=True)
+    os.makedirs(os.path.join(args.output_dir, "reports"), exist_ok=True)
+    
+    # Step 1: Generate conversations
+    if "generate" in steps:
+        logger.info("Step 1: Generating medical conversations")
+        for specialty in specialties:
+            for language in languages:
+                generate_medical_conversations.generate(
+                    specialty=specialty,
+                    language=language,
+                    num_conversations=args.num,
+                    output_dir=os.path.join("data", "raw", "transcripts")
+                )
+    
+    # Step 2: Convert to speech
+    if "convert" in steps:
+        logger.info("Step 2: Converting text to speech")
+        for noise_level in noise_levels:
+            if noise_level == "none":
+                convert_to_speech.convert(
+                    input_dir=os.path.join("data", "raw", "transcripts"),
+                    output_dir=os.path.join("data", "processed", "audio", "clean"),
+                    specialties=specialties,
+                    languages=languages
+                )
+            elif noise_level == "moderate":
+                convert_to_speech_noisy.convert(
+                    input_dir=os.path.join("data", "raw", "transcripts"),
+                    output_dir=os.path.join("data", "processed", "audio", "semi-noise"),
+                    noise_level="moderate",
+                    specialties=specialties,
+                    languages=languages
+                )
+            elif noise_level == "high":
+                convert_to_speech_noisy.convert(
+                    input_dir=os.path.join("data", "raw", "transcripts"),
+                    output_dir=os.path.join("data", "processed", "audio", "high-noise"),
+                    noise_level="high",
+                    specialties=specialties,
+                    languages=languages
+                )
+    
+    # Step 3: Transcribe audio
+    if "transcribe" in steps:
+        logger.info("Step 3: Transcribing audio")
+        models = []
+        if "all" in args.models or args.models == ["all"]:
+            models = ["azure", "nova-3-medical", "nova-2"]
+        else:
+            models = args.models
+            
+        for model in models:
+            for noise_level in noise_levels:
+                noise_dir = "clean" if noise_level == "none" else f"{noise_level}-noise"
+                transcribe_conversations.transcribe(
+                    model=model,
+                    input_dir=os.path.join("data", "processed", "audio", noise_dir),
+                    output_dir=os.path.join("data", "processed", "transcripts", model),
+                    specialties=specialties,
+                    languages=languages
+                )
+                
+        # Generate SOAP notes
+        logger.info("Generating SOAP notes from transcriptions")
+        for model in models:
+            soap_generation.generate(
+                input_dir=os.path.join("data", "processed", "transcripts", model),
+                output_dir=os.path.join("data", "processed", "soap", model),
+                specialties=specialties,
+                languages=languages
+            )
+    
+    # Step 4: Evaluate transcriptions
+    if "evaluate" in steps:
+        logger.info("Step 4: Evaluating transcription quality")
+        evaluator.evaluate(
+            reference_dir=os.path.join("data", "raw", "transcripts"),
+            transcription_dir=os.path.join("data", "processed", "transcripts"),
+            soap_dir=os.path.join("data", "processed", "soap"),
+            output_dir=os.path.join(args.output_dir, "tables"),
+            specialties=specialties,
+            languages=languages
+        )
+    
+    # Step 5: Generate visualizations
+    if "visualize" in steps:
+        logger.info("Step 5: Generating visualizations")
+        plots.generate_all_plots(
+            data_file=os.path.join(args.output_dir, "tables", "evaluation_results.csv"),
+            output_dir=os.path.join(args.output_dir, "figures")
+        )
+    
+    logger.info("Pipeline completed successfully")
 
 if __name__ == "__main__":
     main() 

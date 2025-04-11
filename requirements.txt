@@ -1,38 +1,73 @@
-openai>=1.70.0
-python-dotenv>=0.19.0
-gTTS==2.3.2
-tqdm==4.66.1
-pydub>=0.25.1
+# Core dependencies
 numpy>=1.24.0
 pandas>=1.5.0
 matplotlib>=3.6.0
 seaborn>=0.12.0
-nltk>=3.8.0
 scipy>=1.10.0
-pyttsx3>=2.90
-soundfile>=0.12.1
-# Dependencies for audio processing
+scikit-learn>=1.0.2
+tqdm==4.66.1
+
+# Natural language processing
+nltk>=3.8.0
+jiwer>=3.0.3       # Word Error Rate calculation
+rouge>=1.0.1       # Text similarity metrics
+spacy>=3.5.0       # Medical entity extraction
+textdistance>=4.5.0 # Text similarity algorithms
+transformers>=4.30.0 # Hugging Face transformers for advanced NLP
+sentencepiece>=0.1.99 # Tokenization for multilingual models
+
+# Medical NLP packages
+medspacy>=0.2.0.0   # Medical NLP extension for spaCy
+scispacy>=0.5.3     # Scientific/biomedical extension for spaCy
+
+# Speech recognition and audio processing
 speechbrain>=0.5.14
 torch>=2.0.0
 torchaudio>=2.0.0
 librosa>=0.10.0
 noisereduce>=2.0.1
-# For API integrations
-requests>=2.30.0
-deepgram-sdk>=2.12.0
-azure-cognitiveservices-speech>=1.31.0
-# For evaluation
-scikit-learn>=1.0.2
-jiwer>=3.0.3
-rouge>=1.0.1
-# For visualization
-plotly>=5.14.0
-# For audio recording and playback
-pyaudio>=0.2.13
-# For file handling and compression
-ffmpeg-python>=0.2.0
-# For data export
-openpyxl>=3.1.2
-# Optional dependencies for development
-black>=23.3.0
-pytest>=7.3.1
+soundfile>=0.12.1
+pyaudio>=0.2.13     # For audio recording/playback
+ffmpeg-python>=0.2.0 # Audio file handling
+pydub>=0.25.1       # Audio manipulation
+webrtcvad>=2.0.10   # Voice activity detection
+pesq>=0.0.4         # Perceptual audio quality assessment
+
+# Text-to-Speech
+gTTS==2.3.2         # Google Text-to-Speech
+pyttsx3>=2.90       # Offline TTS engine
+azure-cognitiveservices-speech>=1.31.0 # Azure TTS
+
+# API integrations
+openai>=1.70.0      # OpenAI APIs
+deepgram-sdk>=2.12.0 # Deepgram Nova models
+azure-identity>=1.15.0 # Azure authentication
+python-dotenv>=0.19.0 # Environment variable management
+requests>=2.30.0    # HTTP requests
+langchain>=0.1.0    # Framework for LLM applications
+
+# Data visualization
+plotly>=5.14.0      # Interactive visualizations
+wordcloud>=1.8.2.2  # Word cloud visualization
+bokeh>=3.2.0        # Interactive web-ready visualizations
+altair>=5.0.0       # Declarative statistical visualizations
+
+# Data export and reporting
+openpyxl>=3.1.2     # Excel file handling
+markdown>=3.4.3     # Markdown generation
+jinja2>=3.1.2       # Report templating
+pdfkit>=1.0.0       # PDF report generation
+weasyprint>=59.0    # HTML to PDF converter
+
+# Development tools
+black>=23.3.0       # Code formatting
+pytest>=7.3.1       # Testing
+pylint>=2.17.0      # Code linting
+jupyterlab>=4.0.0   # For notebooks
+ipywidgets>=8.0.0   # Interactive widgets for notebooks
+
+# Utilities
+tqdm>=4.66.0        # Progress bars
+typeguard>=4.0.0    # Runtime type checking
+structlog>=23.1.0   # Structured logging
+retry>=0.9.2        # Retry mechanism for API calls
