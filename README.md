@@ -27,7 +27,7 @@ The framework includes a complete pipeline for:
 
 ## Key Findings
 
-![Model Performance Comparison](results/custom_viz/model_comparison.png)
+![Model Performance Comparison](results/figures/model_comparison.png)
 
 Our rigorous scientific evaluation revealed:
 
@@ -108,7 +108,7 @@ medical-stt-evaluation/
 │       └── fr-CA/                # French-Canadian data
 │
 ├── results/                      # Results and outputs
-│   ├── custom_viz/                  # Visualization outputs
+│   ├── figures/                  # Visualization outputs
 │   ├── tables/                   # Evaluation result tables
 │   └── reports/                  # Generated reports
 │
@@ -241,19 +241,19 @@ The framework includes tools for generating scientific visualizations and report
 ### Available Visualizations
 
 1. **Model Performance Comparison**:
-   ![Model Performance](results/custom_viz/model_comparison.png)
+   ![Model Performance](results/figures/model_comparison.png)
 
 2. **Language Performance Analysis**:
-   ![Language Performance](results/custom_viz/language_comparison.png)
+   ![Language Performance](results/figures/language_comparison.png)
 
 3. **SOAP Section Analysis**:
-   ![SOAP Section Performance](results/custom_viz/combined_section_scores.png)
+   ![SOAP Section Performance](results/figures/combined_section_scores.png)
 
 4. **Noise Impact Analysis**:
-   ![Noise Performance](results/custom_viz/combined_noise_type_scores.png)
+   ![Noise Performance](results/figures/combined_noise_type_scores.png)
 
 5. **Medical Term Accuracy**:
-   ![Medical Term Accuracy](results/custom_viz/medical_term_accuracy.png)
+   ![Medical Term Accuracy](results/figures/medical_term_accuracy.png)
 
 ### Generating Reports
 
