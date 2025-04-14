@@ -51,7 +51,7 @@ Our scientific evaluation employed a rigorous methodology to ensure validity and
 
 ### Model Comparison
 
-![Model Comparison](results/figures/model_comparison.png)
+![Model Comparison](results/custom_viz/model_comparison.png)
 
 The above visualization compares performance across different model configurations. Statistical analysis (one-way ANOVA) shows significant differences between models (F=8.76, p < 0.001) with the following key findings:
 
@@ -64,14 +64,14 @@ The above visualization compares performance across different model configuratio
 
 We conducted rigorous statistical analyses of each model's performance by language:
 
-![English Model Comparison](results/figures/model_comparison_en-CA.png)
+![English Model Comparison](results/custom_viz/model_comparison_en-CA.png)
 
 The English model comparison reveals statistically significant differences:
 - Nova-3-medical achieves higher medical term F1 scores than Azure (87.1% vs 81.4%, p < 0.01)
 - Nova-3-medical shows particular strength in cardiology terminology (83.5% vs 74.8%, p < 0.01)
 - Azure maintains more consistent performance across specialties but with lower overall accuracy
 
-![French Model Comparison](results/figures/model_comparison_fr-CA.png)
+![French Model Comparison](results/custom_viz/model_comparison_fr-CA.png)
 
 The French model comparison shows significant differences:
 - Nova-2 outperforms Azure for medical terminology recognition (91.4% vs 83.2%, p < 0.001)
@@ -80,7 +80,7 @@ The French model comparison shows significant differences:
 
 ## Language-Specific Performance
 
-![Language Comparison](results/figures/language_comparison.png)
+![Language Comparison](results/custom_viz/language_comparison.png)
 
 Our analysis revealed statistically significant language effects (two-way ANOVA, F=18.42, p < 0.001):
 
@@ -98,7 +98,7 @@ Our analysis revealed statistically significant language effects (two-way ANOVA,
 
 ## Specialty-Specific Performance
 
-![Specialty Comparison](results/figures/specialty_comparison.png)
+![Specialty Comparison](results/custom_viz/specialty_comparison.png)
 
 Statistical analysis revealed significant specialty effects (ANOVA, F=11.34, p < 0.001):
 
@@ -116,7 +116,7 @@ Statistical analysis revealed significant specialty effects (ANOVA, F=11.34, p <
 
 ## Consultation vs. Follow-up Performance
 
-![Consultation Type Comparison](results/figures/consultation_type_comparison_all.png)
+![Consultation Type Comparison](results/custom_viz/consultation_type_comparison_all.png)
 
 Our results show significant effects of consultation type (t-test, p < 0.01):
 
@@ -152,13 +152,13 @@ Key findings supported by statistical analysis:
 - Nova-2 demonstrates remarkable resilience to noise (ANOVA, p < 0.001)
 - Azure Speech Services shows steeper performance degradation as noise increases (significant interaction with noise level, p < 0.01)
 
-![Noise Performance Heatmap](results/figures/language_noise_heatmap.png)
+![Noise Performance Heatmap](results/custom_viz/language_noise_heatmap.png)
 
 ## SOAP Note Section Performance
 
 Evaluation of SOAP section performance reveals significant variation across sections:
 
-![SOAP Section Performance](results/figures/combined_section_scores.png)
+![SOAP Section Performance](results/custom_viz/combined_section_scores.png)
 
 | Section | Semantic Similarity | WER (lower is better) | BLEU Score | Phrase Match |
 |---------|---------------------|------------------------|------------|--------------|
@@ -193,7 +193,7 @@ A critical aspect of our scientific evaluation was precise measurement of medica
 
 ### Overall Medical Terminology Performance
 
-![Medical Term Accuracy](results/figures/medical_term_accuracy.png)
+![Medical Term Accuracy](results/custom_viz/medical_term_accuracy.png)
 
 | Model | Language | Medical Term F1 | Specialized Terms | Common Terms | Drug Names |
 |-------|----------|:---------------:|:-----------------:|:------------:|:----------:|
@@ -241,7 +241,7 @@ Our detailed statistical analysis revealed specific patterns of medical terminol
 
 ### Medical Terminology by Specialty
 
-![Medical Term by Specialty](results/figures/specialty_term_recognition.png)
+![Medical Term by Specialty](results/custom_viz/specialty_term_recognition.png)
 
 The specialized model advantage varies significantly by medical specialty:
 
@@ -258,7 +258,7 @@ We conducted in-depth analysis of transcription quality beyond simple accuracy m
 
 Statistical analysis of semantic similarity scores revealed:
 
-![Semantic Similarity Distribution](results/figures/combined_score_distribution.png)
+![Semantic Similarity Distribution](results/custom_viz/combined_score_distribution.png)
 
 - Nova-3-medical preserves semantic meaning better than Azure for English content (~8% improvement, p < 0.01)
 - Nova-2 shows exceptional semantic preservation for French content (~12% improvement, p < 0.001)
@@ -374,18 +374,18 @@ Performance of this architecture was validated through cross-validation testing 
 
 We employed additional metrics and visualizations to gain deeper insights:
 
-![Metrics Correlation Heatmap](results/figures/metrics_correlation_heatmap.png)
+![Metrics Correlation Heatmap](results/custom_viz/metrics_correlation_heatmap.png)
 
 Correlation analysis between metrics reveals:
 - Strong positive correlation between medical term F1 and overall semantic similarity (r = 0.81)
 - Moderate negative correlation between WER and speaker accuracy (r = -0.62)
 - Strong relationship between performance across SOAP sections (r > 0.75)
 
-![Multiple Metrics by Section](results/figures/multiple_metrics_by_section.png)
+![Multiple Metrics by Section](results/custom_viz/multiple_metrics_by_section.png)
 
 This multi-metric analysis demonstrates consistent patterns across evaluation approaches, strengthening the validity of our findings.
 
-![Additional Metrics Boxplot](results/figures/additional_metrics_boxplot.png)
+![Additional Metrics Boxplot](results/custom_viz/additional_metrics_boxplot.png)
 
 Statistical distribution of performance metrics confirms the significance of observed differences through non-overlapping interquartile ranges.
 
@@ -393,15 +393,15 @@ Statistical distribution of performance metrics confirms the significance of obs
 
 Our comprehensive visual analysis provides further insights:
 
-![Combined Model Scores](results/figures/combined_model_scores.png)
+![Combined Model Scores](results/custom_viz/combined_model_scores.png)
 
 This visualization compares overall performance across models and demonstrates the statistical significance of observed differences.
 
-![Combined Language Scores](results/figures/combined_language_scores.png)
+![Combined Language Scores](results/custom_viz/combined_language_scores.png)
 
 The substantial performance gap between languages is evident across all metrics and models, with statistical significance confirmed.
 
-![Combined Noise Type Scores](results/figures/combined_noise_type_scores.png)
+![Combined Noise Type Scores](results/custom_viz/combined_noise_type_scores.png)
 
 Noise impact analysis shows consistent patterns of degradation across models, with varying degrees of resilience.
 
