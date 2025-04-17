@@ -16,6 +16,7 @@ import random
 import time
 import argparse
 import openai
+from openai import AzureOpenAI
 from datetime import datetime
 from tqdm import tqdm
 from dotenv import load_dotenv
@@ -23,10 +24,22 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-# Set up OpenAI API key
-openai.api_key = os.getenv("OPENAI_API_KEY")
-if not openai.api_key:
-    print("Warning: OPENAI_API_KEY not found in environment. Set it in your .env file.")
+# Azure OpenAI Configuration
+AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
+AZURE_OPENAI_DEPLOYMENT_NAME = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME", "gpt-4o")
+AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT", "https://notegen-openai-eastca.openai.azure.com")
+
+# Initialize Azure OpenAI client
+client = AzureOpenAI(
+    api_key=AZURE_OPENAI_API_KEY,
+    api_version="2023-05-15",
+    azure_endpoint=AZURE_OPENAI_ENDPOINT
+)
+
+# # Set up OpenAI API key
+# openai.api_key = os.getenv("OPENAI_API_KEY")
+# if not openai.api_key:
+#     print("Warning: OPENAI_API_KEY not found in environment. Set it in your .env file.")
 
 # Define base directories for output
 BASE_DIR = "data-med"
@@ -422,8 +435,14 @@ def generate_conversation_with_gpt(prompt, model="gpt-4", temperature=0.7, max_r
     """Generate conversation using GPT model with retry logic."""
     for attempt in range(max_retries):
         try:
-            response = openai.ChatCompletion.create(
-                model=model,
+            # response = openai.ChatCompletion.create(
+            #     model=model,
+            #     messages=[{"role": "user", "content": prompt}],
+            #     temperature=temperature,
+            #     max_tokens=4000
+            # )
+            response = client.chat.completions.create(
+                model=AZURE_OPENAI_DEPLOYMENT_NAME,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=temperature,
                 max_tokens=4000
@@ -577,8 +596,10 @@ Utilisez la terminologie médicale et les noms de médicaments canadiens."""
     
     # Generate the SOAP note using OpenAI
     try:
-        response = openai.ChatCompletion.create(
-            model="gpt-4",
+        # response = openai.ChatCompletion.create(
+        #     model="gpt-4",
+        response = client.chat.completions.create(
+            model=AZURE_OPENAI_DEPLOYMENT_NAME,
             messages=[
                 {"role": "system", "content": "You are a medical professional who creates detailed SOAP notes from conversation transcripts."},
                 {"role": "user", "content": soap_prompt}
@@ -941,8 +962,10 @@ Please generate the follow-up visit using this format:
 """
 
     try:
-        response = openai.ChatCompletion.create(
-            model=model,
+        # response = openai.ChatCompletion.create(
+        #     model=model,
+        response = client.chat.completions.create(
+            model=AZURE_OPENAI_DEPLOYMENT_NAME,
             messages=[
                 {"role": "system", "content": "You are a medical professional who creates realistic doctor-patient conversations for training purposes."},
                 {"role": "user", "content": prompt}

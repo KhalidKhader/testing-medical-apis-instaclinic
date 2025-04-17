@@ -39,7 +39,9 @@ data-med noisy/
 data-med-semi-noise/
 data-med-without-noise-original/
 all-data/
-
+med-data
+med-data-copy
+med-data-xxxxxxx--copy
 # IDE
 .idea/
 .vscode/

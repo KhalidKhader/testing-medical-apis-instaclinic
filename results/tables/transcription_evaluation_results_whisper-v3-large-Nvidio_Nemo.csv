@@ -1,0 +1,1 @@
+file,specialty,language_code,language,visit_type,speaker_accuracy,precision,recall,f1_score,medical_terms_count,wer,cer,bleu,cosine_similarity,model

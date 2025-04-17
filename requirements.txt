@@ -1,11 +1,19 @@
 # Core dependencies
-numpy>=1.24.0
-pandas>=1.5.0
-matplotlib>=3.6.0
-seaborn>=0.12.0
-scipy>=1.10.0
-scikit-learn>=1.0.2
-tqdm==4.66.1
+torch>=2.0.0
+numpy>=1.22.0
+openai-whisper>=20230918
+pyannote.audio>=2.1.1
+librosa>=0.9.0
+transformers>=4.35.0
+
+# Optional NeMo dependencies 
+nemo_toolkit[asr]>=1.20.0
+scikit-learn>=1.0.0
+
+# Utility dependencies
+tqdm>=4.65.0
+matplotlib>=3.5.0
+pydub>=0.25.1
 
 # Natural language processing
 nltk>=3.8.0
@@ -13,7 +21,6 @@ jiwer>=3.0.3       # Word Error Rate calculation
 rouge>=1.0.1       # Text similarity metrics
 spacy>=3.5.0       # Medical entity extraction
 textdistance>=4.5.0 # Text similarity algorithms
-transformers>=4.30.0 # Hugging Face transformers for advanced NLP
 sentencepiece>=0.1.99 # Tokenization for multilingual models
 
 # Medical NLP packages
@@ -22,14 +29,11 @@ scispacy>=0.5.3     # Scientific/biomedical extension for spaCy
 
 # Speech recognition and audio processing
 speechbrain>=0.5.14
-torch>=2.0.0
 torchaudio>=2.0.0
-librosa>=0.10.0
 noisereduce>=2.0.1
 soundfile>=0.12.1
 pyaudio>=0.2.13     # For audio recording/playback
 ffmpeg-python>=0.2.0 # Audio file handling
-pydub>=0.25.1       # Audio manipulation
 webrtcvad>=2.0.10   # Voice activity detection
 pesq>=0.0.4         # Perceptual audio quality assessment
 
@@ -39,7 +43,6 @@ pyttsx3>=2.90       # Offline TTS engine
 azure-cognitiveservices-speech>=1.31.0 # Azure TTS
 
 # API integrations
-openai>=1.70.0      # OpenAI APIs
 deepgram-sdk>=2.12.0 # Deepgram Nova models
 azure-identity>=1.15.0 # Azure authentication
 python-dotenv>=0.19.0 # Environment variable management
@@ -67,7 +70,6 @@ jupyterlab>=4.0.0   # For notebooks
 ipywidgets>=8.0.0   # Interactive widgets for notebooks
 
 # Utilities
-tqdm>=4.66.0        # Progress bars
 typeguard>=4.0.0    # Runtime type checking
 structlog>=23.1.0   # Structured logging
 retry>=0.9.2        # Retry mechanism for API calls
