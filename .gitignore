@@ -42,6 +42,7 @@ all-data/
 med-data
 med-data-copy
 med-data-xxxxxxx--copy
+Pre-processed/
 # IDE
 .idea/
 .vscode/

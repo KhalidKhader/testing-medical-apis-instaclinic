@@ -11,4 +11,3 @@ __version__ = "0.1.0"
 from . import pipeline
 from . import evaluation
 from . import visualization
-from . import utils 
