@@ -12,6 +12,7 @@ This project evaluates and compares various speech-to-text models specifically f
 - **Deepgram Nova-2**: Strong performer for French content (75.6% F1)
 - **Azure Speech Services**: Baseline comparison model
 - **Speechmatics**: Advanced cloud-based speech recognition with strong medical term accuracy (90.9% F1 in English, 72.7% in French) and excellent speaker differentiation
+- **Wav2vec**: Self-supervised speech recognition model showing moderate performance in English (63.5% F1) and poor performance in French (17.3% F1)
 - **Transkriptor**: Latest addition with realistic medical term evaluation (English: 89.3% precision, 86.2% recall; French: 64.3% precision, 39.0% recall)
 
 ## Diarization Systems
@@ -146,6 +147,7 @@ The transcription output is saved as a JSON file with the following structure:
 | Deepgram Nova-3-medical/Nova-2 | 90.7% | 75.6% | 67.9% | 72.4% | 0.212 | 0.367 |
 | Speechmatics | 90.9% | 72.7% | 60.3% | 84.2% | 0.206 | 0.361 |
 | Transkriptor | 87.7% | 46.9% | 57.9% | 72.6% | 0.189 | 0.369 |
+| Wav2vec | 63.5% | 17.3% | 29.3% | 45.6% | 0.437 | 0.727 |
 
 ## Visualization Examples
 

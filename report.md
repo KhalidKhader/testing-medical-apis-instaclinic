@@ -16,6 +16,9 @@ After rigorous testing of various speech recognition models, we have identified 
   - Speechmatics (72.7% F1 score for medical terminology)
   - Transkriptor (46.9% F1 score with 64.3% precision for medical terminology)
 
+- **Not Recommended for Medical Applications**:
+  - Wav2vec: Poor performance especially in French (17.3% F1) and significant segmentation issues
+
 - **Speaker Accuracy Calculation Update**: Our refined methodology now accounts for turn count discrepancies:
   - On average, transcript files contain 20-25% fewer turns than original conversations
   - This turn merging significantly impacts dialogue structure and speaker attribution
@@ -40,11 +43,13 @@ Our testing demonstrates that specialized models with advanced diarization deliv
 | Deepgram Nova-3-medical (English) | 90.7% | 92.1% | 89.3% | 67.9% | 0.212 | 93.1% |
 | Speechmatics (English) | 90.9% | 91.8% | 90.0% | 60.3% | 0.206 | 92.9% |
 | Transkriptor (English) | 87.7% | 89.3% | 86.2% | 57.9% | 0.189 | 92.3% |
+| Wav2vec (English) | 63.5% | 29.3% | 0.437 | 76.9% |
 | Whisper v3 Turbo + NVIDIA NeMo (French) | 75.0% | 77.2% | 72.9% | 84.3% | 0.372 | 85.9% |
 | Whisper large-v3 + NVIDIA NeMo (French) | 73.8% | 76.9% | 70.9% | 80.6% | 0.368 | 85.2% |
 | Deepgram Nova-2 (French) | 75.6% | 79.1% | 72.3% | 72.4% | 0.367 | 85.0% |
 | Speechmatics (French) | 72.7% | 74.6% | 70.9% | 84.2% | 0.361 | 86.3% |
 | Transkriptor (French) | 46.9% | 64.3% | 39.0% | 72.6% | 0.369 | 82.4% |
+| Wav2vec (French) | 17.3% | 45.6% | 0.727 | 54.0% |
 
 ![Dataset Performance Comparison: Metrics across all tested models and datasets](results/figures/Azure_Nova2_3_results_with_SOAP/model_comparison.png)
 
@@ -121,6 +126,12 @@ Based on our evaluation metrics including the refined speaker accuracy calculati
 - **Areas for Monitoring**: Lower speaker accuracy (57.9%) and recall (86.2%) compared to top performers
 - **Recommended Use Cases**: General medical transcription with post-processing for speaker identification
 
+### For English (en-CA) with Wav2vec:
+- **Production Ready**: No, requires significant improvements
+- **Key Weaknesses**: Low medical term F1 score (63.5%), poor speaker identification (29.3%), high WER (0.437)
+- **Areas for Improvement**: Excessive turn segmentation (128% more turns than original), low recall of medical terms (54.1%)
+- **Recommended Use Cases**: Not recommended for medical transcription without substantial improvements
+
 ### For French (fr-CA) with Whisper v3 Turbo + NVIDIA NeMo:
 - **Production Ready**: Yes, with excellent speaker identification
 - **Key Strengths**: Strong speaker diarization (84.3%), good medical terminology (75.0%)
@@ -144,6 +155,12 @@ Based on our evaluation metrics including the refined speaker accuracy calculati
 - **Key Strengths**: Reasonable precision for detected terms (64.3%), competitive speaker accuracy (72.6%)
 - **Areas for Improvement**: Very low recall (39.0%) indicating many missed medical terms
 - **Recommended Use Cases**: Not recommended for production French medical content without extensive post-processing
+
+### For French (fr-CA) with Wav2vec:
+- **Production Ready**: No, performance is insufficient
+- **Key Weaknesses**: Very low medical term F1 score (17.3%), weak speaker identification (45.6%), very high WER (0.727)
+- **Areas for Improvement**: Complete retraining with French medical corpus before reconsideration
+- **Recommended Use Cases**: Not appropriate for medical transcription in French
 
 ## Detailed Model Information
 
@@ -218,6 +235,21 @@ Based on our evaluation metrics including the refined speaker accuracy calculati
   - Speaker diarization accuracy varies significantly between languages
 - **Turn Preservation**: Similar to other models (18-22% turn compression)
 - **Specialty Strength**: Better for English cardiology (91.8% F1) than French cardiology (48.0% F1)
+
+### Wav2vec
+- **Version**: Facebook AI Research implementation
+- **Architecture**: Self-supervised learning transformer-based model
+- **Input Format**: 16kHz mono audio
+- **Languages Tested**: Canadian English (en-CA) and Canadian French (fr-CA)
+- **Key Capabilities**: Self-supervised pretraining, fine-tuning for specific tasks
+- **API Integration**: Hugging Face transformers library implementation
+- **Limitations**:
+  - Poor medical term recognition, especially in French (17.3% F1)
+  - Significant over-segmentation of speaker turns (128-131% more turns than ground truth)
+  - High word error rates (0.437 for English, 0.727 for French)
+  - Low speaker accuracy (29.3% for English, 45.6% for French)
+- **Specialty Performance**: Similar performance between cardiology and general practice within each language
+- **Not recommended for medical applications** due to poor transcription accuracy and turn segmentation issues
 
 ## Overall Results
 
